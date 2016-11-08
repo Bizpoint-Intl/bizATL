@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:str="System.String, Mscorlib"
+		xmlns:def="Definition"> 
+	<Form Name="frm_AddReport" Text="Add Report" ClientSize="800,600" FormBorderStyle="FixedSingle" MaximizeBox="False" MinimizeBox="False" StartPosition="CenterScreen" ShowInTaskbar="False">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<TreeView Name="tvw_AddReport_Available" Location="30, 30" Size="280,500" Font="Tahoma, 10pt" ImageList="{imageList}" ItemHeight="18">
+				<Nodes>
+					<TreeNode Name="trn_AddReport_Available" Text="Available Reports"/>
+				</Nodes>
+			</TreeView>
+			<Button		Name="btn_AddReport_Add"	Text="Add &gt;"		Location="360,240"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<Button		Name="btn_AddReport_Remove"	Text="&lt; Remove"	Location="360,280"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<TreeView Name="tvw_AddReport_Added" Location="485, 30" Size="280,500" Font="Tahoma, 10pt" ImageList="{imageList}" ItemHeight="18">
+				<Nodes>
+					<TreeNode Name="trn_AddReport_Added" Text="Added Reports"/>
+				</Nodes>
+			</TreeView>
+			<GroupBox Name="grb_AddReport2" Location="0, 550" Size="800, 3" TabStop="False" />
+			<Button Name="btn_AddReport_Finish" Location="600,565" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="0" Text="Finish"/>
+			<Button Name="btn_AddReport_Cancel" Location="700,565" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="1" Text="Cancel"/>
+		</Controls>
+	</Form>
+</BizXml>

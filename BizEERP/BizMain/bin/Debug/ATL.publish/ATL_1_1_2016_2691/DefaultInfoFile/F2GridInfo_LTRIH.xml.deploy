@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+    xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <F2GridInfo Name="f2GridInfo" MainTable="trih" Title="Transfer In" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='LTRI'" >
+    <RelationTables>
+      <rel:RelationTableInfo TableName="apm"	    DataField="apnum"	ConditionField="apnum"/>
+    </RelationTables>
+    <F2GridColumnInfo MappingName="refnum"		HeaderText="GRN No."				Width="110" IsItem="True" SearchItem="True" SortItem="True"  Key="True"/>	
+    <F2GridColumnInfo MappingName="apnum"		HeaderText="Supplier Code"	    Width="250" IsItem="True" SearchItem="True" SortItem="True"/>
+	 <F2GridColumnInfo MappingName="apname"		HeaderText="Supplier Name"	    Width="250" IsItem="True" SearchItem="True" SortItem="True"		TableName="apm"/>
+  </F2GridInfo>
+</BizXml>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+		<Form Name="frm_Default" Text="{languageBinding.frm_Default}" ClientSize="360,355" StartPosition="CenterScreen" FormBorderStyle="FixedToolWindow" MaximizeBox="false" MinimizeBox="false" ShowInTaskbar="False" ControlBox="false">
+			<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+			<Controls>
+				<!--PictureBox Name="pcb_Default" Location="0, 0" Size="165, 315" TabStop="False">
+					<ele:BizPictureBoxImage FileName="Bizpoint1.bmp"/>
+				</PictureBox-->
+				<Label		Name="lbl_Default_Title"				Location="30, 20"	Size="320, 30"	Font="Tahoma, 11pt, style=Bold" Text="{languageBinding.lbl_Default_Title}"/>
+				<Label		Name="lbl_Default_Detail"				Location="30, 50"	Size="320, 50"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_Default_Detail}"/>
+				<Label		Name="lbl_Default_SystemYear"			Location="30,100"	Size="200, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_Default_SystemYear}"/>
+				<ComboBox	Name="cmb_Default_SystemYear"			Location="30,120"	Size="150, 20"	Font="Tahoma, 9pt"/>
+				<Label		Name="lbl_Default_AdministratorGroup"	Location="30,150"	Size="200, 20"	Font="Tahoma, 9pt" 	Text="{languageBinding.lbl_Default_AdministratorGroup}"/>
+				<ComboBox	Name="cmb_Default_AdministratorGroup"	Location="30,170"	Size="300, 20"	Font="Tahoma, 9pt"/>
+				<Label		Name="lbl_Default_PowerUserGroup"		Location="30,200"	Size="200, 20"	Font="Tahoma, 9pt" 	Text="{languageBinding.lbl_Default_PowerUserGroup}"/>
+				<ComboBox	Name="cmb_Default_PowerUserGroup"		Location="30,220"	Size="300, 20"	Font="Tahoma, 9pt"/>
+				<GroupBox	Name="grb_Default"						Location="0,  315"	Size="500, 3"	TabStop="False"/>
+				<Button		Name="btn_Default_Finish"				Location="185,325"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="0" Text="{languageBinding.btn_Default_Finish}"/>
+				<Button		Name="btn_Default_Cancel"				Location="270,325"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="1" Text="{languageBinding.btn_Default_Cancel}"/>
+			</Controls>
+		</Form>
+</BizXml>

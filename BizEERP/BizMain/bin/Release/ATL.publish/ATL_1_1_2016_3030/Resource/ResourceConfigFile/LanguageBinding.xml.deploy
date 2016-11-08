@@ -1,0 +1,3 @@
+<BizXml xmlns:lan="BizRAD.BizElements, BizBase" xmlns:def="Definition">
+  <lan:LanguageBinding Name="languageBinding" Language="English" />
+</BizXml>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="tdt6">
+		<DetailGridColumnInfo MappingName="DetailGridnum"		HeaderText="Detail No"			Width="80"/>
+		<DetailGridColumnInfo MappingName="DestinationTable"	HeaderText="Dest. Table"		Width="80"/>
+		<DetailGridColumnInfo MappingName="colDisplay"			HeaderText="Display Column"		Width="120"/>
+		<DetailGridColumnInfo MappingName="colCopy"				HeaderText="Copy Column"		Width="120"/>
+		<DetailGridColumnInfo MappingName="sqlDisplay"			HeaderText="Display SQL"		Width="120"/>
+		<DetailGridColumnInfo MappingName="sqlCopy"				HeaderText="Copy SQL"			Width="120"/>
+		<DetailGridColumnInfo MappingName="extractkey"			HeaderText="Extract Key"		Width="120"/>
+		<DetailGridColumnInfo MappingName="inclextracted"		HeaderText="Incl. Extracted"	Width="80"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="tdtnum"				HeaderText="{languageBinding.tdtnum}"			Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="qcth" Title="{languageBinding.QCT}" DocumentInfo="DocumentInfo_QCT.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="refnum"	HeaderText="Quotation No"		Width="100"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+		<VoucherGridColumnInfo MappingName="arnum"		HeaderText="Cust. Code"		Width="70"/>
+		<VoucherGridColumnInfo MappingName="sectorcode"		HeaderText="Sector"		Width="70"/>
+		<VoucherGridColumnInfo MappingName="sitenum"		HeaderText="Site Name"		Width="70"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="trandate"		HeaderText="Contract Date"		Width="70" ColumnType="DateTime"/>
+		<VoucherGridColumnInfo MappingName="issuedby"		HeaderText="Issued By"			Width="40"/>
+		<VoucherGridColumnInfo MappingName="sinstruction"		HeaderText="Special Instructions"		Width="400"/>
+	</VoucherGridInfo>
+</BizXml>

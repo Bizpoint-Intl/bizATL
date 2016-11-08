@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_trnhleaveinfo"		  Location="5, 10"		Size="320,520" 	Text="Course Information" >
+				<Controls>
+					<Label		Name="lbl_empnum"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="{languageBinding.empnum}" Visible="False"/>
+					<TextBox	Name="trnh_empnum"	  Location="95,25"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_coursecode"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Course" />
+          <TextBox	Name="trnh_coursecode"	  Location="95,25"		Size="220,21"	TabIndex="51" CharacterCasing="Upper" />
+
+          <Label		Name="lbl_coursename"	  Location="10,  50" 		Size="80, 16"	TextAlign="Right" Text="Course Name"/>
+          <TextBox	Name="trnh_coursename"	  Location="95,50"	ReadOnly="True" 	Size="180,21"	TabIndex="51" />
+
+          <Label		Name="lbl_apnum"	  Location="10,  75" 		Size="80, 16"	TextAlign="Right" Text="Vendor"/>
+          <TextBox	Name="trnh_apnum"	  Location="95,75"	 	Size="60,21"	TabIndex="51"  CharacterCasing="Upper"/>
+          <TextBox	Name="trnh_apname"	  Location="155,75"	 	Size="160,21"	TabIndex="51" ReadOnly="True"/>
+          
+          <Label		Name="lbl_venue"	  Location="10,  100" 		Size="80, 16"	TextAlign="Right" Text="Venue"/>
+          <TextBox	Name="trnh_coursevenue" Location="95, 100" Size="220, 100"	TabIndex="6" Multiline="True" ScrollBars="Vertical" />
+          
+					<Label		Name="lbl_empname"	  Location="10,  50" 		Size="80, 16"	TextAlign="Right" Text="{languageBinding.empname}" Visible="False"/>
+					<Label		Name="lbl_matnum"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Appointment" Visible="False"/>
+					<Label		Name="lbl_sitenumsector"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Site / Sector" Visible="False"/>
+
+					<TextBox	Name="trnh_empname"	  Location="95,50"	ReadOnly="True" 	Size="180,21"	TabIndex="51" Visible="False"/>
+					<TextBox	Name="trnh_matnum"	  Location="95,75"	ReadOnly="True"	Size="180,21"	TabIndex="51" Visible="False"/>
+					<TextBox	Name="trnh_sitenumsector"	  Location="95,100"	ReadOnly="True"	Size="180,21"	TabIndex="51" Visible="False"/>
+					<TextBox	Name="trnh_sitenum"	  Location="95,100"	ReadOnly="True" Visible="False" 	Size="180,21"	TabIndex="51" />
+					<TextBox	Name="trnh_sectorcode"	  Location="95,100"	ReadOnly="True" Visible="False" 	Size="180,21"	TabIndex="51"/>
+
+
+					<GroupBox Name="grb_trnhdrecinfo"		  Location="10, 200"		Size="300,160" 	Text="Recommendation">
+						<Controls>
+							<Label		Name="lbl_appraisedcomments"	Location="10, 20" Size="150, 16"		Text="Reason"/>
+							<TextBox	Name="trnh_appraisedcomments" Location="10, 40" Size="280, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+							<RadioButton	Name="rad_Recd"		Location="10, 110"	Size="100,21"	TabIndex="9" Text="Recommended" Visible="true"/>
+							<RadioButton	Name="rad_NotRecd"		Location="120, 110"	Size="120,21"	TabIndex="9" Text="Not Recommended" Visible="true"/>
+							<Label		Name="lbl_appraisedby"	  Location="120,  135"		Size="20, 16"	TextAlign="Right" Text="By:"/>
+							<TextBox	Name="trnh_appraisedby"	  Location="155,135"		Size="120,21"	TabIndex="51"/>
+
+
+							<Label		Name="lbl_appraisalscore"	  Location="105,  160"		Size="40, 16"	TextAlign="Right" Text="Score:" Visible="False"/>
+							<TextBox	Name="txt_appraisalscore"	  Location="155,160" ReadOnly="True" 		Size="50,21"	TabIndex="51" Visible="False"/>
+							
+							<Label		Name="lbl_separator"	  Location="210,  160"		Size="10, 16"	TextAlign="Right" Text="/" Visible="False"/>
+              <TextBox	Name="txt_appraisaloverscore"	  Location="225,160" ReadOnly="True" 		Size="50,21"	TabIndex="51" Visible="False"/>
+
+
+						</Controls>
+					</GroupBox>
+
+					<GroupBox Name="grb_trnhapprinfo"		  Location="10, 345"		Size="300,170" 	Text="Approval">
+						<Controls>
+							<Label		Name="lbl_apprdbyreason"	Location="10, 20" Size="150, 16"		Text="Reason"/>
+							<TextBox	Name="trnh_approvedcomments" Location="10, 40" Size="280, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+							<RadioButton	Name="rad_Appr"		Location="10, 110"	Size="100,21"	TabIndex="9" Text="Approved" Visible="true"/>
+							<RadioButton	Name="rad_NotAppr"		Location="120, 110"	Size="120,21"	TabIndex="9" Text="Not Approved" Visible="true"/>
+							<Label		Name="lbl_approvedby"	  Location="120,  135"		Size="20, 16"	TextAlign="Right" Text="By:"/>
+							<TextBox	Name="trnh_approvedby"	  Location="155,135"		Size="120,21"	TabIndex="51"/>
+
+						</Controls>
+					</GroupBox>
+				</Controls>
+			</GroupBox>
+
+
+			<GroupBox	Name="grb_trnhdocinfo"		  Location="340, 10"		Size="380,500" 	Text="" >
+				<Controls>
+
+					<Label		Name="lbl_trandate"			   Location="10,  10"	  Size="55, 18" TextAlign="MiddleLeft" Text="TranDate:"/>
+					<dtp:BizDateTimePicker Name="trnh_trandate"  Location="10, 35"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+          <Label		Name="lbl_totaltrnhrs"			   Location="10,  60"	  Size="120, 18" TextAlign="MiddleLeft" Text="Total Trainning Hrs:"/>
+          <TextBox	Name="trnh_totaltrnhrs"	  Location="10, 80" 	Size="120,21"	TabIndex="51"/>
+          <!--<dtp:BizDateTimePicker Name="trnh_totaltrnhrs"  Location="10, 50" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />-->
+
+          <Label		Name="lbl_trStartDate"			   Location="150,  10"	  Size="35, 18" TextAlign="MiddleLeft" Text="Start:"/>
+          <dtp:BizDateTimePicker Name="trnh_trStartDate"  Location="150, 35" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+          <Label		Name="lbl_trEndDate"			   Location="275,  10"	  Size="35, 18" TextAlign="MiddleLeft" Text="End:"/>
+          <dtp:BizDateTimePicker Name="trnh_trEndDate"  Location="275, 35" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+          <!---->
+          
+          <Label		Name="lbl_totalCourseFee"	  Location="10,  110"		Size="160, 18"	TextAlign="Right" Text="Total Course Fee (Inc. GST)" />
+          <TextBox	Name="trnh_totalCourseFee"	  Location="10,130"		Size="120, 21"  	TabIndex="51" />
+
+
+          <Label		Name="lbl_coursetype"	  Location="170,  110"		Size="250, 16" TextAlign="Right" Text="Course Type:"/>
+          <ComboBox Name="trnh_coursetype" 	  Location="170,130"		Size="80,21" Enabled="True" TabStop="False">
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem DisplayMember="NIL"	ValueMember=""/>
+                <ele:ComboBoxItem DisplayMember="Full-Time"	ValueMember="Full-Time"/>
+                <ele:ComboBoxItem DisplayMember="Part-Time"	ValueMember="Part-Time"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+          
+          
+
+          <Label		Name="lbl_AvailableFunding"	  Location="10,  160"		Size="150, 18"	TextAlign="Right" Text="Available Funding:" />
+          <TextBox	Name="trnh_AvailableFunding"	  Location="10,180"	 	Size="120, 21"  	TabIndex="51" />
+
+          <Label		Name="lbl_NetCourseFee"	  Location="10,  210"		Size="150, 18"	TextAlign="Right" Text="Net Course Fees (incl. GST):" />
+          <TextBox	Name="trnh_NetCourseFee"	  Location="10,230"	 	Size="120, 21"  	TabIndex="51" />
+
+          <Label		Name="lbl_staffpaid"	  Location="10,  260"		Size="200, 18"	TextAlign="Right" Text="Course Fee Paid By Staff (incl. GST):" />
+          <TextBox	Name="trnh_staffpaid"	  Location="10,280"	 	Size="120, 21"  	TabIndex="51" />
+
+          <Label		Name="lbl_BondDuration"	  Location="10,  310"		Size="150, 18"	TextAlign="Right" Text="Bound (if any) / Duration" />
+          <TextBox	Name="trnh_BondDuration"	  Location="10,330"	 	Size="350, 21"  	TabIndex="51" />
+
+          <Label		Name="lbl_remark"	  Location="10,  360"		Size="150, 18"	TextAlign="Right" Text="Remarks:" />
+          <TextBox	Name="trnh_remark" Location="10, 380" Size="350, 70" 	TabIndex="6" Multiline="True" ScrollBars="Vertical" />
+          
+          <!---->
+          
+
+					<Label		Name="lbl_employmentdate"			   Location="242,  50"	  Size="35, 21" TextAlign="MiddleLeft" Text="Hired:" Visible="False"/>
+          <TextBox Name="trnh_employmentdate"  Location="285, 50" ReadOnly="True"      Size="65, 21" Visible="False"/>
+
+          <Label		Name="lbl_currentsal"	  Location="200,  75"		Size="85, 21"	TextAlign="Right" Text="Current Salary:" Visible="False"/>
+          <TextBox	Name="trnh_currentsal"	  Location="285,75"		Size="80, 21" ReadOnly="True" 	TabIndex="51" Visible="False"/>
+
+					<GroupBox Name="grb_trnhdrecinfo"		  Location="65, 100"		Size="300,140" 	Text="Reason For Last Increment" Visible="False">
+            <Controls>
+
+              <Label		Name="lbl_lasincrementdate"			   Location="165,  25"	  Size="35, 21" TextAlign="MiddleLeft" Text="Date:" Visible="False"/>
+							<TextBox Name="trnh_lastincrementdate"  Location="200, 25" ReadOnly="True"     Size="65, 21" Visible="False"/>
+              <TextBox	Name="trnh_reasonforlastincre" Location="10, 50" Size="280, 60" ReadOnly="True" 	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper" Visible="False"/>
+            </Controls>
+          </GroupBox>
+
+          <Label		Name="lbl_newsal"	  Location="215,  250"		Size="70, 21"	TextAlign="Right" Text="New Salary:" Visible="False"/>
+					<TextBox	Name="trnh_newsal"	  Location="285,250"	ReadOnly="True" 	Size="60, 21"  	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_TRNmcode"	  Location="185,  275"		Size="100, 21"	TextAlign="Right" Text="Adjustment Code:" Visible="False"/>
+					<ComboBox	Name="trnh_TRNmcode"	  Location="285,275"	ReadOnly="True" 	Size="80, 21"  	TabIndex="51" Visible="False"/>
+
+					<Label		Name="lbl_newsaleffectivedate"			   Location="200,  300"	  Size="80, 21" TextAlign="MiddleLeft" Text="Effective Date:" Visible="False"/>
+					<dtp:BizDateTimePicker Name="trnh_newsaleffectivedate"  Location="285, 300"     Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" Visible="False"/>
+
+					<Label		Name="lbl_hsgcode"	  Location="240,  325"		Size="40, 16"	TextAlign="Right" Text="Grade:" Visible="False"/>
+					<ComboBox Name="trnh_hsgcode" Location="285,325"           Size="70,21" Visible="False"/>
+
+					<Label		Name="lbl_newSite"	  Location="228,  350"		Size="55, 21"	Text="New Site:" Visible="False"/>
+          <TextBox	Name="trnh_newsitenum"	  Location="285,350"		Size="80, 21"  	TabIndex="51" Visible="False"/>
+
+					<!--<Label		Name="lbl_newSite"	  Location="200,  175"		Size="85, 21"	Text="New Site:"/>
+					<TextBox	Name="cfrh_newsitenum"	  Location="285,175"		Size="80, 21"  	TabIndex="51"/>-->
+
+					<!--<Label		Name="lbl_statuscode"	  Location="215,  350"		Size="70, 21"	TextAlign="Right" Text="Status"/>
+					<TextBox	Name="trnh_statuscode"	  Location="285,350"		Size="90, 21"  	TabIndex="51"/>-->
+
+				</Controls>
+			</GroupBox>
+		</Controls>
+	</Form>
+</BizXml>

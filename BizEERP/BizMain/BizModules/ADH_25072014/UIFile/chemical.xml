@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="chemicalcost" Text="Chemical" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_list1"		  Location="3, 5"		Size="734,450" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_chemicalcost" Location="0, 0"	Size="730, 449"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_list22"		  Location="3, 451"		Size="734,84" 	Text="" >
+				<Controls>
+					<Label		Name="lbl_ttlamt"	  Location="560,  10"		Size="55, 16"	TextAlign="Right" Text="Total Amt:"/>
+					<TextBox	Name="adh9_ttlamt"	  Location="620,10" ReadOnly="True" 		Size="90,21"	TabIndex="51" />
+
+				</Controls>
+			</GroupBox>
+		</Controls>
+	</Form>
+</BizXml>

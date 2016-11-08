@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="concierge" Text="Concierge" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<!--<Label		Name="lbl_concierge"	  Location="10,  5"		Size="60, 16"	TextAlign="Right" Text="Addditional Shift:"/>
+			<TextBox	Name="wrr3_concierge"	  Location="70,5"		Size="60,21"	TabIndex="51" BackColor="Yellow" KeyDown="txt_concierge_KeyDown" DoubleClick="txt_concierge_Click"/>-->
+			<!--<Label		Name="lbl_dayshiftcode"	  Location="200,  5"		Size="200, 16"	TextAlign="Right" Text="' X ' = Available   ' O ' = Not Available"/>-->
+			
+			<GroupBox	Name="grb_conciergeinfo"		  Location="0, 35"		Size="734,310" 	Text="" >
+				<Controls>
+
+					<DataGrid	Name="dg_Concierge" Location="0, 0"	Size="736,310"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_conciergesummary"		  Location="0, 345"		Size="734,115" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_Conciergesummary" Location="0, 0"	Size="736,115"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+      <Label		Name="lbl_wrr3Monday"	  Location="225,  465"		Size="40, 16"	TextAlign="Middle" Text="MON"/>
+
+      <Label		Name="lbl_wrr3Tuesday"	  Location="280,  465"		Size="40, 16"	TextAlign="Middle" Text="TUE"/>
+
+      <Label		Name="lbl_wrr3Wednesday"	  Location="335,  465"		Size="40, 16"	TextAlign="Middle" Text="WED"/>
+
+      <Label		Name="lbl_wrr3Thursday"	  Location="390,  465"		Size="40, 16"	TextAlign="Middle" Text="THU"/>
+
+      <Label		Name="lbl_wrr3Friday"	  Location="445,  465"		Size="40, 16"	TextAlign="Middle" Text="FRI"/>
+
+      <Label		Name="lbl_wrr3Saturday"	  Location="500,  465"		Size="40, 16"	TextAlign="Middle" Text="SAT"/>
+
+      <Label		Name="lbl_wrr3Sunday"	  Location="555,  465"		Size="40, 16"	TextAlign="Middle" Text="SUN"/>
+
+
+
+      <!---->
+
+      <Label		Name="lbl_wrr3Total"	  Location="170,  485"		Size="40, 16"	TextAlign="Right" Text="Total"/>
+
+      <TextBox	Name="wrr3Total_monday"	  Location="220,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_tuesday"	  Location="275,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_wednesday"	  Location="330,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_thursday"	  Location="385,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_friday"	  Location="440,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_saturday"	  Location="495,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Total_sunday"	  Location="550,485"			Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <!---->
+
+      <Label		Name="lbl_ConciergeContract"	  Location="100,  510"		Size="120, 16"	TextAlign="Right" Text="Required Manpower"/>
+
+      <TextBox	Name="wrr3Ctrh_monday"	  Location="220,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_tuesday"	  Location="275,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_wednesday"	  Location="330,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_thursday"	  Location="385,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_friday"	  Location="440,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_saturday"	  Location="495,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr3Ctrh_sunday"	  Location="550,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+
+    </Controls>
+	</Form>
+</BizXml>

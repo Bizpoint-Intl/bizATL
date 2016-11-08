@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="adh1" Title="Adhoc" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="status = 'P' OR status = 'O'">
+		<F2GridColumnInfo MappingName="refnum"	HeaderText="Refnum"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="matnum"	HeaderText="Appt"	Width="100" IsItem="True" SearchItem="True" SortItem="True" />
+		<F2GridColumnInfo MappingName="shiftcode"	HeaderText="ShiftCode"	Width="100" IsItem="True" SearchItem="True" SortItem="True" />
+		<F2GridColumnInfo MappingName="adhocfrom"	HeaderText="From"	Width="80" ColumnType="DateTime"  />
+		<F2GridColumnInfo MappingName="adhocto"	HeaderText="To"	Width="80" ColumnType="DateTime"   />
+		<F2GridColumnInfo MappingName="officerqty"	HeaderText="Qty"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="monday"	HeaderText="MON"	Width="70"  />
+		<F2GridColumnInfo MappingName="tuesday"	HeaderText="TUE"	Width="70"  />
+		<F2GridColumnInfo MappingName="wednesday"	HeaderText="WED"	Width="70"  />
+		<F2GridColumnInfo MappingName="thursday"	HeaderText="THU"	Width="70"  />
+		<F2GridColumnInfo MappingName="friday"	HeaderText="FRI"	Width="70"  />
+		<F2GridColumnInfo MappingName="saturday"	HeaderText="SAT"	Width="70"  />
+		<F2GridColumnInfo MappingName="sunday"	HeaderText="SUN"	Width="70"  />
+		<F2GridColumnInfo MappingName="noofdays"	HeaderText="Days"	Width="200" IsItem="True" />
+		<!--<F2GridColumnInfo MappingName="isdaily "	HeaderText=""	Width="0"  />-->
+		<!--<F2GridColumnInfo MappingName="isweekend"	HeaderText=""	Width="70"  />>-->
+    <F2GridColumnInfo MappingName="shiftType"	HeaderText="Type"	Width="70"  />
+		<F2GridColumnInfo MappingName="[guid]"	HeaderText=""	Width="0"  />
+		
+		
+	</F2GridInfo>
+</BizXml>

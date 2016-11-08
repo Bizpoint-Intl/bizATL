@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="qct4" Title="FeedBack Lists">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="dateraised"			  HeaderText="Date Raised" 		Width="80" ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="raisedby"	HeaderText="Raised By"	Width="100"         Format="#,##0.00####" ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="desc"	HeaderText="Description"	Width="200"         Format="#,##0.00####" ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="followup"	HeaderText="Follow Up" ReadOnly="True" 	Width="200"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="guid"		HeaderText=""			Width="0"	ReadOnly="true" />
+	</DetailGridInfo>
+</BizXml>
+

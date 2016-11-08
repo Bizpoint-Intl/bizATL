@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="tra1" Title="Details">		
+		<RelationTables>
+			<bas:RelationTableInfo TableName="matm" DataField="matnum" ConditionField="matnum"/>
+    </RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"				HeaderText="{languageBinding.mark}"				Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="sectorcode"			HeaderText=""		Width="0" F2="True" F2GridInfo="F2GridInfo_SEM.xml"/>
+    <DetailGridColumnInfo MappingName="ccnum"			HeaderText="Cost Center"		Width="60" F2="True" F2GridInfo="F2GridInfo_CCM.xml"/>
+
+    <DetailGridColumnInfo MappingName="tositenum"			HeaderText="Location"		Width="60" F2="True" F2GridInfo="F2GridInfo_SITM.xml"/>
+		<DetailGridColumnInfo MappingName="tranum"			HeaderText=""		Width="0" ReadOnly="true"/>
+
+    <DetailGridColumnInfo MappingName="matnum"	HeaderText="Product Code"	Width="80"         ReadOnly="True" TableName="matm"/>
+    <DetailGridColumnInfo MappingName="matname"			HeaderText="Description"		Width="200" F2="True" F2GridInfo="F2GridInfo_MATMNAME.xml" >
+      <RelationF2Columns>
+        <RelationF2Column ColumnName="matnum"	F2MappingName="matnum"/>
+        <RelationF2Column ColumnName="uomcode"	F2MappingName="uomcode"/>
+        <RelationF2Column ColumnName="pcatcode"	F2MappingName="pcatcode"/>
+      </RelationF2Columns>
+    </DetailGridColumnInfo>
+    
+    <DetailGridColumnInfo MappingName="uom"					HeaderText="UOM"				Width="80" ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="pcatcode"			HeaderText=""		Width="0" ReadOnly="true" TableName="matm"/>
+		<DetailGridColumnInfo MappingName="stdqty"					HeaderText="Standard"				Width="60" ReadOnly="true" Format ="#,##0"/>
+    <DetailGridColumnInfo MappingName="retail"					HeaderText="Price"				Width="60" />
+    <DetailGridColumnInfo MappingName="lasttotalqty"					HeaderText="Last Qty"				Width="60" ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="lastdate"					HeaderText="Last Date"				Width="80" ReadOnly="true"/>
+
+    <DetailGridColumnInfo MappingName="trqqty"					HeaderText="Req Qty"				Width="60" ReadOnly="true" Format ="#,##0"/>
+		<DetailGridColumnInfo MappingName="traqty"					HeaderText="Approved Qty"			ReadOnly="true"	Width="60" Format ="#,##0"/>
+		<DetailGridColumnInfo MappingName="qty"					HeaderText="Issue Qty"				Width="60"  Format ="#,##0"/>
+    <DetailGridColumnInfo MappingName="accnum"					HeaderText="Prc A/C"				Width="80" F2="True" F2GridInfo="F2GridInfo_ACM.xml"/>
+
+    <DetailGridColumnInfo MappingName="remarks"			HeaderText="{languageBinding.remarks}"		Width="200"/>
+    <DetailGridColumnInfo MappingName="ponum"			HeaderText="PO No 1"		Width="120"/>
+    <DetailGridColumnInfo MappingName="ponum2"			HeaderText="PO No 2"		Width="120"/>
+    <DetailGridColumnInfo MappingName="ponum3"			HeaderText="PO No 3"		Width="120"/>
+    <DetailGridColumnInfo MappingName="ponum4"			HeaderText="PO No 4"		Width="120"/>
+    <DetailGridColumnInfo MappingName="grnnum"			HeaderText="GRN No"		Width="120"/>
+    <DetailGridColumnInfo MappingName="refnum"			HeaderText="{languageBinding.refnum}"			Width="0"		ReadOnly="true"  Key="true"/>
+
+    <DetailGridColumnInfo MappingName="whnum"			HeaderText="WHNUM"		Width="60" F2="True" F2GridInfo="F2GridInfo_WHM.xml"/>
+    
+    <DetailGridColumnInfo MappingName="line"        HeaderText="{languageBinding.matnum}"           Width="0"      Sort="True"/>
+    <DetailGridColumnInfo MappingName="projectid"			HeaderText="ProjectID"		Width="100" F2="True" F2GridInfo="F2GridInfo_PRJM.xml"/>
+
+    <DetailGridColumnInfo MappingName="docunum"					HeaderText=""				Width="0" ReadOnly="true"/>
+  </DetailGridInfo>	
+</BizXml>

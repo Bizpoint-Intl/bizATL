@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:def="Definition">
+	<Form Name="frm_Preview" ClientSize="680, 315" FormBorderStyle="FixedToolWindow" MaximizeBox="False" MinimizeBox="False" StartPosition="CenterScreen" ShowInTaskbar="False" Text="Print">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->	
+			<Controls>
+			<!--PictureBox Name="pcb_Preview" Location="0, 0" Size="500, 70" TabStop="False">
+				<ele:BizPictureBoxImage FileName="Bizpoint2.bmp"/>
+				<Controls>
+					<Label Name="lbl_Preview_Title" Location="20,10"	Size="310,50" Font="Tahoma, 9pt" BackColor="White" Text="{languageBinding.lbl_Preview_Title}"/>
+				</Controls>
+			</PictureBox-->
+      <Label Name="lbl_Preview_Title" Location="20,10"	Size="410,20" Font="Tahoma, 9pt" Text="{languageBinding.lbl_Preview_Title}"/>
+        
+			<GroupBox Name="grb_Preview1"			Location="0, 30" Size="750, 3" TabStop="False" />
+			
+			<ListView Name="lvw_Preview_Available"	Location="35,50" Font="Tahoma, 9pt" Size="250, 210" View="Details">
+				<Columns>
+					<ColumnHeader Text="{languageBinding.lvw_Preview_Available}" Width="235" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+			
+			<Button		Name="btn_Preview_Add"		Text="{languageBinding.btn_Preview_Add}"		Location="315,100"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<Button		Name="btn_Preview_Remove"	Text="{languageBinding.btn_Preview_Remove}"		Location="315,140"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			
+			<ListView	Name="lvw_Preview_Added"	Location="415, 50"	Font="Tahoma, 9pt" Size="250, 210" View="Details">
+				<Columns>
+					<ColumnHeader Text="{languageBinding.lvw_Preview_Added}" Width="235" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+				
+			<GroupBox	Name="grb_Preview2"			Location="0,  275" Size="750, 3" TabStop="False" />
+			<Button		Name="btn_Preview_OK"		Location="500,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="0" Text="{languageBinding.btn_Preview_OK}"/>
+			<Button		Name="btn_Preview_Cancel"	Location="585,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="1" Text="{languageBinding.btn_Preview_Cancel}"/>
+		</Controls>
+	</Form>
+</BizXml>

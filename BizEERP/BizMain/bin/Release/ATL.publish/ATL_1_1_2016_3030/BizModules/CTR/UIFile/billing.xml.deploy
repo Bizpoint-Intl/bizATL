@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+		<Form Name="billing" Text="Billing" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="0" Font="{languageBinding.sys_font}"	Enter="detail_Enter">
+			<Controls>
+				<DataGrid	Name="dg_billing"			Location="0, 0"			Size="736,535"	HeaderForeColor="ControlText"	Dock="top"	ScrollBars="Both" TabIndex="1" CaptionBackColor="{languageBinding.captionBackColor}"/>
+			</Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="hemph" Key="empnum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.HEMPH}">
+		<RelationTables>
+			<DocRelationTableInfo TableName="matm" DataField="matnum"			ConditionField="matnum">
+				<Fields>
+					<Field ColumnName="matnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="referby"			DataTableName="hemph1"/>
+
+			<!--<DocRelationTableInfo TableName="pmm" DataField="pmcode"			ConditionField="pmcode">
+				<Fields>
+					<Field ColumnName="pmcode"/>
+				</Fields>
+			</DocRelationTableInfo>
+      
+      <DocRelationTableInfo TableName="paytm" DataField="paytypecode"			ConditionField="paytypecode">
+        <Fields>
+          <Field ColumnName="paytypecode"/>
+        </Fields>
+      </DocRelationTableInfo>-->
+      
+
+			<DocRelationTableInfo TableName="hemps" DataField="statuscode"			ConditionField="statuscode">
+				<Fields>
+					<Field ColumnName="statuscode"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			<!--<DocRelationTableInfo TableName="regm" DataField="regname"			ConditionField="regname">
+				<Fields>
+					<Field ColumnName="regname"/>
+				</Fields>
+			</DocRelationTableInfo>-->
+
+
+      <DocRelationTableInfo TableName="hnam" DataField="nationality"			ConditionField="nationality">
+        <Fields>
+          <Field ColumnName="nationality"/>
+        </Fields>
+      </DocRelationTableInfo>
+
+
+      <DocRelationTableInfo TableName="hram" DataField="hramdesc"			ConditionField="hramdesc">
+        <Fields>
+          <Field ColumnName="hramdesc"/>
+        </Fields>
+      </DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="hrrm" DataField="religion"			ConditionField="religion">
+				<Fields>
+					<Field ColumnName="religion"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="wpr" DataField="wpnum"			ConditionField="wpnum">
+				<Fields>
+					<Field ColumnName="wpnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="sitm" DataField="sitenum"			ConditionField="sitenum">
+				<Fields>
+					<Field ColumnName="sitenum"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="sem" DataField="sectorcode"			ConditionField="sectorcode">
+        <Fields>
+          <Field ColumnName="sectorcode"/>
+        </Fields>
+      </DocRelationTableInfo>
+
+
+			<DocRelationTableInfo TableName="pfm" DataField="nric"			ConditionField="nric">
+				<Fields>
+					<Field ColumnName="name"/>
+					<Field ColumnName="maritalstatus"/>
+					<Field ColumnName="bloodtype"/>
+					<Field ColumnName="nationality"/>
+					<Field ColumnName="ethnicity"/>
+					<Field ColumnName="gender"/>
+					<Field ColumnName="dob"/>										
+				</Fields>
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="pfmadd" DataField="nric"			ConditionField="nric">
+				<Fields>
+					<Field ColumnName="padd1"/>
+					<Field ColumnName="padd2"/>
+					<Field ColumnName="padd3"/>
+					<Field ColumnName="ppostal"/>
+					<Field ColumnName="cadd1"/>
+					<Field ColumnName="cadd2"/>
+					<Field ColumnName="cadd3"/>
+					<Field ColumnName="cpostal"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="recr" DataField="nric"			ConditionField="nric">
+				<Fields>
+					<Field ColumnName="nric"/>
+				</Fields>
+			</DocRelationTableInfo>		
+
+			<DocRelationTableInfo TableName="pfns" DataField="nric"			ConditionField="nric">
+				<Fields>
+					<Field ColumnName="force"/>
+					<Field ColumnName="rank"/>
+					<Field ColumnName="vocation"/>
+					<Field ColumnName="yearserved"/>
+				</Fields>
+			</DocRelationTableInfo>
+		
+			<!--<DocRelationTableInfo TableName="hram" DataField="hramnum"			ConditionField="hramnum">
+				<Fields>
+					<Field ColumnName="hramnum"/>
+				</Fields>
+			</DocRelationTableInfo>-->
+
+			<DocRelationTableInfo TableName="pfm" DataField="nric" ConditionField="nric" Save="True"/>
+			<DocRelationTableInfo TableName="pfmadd" DataField="nric" ConditionField="nric" Save="True"/>
+			<DocRelationTableInfo TableName="pfns" DataField="nric" ConditionField="nric" Save="True"/>
+			<!--<DocRelationTableInfo TableName="salh"		DataField="empnum"	ConditionField="refnum"			Save="refnum"/>-->
+
+			<DocRelationTableInfo TableName="vHemphNRIC" DataField="nric"			ConditionField="nric">
+				<Fields>
+					<Field ColumnName="nric"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+		</RelationTables>
+		<DocumentPages>
+	
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+           
+        
+				
+					<!--<Detail DataGridName="dg_Workpermit"	DetailGridInfo="DetailGridInfo_WPR.xml"  CaptionText=""/>-->
+					<!--<F2Controls>
+						<F2Control ControlName="hemph_matnum" F2GridInfo="F2GridInfo_matm.xml">
+							<RelationF2Tables>
+								<RelationF2Table TableName="matm"/>
+							</RelationF2Tables>
+						</F2Control>
+					
+					<F2Control ControlName="pfm_nationality" F2GridInfo="F2GridInfo_HEME.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="heme"/>
+						</RelationF2Tables>
+					</F2Control>
+				
+					<F2Control ControlName="pfm_ethnicity" F2GridInfo="F2GridInfo_HEME.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="heme"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>-->
+
+				<F2Controls>
+
+
+          <F2Control ControlName="hemph_referby"  F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph1"/>
+            </RelationF2Tables>
+          </F2Control>
+
+					<F2Control ControlName="hemph_nric" F2GridInfo="F2GridInfo_vHemphNRIC.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="vHemphNRIC"/>
+						</RelationF2Tables>
+					</F2Control>
+
+
+          <!--<F2Control ControlName="hemph_paytypecode" F2GridInfo="F2GridInfo_PAYTM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="PAYTM"/>
+            </RelationF2Tables>
+          </F2Control>-->
+					
+					<F2Control ControlName="hemph_matnum" F2GridInfo="F2GridInfo_APPT.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="matm"/>
+						</RelationF2Tables>
+					</F2Control>
+					
+					
+
+					<F2Control ControlName="hemph_religion" F2GridInfo="F2GridInfo_HRRM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hrrm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="hemph_statuscode" F2GridInfo="F2GridInfo_HEMPS.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemps"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<!--<F2Control ControlName="hemph_hramnum" F2GridInfo="F2GridInfo_HRAM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hram"/>
+						</RelationF2Tables>
+					</F2Control>-->
+
+					<F2Control ControlName="hemph_nationality" F2GridInfo="F2GridInfo_HNAM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hnam"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<!--<F2Control ControlName="hemph_pmcode" F2GridInfo="F2GridInfo_PMM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="pmm"/>
+						</RelationF2Tables>
+					</F2Control>-->
+
+          <!--<F2Control ControlName="hemph_hramdesc" F2GridInfo="F2GridInfo_HRAM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hram"/>
+            </RelationF2Tables>
+          </F2Control>-->
+
+					<F2Control ControlName="hemph_sitenum" F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+          <F2Control ControlName="hemph_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="sem"/>
+            </RelationF2Tables>
+          </F2Control>
+
+
+        </F2Controls>
+				
+			</DocumentPageInfo>
+			<!--<DocumentPageInfo FileName="contactinfos.xml"	FormName="contactinfos"	Title="Emp Contact">
+				<Details>
+					<Detail DataGridName="dg_contactinfos"	DetailGridInfo="DetailGridInfo_HCNR.xml"  CaptionText="Contacts"/>
+				</Details>
+			</DocumentPageInfo>-->
+		
+			<DocumentPageInfo FileName="experience.xml"	FormName="experience"	Title="Employment History">
+				<Details>
+					<Detail DataGridName="dg_Experience"	DetailGridInfo="DetailGridInfo_PFMWE.xml"  CaptionText="Employment History"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="education.xml"	FormName="education"	Title="Education">
+				<Details>
+					<Detail DataGridName="dg_Education"	DetailGridInfo="DetailGridInfo_PFMEDU.xml"  CaptionText="Education"/>
+					<Detail DataGridName="dg_Educationdocs"	DetailGridInfo="DetailGridInfo_PFDREC.xml"  CaptionText="Certificates"/>
+
+				</Details>
+			</DocumentPageInfo>
+
+			<!--<DocumentPageInfo FileName="employmentrec.xml"	FormName="employmentrec"	Title="Resigned / Termination">
+				<Details>
+					--><!--<Detail DataGridName="dg_Employmentrec"	DetailGridInfo="DetailGridInfo_PFMER.xml"  CaptionText="Resigned / Termination"/>--><!--
+				</Details>
+			</DocumentPageInfo>-->
+
+			<DocumentPageInfo FileName="salaryrec.xml"	FormName="salaryrec"	Title="Salary Record">
+				<Details>
+					<Detail DataGridName="dg_Salaryrec"	DetailGridInfo="DetailGridInfo_PFMSR.xml"  CaptionText="Salaries"/>
+					<Detail DataGridName="dg_SalaryHistory"	DetailGridInfo="DetailGridInfo_PFMSR2.xml"  CaptionText="Salaries History"/>
+				</Details>
+			</DocumentPageInfo>
+
+      <DocumentPageInfo FileName="appraisal.xml"	FormName="appraise"	Title="Appraisal History">
+        <Details>
+        </Details>
+      </DocumentPageInfo>
+
+
+      <DocumentPageInfo FileName="leavehistory.xml"	FormName="leaverec"	Title="Leave History">
+        <Details>
+        </Details>
+      </DocumentPageInfo>
+
+      <DocumentPageInfo FileName="trnrequest.xml"	FormName="request"	Title="Trainnings">
+        <Details>
+          <!--<Detail DataGridName="dg_request"	DetailGridInfo="DetailGridInfo_TRN1.xml"  CaptionText="Employee(s)"/>-->
+        </Details>
+      </DocumentPageInfo>
+
+
+      <!--<DocumentPageInfo FileName="incentive.xml"	FormName="incentive"	Title="Incentive Program">
+				<Details>
+					<Detail DataGridName="dg_Incentive"	DetailGridInfo="DetailGridInfo_RECR.xml"  CaptionText="Incentives"/>
+				</Details>
+			</DocumentPageInfo>-->
+
+			<DocumentPageInfo FileName="family.xml"	FormName="family"	Title="Family History">
+				<Details>
+					<Detail DataGridName="dg_Family"	DetailGridInfo="DetailGridInfo_FAMR.xml"  CaptionText="Family History"/>
+          <Detail DataGridName="dg_contactinfos"	DetailGridInfo="DetailGridInfo_HCNR.xml"  CaptionText="Contacts"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="permitslicences.xml"	FormName="permitslicences"	Title="Permits and Licences Record">
+				<Details>
+					<Detail DataGridName="dg_Permitslicences"	DetailGridInfo="DetailGridInfo_PLR.xml"  CaptionText="Permits and Licences"/>
+					<Detail DataGridName="dg_Permitsdocs"	DetailGridInfo="DetailGridInfo_PFPLREC.xml"  CaptionText="Documents"/>
+
+				</Details>
+			</DocumentPageInfo>
+
+			<!--<DocumentPageInfo FileName="cidclearances.xml"	FormName="cidclearances"	Title="Status of Individual">
+				<Details>
+					<Detail DataGridName="dg_cidclearances"	DetailGridInfo="DetailGridInfo_CIDC.xml"  CaptionText="Status of Individual"/>
+
+				</Details>
+			</DocumentPageInfo>-->
+
+	
+
+			<DocumentPageInfo FileName="warning.xml"	FormName="warning"	Title="Warning Letters">
+				<Details>
+					<Detail DataGridName="dg_warning"	DetailGridInfo="DetailGridInfo_WLR.xml"  CaptionText="Warning Letters"/>
+				</Details>
+			</DocumentPageInfo>
+
+      <DocumentPageInfo FileName="archive.xml"	FormName="archive"	Title="Misc">
+        <Details>
+          <Detail DataGridName="dg_archive"	DetailGridInfo="DetailGridInfo_PFFA.xml"  CaptionText="Folder Archive"/>
+        </Details>
+      </DocumentPageInfo>
+			
+			
+			
+		</DocumentPages>
+    
+		<Reports>
+			<Report ReportName="Letter Of Appointment"  DefaultReport="True" ReportPath="\HEMP\Report\LetterOfAppointment1.rpt" />
+      <Report ReportName="Giro Opt-Out Form"   ReportPath="\HEMP\Report\GiroOptOutForm1.rpt" />
+      <Report ReportName="Recommendation Form"   ReportPath="\HEMP\Report\RecommendationForm1.rpt" />
+			<!--<Report ReportName="Curriculum Vitae 2"  DefaultReport="True" ReportPath="\HEMP\Report\CV2.rpt" />-->
+      <Report ReportName="Application Form"   ReportPath="\HEMP\Report\AppFom.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

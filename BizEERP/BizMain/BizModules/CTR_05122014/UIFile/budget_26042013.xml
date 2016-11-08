@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="budget" Text="Budget" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+			<GroupBox Name="gpEst" Text="" Location="10, 50" Size="100, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+					<Label		Name="lbl_1"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Contract:"/>
+					<Label		Name="lbl_2"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Salary:"/>
+					<Label		Name="lbl_3"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Material:"/>
+					<Label		Name="lbl_4"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Chemical:"/>
+					<Label		Name="lbl_5"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Machinery:"/>
+					<Label		Name="lbl_6"	  Location="10,  150"		Size="80, 16"	TextAlign="Right" Text="Equipment:"/>
+					<Label		Name="lbl_7"	  Location="10,  175"		Size="80, 16"	TextAlign="Right" Text="Toiletries:"/>
+					<Label		Name="lbl_8"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="Periodic:"/>
+					<Label		Name="lbl_9"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Landscaping:"/>
+					<Label		Name="lbl_10"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Sub-Contract:"/>
+					<Label		Name="lbl_11"	  Location="10,  275"		Size="80, 16"	TextAlign="Right" Text="Other Charges:"/>
+				</Controls>
+			</GroupBox>
+
+			<!--Estimate-->
+			<GroupBox Name="gpActual" Text="Estimate" Location="115, 50" Size="110, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+
+					<TextBox		Name="ctrh_bgtestctr"	  Location="10,  25"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestsal"	  Location="10,  50"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestmat"	  Location="10,  75"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestchem"	  Location="10,  100"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestmach"	  Location="10,  125"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestequip"	  Location="10,  150"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestToi"	  Location="10,  175"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestPrd"	  Location="10,  200"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestLand"	  Location="10,  225"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestSub"	  Location="10,  250"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtestOther"	  Location="10,  275"		Size="80,21"	TextAlign="Right" />
+					
+				</Controls>
+			</GroupBox>
+
+			<!--Manual Actual-->
+			<GroupBox Name="gpActual" Text="Manual Actual" Location="225, 50" Size="110, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+
+					<TextBox		Name="ctrh_bgtActMctr"	  Location="10,  25"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMsal"	  Location="10,  50"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMmat"	  Location="10,  75"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMchem"	  Location="10,  100"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMmach"	  Location="10,  125"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMequip"	  Location="10, 150"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMToi"	  Location="10,  175"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMPrd"	  Location="10,  200"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMLand"	  Location="10,  225"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMSub"	  Location="10,  250"		Size="80,21"	TextAlign="Right" />
+					<TextBox		Name="ctrh_bgtActMOther"	  Location="10,  275"		Size="80,21"	TextAlign="Right" />
+
+				</Controls>
+			</GroupBox>
+
+			<!--System Actual-->
+			<GroupBox Name="gpSysActual" Text="Sys Actual" Location="335, 50" Size="110, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+
+					<TextBox		Name="ctrh_bgtsactctr"	  Location="10,  25"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactsal"	  Location="10,  50"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactmat"	  Location="10,  75"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactchem"	  Location="10,  100"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactmach"	  Location="10,  125"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactequip"	  Location="10,  150"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactToi"	  Location="10,  175"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactPrd"	  Location="10,  200"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactLand"	  Location="10,  225"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactSub"	  Location="10,  250"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtsactOther"	  Location="10,  275"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+
+				</Controls>
+			</GroupBox>
+
+			<!--Actual-->
+			<GroupBox Name="gpActual" Text="Actual" Location="445, 50" Size="110, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+
+					<TextBox		Name="ctrh_bgtactctr"	  Location="10,  25"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactsal"	  Location="10,  50"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactmat"	  Location="10,  75"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactchem"	  Location="10,  100"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactmach"	  Location="10,  125"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactequip"	  Location="10,   150"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactToi"	  Location="10,  175"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactPrd"	  Location="10,  200"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactLand"	  Location="10,   225"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactSub"	  Location="10,  250"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtactOther"	  Location="10,  275"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+
+				</Controls>
+			</GroupBox>
+
+			<!--Latest Actual-->
+			<GroupBox Name="gpLatestActual" Text="Latest Actual" Location="555, 50" Size="110, 323" FlatStyle="System" TabIndex="3" TabStop="False" >
+				<Controls>
+
+					<TextBox		Name="ctrh_bgtlactctr"	  Location="10,  25"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactsal"	  Location="10,  50"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactmat"	  Location="10,  75"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactchem"	  Location="10,  100"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactmach"	  Location="10,  125"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactequip"	  Location="10,   150"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactToi"	  Location="10,  175"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactPrd"	  Location="10,  200"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactLand"	  Location="10, 225"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactSub"	  Location="10,  250"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+					<TextBox		Name="ctrh_bgtlactOther"	  Location="10,  275"		Size="80,21"	TextAlign="Right" ReadOnly="True"/>
+
+				</Controls>
+			</GroupBox>
+
+			<Label		Name="lbl_11"	  Location="10,  383"		Size="100, 16"	TextAlign="Right" Text="Grand Total:"/>
+			<TextBox		Name="txt_grandTotal1"	  Location="140,  383"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_22"	  Location="10,  408"		Size="100, 16"	TextAlign="Right" Text="Gross Profit:"/>
+			<TextBox		Name="txt_grossProfit1"	  Location="140,  408"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+
+		
+			<TextBox		Name="txt_grandTotal2"	  Location="250,  383"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+		
+			<TextBox		Name="txt_grossProfit2"	  Location="250,  408"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+
+
+			<TextBox		Name="txt_grandTotal3"	  Location="360,  383"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+			<TextBox		Name="txt_grossProfit3"	  Location="360,  408"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+
+
+			<TextBox		Name="txt_grandTotal4"	  Location="470,  383"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+			<TextBox		Name="txt_grossProfit4"	  Location="470,  408"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+
+
+			<TextBox		Name="txt_grandTotal5"	  Location="580,  383"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>
+			<TextBox		Name="txt_grossProfit5"	  Location="580,  408"		Size="60,21"	TextAlign="Right" ReadOnly="True"/>-->
+
+
+		</Controls>
+	</Form>
+</BizXml>

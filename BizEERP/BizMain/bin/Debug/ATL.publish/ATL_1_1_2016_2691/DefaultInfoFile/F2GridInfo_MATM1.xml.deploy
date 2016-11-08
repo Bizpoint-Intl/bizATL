@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="Stocks" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="matnum"		HeaderText="{languageBinding.matnum}"			Width="100"	IsItem="True"	SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="matname"		HeaderText="{languageBinding.matname}"		Width="200"	SearchItem="True" />
+    <F2GridColumnInfo MappingName="retail"			HeaderText="RetailPrice"				Width="100"	SearchItem="True"/>
+  </F2GridInfo>
+</BizXml>

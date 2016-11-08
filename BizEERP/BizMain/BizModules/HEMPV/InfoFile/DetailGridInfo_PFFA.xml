@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="pffa" Title="Archive">
+		<VirtualColumns>
+      <bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+      <bas:VirtualColumn ColumnName="button1"	DataType="System.String" DefaultValue="Upload" />
+      <bas:VirtualColumn ColumnName="button2"	DataType="System.String" DefaultValue="Preview" />
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="Description"  	Width="350" />
+		<DetailGridColumnInfo MappingName="filedesc"	HeaderText="" ReadOnly="True" 	Width="0"          />
+		<DetailGridColumnInfo MappingName="filename"	HeaderText="" ReadOnly="True" 	Width="0"         />
+		<DetailGridColumnInfo MappingName="physicalserverlocation"	HeaderText=""	Width="0"          ReadOnly="true"/>				        
+		<DetailGridColumnInfo MappingName="trackingno"	HeaderText=""	Width="0"         ReadOnly="true"/>
+		<DetailGridColumnInfo MappingName="mappedDrivelocation"	HeaderText=""	Width="0"          ReadOnly="true"/>
+		<DetailGridColumnInfo MappingName="status"	HeaderText=""	Width="0"        ReadOnly="true"/>		
+		<DetailGridColumnInfo MappingName="created"	HeaderText=""	Width="0"        ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy" ReadOnly="true"/>
+		<DetailGridColumnInfo MappingName="nric"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="empnum"		HeaderText=""			Width="0"	ReadOnly="true"  Key="True"/>
+    <DetailGridColumnInfo MappingName="button1"		HeaderText="Upload"			Width="80"	ColumnType="TextBox" />
+    <DetailGridColumnInfo MappingName="button2"		HeaderText="Preview"			Width="80"	ColumnType="TextBox" />
+
+  </DetailGridInfo>
+</BizXml>
+

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="exr" Title="Ex-Rate" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_EXR.xml">
+		<VoucherGridColumnInfo MappingName="oricur"	  HeaderText="{languageBinding.oricur}"		  Width="100" SearchItem="true" ConfirmItem="true" Key="True"/>
+		<VoucherGridColumnInfo MappingName="curname"  HeaderText="{languageBinding.curname}"    Width="250" SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="active"		HeaderText="{languageBinding.active}"			Width="45"  ColumnType="CheckBox"/>
+		<VoucherGridColumnInfo MappingName="status"		HeaderText="{languageBinding.status}"			Width="45"/>
+	</VoucherGridInfo>
+</BizXml>

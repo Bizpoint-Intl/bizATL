@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="siv1"	 ExtractGridInfo="">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="acm"	DataField="accnum"	ConditionField="accnum"/>
+			<bas:RelationTableInfo TableName="matm"	DataField="matnum"	ConditionField="matnum"/>
+			<bas:RelationTableInfo TableName="uom"	DataField="uomcode"	ConditionField="uom"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="line"			HeaderText=""		Width="0"	Sort="True"/>
+		<DetailGridColumnInfo MappingName="invnum"		HeaderText="Inv. No."								Width="100"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="invdate"		HeaderText="Inv. Date"								Width="80"		ReadOnly="True" ColumnType="DateTime"/>
+		<DetailGridColumnInfo MappingName="matnum"		HeaderText="{languageBinding.matnum}"		Width="100" F2="True" F2GridInfo="F2GridInfo_MATM.xml"/>
+
+		<DetailGridColumnInfo MappingName="shiftcode"		HeaderText="ShiftCode"		Width="60"  Format ="#,##0.00" F2="True" F2GridInfo="F2GridInfo_SHM.xml"/>
+		<DetailGridColumnInfo MappingName="timein"		HeaderText="TimeIn"								Width="60" />
+		<DetailGridColumnInfo MappingName="timeout"		HeaderText="TimeOut"								Width="60" />
+		
+		<DetailGridColumnInfo MappingName="detail"			HeaderText="Product Detail"						Width="200"/>
+
+		<DetailGridColumnInfo MappingName="ccnum"		HeaderText="ccnum"		Width="100" F2="True" F2GridInfo="F2GridInfo_CCM.xml"/>
+		<DetailGridColumnInfo MappingName="hscode"		HeaderText=""								Width="0" ReadOnly="True"/>
+		
+		<DetailGridColumnInfo MappingName="oricountry"	HeaderText="Country Of Origin"					Width="75" ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dqty"			HeaderText="{languageBinding.qty}"			Width="55"/>
+		<DetailGridColumnInfo MappingName="uom"			HeaderText="{languageBinding.uom}"			Width="50"	F2="True" F2GridInfo="F2GridInfo_UOM.xml"/>
+		<DetailGridColumnInfo MappingName="price"			HeaderText="Price"									Width="80"/>
+		<DetailGridColumnInfo MappingName="oricur"			HeaderText="{languageBinding.oricur}"			Width="50"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="exrate"		HeaderText="{languageBinding.exrate}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dgrosamt"		HeaderText="{languageBinding.grosamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="discamt"		HeaderText="DiscAmt"								Width="75"/>
+		<DetailGridColumnInfo MappingName="gstper"		HeaderText="{languageBinding.gstper}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="roriamt"		HeaderText="{languageBinding.oriamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dorigstamt"	HeaderText="Orig-GstAmt"							Width="75"/>
+		<DetailGridColumnInfo MappingName="rpostamt"		HeaderText="Post-Amt"								Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dgstamt"		HeaderText="{languageBinding.gstamt}"		Width="75"  ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.accnum}"		Width="80"	F2="True" F2GridInfo="F2GridInfo_ACM.xml">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="accname"	F2MappingName="accname"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="accname"		HeaderText="{languageBinding.accname}"	Width="100" ReadOnly="True" TableName="acm"/>
+		<DetailGridColumnInfo MappingName="remark"		HeaderText="Remarks"								Width="200"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="0"	ReadOnly="True" Key="True"/>
+    <!--steve*-->
+    <!--<DetailGridColumnInfo MappingName="locno"				HeaderText="Loc No."			sdbWidth="100"	F2="True" F2GridInfo="F2GridInfo_LOCM.xml" />
+    <DetailGridColumnInfo MappingName="deptno"			HeaderText="Dept No."			Width="100"	F2="True" F2GridInfo="F2GridInfo_DEPTM.xml" />-->
+    <!--steve end-->
+	</DetailGridInfo>
+</BizXml>

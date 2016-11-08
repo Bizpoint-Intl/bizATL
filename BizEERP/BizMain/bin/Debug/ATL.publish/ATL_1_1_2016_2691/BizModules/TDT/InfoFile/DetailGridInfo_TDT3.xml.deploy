@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="tdt3">
+		<DetailGridColumnInfo MappingName="feature"			HeaderText="Feature"		Width="400"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="availability"	HeaderText="Availability"	Width="80"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="tdtnum"			HeaderText="{languageBinding.tdtnum}"			Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="worh" Key="refnum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.WOR}">
+		<RelationTables>
+
+			<!--<DocRelationTableInfo TableName="vMainHEMPH"		DataField="empnum"	ConditionField="fromempnum"/>
+			<DocRelationTableInfo TableName="vMainHEMPH"		DataField="empnum"	ConditionField="toempnum"	DataTableName="vMainHEMPH1"/>-->
+
+      <!--<DocRelationTableInfo TableName="hemph" DataField="empnum" ConditionField="empnum">
+        <Fields>
+
+          <Field ColumnName="empnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+
+
+
+
+
+      <DocRelationTableInfo TableName="ctrh" DataField="refnum" ConditionField="docunum">
+        <Fields>
+
+          <Field ColumnName="refnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>-->
+
+      <!--<DocRelationTableInfo TableName="sysuserinfo"  DataField="username"	ConditionField="username">
+        <Fields>
+          <Field ColumnName="username"/>
+        </Fields>
+      </DocRelationTableInfo>-->
+
+
+
+
+      <DocRelationTableInfo TableName="vHemphNRIC"  DataField="empname"	ConditionField="assignmentname">
+        <Fields>
+          <Field ColumnName="empname"/>
+        </Fields>
+      </DocRelationTableInfo>
+
+
+      <DocRelationTableInfo TableName="hemph" DataField="empnum" ConditionField="empnum">
+        <Fields>
+
+          <Field ColumnName="empnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+      
+
+
+      <DocRelationTableInfo TableName="hemph" DataField="empnum" ConditionField="empnum2" DataTableName="HEMPH2">
+        <Fields>
+
+          <Field ColumnName="empnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="hemph" DataField="empnum" ConditionField="empnum3" DataTableName="HEMPH3">
+        <Fields>
+
+          <Field ColumnName="empnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+
+
+
+      <DocRelationTableInfo TableName="SITM_CTR" DataField="refnum" ConditionField="docunum">
+        <Fields>
+
+          <Field ColumnName="refnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="ctrh" DataField="refnum" ConditionField="docunum">
+
+      </DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="arm" DataField="arnum" ConditionField="arnum">
+        <Fields>
+
+          <Field ColumnName="arnum"/>
+
+        </Fields>
+      </DocRelationTableInfo>
+
+      <DocRelationTableInfo TableName="vHemphNRIC" DataField="nric"			ConditionField="nric">
+        <Fields>
+          <Field ColumnName="nric"/>
+        </Fields>
+      </DocRelationTableInfo>
+      
+      
+			<DocRelationTableInfo TableName="sitm"		DataField="sitenum"	ConditionField="sitenum"	/>
+			<DocRelationTableInfo TableName="adh"		DataField="refnum"	ConditionField="adhnum"	/>
+			<DocRelationTableInfo TableName="sem"		DataField="sectorcode"	ConditionField="sectorcode"	/>
+
+
+			<DocRelationTableInfo TableName="paytm" DataField="paytypecode"			ConditionField="paytypecode">
+
+      </DocRelationTableInfo>
+
+
+
+
+      <DocRelationTableInfo TableName="wrr" DataField="refnum"			ConditionField="wrrnum">
+
+			</DocRelationTableInfo>
+
+
+
+		</RelationTables>
+		<DocumentPages>
+			<!-- ATR -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+     
+
+				<F2Controls>
+
+          <F2Control ControlName="worh_assignmentname" F2GridInfo="F2GridInfo_vHemphName.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="vHemphNRIC"/>
+            </RelationF2Tables>
+          </F2Control>
+
+          <!--<F2Control ControlName="worh_username" F2GridInfo="F2GridInfo_vHemphName.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="vHemphNRIC"/>
+            </RelationF2Tables>
+          </F2Control>-->
+
+          <F2Control ControlName="worh_docunum" F2GridInfo="F2GridInfo_SITM_CTR.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="SITM_CTR"/>
+            </RelationF2Tables>
+          </F2Control>
+
+
+          <F2Control ControlName="worh_empnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph"/>
+            </RelationF2Tables>
+          </F2Control>
+
+          <F2Control ControlName="worh_empnum2" F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph2"/>
+            </RelationF2Tables>
+          </F2Control>
+
+
+          <F2Control ControlName="worh_empnum3" F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph3"/>
+            </RelationF2Tables>
+          </F2Control>
+
+
+
+
+          <F2Control ControlName="worh_nric" F2GridInfo="F2GridInfo_vHemphNRIC.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="vHemphNRIC"/>
+            </RelationF2Tables>
+          </F2Control>
+
+          <!--<F2Control ControlName="worh_docunum" F2GridInfo="F2GridInfo_CTRH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="ctrh"/>
+            </RelationF2Tables>
+          </F2Control>-->
+          
+					<F2Control ControlName="worh_arnum" F2GridInfo="F2GridInfo_ARM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="arm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="worh_sitenum" F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="worh_adhnum" F2GridInfo="F2GridInfo_ADH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="adh"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="worh_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+
+
+				</F2Controls>
+			
+				
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="location.xml"		FormName="location"	Title="Location">
+				<Details>
+					<Detail DataGridName="dg_location"	DetailGridInfo="DetailGridInfo_WOR4.xml"  CaptionText="Location"/>
+					<Detail DataGridName="dg_photo"	DetailGridInfo="DetailGridInfo_WOR5.xml"  CaptionText="Photos"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="newtask.xml"		FormName="newtask"	Title="New Task">
+				<Details>
+					<Detail DataGridName="dg_newtask"	DetailGridInfo="DetailGridInfo_WOR1.xml"  CaptionText="New Task"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="outstanding.xml"		FormName="outstanding"	Title="Outstanding">
+				<Details>
+					<!--<Detail DataGridName="dg_outstanding"	DetailGridInfo="DetailGridInfo_WOR2.xml"  CaptionText="Outstanding"/>-->
+				</Details>
+			</DocumentPageInfo>
+
+			<!--<DocumentPageInfo FileName="machinery.xml"		FormName="machinery"	Title="Machinery">
+				<Details>
+					<Detail DataGridName="dg_machinery"	DetailGridInfo="DetailGridInfo_WOR3.xml"  CaptionText="Machinery"/>
+				</Details>
+			</DocumentPageInfo>-->
+			
+		</DocumentPages>
+		<Reports>
+			<!--<Report ReportName="Service Report"  DefaultReport="True" ReportPath="\WOR\Report\WorFrm.rpt" />-->
+ 
+        <Report ReportName="Pest Control Report 1"  DefaultReport="True" ReportPath="\SVC\Report\PestControlReportForm1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

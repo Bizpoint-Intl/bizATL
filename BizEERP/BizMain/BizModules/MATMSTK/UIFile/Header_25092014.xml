@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+  <Form Name="header" Text="Header" Location="4, 21" Size="736, 535" ForeColor="Black" Font="{languageBinding.sys_font}">
+    <Controls>
+		<GroupBox Name="gpInfo" Text="Product Information" Location="10, 10" Size="583, 305" TabIndex="0" TabStop="False" >
+			<Controls>
+				<Label Name="lblmatnum" Text="Product Code:" Location="13, 22" Size="83, 23"  />
+				<TextBox Name="matm_matnum" Location="97, 19" Size="133, 20" ReadOnly="True" TabStop="False" />
+				
+				<Label Name="lblDescr" Text="Description:" Location="13, 51" Size="83, 23"/>
+				<TextBox Name="matm_matname" Location="97, 48" Size="278, 20" TabIndex="1" />
+				
+				<TextBox Name="txtStatus" Location="456, 19" Size="110, 20" ReadOnly="True" TextAlign="Center" TabStop="False" />
+				
+				<Panel Name="pnInfo" Location="9, 77" Size="319, 135" TabIndex="2">
+					<Controls>
+						<Label Name="lblCat" Text="Category:" Location="4, 9" Size="79, 21"  />
+						<TextBox Name="matm_pcatcode" Location="88, 6" Size="70, 20" TabIndex="0" />
+						<TextBox Name="pcatm_ptypecode" Location="164, 6" Size="141, 20" ReadOnly="True" TabStop="False" />
+						<TextBox Name="pcatm_pcatname" Location="88, 30" Size="217, 20" ReadOnly="True" TabStop="False" />
+						<Label Name="lblhscode" Text="HS Code:" Location="4, 58" Size="52, 23"  />
+						<TextBox Name="pcatm_hscode" Location="88, 55" Size="120, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblBrand" Text="Brand:" Location="4, 83" Size="79, 23" />
+						<TextBox Name="matm_pbrdcode" Location="88, 80" Size="70, 20" TabIndex="1" />
+						<TextBox Name="pbrdm_pbrdname" Location="164, 80" Size="141, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblModel" Text="Model Code:" Location="4, 108" Size="79, 23"  />
+						<TextBox Name="matm_modelcode" Location="88, 105" Size="70, 20" TabIndex="2" />
+						
+						<CheckBox	Name="matm_nonstock"	 Text="Non-Stock Item" 	Location="164, 106"		Size="150, 20"	TabIndex="3" />
+					</Controls>
+				</Panel>
+
+				<GroupBox Name="gpOther" Text="" Location="334, 71" Size="241, 149" FlatStyle="System" TabIndex="3" TabStop="False" >
+					<Controls>
+						<CheckBox	Name="matm_isInventorytype"	 Text="Inventory Type" 	Location="10, 18"		Size="150, 20"	TabIndex="3" />
+
+						<Label    Name="lbl_deploymentType"          Location="10, 43"  Size="80, 21" TextAlign="MiddleLeft" Text="Deploy Type"/>
+						<ComboBox Name="matm_deploymentType"          Location="104, 40"  Size="120,21" TabStop="False">
+							<ele:BizDisplayValuePair>
+								<ele:ComboBoxItems>
+									<ele:ComboBoxItem DisplayMember="NA"					ValueMember="NA"/>
+									<ele:ComboBoxItem DisplayMember="Expendable"			ValueMember="Expendable"/>
+									<ele:ComboBoxItem DisplayMember="Non-Expendable"					ValueMember="Non-Expendable"/>
+								</ele:ComboBoxItems>
+							</ele:BizDisplayValuePair>
+						</ComboBox>
+
+						<Label    Name="lbl_ApplicationType"          Location="10, 68"  Size="80, 21" TextAlign="MiddleLeft" Text="Appli Type"/>
+						<ComboBox Name="matm_ApplicationType"          Location="104, 65"  Size="100,21" TabStop="False">
+							<ele:BizDisplayValuePair>
+								<ele:ComboBoxItems>
+									<ele:ComboBoxItem DisplayMember="NA"					ValueMember="NA"/>
+									<ele:ComboBoxItem DisplayMember="Toiletries"			ValueMember="Toiletries"/>
+									<ele:ComboBoxItem DisplayMember="OS-Service"					ValueMember="OS-Service"/>
+									<ele:ComboBoxItem DisplayMember="Material"					ValueMember="Material"/>
+									<ele:ComboBoxItem DisplayMember="Machinery"					ValueMember="Machinery"/>
+									<ele:ComboBoxItem DisplayMember="Chemical"					ValueMember="Chemical"/>
+									<ele:ComboBoxItem DisplayMember="Equipment"			ValueMember="Equipment"/>
+									<ele:ComboBoxItem DisplayMember="Landscaping"					ValueMember="Landscaping"/>
+									<ele:ComboBoxItem DisplayMember="Others"					ValueMember="Others"/>
+									<ele:ComboBoxItem DisplayMember="Periodic"			ValueMember="Periodic"/>									
+								</ele:ComboBoxItems>
+							</ele:BizDisplayValuePair>
+						</ComboBox>
+						
+					</Controls>
+				</GroupBox>
+				
+				
+				
+				<GroupBox Name="gpParam" Text="Parameters" Location="334, 71" Size="241, 149" FlatStyle="System" TabIndex="3" TabStop="False" Visible="False">
+					<Controls>
+						<Label Name="lblLoft" Text="Loft:" Location="10, 18" Size="48, 23" />
+						<TextBox Name="matm_ploftcode" Location="64, 15" Size="54, 20" TabIndex="0" />
+						<TextBox Name="ploftm_ploftname" Location="122, 15" Size="110, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblFlex" Text="Flex:" Location="10, 43" Size="48, 23" />
+						<TextBox Name="matm_pflexcode" Location="64, 40" Size="54, 20" TabIndex="1" />
+						<TextBox Name="pflexm_pflexname" Location="122, 40" Size="110, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblShaft" Text="Shaft:" Location="10, 68" Size="48, 23" />
+						<TextBox Name="matm_pshfcode" Location="64, 65" Size="54, 20" TabIndex="2" />
+						<TextBox Name="pshfm_pshfname" Location="122, 65" Size="110, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblColor" Text="Color:" Location="10, 93" Size="48, 23"  />
+						<TextBox Name="matm_pcolcode" Location="64, 90" Size="54, 20" TabIndex="3" />
+						<TextBox Name="pcolm_pcolname" Location="122, 90" Size="110, 20" ReadOnly="True" TabStop="False" />
+
+						<Label Name="lblSize" Text="Size:" Location="10, 118" Size="48, 23"  />
+						<TextBox Name="matm_pszcode" Location="64, 115" Size="54, 20" TabIndex="4" />
+						<TextBox Name="pszm_pszname" Location="122, 115" Size="110, 20" ReadOnly="True" TabStop="False" />
+					</Controls>
+				</GroupBox>
+
+				<Panel Name="pnStockInfo" Location="9, 215" Size="570, 100" TabIndex="4">
+					<Controls>
+						<Label Name="lblcountry" Text="Country:" Location="4, 9" Size="52, 23" Visible="False"/>
+						<TextBox Name="matm_oricountry" Location="88, 6" Size="70, 20" TabIndex="0" Visible="False"/>
+						<TextBox Name="countrycode_countryname" Location="164, 6" Size="141, 20" ReadOnly="True" TabStop="False" Visible="False"/>
+
+						<Label Name="lbluom" Text="UOM:" Location="4, 34" Size="52, 23" />
+						<TextBox Name="matm_uomcode" Location="88, 31" Size="70, 20" TabIndex="1" />
+						<TextBox Name="uom_uomname" Location="164, 31" Size="141, 20" ReadOnly="True" TabStop="False" />
+
+            <Button Name="btnAvail" Text="Available?" Location="4, 57" Size="75, 30" TabIndex="5" Visible="False"/>
+
+            <Label Name="lblBarcode" Text="S/N:" Location="330, 9" Size="55, 23" />
+			<TextBox Name="matm_barcode" Location="390, 6" Size="150, 20"  TabStop="False" />
+
+			<Button Name="btnPrintBarcode" Location="455, 6" Size="110, 26" TabIndex="7" Text="Print One Item" Visible="False"/>
+						<Button Name="btnSelectItem" Location="455, 35" Size="110, 26" TabIndex="8" Text="Select Print Items" Visible="False"/>
+
+						<Label Name="lblQty" Text="Print Qty:" Location="330, 36" Size="55, 23" Visible="False"/>
+            <TextBox Name="matm_qty" Location="390, 33" Size="60, 20" ReadOnly="False" TabStop="False" Visible="False"/>
+
+            <Label		Name="lbl_printPrice"				Location="330,60"  Size="65, 16"	    TextAlign="MiddleLeft"	Text="Print Price" Visible="False"/>
+			<CheckBox	Name="matm_printPrice"	      Location="400, 57"	 Size="30,	20"	  TabStop="False"	  FlatStyle="System" Visible="False"/>
+						
+						
+					</Controls>
+				</Panel>
+			</Controls>
+		</GroupBox>
+		
+		<GroupBox Name="gpStatus" Text="STATUS SETTING" Location="10, 315" Size="583, 50" TabIndex="6" TabStop="False" >
+			<Controls>
+				<RadioButton Name="rbNEW" Text="NEW" Location="15, 20" Size="104, 24" TabIndex="0" TabStop="True" />
+				<RadioButton Name="rbLIVE" Text="LIVE" Location="160, 20" Size="104, 24" TabIndex="1" TabStop="True" />
+				<RadioButton Name="rbDisCont" Text="DISCONTINUED" Location="290, 20" Size="138, 24" TabIndex="2" TabStop="True" />
+				<RadioButton Name="rbObsolete" Text="OBSOLETE" Location="450, 20" Size="104, 24" TabIndex="3" TabStop="True" />
+			</Controls>
+		</GroupBox>
+		
+		<DataGrid Name="dgPrice" Location="10, 370" Size="710, 120" Anchor="Top, Bottom, Left, Right" CaptionText="Price Table" TabIndex="7" />
+		
+	</Controls>
+  </Form>
+</BizXml>

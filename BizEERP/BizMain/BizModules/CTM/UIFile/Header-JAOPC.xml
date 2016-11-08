@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+      <GroupBox	Name="grp_ctmInfo"	Location="5, 10" Text="Country Code Master" Size="420,120">
+        <Controls>
+			<Label		Name="lblcode"		Location="5, 50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Country Code"/>
+			<TextBox	Name="countrycode_countrycode"	Location="130, 45"		Size="240,21"	TabIndex="1" ReadOnly="True"/>
+			<Label		Name="lblname"		Location="5, 75"		Size="120, 16"	TextAlign="MiddleLeft"	Text="Country Name"/>
+			<TextBox	Name="countrycode_countryname"	Location="130, 70"		Size="240,21"	TabIndex="1"/>
+        </Controls>
+      </GroupBox>
+		</Controls>
+	</Form>
+</BizXml>

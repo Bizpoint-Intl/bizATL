@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="wor5" Title="Location">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="pdm"	DataField="svccode"	ConditionField="svccode"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+			<bas:VirtualColumn ColumnName="button"	DataType="System.String" DefaultValue="View" />
+		</VirtualColumns>		
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="sitenum"	HeaderText="Loc No"  	Width="80"  ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="svccode"	HeaderText="Service Code"	Width="100"          F2="True" F2GridInfo="F2GridInfo_PDM.xml" ReadOnly="True">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="svcdesc"	F2MappingName="svcdesc"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="svcdesc"	HeaderText="Description"	Width="200"         ReadOnly="True" TableName="pdm" />
+		<DetailGridColumnInfo MappingName="frequencycode"	HeaderText="Freqency"	 Width="70"  F2="True" F2GridInfo="F2GridInfo_FQM.xml"     ReadOnly="True"/>		
+		<DetailGridColumnInfo MappingName="filename"	HeaderText="Filename"  	Width="80"  ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="button"		HeaderText="Picture"			Width="80"	ColumnType="TextBox" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True" />		
+	</DetailGridInfo>
+</BizXml>
+

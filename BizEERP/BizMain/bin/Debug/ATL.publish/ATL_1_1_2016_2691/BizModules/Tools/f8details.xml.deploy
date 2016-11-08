@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="f8details" Text="Raw Material Details" AutoScaleBaseSize="5, 14" ClientSize="800, 600" StartPosition="CenterScreen" Font="{languageBinding.sys_font}" FormBorderStyle="FixedDialog"	MinimizeBox="false" MaximizeBox="false"	Load="MaterialDetail_Load"	Closing="MaterialDetail_Closing"	ReadOnly="true">
+		<Controls>
+			<lxf:TabControl Name="tcl_material"	Location="0, 180"		Size="800, 370" Appearance="MultiForm" Style="Plain" BackColor="0,78,152" IDEPixelBorder="true" Visible="true" PositionTop="true" TextColor="Orange" TextInactiveColor="White" Font="Tahoma, 8.75pt, style=Bold"/>
+			<GroupBox Name="grp_material"				Location="10,0"			Text="{languageBinding.grp_matmCal}"	Size="780,160" FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_matnum"			Location="10, 30"		Size="80, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.wor_matnum}"/>
+					<TextBox	Name="wor1_matnum"		Location="90,	25"		Size="80, 21"		TabIndex="22"	ReadOnly="true"/>
+					<TextBox	Name="wor1_matname"		Location="170,25"		Size="180,21"		TabIndex="23"	ReadOnly="true"/>
+					<Label		Name="lbl_length"			Location="370,30"		Size="70, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.length}"/>
+					<TextBox	Name="wor1_length"		Location="440,25"		Size="60,	21"		TabIndex="0"/>
+					<Label		Name="lbl_height"			Location="520,30"		Size="70, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.height}"/>
+					<TextBox	Name="wor1_height"		Location="590,25"		Size="60,	21"		TabIndex="1"/>
+					<Label		Name="lbl_qty"				Location="670,30"		Size="30, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.nos}"/>
+					<TextBox	Name="wor1_qty"				Location="700,25"		Size="60,	21"		TabIndex="2"/>
+					<Label		Name="lbl_Weight"			Location="10,60"		Size="150, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.sor1wt}"/>
+					<TextBox	Name="wor1_Weight"		Location="160,55"		Size="60,	21"		TabIndex="24"	ReadOnly="true"/>
+					<Label		Name="lbl_SpanPanel"	Location="10,90"		Size="150, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.sor1sp}"/>
+					<TextBox	Name="wor1_SpanPanel"	Location="160,85"		Size="60,	21"		TabIndex="25"	ReadOnly="true"/>
+					<Label		Name="lbl_Const1"			Location="10,120"		Size="150, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.sor1const1}"/>
+					<TextBox	Name="wor1_Const1"		Location="160,115"	Size="60,	21"		TabIndex="3"/>
+					<Label		Name="lbl_Curb"				Location="250,60"		Size="100, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.sor1curb}"/>
+					<TextBox	Name="wor1_Curb"			Location="350,55"		Size="60,	21"		TabIndex="4"/>
+					<Label		Name="lbl_HandleHt"		Location="250,90"		Size="100, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.sor1handle}"/>
+					<TextBox	Name="wor1_HandleHt"	Location="350,85"		Size="60,	21"		TabIndex="5"/>
+					<Label		Name="lbl_x"					Location="440,60"		Size="40, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.sor1x}"/>
+					<TextBox	Name="wor1_x"					Location="480,55"		Size="60,	21"		TabIndex="26"	ReadOnly="true"/>
+					<Label		Name="lbl_y"					Location="440,90"		Size="40, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.sor1y}"/>
+					<TextBox	Name="wor1_y"					Location="480,85"		Size="60,	21"		TabIndex="27"	ReadOnly="true"/>
+					<Button		Name="btn_compute"		Location="590,110"	Size="170,23"		TabIndex="6"	Text="Compute"	Click="btn_Compute" />
+				</Controls>
+			</GroupBox>
+			<Button		Name="btn_getmatm"				Location="20,570"		Size="170,23"		TabIndex="7"	Text="Get Raw Material from MATM"	Click="btn_GetMATM" />
+			<Button		Name="btn_insert"					Location="440,570"	Size="100,23"		TabIndex="8"	Text="Insert"		Click="btn_insert" Enabled="false"/>
+			<Button		Name="btn_delete"					Location="560,570"	Size="100,23"		TabIndex="9"	Text="Delete"		Click="btn_Delete" />
+			<Button		Name="btn_confirm"				Location="680,570"	Size="100,23"		TabIndex="10"	Text="Confirm"	Click="btn_Confirm" />
+		</Controls>
+	</Form>
+</BizXml>

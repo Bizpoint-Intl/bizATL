@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="hparh" Title="Search Perosnal Appraisal Records" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<RelationTables>
+			<bas:RelationTableInfo	TableName="hemph"	DataField="empnum"			ConditionField="empnum"/>
+			<bas:RelationTableInfo	TableName="matm"	DataField="matnum"		ConditionField="matnum"/>	
+		</RelationTables>
+		<F2GridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="empnum"		HeaderText="{languageBinding.empnum}"		Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="empname"		HeaderText="{languageBinding.empname}"		Width="250" TableName="hemph"/>
+		<F2GridColumnInfo MappingName="ccnum"		HeaderText="{languageBinding.ccnum}"		Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="matnum"	HeaderText="{languageBinding.matnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="matname"	HeaderText="{languageBinding.matname}"		Width="250" TableName="matm"/>
+		<F2GridColumnInfo MappingName="datefrm"		HeaderText="{languageBinding.datefrm}"		Width="80"	IsItem="True" SearchItem="True"/>
+		<F2GridColumnInfo MappingName="dateto"		HeaderText="{languageBinding.dateto}"		Width="80"	IsItem="True" SearchItem="True"/>
+		<F2GridColumnInfo MappingName="detail"		HeaderText="{languageBinding.detail}"		Width="250"/>
+		<F2GridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"			Width="80"/>
+	</F2GridInfo>
+</BizXml>

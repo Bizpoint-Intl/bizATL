@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="countrycode" Title="Country Code" PageSize="{languageBinding.sys_F2_Pagesize}" >
+		<F2GridColumnInfo MappingName="countrycode"			HeaderText="Code"					Width="120" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="countryname"			HeaderText="Country Name"		Width="300" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

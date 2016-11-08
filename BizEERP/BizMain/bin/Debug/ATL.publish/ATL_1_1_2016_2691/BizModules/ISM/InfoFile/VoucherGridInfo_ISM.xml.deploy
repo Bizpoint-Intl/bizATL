@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="ism" Title="{languageBinding.ISM}" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_ISM.xml">
+		<VoucherGridColumnInfo MappingName="ismcode"		    HeaderText="Code"	      Width="120"   SearchItem="true" ConfirmItem="true" Key="True"/>
+				<VoucherGridColumnInfo MappingName="status"		    HeaderText="{languageBinding.status}"		    Width="60"    SearchItem="true"/>
+		<VoucherGridColumnInfo MappingName="trStartDate"		    HeaderText="Start Date"		    Width="80"    SearchItem="true" ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+    <VoucherGridColumnInfo MappingName="trEndDate"		    HeaderText="End Date"		    Width="80"    SearchItem="true" ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+
+  </VoucherGridInfo>
+  
+</BizXml>

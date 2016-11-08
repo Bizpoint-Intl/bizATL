@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="lvm" YearTable="False" Title="Search Leave Type Master">
+		<F2GridColumnInfo MappingName="lvmnum"		 HeaderText="Leave Type Code"	Width="120" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="lvmname"		 HeaderText="Leave Type Name"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="offorleave"		 HeaderText="Off/Leave"	Width="100" />
+		<F2GridColumnInfo MappingName="ispaid"	   HeaderText="Is Paid"	        Width="100"  IsItem="True"    ColumnType = "Checkbox"/>
+		<F2GridColumnInfo MappingName="ishalfday"	   HeaderText="Is Half-Day"	        Width="100"  IsItem="True"    ColumnType = "Checkbox"/>
+		<F2GridColumnInfo MappingName="iscalculable"	   HeaderText="Calculable"	        Width="100"  IsItem="True"    ColumnType = "Checkbox"/>
+		<F2GridColumnInfo MappingName="isCapped"	   HeaderText="Cap"	        Width="100"  IsItem="True"    ColumnType = "Checkbox"/>
+		<F2GridColumnInfo MappingName="isCappedvalue"		 HeaderText="Cap Value"	Width="100" />	
+	</F2GridInfo>
+</BizXml> 

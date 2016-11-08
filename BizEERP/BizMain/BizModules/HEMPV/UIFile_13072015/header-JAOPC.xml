@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" ScrollBars="Vertical" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_sitenum"	  Location="350,  10"		Size="30, 16"	TextAlign="Right" Text="Site"/>
+			<TextBox	Name="hemph_sitenum" 	  Location="380,10"		Size="65,21"  	TabIndex="51"/>
+
+			<Label		Name="lbl_sectorcode"	  Location="450,  10"		Size="40, 16"	TextAlign="Right" Text="Sector"/>
+			<TextBox	Name="hemph_sectorcode" 	  Location="490,10"		Size="40,21"  	TabIndex="51"/>
+
+
+			<Label		Name="lbl_daysperweek"	  Location="535,  10"		Size="50, 16"	TextAlign="Right" Text="DPerWk"/>
+			<TextBox	Name="hemph_daysperweek" 	  Location="585,10"		Size="30,21"  	TabIndex="51"/>
+
+			<Label		Name="lbl_paytypecode"	  Location="620,  10"		Size="35, 16"	TextAlign="Right" Text="PType"/>
+			<TextBox	Name="hemph_paytypecode" 	  Location="660,10"		Size="30,21"  	TabIndex="51"/>
+
+			<Label		Name="lbl_datejoined"			   Location="350,  35"	  Size="80, 21" TextAlign="MiddleLeft" Text="{languageBinding.joineddate}"/>
+			<dtp:BizDateTimePicker Name="hemph_datejoined"  Location="435, 35"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+			<Label		Name="lbl_daterconfirmed"	   Location="350,  60"	Size="80, 21" TextAlign="MiddleLeft" Text="{languageBinding.confirmationdate}"/>
+			<TextBox Name="txt_dateconfirmed"    Location="435, 60"  ReadOnly="True"       Size="80, 21"   />
+
+			<Label		Name="lbl_dateresigned"	   Location="350,  85"	Size="80, 21" TextAlign="MiddleLeft" Text="{languageBinding.resignationddate}"/>
+			<TextBox Name="txt_dateresigned"    Location="435, 85"  ReadOnly="True"    Size="80, 21"   />
+
+
+			<Label		Name="lbl_contractend"	  Location="545,  35"		Size="60, 16"	TextAlign="Right" Text="Contr End"/>
+			<TextBox	Name="hemph_contractend" ReadOnly="True" 	  Location="605,35"		Size="65,21"  	TabIndex="51"/>
+
+
+			<Label		Name="lbl_status"	  Location="545,  60"		Size="60, 16"	TextAlign="Right" Text="Status:"/>
+			<TextBox	Name="hemph_statuscode"	  Location="605,60"		Size="100,21" CharacterCasing="Upper"	TabIndex="51"/>
+
+			<TextBox	Name="hemph_nextapprdate"	  Location="605,85" ReadOnly="True"		Size="80, 21"	TabIndex="51"/>
+			<Label		Name="lbl_nextapprdate"	  Location="525,  85"		Size="70, 16"	TextAlign="Right" Text="Next Appr Yr"/>
+
+
+			<Label		Name="lbl_cardid"	   Location="350,  110"	Size="80, 21" TextAlign="MiddleLeft" Text="Card ID"/>
+			<TextBox Name="hemph_cardid"    Location="435, 110"     Size="80, 21"   />
+
+
+			<GroupBox	Name="grb_hemphprofileinfo"		  Location="10, 5"		Size="320,480" 	Text="Profile Information" >
+				<Controls>
+
+					<Label		Name="lbl_fname"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="{languageBinding.empname}"/>
+					<TextBox	Name="hemph_empname"	  Location="95,25"	CharacterCasing="Upper"	Size="195,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_nric"	  Location="10,  50"		Size="80, 16" 	TextAlign="Right" Text="NRIC/FIN"/>
+					<TextBox	Name="hemph_nric"	  Location="95,  50"		Size="180,21" CharacterCasing="Upper"	TabIndex="51"  />
+
+
+					<Label		Name="lbl_BldgBlock"	  Location="60,  75"		Size="35, 16" 	TextAlign="Right" Text="Block"/>
+					<TextBox	Name="hemph_BldgBlock"	  Location="95,75"  CharacterCasing="Upper"		Size="35,21"	TabIndex="51"/>
+					
+					<Label		Name="lbl_lvlNo"	  Location="140,  75"		Size="20, 16" 	TextAlign="Right" Text="Lvl"/>
+					<TextBox	Name="hemph_LevelNo"	  Location="165,75"  CharacterCasing="Upper"		Size="30,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_UnitNo"	  Location="200,  75"		Size="30, 16" 	TextAlign="Right" Text="Unit No:"/>
+					<TextBox	Name="hemph_UnitNo"	  Location="230,75"  CharacterCasing="Upper"		Size="45,21"	TabIndex="51"/>
+
+
+					<Label		Name="lbl_StreetName"	  Location="55,  100"		Size="40, 16" 	TextAlign="Right" Text="Street"/>
+					<TextBox	Name="hemph_StreetName"	  Location="95,100"  CharacterCasing="Upper"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_Country"	  Location="45,  125"		Size="50, 16"	TextAlign="Right" Text="Country"/>
+					<TextBox	Name="hemph_Country"	  Location="95,125"	 CharacterCasing="Upper"	Size="90,21"	TabIndex="51" />
+
+
+					<Label		Name="lbl_postal"	  Location="190,  125"		Size="40, 16"	TextAlign="Right" Text="Postal"/>
+					<TextBox	Name="hemph_postal"	  Location="230,125"	 CharacterCasing="Upper"	Size="60,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_ForeignAdd"	  Location="25,  150"		Size="65, 16" 	TextAlign="Right" Text="Foreign Add"/>
+					<TextBox	Name="hemph_padd1"	  Location="95,  150"		Size="180,21" CharacterCasing="Upper"	TabIndex="51"  />
+					<TextBox	Name="hemph_padd2"	  Location="95,  175"		Size="180,21" CharacterCasing="Upper"	TabIndex="51"  />
+					<TextBox	Name="hemph_padd3"	  Location="95,  200"		Size="180,21" CharacterCasing="Upper"	TabIndex="51"  />
+
+					<Label		Name="lbl_pcountry"	  Location="45,  225"		Size="50, 16"	TextAlign="Right" Text="Country"/>
+					<TextBox	Name="hemph_pcountry"	  Location="95,225"	 CharacterCasing="Upper"	Size="90,21"	TabIndex="51" />
+
+
+					<Label		Name="lbl_ppostal"	  Location="190,  225"		Size="40, 16"	TextAlign="Right" Text="Postal"/>
+					<TextBox	Name="hemph_ppostal"	  Location="230,225"	 CharacterCasing="Upper"	Size="60,21"	TabIndex="51"/>
+
+
+
+					<!--<Label		Name="lbl_CountryAddress"	  Location="10,  150"		Size="80, 16"	TextAlign="Right" Text="Country Add"/>
+					<TextBox	Name="hemph_CountryAddress"	  Location="95,150"	 CharacterCasing="Upper"	Size="180,42"	TabIndex="51" Multiline="True" ScrollBars="Vertical" />
+
+					<Label		Name="lbl_ForeignAddress"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="Foreign Add"/>
+					<TextBox	Name="hemph_ForeignAdd"	  Location="95,200"	 CharacterCasing="Upper"	Size="180,21"	TabIndex="51" />-->
+
+					<Label		Name="lbl_BankName"	  Location="30,  250"		Size="65, 16" 	TextAlign="Right" Text="Bank Name"/>
+					<TextBox	Name="hemph_BankName"	  Location="95,250"  CharacterCasing="Upper"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_BankCode"	  Location="35,  275"		Size="60, 16" 	TextAlign="Right" Text="Bank Code"/>
+					<TextBox	Name="hemph_BankCode"	  Location="95,275"  CharacterCasing="Upper"		Size="35,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_BranchCode"	  Location="140,  275"		Size="70, 16" 	TextAlign="Right" Text="Branch Code"/>
+					<TextBox	Name="hemph_BranchCode"	  Location="220,275"  CharacterCasing="Upper"		Size="30,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_bankacc"	  Location="40,  300"		Size="55, 16"	TextAlign="Right" Text="Bank Acc"/>
+					<TextBox	Name="hemph_bankacc"	  Location="95,300"	 CharacterCasing="Upper"	Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_dob"	  Location="10,  325"		Size="50, 16"	TextAlign="Right" Text="D.O.B."/>
+					<dtp:BizDateTimePicker Name="hemph_dob"    Location="95, 325"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+					<Label		Name="lbl_age"	  Location="200,  325"		Size="30, 16"	TextAlign="Right" Text="Age"/>
+					<TextBox	Name="age"	  Location="240,325" ReadOnly="True" 		Size="30,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_gender"	  Location="10,  350"		Size="60, 16"	TextAlign="Right" Text="Gender"/>
+
+					<RadioButton	Name="rad_male"		Location="95, 350"	Size="30,21"	TabIndex="9" Text="M" Visible="true"/>
+					<RadioButton	Name="rad_female"		Location="125, 350"	Size="30,21"	TabIndex="9" Text="F" Visible="true"/>
+
+					<Label		Name="lbl_bloodtype"	  Location="170,  350"		Size="50, 16"	TextAlign="Right" Text="B. Type"/>
+
+					<ComboBox Name="hemph_bloodtype"         Location="225, 350"  Size="50,21" Enabled="True" TabStop="False">
+						<ele:BizDisplayValuePair>
+							<ele:ComboBoxItems>
+								<ele:ComboBoxItem DisplayMember="NIL"	ValueMember=""/>
+								<ele:ComboBoxItem DisplayMember="O+"	ValueMember="O+"/>
+								<ele:ComboBoxItem DisplayMember="O-"	ValueMember="O-"/>
+								<ele:ComboBoxItem DisplayMember="A+"	ValueMember="A+"/>
+								<ele:ComboBoxItem DisplayMember="A-"	ValueMember="A-"/>
+								<ele:ComboBoxItem DisplayMember="B+"	ValueMember="B+"/>
+								<ele:ComboBoxItem DisplayMember="B-"	ValueMember="B-"/>
+								<ele:ComboBoxItem DisplayMember="AB+"	ValueMember="AB+"/>
+								<ele:ComboBoxItem DisplayMember="AB-"	ValueMember="AB-"/>
+							</ele:ComboBoxItems>
+						</ele:BizDisplayValuePair>
+					</ComboBox>
+
+					<Label		Name="lbl_maritalstatus"	  Location="10,  375"		Size="80, 16"	TextAlign="Right" Text="Marital Status"/>
+					<ComboBox Name="hemph_maritalstatus"      Location="95,375"  Size="80,21" Enabled="True" TabStop="False">
+						<ele:BizDisplayValuePair>
+							<ele:ComboBoxItems>
+								<ele:ComboBoxItem DisplayMember="NIL"	ValueMember=""/>
+								<ele:ComboBoxItem DisplayMember="SINGLE"	ValueMember="SINGLE"/>
+								<ele:ComboBoxItem DisplayMember="MARRIED"	ValueMember="MARRIED"/>
+								<ele:ComboBoxItem DisplayMember="SEPERATED"	ValueMember="SEPARATED"/>
+								<ele:ComboBoxItem DisplayMember="DIVORCED"	ValueMember="DIVORCED"/>
+								<ele:ComboBoxItem DisplayMember="WIDOWED"	ValueMember="WIDOWED"/>
+							</ele:ComboBoxItems>
+						</ele:BizDisplayValuePair>
+					</ComboBox>
+
+					<Label		Name="lbl_hramnum"	  Location="10,  400"		Size="50, 16"	TextAlign="Right" Text="Race"/>
+					<!--<TextBox	Name="hemph_hramnum"	  Location="95,375" CharacterCasing="Upper"		Size="110,21"	TabIndex="51"/>-->
+					<TextBox	Name="hemph_hramdesc"	  Location="95,400" CharacterCasing="Upper"		Size="75,21"	TabIndex="51"/>
+
+
+
+
+					<Label		Name="lbl_agencyfund"	  Location="180,  400"		Size="40, 16"	TextAlign="Right" Text="Agency"/>
+					<ComboBox Name="hemph_agencyfund"      Location="220,400"  Size="50,21" Enabled="True" TabStop="False">
+						<ele:BizDisplayValuePair>
+							<ele:ComboBoxItems>
+								<ele:ComboBoxItem DisplayMember="NIL"	ValueMember=""/>
+								<ele:ComboBoxItem DisplayMember="SINDA"	ValueMember="SINDA"/>
+								<ele:ComboBoxItem DisplayMember="CDAC"	ValueMember="CDAC"/>
+								<ele:ComboBoxItem DisplayMember="MBMF"	ValueMember="MBMF"/>
+								<ele:ComboBoxItem DisplayMember="ECF"	ValueMember="ECF"/>
+							</ele:ComboBoxItems>
+						</ele:BizDisplayValuePair>
+					</ComboBox>
+					
+								
+
+					<Label		Name="lbl_religion"	  Location="10,  425"		Size="80, 16"	TextAlign="Right" Text="Religion"/>
+					<TextBox	Name="hemph_religion"	  Location="95,425"	 CharacterCasing="Upper"	Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_nationality"	  Location="10,  450"		Size="80, 16"	TextAlign="Right" Text="Nationality"/>
+					<TextBox	Name="hemph_nationality"	  Location="95,450"	 CharacterCasing="Upper"	Size="80,21" TabIndex="51"/>
+
+
+					<Label		Name="lbl_datejPR"			   Location="185,  450"	  Size="30, 21" TextAlign="MiddleLeft" Text="PR Date"/>
+					<dtp:BizDateTimePicker Name="hemph_datePR"  Location="220, 450"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+					
+
+
+				</Controls>
+			</GroupBox>
+
+
+			<GroupBox	Name="grb_hemphotherinfo"		  Location="350, 130"		Size="380,396" 	Text="" >
+				<Controls>
+					<!--<Label		Name="lbl_hsg"	  Location="10,  10"		Size="150, 16"	TextAlign="Right" Text="Salary Grade Information"/>-->
+					<Label		Name="lbl_hsgcode"	  Location="10,  10"		Size="50, 16"	TextAlign="Right" Text="Grade"/>
+					<ComboBox Name="hemph_hsgcode" Location="60,10"           Size="70,21" />
+					<Label		Name="lbl_matnum"	  Location="190,  10"		Size="70, 16"	TextAlign="Right" Text="Appointment"/>
+					<TextBox	Name="hemph_matnum"	  Location="260,10"		Size="100,21"	TabIndex="51"/>
+					<Label		Name="lbl_nslabel"	  Location="10,  40"		Size="150, 16"	TextAlign="Right" Text="National Service Background"/>
+					<CheckBox	Name="hemph_isNSmandatory"	Text="" Location="170, 40"	Size="80,19"	TabIndex="52" FlatStyle="System"/>
+					<Label		Name="lbl_force"	  Location="10,  65"		Size="50, 16"	TextAlign="Right" Text="Force"/>
+					<Label		Name="lbl_rank"	  Location="190,  65"		Size="50, 16"	TextAlign="Right" Text="Rank"/>
+					<Label		Name="lbl_vocation"	  Location="10,  90"		Size="50, 16"	TextAlign="Right" Text="Vocation"/>
+					<Label		Name="lbl_yearserved"	  Location="190, 90"		Size="70, 16"	TextAlign="Right" Text="Years Served"/>
+					<TextBox	Name="hemph_force"	  Location="60,65"		Size="120,21" CharacterCasing="Upper"	TabIndex="51"/>
+					<TextBox	Name="hemph_rank"	  Location="260,65"		Size="90,21" CharacterCasing="Upper"	TabIndex="51"/>
+					<TextBox	Name="hemph_vocation"	  Location="60,90"		Size="120,21" CharacterCasing="Upper"	TabIndex="51"/>
+					<TextBox	Name="hemph_yearserved"	  Location="260,90"		Size="40,21"	TabIndex="51"/>
+					<Label		Name="lbl_recrlabel"	  Location="10,  120"		Size="150, 16"	TextAlign="Right" Text="Recommender Information"/>
+
+					<Label		Name="lbl_recrempnum"	  Location="10,  145"		Size="50, 16"	TextAlign="Right" Text="{languageBinding.empnum}"/>
+					<TextBox	Name="hemph_recrempnum"	  Location="60,145" CharacterCasing="Upper"	 ReadOnly="True" 	Size="70,21"	TabIndex="51" />
+
+					<Label		Name="lbl_empname"	  Location="170,  145"		Size="40, 16"	TextAlign="Right" Text="{languageBinding.empname}"/>
+					<TextBox	Name="recrempname"	  Location="210,145" CharacterCasing="Upper" ReadOnly="True"	Size="120,21"	TabIndex="51" />
+
+					<Label Name="lbl_upload" Text="Upload" Location="20, 175" Size="40, 23"  TextAlign="MiddleLeft"/>
+					<TextBox Name="photourl" Location="60, 175" Size="280, 21" ReadOnly="True" />
+					<Button Name="btnBrowse" Text="Browse" Location="60, 200" Size="58, 23"  UseVisualStyleBackColor="True" TabIndex="19">
+					</Button>
+					<PictureBox Name="pictbox" Location="145, 200" Size="185, 185" TabStop="False" InitialImage="System.Drawing.Bitmap" BorderStyle="Fixed3D"/>
+					<Label		Name="lbl_photo"	  Location="100,  265"		Size="125, 16"	TextAlign="Right" Text="Photo"/>
+
+				</Controls>
+			</GroupBox>
+
+			<TextBox	Name="hemph_remark" Location="10, 490" Size="250, 35" 	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+			<CheckBox	Name="hemph_isRetired"	Text="Retired" Location="265, 490"	Size="100,19"	TabIndex="52" FlatStyle="System"/>
+			<CheckBox	Name="hemph_isBlacklisted"	Text="Blacklist" Location="265, 510"	Size="100,19"	TabIndex="52" FlatStyle="System"/>
+		</Controls>
+	</Form>
+</BizXml>

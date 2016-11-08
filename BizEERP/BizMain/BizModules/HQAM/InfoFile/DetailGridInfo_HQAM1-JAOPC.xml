@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="hqam1" Title="Answers">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="AnsNo"	HeaderText="No"	Width="20" ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="AnswerCode"	HeaderText="Answer Code"	Width="100" ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="isactive"	HeaderText="Active"	Width="50"   ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="Answer"	HeaderText="Answer"	Width="400"   Format="#,##0.00####"/>	
+		<DetailGridColumnInfo MappingName="score"	HeaderText="Score"	Width="50"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="hqamcode"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

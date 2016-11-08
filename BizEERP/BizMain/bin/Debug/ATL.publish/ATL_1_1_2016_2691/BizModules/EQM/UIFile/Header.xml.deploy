@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_eqmdesc"		Location="10, 10"	Size="90, 16"	TextAlign="MiddleLeft" Text="{languageBinding.desc}"/>
+			<TextBox	Name="eqm_eqmdesc"	Location="110, 10"	Size="250,21" 	TabIndex="0"/>
+
+			<Label		Name="lbl_serialno"		Location="10, 35"	Size="90, 16"	TextAlign="MiddleLeft" Text="S/N No"/>
+			<TextBox	Name="eqm_serialno"	Location="110, 35"	Size="250,21"	TabIndex="0"/>
+
+
+			<Label		Name="lbl_remark"		Location="10, 65"	Size="90, 16"	TextAlign="MiddleLeft" Text="{languageBinding.remark}"/>
+			<TextBox	Name="hsam_remark"	Location="110,65"	Size="250,63"	TabIndex="0" Multiline="True" ScrollBars="Vertical"/>
+		</Controls>
+	</Form>
+</BizXml>

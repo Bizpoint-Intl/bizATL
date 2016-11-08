@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+	
+			<GroupBox	Name="grb_sitmdshiftinfo"		  Location="5, 10"		Size="731,100" 	Text="Shift Information" >
+				<Controls>
+
+					<Label		Name="lbl_empnum"			   Location="5,  25"	  Size="60, 21" TextAlign="MiddleLeft" Text="Emp No"/>
+					<TextBox	Name="sitmd_empnum" 	  Location="5,50"		Size="80,21"	TabIndex="51"/>
+					<!--<dtp:BizDateTimePicker Name="sitmd_timein"    Location="65,50"      Size="80, 21"  Format="Time" ShowUpDown="True" CustomFormat="HH:mm:ss" />-->
+
+
+					<Label		Name="lbl_empnane"	   Location="110,  25"  	Size="60, 21" TextAlign="MiddleLeft" Text="Name"/>
+					<TextBox	Name="sitmd_empname"  Location="110, 50"	ReadOnly="True"	Size="160,21"	TabIndex="51"/>
+
+
+					<!--<Label		Name="lbl_ttlworkinghrs"	  Location="200,  25"		Size="80, 16"	TextAlign="Right" Text="Total Working Hours"/>
+					<TextBox	Name="sitmd_ttlworkinghrs" ReadOnly="True" 	  Location="200,50"		Size="60,21"	TabIndex="51"/>
+
+
+          <Label		Name="lbl_ShiftType"	  Location="380,  25"		Size="80, 16"	TextAlign="Right" Text="Type"/>
+          <ComboBox Name="sitmd_shifttype"          Location="380, 50"  Size="40,21" Enabled="True" TabStop="False">
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem DisplayMember="D"							ValueMember="D"/>
+                <ele:ComboBoxItem DisplayMember="N"				ValueMember="N"/>
+                <ele:ComboBoxItem DisplayMember="C"							ValueMember="C"/>               
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>-->
+
+
+          <!--<GroupBox	Name="grb_weektimeinfo"	Location="380,  100" 	  		Size="340, 175" 	Text="" >
+            <Controls>
+              <DataGrid	Name="dg_detailedweektime" Location="0, 0"	      Size="340, 175" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+            </Controls>
+          </GroupBox>
+
+          <Label		Name="lbl_remark"	Location="5, 75" Size="150, 21"		Text="Remarks"/>
+          <TextBox	Name="sitmd_remark" Location="5, 100" Size="320, 80" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+
+          <GroupBox	Name="grb_sitmdweekinfo"	Location="5, 200" 	  		Size="365,80" 	Text="Day" >
+            <Controls>
+              <CheckBox	Name="cb_all" Text="All Week" 		Location="10,	20"		Size="100, 20"	TabIndex="0"	FlatStyle="System"/>
+
+              <CheckBox	Name="sitmd_Monday" Text="Mon" 		Location="10,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+              <CheckBox	Name="sitmd_Tuesday" Text="Tue" 		Location="60,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+              <CheckBox	Name="sitmd_Wednesday" Text="Wed" 		Location="110,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+              <CheckBox	Name="sitmd_Thursday" Text="Thu" 		Location="160,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+              <CheckBox	Name="sitmd_Friday" Text="Fri" 		Location="210,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+              <CheckBox	Name="sitmd_Saturday" Text="Sat" 		Location="260,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+					<CheckBox	Name="sitmd_Sunday" Text="Sun" 		Location="310,	45"		Size="50, 20"	TabIndex="0"	FlatStyle="System"/>
+				</Controls>
+			</GroupBox>-->
+
+       
+				</Controls>
+			</GroupBox>
+			
+			
+			<GroupBox	Name="grb_sitmdotherinfo"	Location="5, 105" 	  		Size="731,460" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_outletlists" Location="0, 0"	      Size="730, 430" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+
+
+
+
+
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

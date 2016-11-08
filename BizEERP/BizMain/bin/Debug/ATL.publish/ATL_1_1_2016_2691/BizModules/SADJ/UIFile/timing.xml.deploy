@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="timing" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_SADJhleaveinfo"		  Location="5, 10"		Size="360,520" 	Text="New Timing Information" >
+				<Controls>
+              
+          <Label		Name="lbl_MonToFriTime"	  Location="10,  25"		Size="60, 16"	TextAlign="Right" Text="Mon-to-Fri"/>
+
+
+          <TextBox Name="SADJh_newMonToFriShiftCode" Location="70,25"           Size="38,21" />
+          
+          <TextBox Name="SADJh_MonToFriTimeFrom" Location="110,25"           Size="40,21" />                        
+          <Label		Name="lbl_MonToFriTime"	  Location="152,  25"		Size="5, 16"	TextAlign="Right" Text=":"/>          
+          <TextBox Name="SADJh_MonToFriTimeTo" Location="161,25"           Size="40,21" />
+          <Label		Name="lbl_MonToFriLunchHr"	  Location="205,  25"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_MonToFriLunchHr" Location="240,25"           Size="30,21" />
+
+          <Label		Name="lbl_MonToFriTeaBrkHr"	  Location="274,  25"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_MonToFriTeaBrkHr" Location="299,25"           Size="40,21" />
+          <CheckBox	Name="SADJh_t1"			Location="342,	25"		Size="50, 20"	TabIndex="0"			FlatStyle="System"/>
+
+
+
+          <Label		Name="lbl_SatTimeFrom"	  Location="10,  50"		Size="60, 16"	TextAlign="Right" Text="Saturday"/>
+
+          <TextBox Name="SADJh_newSatShiftCode" Location="70,50"           Size="38,21" />
+          
+          <TextBox Name="SADJh_SatTimeFrom" Location="110,50"           Size="40,21" />
+          <Label		Name="lbl_SatTimeTo"	  Location="152,  50"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_SatTimeTo" Location="161,50"           Size="40,21" />
+
+          <Label		Name="lbl_SatLunchHr"	  Location="205,  50"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_SatLunchHr" Location="240,50"           Size="30,21" />
+
+          <Label		Name="lbl_SatTeaBrkHr"	  Location="274,  50"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_SatTeaBrkHr" Location="299,50"           Size="40,21" />
+          <CheckBox	Name="SADJh_t2"			Location="342,	50"		Size="50, 20"	TabIndex="0"			FlatStyle="System"/>
+
+
+
+          <Label		Name="lbl_SunTimeFrom"	  Location="10,  75"		Size="60, 16"	TextAlign="Right" Text="Sunday"/>
+
+          <TextBox Name="SADJh_newSunShiftCode" Location="70,75"           Size="38,21" />
+          
+          <TextBox Name="SADJh_SunTimeFrom" Location="110,75"           Size="40,21" />
+          <Label		Name="lbl_SunTimeTo"	  Location="152,  75"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_SunTimeTo" Location="161,75"           Size="40,21" />
+
+          <Label		Name="lbl_SunLunchHr"	  Location="205,  75"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_SunLunchHr" Location="240,75"           Size="30,21" />
+
+          <Label		Name="lbl_SunTeaBrkHr"	  Location="274,  75"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_SunTeaBrkHr" Location="299,75"           Size="40,21" />
+          <CheckBox	Name="SADJh_t3"			Location="342,	75"		Size="50, 20"	TabIndex="0"			FlatStyle="System"/>
+
+
+          <Label		Name="lbl_PHTimeFrom"	  Location="10,  100"		Size="60, 16"	TextAlign="Right" Text="P.H."/>
+
+          <TextBox Name="SADJh_newPHShiftCode" Location="70,100"           Size="38,21" />
+          
+          <TextBox Name="SADJh_PHTimeFrom" Location="110,100"           Size="40,21" />
+          <Label		Name="lbl_PHTimeTo"	  Location="152,  100"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_PHTimeTo" Location="161,100"           Size="40,21" />
+
+          <Label		Name="lbl_PHLunchHr"	  Location="205,  100"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_PHLunchHr" Location="240,100"           Size="30,21" />
+
+          <Label		Name="lbl_PHTeaBrkHr"	  Location="274,  100"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_PHTeaBrkHr" Location="299,100"           Size="40,21" />
+          <CheckBox	Name="SADJh_t4"			Location="342,	100"		Size="50, 20"	TabIndex="0"			FlatStyle="System"/>
+
+
+          <Label		Name="lbl_RegularOffDay"	  Location="10,  125"		Size="65, 16"	TextAlign="Right" Text="Reg.Off-Day"/>
+          <TextBox Name="SADJh_RegularOffDay" Location="80,125"           Size="260,21" />
+
+          <CheckBox	Name="SADJh_t5"			Location="342,	125"		Size="50, 20"	TabIndex="0"			FlatStyle="System"/>
+
+				</Controls>        
+			</GroupBox>
+
+
+			<GroupBox	Name="grb_SADJhdocinfo"		  Location="369, 10"		Size="368,520" 	Text="Old Timing Information" >
+				<Controls>
+
+
+          <Label		Name="lbl_oldMonToFriTime"	  Location="10,  25"		Size="60, 16"	TextAlign="Right" Text="Mon-to-Fri"/>
+
+          <TextBox Name="SADJh_MonToFriShiftCode" Location="70,25"           Size="38,21" />
+          
+          <TextBox Name="SADJh_oldMonToFriTimeFrom" Location="125,25"           Size="40,21" />
+          <Label		Name="lbl_oldMonToFriTime"	  Location="167,  25"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_oldMonToFriTimeTo" Location="176,25"           Size="40,21" />
+
+          <Label		Name="lbl_oldMonToFriLunchHr"	  Location="220,  25"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_oldMonToFriLunchHr" Location="255,25"           Size="30,21" />
+
+          <Label		Name="lbl_oldMonToFriTeaBrkHr"	  Location="289,  25"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_oldMonToFriTeaBrkHr" Location="314,25"           Size="40,21" />
+
+
+
+          <Label		Name="lbl_oldSatTimeFrom"	  Location="10,  50"		Size="60, 16"	TextAlign="Right" Text="Saturday"/>
+
+          <TextBox Name="SADJh_SatShiftCode" Location="70,50"           Size="38,21" />
+          
+          <TextBox Name="SADJh_oldSatTimeFrom" Location="125,50"           Size="40,21" />
+          <Label		Name="lbl_oldSatTimeTo"	  Location="167,  50"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_oldSatTimeTo" Location="176,50"           Size="40,21" />
+
+          <Label		Name="lbl_oldSatLunchHr"	  Location="220,  50"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_oldSatLunchHr" Location="255,50"           Size="30,21" />
+
+          <Label		Name="lbl_oldSatTeaBrkHr"	  Location="289,  50"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_oldSatTeaBrkHr" Location="314,50"           Size="40,21" />
+
+
+          <Label		Name="lbl_oldSunTimeFrom"	  Location="10,  75"		Size="60, 16"	TextAlign="Right" Text="Sunday"/>
+
+          <TextBox Name="SADJh_SunShiftCode" Location="70,75"           Size="38,21" />
+          
+          <TextBox Name="SADJh_oldSunTimeFrom" Location="125,75"           Size="40,21" />
+          <Label		Name="lbl_oldSunTimeTo"	  Location="167,  75"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_oldSunTimeTo" Location="176,75"           Size="40,21" />
+
+          <Label		Name="lbl_oldSunLunchHr"	  Location="220,  75"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_oldSunLunchHr" Location="255,75"           Size="30,21" />
+
+          <Label		Name="lbl_oldSunTeaBrkHr"	  Location="289,  75"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_oldSunTeaBrkHr" Location="314,75"           Size="40,21" />
+
+
+          <Label		Name="lbl_oldPHTimeFrom"	  Location="10,  100"		Size="60, 16"	TextAlign="Right" Text="P.H."/>
+
+          <TextBox Name="SADJh_PHShiftCode" Location="70,100"           Size="38,21" />
+          
+          <TextBox Name="SADJh_oldPHTimeFrom" Location="125,100"           Size="40,21" />
+          <Label		Name="lbl_oldPHTimeTo"	  Location="167,  100"		Size="5, 16"	TextAlign="Right" Text=":"/>
+          <TextBox Name="SADJh_oldPHTimeTo" Location="176,100"           Size="40,21" />
+
+          <Label		Name="lbl_oldPHLunchHr"	  Location="220,  100"		Size="35, 16"	TextAlign="Right" Text="Lunch"/>
+          <TextBox Name="SADJh_oldPHLunchHr" Location="255,100"           Size="30,21" />
+
+          <Label		Name="lbl_oldPHTeaBrkHr"	  Location="289,  100"		Size="25, 16"	TextAlign="Right" Text="Tea"/>
+          <TextBox Name="SADJh_oldPHTeaBrkHr" Location="314,100"           Size="40,21" />
+
+
+          <Label		Name="lbl_oldRegularOffDay"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Reg. Off-Day"/>
+          <TextBox Name="SADJh_oldRegularOffDay" Location="95,125"           Size="260,21" />
+
+     
+          
+          
+          
+          
+
+				</Controls>
+			</GroupBox>
+		</Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="pd">
+		<DetailGridColumnInfo MappingName="period"			HeaderText="{languageBinding.period}"		Width="20"	ReadOnly="True"	Key="True"/>
+		<DetailGridColumnInfo MappingName="remarks"		HeaderText="{languageBinding.remarks}"		Width="100" ReadOnly="True"	Key="True"/>
+		<DetailGridColumnInfo MappingName="locked"		HeaderText="Locked"								Width="60"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="[user]"			HeaderText="User"									Width="100" ReadOnly="True"	/>
+		<DetailGridColumnInfo MappingName="modified"		HeaderText="Modified"								Width="120" ReadOnly="True"	ColumnType="DateTime" />
+	</DetailGridInfo>
+</BizXml>

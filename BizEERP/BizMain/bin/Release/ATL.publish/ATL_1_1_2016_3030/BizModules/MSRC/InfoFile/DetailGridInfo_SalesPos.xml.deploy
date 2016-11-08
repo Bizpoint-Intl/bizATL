@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="saj1"  ExtractGridInfo="">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="acm"	DataField="accnum"	ConditionField="accnum"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="detail"			HeaderText="Detail"						Width="100"/>
+		<DetailGridColumnInfo MappingName="oricur"			HeaderText="Cur"			Width="30"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="exrate"		HeaderText="{languageBinding.exrate}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dgrosamt"		HeaderText="{languageBinding.grosamt}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="roriamt"		HeaderText="{languageBinding.oriamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dorigstamt"	HeaderText="Orig-GstAmt"							Width="75"/>
+		<DetailGridColumnInfo MappingName="rpostamt"		HeaderText="Post-Amt"								Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="dgstamt"		HeaderText="{languageBinding.gstamt}"		Width="75"  ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="deposit"		HeaderText="Deposit (Orig)"						Width="75"/>
+		<DetailGridColumnInfo MappingName="aftdeposit"	HeaderText="Amt Before Deposit(Orig)"		Width="75"/>
+		<DetailGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.accnum}"		Width="80"	F2="True" F2GridInfo="F2GridInfo_ACM.xml">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="accname"	F2MappingName="accname"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="accname"		HeaderText="{languageBinding.accname}"	Width="100" ReadOnly="True" TableName="acm"/>
+		<DetailGridColumnInfo MappingName="remark"		HeaderText="Remarks"								Width="200"/>
+		<DetailGridColumnInfo MappingName="reason"		HeaderText="Balance/Deposit?"					Width="100"/>
+		<DetailGridColumnInfo MappingName="OrderSNo"	HeaderText="Sales Order No."						Width="100"/>
+		<DetailGridColumnInfo MappingName="posdate"		HeaderText="POS Date"								ColumnType="DateTime" Width="100"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:cdwf="CrystalDecisions.Windows.Forms, CrystalDecisions.Windows.Forms"
+		xmlns:def="Definition" 
+		xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="frm_ReportViewer" Text="{languageBinding.Tahoma875}" WindowState="Maximized" Font="{languageBinding.Tahoma875}">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<cdwf:CrystalReportViewer Name="crv_ReportView" Location="0, 0" ActiveViewIndex="-1" DisplayGroupTree="False" Dock="Fill" TabIndex="0"/>
+		</Controls>
+	</Form>
+</BizXml>

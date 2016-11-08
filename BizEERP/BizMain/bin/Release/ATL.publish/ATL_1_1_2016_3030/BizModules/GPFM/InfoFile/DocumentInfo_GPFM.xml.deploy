@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="gpfm" Key="gpfmcode" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.GPFM}">
+		<RelationTables>
+		
+
+		</RelationTables>
+		<DocumentPages>
+        
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+				<Details>
+					<!--<Detail DataGridName="dg_qa"	DetailGridInfo="DetailGridInfo_GPFM1.xml"  CaptionText="Answers"/>-->
+				</Details>
+			</DocumentPageInfo>
+
+
+      <DocumentPageInfo FileName="factorgroup.xml"		FormName="factorgroup"	Title="Group">
+        <Details>
+          <Detail DataGridName="dg_factorgroup"	DetailGridInfo="DetailGridInfo_GPFM1.xml"  CaptionText="Group"/>
+        </Details>
+
+      </DocumentPageInfo>
+
+      <DocumentPageInfo FileName="factor.xml"		FormName="factor"	Title="Factors">
+        <Details>
+          <Detail DataGridName="dg_factor"	DetailGridInfo="DetailGridInfo_GPFM2.xml"  CaptionText="Performance Factors"/>
+        </Details>
+
+      </DocumentPageInfo>
+
+
+
+    </DocumentPages>
+		<Reports>
+			
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

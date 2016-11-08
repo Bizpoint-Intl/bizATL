@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_fldmname"		Location="10, 10"	Size="90, 16"	TextAlign="MiddleLeft" Text="Folder Name:"/>
+			<TextBox	Name="fldm_fldmname"	Location="110, 5"	Size="250,21"	TabIndex="0"/>
+
+			<Label		Name="lbl_subFolder"		Location="10, 35"	Size="90, 32"	TextAlign="MiddleLeft" Text="Sub Folder"/>
+			<TextBox	Name="fldm_subFolder"	Location="110,35"	Size="250,21"	TabIndex="0" />
+
+
+			<Label		Name="lbl_fileNmFmt"		Location="10, 65"	Size="100, 32"	TextAlign="MiddleLeft" Text="File Name Format"/>
+			<TextBox	Name="fldm_fileNmFmt"	Location="110,65"	Size="100,21"	TabIndex="0"/>
+			
+			<Label		Name="lbl_dash1"		Location="220, 60"	Size="10, 32"	TextAlign="MiddleLeft" Text="-"/>
+			
+			<TextBox	Name="txt_arnum"	Location="240,65"	Size="100,21"	TabIndex="0" Text="Customer Code" ReadOnly="True"/>
+
+			<Label		Name="lbl_dash2"		Location="350, 60"	Size="10, 32"	TextAlign="MiddleLeft" Text="-"/>
+			
+			<TextBox	Name="txt_frenum"	Location="370,65"	Size="100,21"	TabIndex="0" Text="Refnum" ReadOnly="True"/>
+
+			<Label		Name="lbl_dash3"		Location="480, 60"	Size="10, 32"	TextAlign="MiddleLeft" Text="-"/>
+
+			<TextBox	Name="txt_number"	Location="500,65"	Size="100,21"	TabIndex="0" Text="Number" ReadOnly="True"/>
+	
+			<Label		Name="lbl_remark"		Location="10, 95"	Size="90, 32"	TextAlign="MiddleLeft" Text="Description"/>
+			<TextBox	Name="fldm_remark"	Location="110,95"	Size="250,63"	TabIndex="0" Multiline="True" ScrollBars="Vertical"/>
+		</Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+			<GroupBox	Name="grb_errhleaveinfo"		  Location="5, 10"		Size="320,520" 	Text="Appraisal Information" >
+				<Controls>
+					<Label		Name="lbl_empnum"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="{languageBinding.empnum}"/>
+					<TextBox	Name="errh_empnum"	  Location="95,25"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_empname"	  Location="10,  50" 		Size="80, 16"	TextAlign="Right" Text="{languageBinding.empname}"/>
+					<Label		Name="lbl_matnum"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Appointment"/>
+					<Label		Name="lbl_sitenum"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Site"/>
+					<Label		Name="lbl_sectorcode"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Sector"/>
+
+					<TextBox	Name="errh_empname"	  Location="95,50"	ReadOnly="True" 	Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="errh_matnum"	  Location="95,75"	ReadOnly="True"	Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="errh_sitenum"	  Location="95,100"	ReadOnly="True"	Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="errh_sectorcode"	  Location="95,124"	ReadOnly="True"	Size="180,21"	TabIndex="51"/>
+
+					<GroupBox Name="grb_errhdrecinfo"		  Location="10, 150"		Size="300,195" 	Text="Recommendation">
+						<Controls>
+							<Label		Name="lbl_confirmedcomments"	Location="10, 20" Size="150, 16"		Text="Reason"/>
+							<TextBox	Name="errh_confirmedcomments" Location="10, 40" Size="280, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+							<RadioButton	Name="rad_Recd"		Location="10, 110"	Size="100,21"	TabIndex="9" Text="Recommended" Visible="true"/>
+							<RadioButton	Name="rad_NotRecd"		Location="120, 110"	Size="120,21"	TabIndex="9" Text="Not Recommended" Visible="true"/>
+							<Label		Name="lbl_confirmedby"	  Location="120,  135"		Size="20, 16"	TextAlign="Right" Text="By:"/>
+							<TextBox	Name="errh_confirmedby"	  Location="155,135" 		Size="120,21"	TabIndex="51"/>
+
+
+							<!--<Label		Name="lbl_appraisalscore"	  Location="105,  160"		Size="40, 16"	TextAlign="Right" Text="Score:"/>
+							<TextBox	Name="errh_appraisalscore"	  Location="155,160" ReadOnly="True" 		Size="120,21"	TabIndex="51"/>-->
+
+						</Controls>
+					</GroupBox>
+
+
+					<GroupBox Name="grb_errhapprinfo"		  Location="10, 345"		Size="300,170" 	Text="Approval">
+						<Controls>
+							<Label		Name="lbl_apprdbyreason"	Location="10, 20" Size="150, 16"		Text="Reason"/>
+							<TextBox	Name="errh_approvedcomments" Location="10, 40" Size="280, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+							<RadioButton	Name="rad_Appr"		Location="10, 110"	Size="100,21"	TabIndex="9" Text="Approved" Visible="true"/>
+							<RadioButton	Name="rad_NotAppr"		Location="120, 110"	Size="120,21"	TabIndex="9" Text="Not Approved" Visible="true"/>
+							<Label		Name="lbl_approvedby"	  Location="120,  135"		Size="20, 16"	TextAlign="Right" Text="By:"/>
+							<TextBox	Name="errh_approvedby"	  Location="155,135"		Size="120,21"	TabIndex="51"/>
+
+						</Controls>
+					</GroupBox>
+
+
+				</Controls>
+			</GroupBox>
+
+
+			<GroupBox	Name="grb_errhdocinfo"		  Location="350, 10"		Size="380,260" 	Text="Other Information" >
+				<Controls>
+
+					<Label		Name="lbl_trandate"			   Location="200,  25"	  Size="85, 21" TextAlign="MiddleLeft" Text="Date Tendered"/>
+					<dtp:BizDateTimePicker Name="errh_trandate"  Location="285, 25" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+
+					<Label		Name="lbl_nslabel"	  Location="205,  50"		Size="75, 16"	TextAlign="Right" Text="For Transfer:"/>
+					<CheckBox	Name="errh_EmpWillConvert"	Text="" Location="285, 50"	Size="80,19"	 FlatStyle="System"/>
+
+
+					<Label		Name="lbl_employmentdate"			   Location="210,  75"	  Size="75, 21" TextAlign="MiddleLeft" Text="Joined Date:"/>
+					<!--<dtp:BizDateTimePicker Name="errh_employmentdate"  Location="285, 50" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />-->
+					<TextBox	Name="txt_employmentdate"	  Location="285, 75"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>
+
+
+					<Label		Name="lbl_currentsal"	  Location="200,  100"		Size="85, 21"	TextAlign="Right" Text="Current Salary:"/>
+					<TextBox	Name="errh_currentsal"	  Location="285,100"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>
+
+					<Label		Name="lbl_newsaleffectivedate"			   Location="160,  125"		  Size="125, 21" TextAlign="MiddleLeft" Text="Last Employment Date:"/>
+					<dtp:BizDateTimePicker Name="errh_lastday"  Location="285, 125" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+          <Label		Name="lbl_effectivedate"			   Location="205,  150"		  Size="80, 21" TextAlign="MiddleLeft" Text="Effective Date:"/>
+          <dtp:BizDateTimePicker Name="errh_effectivedate"  Location="285, 150" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+
+          <Label		Name="lbl_totaldays"	  Location="10,  175"		Size="60, 21"	TextAlign="Right" Text="Send To"/>
+          <TextBox	Name="errh_sendto"	  Location="70,175"  		Size="180,21"	TabIndex="51" ReadOnly="True"/>
+          <Button	Name="Btn_send"	  Location="270,175"  		Size="80,21"	TabIndex="51" Text="Send Email"/>
+					<!--<Label		Name="lbl_lasincrementdate"			   Location="170,  100"	  Size="110, 21" TextAlign="MiddleLeft" Text="Last Increment Date:"/>
+					<dtp:BizDateTimePicker Name="errh_lasincrementdate"  Location="285, 100" ReadOnly="True"       Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+					<Label		Name="lbl_reasonforlastincre"	  Location="140,  75"		Size="175, 21"	TextAlign="Right" Text="Reason For Last Increment"/>
+					<TextBox	Name="txt_reasonforlastincre"	  Location="285,75"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>
+
+
+					<Label		Name="lbl_newsal"	  Location="210,  125"		Size="70, 21"	TextAlign="Right" Text="New Salary:"/>
+					<TextBox	Name="txt_newsal"	  Location="285,125"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>-->
+
+
+					
+				</Controls>
+			</GroupBox>
+
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

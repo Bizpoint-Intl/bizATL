@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="gstm" Key="gstgrpnum"   CompanyTitle="{languageBinding.coyname}" ModuleTitle="GST Master">
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Header" />
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

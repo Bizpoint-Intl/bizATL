@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:str="System.String, Mscorlib"
+		xmlns:def="Definition"> 
+	<Form Name="frm_AddTable" Text="{languageBinding.frm_AddTable}" ClientSize="500, 315" FormBorderStyle="FixedToolWIndow" MaximizeBox="False" MinimizeBox="False" StartPosition="CenterScreen" ShowInTaskbar="False" ControlBox="false">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<!--PictureBox Name="pcb_AddTable" Location="0, 0" Size="500, 70" TabStop="False">
+				<ele:BizPictureBoxImage FileName="Bizpoint2.bmp"/>
+				<Controls>
+					<Label Name="lbl_AddUser_Title" Location="20,10"	Size="310,50" Font="Tahoma, 9pt" BackColor="White" Text="{languageBinding.lbl_AddUser_Title}"/>
+				</Controls>
+			</PictureBox-->
+      <Label Name="lbl_AddUser_Title" Location="20,10"	Size="410,20" Font="Tahoma, 9pt" Text="{languageBinding.lbl_AddUser_Title}"/>
+      
+			<GroupBox	Name="grb_AddTableUp" Location="0, 30"	 Size="500, 3" TabStop="False" />
+			<ListView	Name="lvw_AddTable_Available"	Location="35,50" Font="Tahoma, 9pt" Size="150, 210" View="Details" LargeImageList="{imageList}" SmallImageList="{imageList}">
+				<Columns>
+					<ColumnHeader Text="Available Tables" Width="125" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+			<Button		Name="btn_AddTable_Add"		Text="{languageBinding.btn_AddTable_Add}"		Location="215,100"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<Button		Name="btn_AddTable_Remove"	Text="{languageBinding.btn_AddTable_Remove}"	Location="215,140"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<ListView	Name="lvw_AddTable_Added"	Location="315, 50"	Font="Tahoma, 9pt" Size="150, 210" View="Details" LargeImageList="{imageList}" SmallImageList="{imageList}">
+				<Columns>
+					<ColumnHeader Text="Added Tables" Width="125" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+			<GroupBox	Name="grb_AddTableDown"		Location="0, 275" Size="500, 3" TabStop="False" />
+			<Button		Name="btn_AddTable_Finish"	Location="335,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="0" Text="{languageBinding.btn_AddTable_Finish}"/>
+			<Button		Name="btn_AddTable_Cancel"	Location="420,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="1" Text="{languageBinding.btn_AddTable_Cancel}"/>
+		</Controls>
+	</Form>
+</BizXml>

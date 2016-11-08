@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <F2GridInfo Name="f2GridInfo" MainTable="dorh" Title="{languageBinding.DOR}" PageSize="{languageBinding.sys_F2_Pagesize}">
+	  <RelationTables>
+		  <rel:RelationTableInfo TableName="arm"	    DataField="arnum"	ConditionField="arnum"/>
+	  </RelationTables>
+		<F2GridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"	Width="130"	IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="arnum"		HeaderText="arnum"								Width="110"	IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="arname"	HeaderText="arname"							Width="110"	IsItem="True" SearchItem="True" SortItem="True"		TableName="arm"/>
+	</F2GridInfo>
+</BizXml>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="matm1">
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+			<bas:VirtualColumn ColumnName="pnett"	DataType="System.Decimal" DefaultValue="0.0" />
+			<bas:VirtualColumn ColumnName="pfloor"	DataType="System.Decimal" DefaultValue="0.0"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"				Width="40"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="matnum"		HeaderText="ProductCode"			Width="0"	ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="effectivedate"	HeaderText="Effective From"		Width="90" ColumnType="DateTime" VoucherSort="True"/>
+		<DetailGridColumnInfo MappingName="retail"			HeaderText="Retail($)"		Width="100" Format="0.00"/>
+		<DetailGridColumnInfo MappingName="pnett"			HeaderText=""		Width="0" ReadOnly="true" Format="0.00" />
+		<DetailGridColumnInfo MappingName="nett"			HeaderText=""		Width="0" Format="0.00"/>
+		<DetailGridColumnInfo MappingName="pfloor"			HeaderText=""		Width="0" ReadOnly="true" Format="0.00"/>
+		<DetailGridColumnInfo MappingName="floor"			HeaderText=""		Width="0" Format="0.00"/>
+	</DetailGridInfo>
+</BizXml>

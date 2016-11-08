@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="pfmsr2" Title="Salary History">
+		<DetailGridColumnInfo MappingName="matnum"		HeaderText="Appointment"			Width="100"	ReadOnly="true" />
+
+		<DetailGridColumnInfo MappingName="TotalSalary"	HeaderText="Total Salary($)"	Width="100"  ReadOnly="true"  Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="dateadjusted"	HeaderText="Date Adjusted"	Width="120" ReadOnly="True"    ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="Refnum"			Width="150"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="AdjustedCode"	HeaderText="AdjustedCode" ReadOnly="True" 	Width="130"   Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="sitenum"	HeaderText="Site" ReadOnly="True" 	Width="130"   Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="empnum"	HeaderText=""	Width="0"  ReadOnly="true"  Format="#,##0.00####" Key="True" />
+		
+		
+
+
+
+
+
+	</DetailGridInfo>
+</BizXml>
+

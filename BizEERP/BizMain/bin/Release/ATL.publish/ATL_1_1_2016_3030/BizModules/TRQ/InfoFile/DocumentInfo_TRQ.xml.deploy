@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="trqh" Key="refnum"  CompanyTitle="{languageBinding.coyname}" ModuleTitle="{languageBinding.TRQ}">
+		<RelationTables>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="requestedby" DataTableName="hemph"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="sentby"			DataTableName="hemph1"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="agreedby"		DataTableName="hemph2"/>
+      <DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="approveby"		DataTableName="hemph3"/>
+			<DocRelationTableInfo TableName="sitm"		DataField="sitenum"	ConditionField="fromsitenum"/>
+			<DocRelationTableInfo TableName="sitm"		DataField="sitenum"	ConditionField="tositenum"	DataTableName="sitm1"/>
+			<DocRelationTableInfo TableName="ctrh"		DataField="refnum"	ConditionField="ctrnum"/>
+			<DocRelationTableInfo TableName="whm"		DataField="whnum"	ConditionField="whnum"/>
+      <DocRelationTableInfo TableName="ccm"		DataField="ccnum"	ConditionField="ccnum"/>
+      <DocRelationTableInfo TableName="prjm"		DataField="projectid"	ConditionField="projectid"/>
+			<DocRelationTableInfo TableName="sem"		DataField="sectorcode"	ConditionField="sectorcode"/>
+			<DocRelationTableInfo TableName="grnh"		DataField="refnum"	ConditionField="grnrefnum" Save="True"/>
+			<DocRelationTableInfo TableName="vCTRH_ADH" DataField="refnum" ConditionField="docunum">
+			</DocRelationTableInfo>
+    </RelationTables>
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Header">
+				<F2Controls>
+					<F2Control ControlName="trqh_requestedby"  F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemph"/>
+						</RelationF2Tables>
+					</F2Control>
+          <!--<F2Control ControlName="trqh_approveby"  F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph3"/>
+            </RelationF2Tables>
+          </F2Control>-->
+					<F2Control ControlName="trqh_fromsitenum"  F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trqh_tositenum"  F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm1"/>
+						</RelationF2Tables>
+					</F2Control>					
+					<!--<F2Control ControlName="trqh_ctrnum"  F2GridInfo="F2GridInfo_CTRH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="ctrh"/>
+						</RelationF2Tables>
+					</F2Control>-->
+					<F2Control ControlName="trqh_docunum" F2GridInfo="F2GridInfo_vCTRH_ADH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="vCTRH_ADH"/>
+						</RelationF2Tables>
+					</F2Control>
+          <F2Control ControlName="trqh_ccnum" F2GridInfo="F2GridInfo_CCM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="ccm"/>
+            </RelationF2Tables>
+          </F2Control>
+          <F2Control ControlName="trqh_projectid" F2GridInfo="F2GridInfo_PRJM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="prjm"/>
+            </RelationF2Tables>
+          </F2Control>
+					<F2Control ControlName="trqh_whnum"  F2GridInfo="F2GridInfo_WHM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="whm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trqh_sectorcode"  F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+      <DocumentPageInfo FileName="detail.xml" FormName="detail" Title="Details">
+        <Details>
+          <Detail DataGridName="dg_location"  DetailGridInfo="DetailGridInfo_TRQ2.xml" CaptionText="Location Extracted"/>
+			<Detail DataGridName="dg_item"  DetailGridInfo="DetailGridInfo_TRQ1.xml" CaptionText="Items to be Issued"/>
+        </Details>
+      </DocumentPageInfo>
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Material Request(Form) - Internal"  DefaultReport="True" ReportPath="\TRQ\Report\TrqFrm.rpt" />
+			<!--<Report ReportName="Material Request(Form)"  DefaultReport="True" ReportPath="\TRQ\Report\TrqFrm2.rpt" />-->
+		</Reports>
+	</DocumentInfo>
+</BizXml>

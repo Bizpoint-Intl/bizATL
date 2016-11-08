@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="trah" Title="Material Allowed" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='TRA'" >
+		<F2GridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="fromsitenum"	HeaderText="Request Site"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="tositenum"	HeaderText="Supply Site"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="sectorcode"	HeaderText="Zone"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="senddate"	HeaderText="Date Requested"	Width="200" IsItem="True" />
+    <F2GridColumnInfo MappingName="ccnum"	HeaderText="CCNUM"	Width="0"  />
+	</F2GridInfo>
+</BizXml>

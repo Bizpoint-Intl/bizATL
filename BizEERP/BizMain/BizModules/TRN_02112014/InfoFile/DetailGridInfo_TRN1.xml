@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="TRN1" Title="Schedule">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="nric"		HeaderText="NRIC"			Width="80"	F2="True" F2GridInfo="F2GridInfo_vHemphNRIC.xml" />
+		<DetailGridColumnInfo MappingName="empnum"		HeaderText="EmpNo"			Width="80"	F2="True" F2GridInfo="F2GridInfo_HEMPH.xml" />
+		<DetailGridColumnInfo MappingName="empname"		HeaderText="Name"			Width="200"	ReadOnly="true" />
+    <DetailGridColumnInfo MappingName="matnum"		HeaderText="Designation"			Width="100"	ReadOnly="true" />
+    <DetailGridColumnInfo MappingName="sitenum"		HeaderText="Department/Site"			Width="100"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+    <DetailGridColumnInfo MappingName="isPass"  		  HeaderText=""		  Width="0" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="isFailed"  		  HeaderText=""		  Width="0" 	ColumnType="CheckBox"/>
+
+    <DetailGridColumnInfo MappingName="staffstatus"			  HeaderText="Status"		Width="60" ColumnType="ComboBox" >
+      <ComboBoxItems>
+        <bas:ComboBoxItem DisplayMember="P"			ValueMember="P"/>
+        <bas:ComboBoxItem DisplayMember="F"			ValueMember="F"/>
+      </ComboBoxItems>
+    </DetailGridColumnInfo>
+    
+    
+    <DetailGridColumnInfo MappingName="isFullTime"  		  HeaderText=""		  Width="0" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="isRejected"  		  HeaderText="Rejected"		  Width="60" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="noshow"  		  HeaderText="NoShow"		  Width="60" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="funding"		HeaderText=""			Width="0"	 />
+    <DetailGridColumnInfo MappingName="recommendreason"		HeaderText=""			Width="0"	 />
+    <DetailGridColumnInfo MappingName="rejectreason"		HeaderText=""			Width="0"	 />
+    <DetailGridColumnInfo MappingName="remark"		HeaderText="Remarks"			Width="300"	 />
+	</DetailGridInfo>
+</BizXml>
+

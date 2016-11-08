@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <DetailGridInfo Name="detailGridInfo" MainTable="wor1" Title="New Task">
+    <RelationTables>
+      <bas:RelationTableInfo TableName="pdm"	DataField="svccode"	ConditionField="svccode"/>
+      <bas:RelationTableInfo TableName="sitm"	DataField="sitenum"	ConditionField="sitenum"/>
+      <bas:RelationTableInfo TableName="hemph"	DataField="empnum"	ConditionField="zempnum"/>
+    </RelationTables>
+    <VirtualColumns>
+      <bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+      <bas:VirtualColumn ColumnName="button"	DataType="System.String" DefaultValue="View" />
+    </VirtualColumns>
+    <DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+    <!--<DetailGridColumnInfo MappingName="zempnum"			  HeaderText="Zone Sup"	  	Width="90"  F2="True" F2GridInfo="F2GridInfo_HEMPH.xml"/>-->
+    <DetailGridColumnInfo MappingName="zempnum"			  HeaderText=""	  	Width="0"  F2="True" F2GridInfo="F2GridInfo_HEMPH.xml">
+      <RelationF2Columns>
+        <RelationF2Column ColumnName="empname"	F2MappingName="empname"/>
+      </RelationF2Columns>
+    </DetailGridColumnInfo>
+    <DetailGridColumnInfo MappingName="empname"	HeaderText=""	Width="0"         ReadOnly="True" TableName="hemph"/>
+
+    <DetailGridColumnInfo MappingName="sitenum"	HeaderText=""	Width="0"          F2="True" F2GridInfo="F2GridInfo_SITM.xml">
+      <RelationF2Columns>
+        <RelationF2Column ColumnName="sitename"	F2MappingName="sitename"/>
+      </RelationF2Columns>
+    </DetailGridColumnInfo>
+    <DetailGridColumnInfo MappingName="sitename"	HeaderText=""	Width="0"         ReadOnly="True" TableName="sitm"/>
+    <DetailGridColumnInfo MappingName="locnum"	HeaderText="Location"	 Width="100"         />
+    <DetailGridColumnInfo MappingName="svccode"	HeaderText="Service Code"	Width="100"          F2="True" F2GridInfo="F2GridInfo_PDM.xml">
+      <RelationF2Columns>
+        <RelationF2Column ColumnName="svcdesc"	F2MappingName="svcdesc"/>
+      </RelationF2Columns>
+    </DetailGridColumnInfo>
+    <DetailGridColumnInfo MappingName="svcdesc"	HeaderText="Description"	Width="200"         ReadOnly="True" TableName="pdm"/>
+    <DetailGridColumnInfo MappingName="p1"  		  HeaderText="L1"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p2"  		  HeaderText="L2"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p3"  		  HeaderText="L3"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p4"  		  HeaderText="L4"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p5"  		  HeaderText="L5"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p6"  		  HeaderText="L6"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="p7"  		  HeaderText="L7"		  Width="40" 	ColumnType="CheckBox"/>
+
+    <DetailGridColumnInfo MappingName="frequencycode"	HeaderText="Freqency"	 Width="70"  F2="True" F2GridInfo="F2GridInfo_FQM.xml"     />
+    <DetailGridColumnInfo MappingName="ldone"	HeaderText="Last Done"	 Width="100"    ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"    />
+    <DetailGridColumnInfo MappingName="eddate"	HeaderText="Estimated Date"   	 Width="100"   ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+    <DetailGridColumnInfo MappingName="mcdate"	HeaderText="Manual"	 Width="100"        ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+    <DetailGridColumnInfo MappingName="cdate"			  HeaderText="Date"	   ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"	Width="100" />
+    <DetailGridColumnInfo MappingName="remark"	HeaderText="Remarks"	 Width="150"         />
+    <DetailGridColumnInfo MappingName="button"		HeaderText=""			Width="0"	ColumnType="TextBox" />
+    <DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	 Key="True"/>
+    <DetailGridColumnInfo MappingName="ctrnum"	HeaderText="docunum"	 Width="100"       ReadOnly="True"  />
+  </DetailGridInfo>
+</BizXml>
+

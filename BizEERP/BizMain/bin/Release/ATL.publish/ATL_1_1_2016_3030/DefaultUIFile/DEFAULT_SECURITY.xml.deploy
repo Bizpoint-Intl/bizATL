@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="frm_Security" Text="Security" Tag="Security" BackColor="0,78,152">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<Panel Name="pan_Security" BackColor="Control" Dock="Fill">
+				<Controls>
+					<ListView Name="lvw_Security" Dock="Fill"	Font="Tahoma, 10pt" LargeImageList="{imageList}" SmallImageList="{imageList}" FullRowSelect="True" MultiSelect="False" ForeColor="Black"/>
+					<Splitter Name="slt_Security" Dock="Left"	MinExtra="100"		MinSize="150" />
+					<TreeView Name="tvw_Security" Dock="Left"	Font="Tahoma, 10pt" ImageList="{imageList}" ItemHeight="18" Width="230" LabelEdit="True">
+						<Nodes>
+							<TreeNode Name="trn_Security" Text="Security" ImageIndex="14" SelectedImageIndex="14">
+								<Nodes>
+									<TreeNode Name="trn_User"	Text="Users"	ImageIndex="10" SelectedImageIndex="10"/>
+									<TreeNode Name="trn_Group"	Text="Groups"	ImageIndex="11" SelectedImageIndex="11"/>
+									<TreeNode Name="trn_Module"	Text="Modules"	ImageIndex="12" SelectedImageIndex="12"/>
+									<TreeNode Name="trn_Report"	Text="Reports"	ImageIndex="13" SelectedImageIndex="13"/>
+								</Nodes>
+							</TreeNode>
+						</Nodes>
+					</TreeView>
+				</Controls>
+			</Panel>
+			<StatusBar Name="stb_Security"/>
+		</Controls>
+	</Form>
+</BizXml>

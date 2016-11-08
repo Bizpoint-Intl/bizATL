@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:def="Definition" 
+		xmlns:str="System, mscorlib">
+	<Form Name="frm_Extract" AutoScaleBaseSize="6,14" ClientSize="720,540" StartPosition="CenterScreen" FormBorderStyle="FixedToolWindow" MaximizeBox="false" ShowInTaskbar="False" Closing="frm_Extract_Closing">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<GroupBox Name="grp_Extract_Filter" Text="{languageBinding.grp_Extract_Filter}" Location="25,10" Size="550, 125" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma825Bold}">
+				<Controls>
+					<!--Search0-->
+					<Label		Name="lbl_Extract_Filter0"	Location="20, 25" Size="120,20" TabIndex="0" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825Bold}"/>
+					<TextBox	Name="txt_Extract_From0"	Location="160,20" Size="175,20" TabIndex="1" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<TextBox	Name="txt_Extract_To0"		Location="355,20" Size="175,20" TabIndex="2" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<!--Search1-->
+					<Label		Name="lbl_Extract_Filter1"	Location="20, 50" Size="120,20" TabIndex="3" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825Bold}"/>
+					<TextBox	Name="txt_Extract_From1"	Location="160,45" Size="175,20" TabIndex="4" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<TextBox	Name="txt_Extract_To1"		Location="355,45" Size="175,20" TabIndex="5" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<!--Search2-->
+					<Label		Name="lbl_Extract_Filter2"	Location="20, 75" Size="120,20" TabIndex="6" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825Bold}"/>
+					<TextBox	Name="txt_Extract_From2"	Location="160,70" Size="175,20" TabIndex="7" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<TextBox	Name="txt_Extract_To2"		Location="355,70" Size="175,20" TabIndex="8" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<!--Search3-->
+					<Label		Name="lbl_Extract_Filter3"	Location="20,100" Size="120,20" TabIndex=" 9" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825Bold}"/>
+					<TextBox	Name="txt_Extract_From3"	Location="160,95" Size="175,20" TabIndex="10" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+					<TextBox	Name="txt_Extract_To3"		Location="355,95" Size="175,20" TabIndex="11" FlatStyle="System" Visible="False" Font="{languageBinding.Tahoma825}" CharacterCasing="Upper"/>
+				</Controls>
+			</GroupBox>
+			<!--Sort-->
+			<GroupBox Name="grp_Extract_Sort" Text="{languageBinding.grp_Extract_Sort}" Location="25,140" Size="550, 50" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma825Bold}">
+				<Controls>
+					<ComboBox Name="cmb_Extract_Sort0" Location="20, 20" Size="120,20" TabIndex="19" FlatStyle="System" Font="{languageBinding.Tahoma825}" DropDownWidth="90" ItemHeight="12" MaxDropDownItems="10" Visible="False"/>
+					<ComboBox Name="cmb_Extract_Sort1" Location="150,20" Size="120,20" TabIndex="20" FlatStyle="System" Font="{languageBinding.Tahoma825}" DropDownWidth="90" ItemHeight="12" MaxDropDownItems="10" Visible="False"/>
+					<ComboBox Name="cmb_Extract_Sort2" Location="280,20" Size="120,20" TabIndex="21" FlatStyle="System" Font="{languageBinding.Tahoma825}" DropDownWidth="90" ItemHeight="12" MaxDropDownItems="10" Visible="False"/>
+					<ComboBox Name="cmb_Extract_Sort3" Location="410,20" Size="120,20" TabIndex="22" FlatStyle="System" Font="{languageBinding.Tahoma825}" DropDownWidth="90" ItemHeight="12" MaxDropDownItems="10" Visible="False"/>
+				</Controls>
+			</GroupBox>
+			<!--DataGrid-->
+			<DataGrid Name="dg_Extract" Location="0, 210" Size="720,330" Font="Tahoma, 9pt" CaptionVisible="False" TabIndex="157" FlatStyle="System"/>
+			<!--Button-->
+			<Button Name="btn_Extract_Filter"		Text="{languageBinding.btn_Extract_Filter}"		Location="610,20" TabIndex="23" Visible="True" Font="{languageBinding.Tahoma825Bold}" FlatStyle="System" Click="btn_Filter_Click"/>
+			<Button Name="btn_Extract_Extract"		Text="{languageBinding.btn_Extract_Extract}"	Location="610,50" TabIndex="24" Visible="True" Font="{languageBinding.Tahoma825Bold}" FlatStyle="System" Click="btn_Extract_Click" Enabled="False" />
+			<Button Name="btn_Extract_MarkAll"		Text="{languageBinding.btn_Extract_MarkAll}"	Location="610,80" TabIndex="26" Visible="True" Font="{languageBinding.Tahoma825Bold}" FlatStyle="System" Click="btn_MarkAll_Click"/>
+			<Button Name="btn_Extract_UnMarkAll"	Text="{languageBinding.btn_Extract_UnMarkAll}"	Location="610,110" TabIndex="27" Visible="True" Font="{languageBinding.Tahoma825Bold}" FlatStyle="System" Click="btn_UnMarkAll_Click"/>
+			<Button Name="btn_Extract_Exit"			Text="{languageBinding.btn_Extract_Exit}"		Location="610,140" TabIndex="28" Visible="True" Font="{languageBinding.Tahoma825Bold}" FlatStyle="System" Click="btn_Exit_Click"/>
+		</Controls>
+	</Form>
+</BizXml>

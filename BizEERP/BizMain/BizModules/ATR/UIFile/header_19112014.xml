@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" ScrollBars="Vertical" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+			<Button	Name="Btn_Extract"		Text="Extract"		Location="350, 25"	Size="60, 23" TabIndex="5" Click="btn_Extract_Click"/>
+
+			<Label		Name="lbl_created"			   Location="425,  25"	  Size="50, 21" TextAlign="MiddleLeft" Text="Date"/>
+
+			<dtp:BizDateTimePicker Name="atr_trandate"  Location="475, 25"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+			
+			
+
+			<GroupBox	Name="grb_atrprofileinfo"		  Location="10, 5"		Size="725,430" 	Text="Profile Information" >
+				<Controls>
+					<Label		Name="lbl_wrrnum"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="WRR no"/>
+					<TextBox	Name="atr_wrrnum"	  Location="95,25"		Size="180,21"	TabIndex="51"/>
+          
+          
+
+					<Label		Name="lbl_wrrdate"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="WRR Date"/>
+					<Label		Name="lbl_sector"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Sector Code"/>
+					<Label		Name="lbl_sitenum"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Site No:"/>
+
+					<Label		Name="lbl_wrrFromDate"	  Location="95, 50"		Size="35, 16"	TextAlign="Right" Text="From:"/>
+					<TextBox	Name="atr_wrrFromDate"	  Location="130,50"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>
+
+					<Label		Name="lbl_wrrToDate"	  Location="95,  75"		Size="35, 16"	TextAlign="Right" Text="To:"/>
+					<TextBox	Name="atr_wrrToDate"	  Location="130,75"		Size="80, 21" ReadOnly="True" 	TabIndex="51"/>
+
+					<TextBox	Name="atr_sectorcode"	  Location="95,100"		Size="180,21" ReadOnly="True" 	TabIndex="51"/>
+					<TextBox	Name="atr_sitenum"	  Location="95,125"		Size="180,21" ReadOnly="True" 	TabIndex="51"/>
+					<Label		Name="lbl_Controller"	  Location="10,  150"		Size="80, 16"	TextAlign="Right" Text="Controller"/>
+					<TextBox	Name="atr_controller"	  Location="95,150"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_dutyopsexec1"	  Location="10,  175"		Size="80, 16"	TextAlign="Right" Text="Duty Ops Exec"/>
+					<TextBox	Name="atr_dutyopsexec1"	  Location="95,175"		Size="180,21"	TabIndex="51"/>
+					<Label		Name="lbl_dutyopsexec2"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="Duty Ops Exec"/>
+					<TextBox	Name="atr_dutyopsexec2"	  Location="95,200"		Size="180,21"	TabIndex="51"/>
+					<Label		Name="lbl_dutyopsexec3"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Duty Ops Exec"/>
+					<TextBox	Name="atr_dutyopsexec3"	  Location="95,225"		Size="180,21"	TabIndex="51"/>
+					<Label		Name="lbl_dutyopsexec4"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Duty Ops Exec"/>
+					<TextBox	Name="atr_dutyopsexec4"	  Location="95,250"		Size="180,21"	TabIndex="51"/>
+
+		
+				</Controls>
+			</GroupBox>
+
+
+
+			<Label		Name="lbl_remark"	Location="10, 435" Size="150, 21"		Text="Remarks:"/>
+			<TextBox	Name="atr_remark" Location="10, 465" Size="320, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+		</Controls>
+	</Form>
+</BizXml>

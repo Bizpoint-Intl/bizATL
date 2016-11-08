@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="finrpth" Title="Financial Statement Worksheet" DocumentInfo="DocumentInfo_FINRPT.xml"  DeletedInfo="true">
+    <VoucherGridColumnInfo		MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="130"		SearchItem="True" ConfirmItem="True" RefreshItem="True" PrintItem="True" Key="True" VoucherSort="True" SortType="DESC"/>
+    <VoucherGridColumnInfo		MappingName="title"			HeaderText="Title"			Width="200"/>
+    <VoucherGridColumnInfo		MappingName="trandate"	HeaderText="{languageBinding.trandate}"	Width="80"		SearchItem="True"  ColumnType="DateTime"/>
+    <VoucherGridColumnInfo		MappingName="status"		HeaderText="{languageBinding.status}"		Width="50"/>  
+	  <VoucherGridColumnInfo		MappingName="[user]"		HeaderText="{languageBinding.user}"			Width="85"/>
+	  <VoucherGridColumnInfo		MappingName="period"		HeaderText="{languageBinding.period}"		Width="50"		ConfirmItem="True" RefreshItem="True" Key="True"/>		
+  </VoucherGridInfo>
+</BizXml>

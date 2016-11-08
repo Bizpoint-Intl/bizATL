@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="cseh" Key="coursecode" CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.CSEH}">
+		<!-- regm -->
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Page"/>
+		</DocumentPages>
+		<!-- regd -->
+		<!--DocumentPageInfo FileName="States.xml"	FormName="states"	Title="States">
+			<Details>
+				<Detail DataGridName="dg_States"	DetailGridInfo="DetailGridInfo_States.xml" CaptionText="States"/>
+			</Details>
+		</DocumentPageInfo-->
+	</DocumentInfo>
+</BizXml>

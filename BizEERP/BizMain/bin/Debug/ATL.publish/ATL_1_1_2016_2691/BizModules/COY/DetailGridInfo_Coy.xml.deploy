@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="coy">
+    <VirtualColumns>
+      <bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+    </VirtualColumns>
+    <DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="coy"			  HeaderText="Company"			  Width="60"	ReadOnly="True"	Key="True"/>
+		<DetailGridColumnInfo MappingName="coyname"		HeaderText="{languageBinding.coyname}"		Width="200"/>
+		<DetailGridColumnInfo MappingName="coyaddr1"	HeaderText="Coy Address(1)"		Width="200"/>
+		<DetailGridColumnInfo MappingName="coyaddr2"	HeaderText="Coy Address(2)"		Width="200"/>
+		<DetailGridColumnInfo MappingName="coyaddr3"	HeaderText="Coy Address(3)"		Width="200"/>
+		<DetailGridColumnInfo MappingName="coyaddr4"	HeaderText="Coy Address(4)"		Width="200"/>
+		<DetailGridColumnInfo MappingName="coyemail"	HeaderText="Coy Email"		Width="100"/>
+		<DetailGridColumnInfo MappingName="coyurl"		HeaderText="Coy URL"		  Width="100"/>
+		<DetailGridColumnInfo MappingName="coytel"		HeaderText="Coy Phone"		  Width="100"/>
+		<DetailGridColumnInfo MappingName="coyfax"		HeaderText="Coy Fax"		  Width="100"/>
+		<DetailGridColumnInfo MappingName="coyregnum"	HeaderText="Coy Registration No"	Width="130"/>
+		<DetailGridColumnInfo MappingName="coygstnum"	HeaderText="Coy Tax No"	Width="130"/>
+    <DetailGridColumnInfo MappingName="cpfregnum"	HeaderText="Coy CPF Registration No"	Width="130"/>		
+		<DetailGridColumnInfo MappingName="apnum"			HeaderText="Default Supplier Code"		Width="130"/> 
+		<DetailGridColumnInfo MappingName="arnum"			HeaderText="Default Customer Code"		Width="130"/>
+		<DetailGridColumnInfo MappingName="ccnum"			HeaderText="Default Cost Center"		Width="130"/>
+		<DetailGridColumnInfo MappingName="whnum"			HeaderText="Defailt Warehouse"		Width="130"/>		
+    <DetailGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"			  Width="100" ReadOnly="True"	/>
+		<DetailGridColumnInfo MappingName="modified"	HeaderText="Last Modified"		Width="130" ReadOnly="True"/>
+	</DetailGridInfo>
+</BizXml>

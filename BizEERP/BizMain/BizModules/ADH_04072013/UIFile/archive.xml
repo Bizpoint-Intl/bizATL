@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="archive" Text="Archive" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+			<Controls>
+				<GroupBox	Name="grb_documents1"		  Location="3, 5"		Size="734,50" 	Text="" >
+					<Controls>
+					<Button Name="adh10_btnBrowseEdu" Text="Upload" Location="10, 15" Size="68, 23"  UseVisualStyleBackColor="True" TabIndex="19">
+					</Button>
+					<Button Name="adh10_btnDownloadEdu" Text="Download" Location="110, 15" Size="68, 23"  UseVisualStyleBackColor="True" TabIndex="19">
+					</Button>
+					</Controls>
+				</GroupBox>
+
+
+				<GroupBox	Name="grb_documents2"		  Location="3, 55"		Size="734,460" 	Text="" >
+					<Controls>
+						<DataGrid	Name="dg_archive" Location="3, 5"	Size="732, 450"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+					</Controls>
+				</GroupBox>
+
+
+			</Controls>
+	</Form>
+</BizXml>
+

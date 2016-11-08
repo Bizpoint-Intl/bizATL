@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="porh" Key="refnum" CompanyTitle="{languageBinding.coyBizAcct}" ModuleTitle="{languageBinding.itemPOR}">
+		<RelationTables>
+      <DocRelationTableInfo TableName="vCTRH_ADH" DataField="refnum" ConditionField="docunum2" />
+      
+			<DocRelationTableInfo	TableName="apm" DataField="apnum" ConditionField="apnum">
+				<Fields>
+					<Field ColumnName="apname"/>
+					<Field ColumnName="address"/>
+					<Field ColumnName="phone"/>
+					<Field ColumnName="hp"/>
+					<Field ColumnName="fax"/>
+          <Field ColumnName="ptc"/>
+          <Field ColumnName="oricur"/>
+          <Field ColumnName="ptnum"/>
+          <Field ColumnName="gstgrpnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="gstm" DataField="gstgrpnum" ConditionField="gstgrpnum">
+				<Fields>
+					<Field ColumnName="gstgrpname"/>
+					<Field ColumnName="gsttype"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>
+      <DocRelationTableInfo TableName="trqh" DataField="refnum" ConditionField="ponum" />
+      
+      
+			<DocRelationTableInfo TableName="ptm" DataField="ptnum" ConditionField="payterms"/>
+    </RelationTables>
+		<DocumentPages>
+
+			<!-- porh -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"		Title="Header">
+				<F2Controls>
+          <F2Control ControlName="porh_docunum2" F2GridInfo="F2GridInfo_vCTRH_ADH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="vCTRH_ADH"/>
+            </RelationF2Tables>
+          </F2Control>
+          
+					<F2Control ControlName="porh_apnum" F2GridInfo="F2GridInfo_APM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="apm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+          <F2Control ControlName="porh_ponum" F2GridInfo="F2GridInfo_TRQH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="trqh"/>
+            </RelationF2Tables>
+          </F2Control>
+          
+					<F2Control ControlName="porh_payterms" F2GridInfo="F2GridInfo_PTM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="ptm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="porh_gstgrpnum" F2GridInfo="F2GridInfo_GSTM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="gstm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="porh_oricur" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+      <DocumentPageInfo FileName="Detail.xml"		FormName="detail"		Title="Items">
+        <Details>
+          <Detail DataGridName="dg_Detail1"	DetailGridInfo="DetailGridInfo_Detail1.xml" CaptionText="Purchase Order Detail"/>
+        </Details>
+      </DocumentPageInfo>
+      <DocumentPageInfo FileName="Detail2.xml"		FormName="detail2"		Title="Serial">
+        <Details>
+          <Detail DataGridName="dg_Detail2"	DetailGridInfo="DetailGridInfo_POR2.xml" CaptionText="Purchase Order Detail"/>
+        </Details>
+      </DocumentPageInfo>
+    </DocumentPages>
+    <Reports>
+      <Report ReportName="Purchase Order"  DefaultReport="True" ReportPath="\POR\Report\porRpt.rpt"/>
+      <!--<Report ReportName="Purchase Order2"   ReportPath="\POR\Report\porRpt2.rpt"/>
+      <Report ReportName="Purchase Order3"  DefaultReport="True" ReportPath="\POR\Report\porRpt3.rpt"/>-->
+    </Reports>
+  </DocumentInfo>
+</BizXml>

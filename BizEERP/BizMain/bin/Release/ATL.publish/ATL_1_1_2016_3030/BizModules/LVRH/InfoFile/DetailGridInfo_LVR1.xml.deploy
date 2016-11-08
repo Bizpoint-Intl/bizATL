@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="lvr1" Title="Leave Lists">
+		<DetailGridColumnInfo MappingName="lvmnum"	HeaderText="Leave Code"	Width="120"        ReadOnly="True"     Format="#,##0.00####"    />
+		<DetailGridColumnInfo MappingName="description"	HeaderText="" ReadOnly="True" 	Width="00"       Format="#,##0.00####"   />
+		<DetailGridColumnInfo MappingName="daysleft"	HeaderText="Days" ReadOnly="True" 	Width="80"       Format="#,##0.00####"   />
+		<DetailGridColumnInfo MappingName="leaveyear"	HeaderText="" ReadOnly="True" 	Width="0"       Format="#,##0.00####"   />
+
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>	
+	</DetailGridInfo>
+</BizXml>
+

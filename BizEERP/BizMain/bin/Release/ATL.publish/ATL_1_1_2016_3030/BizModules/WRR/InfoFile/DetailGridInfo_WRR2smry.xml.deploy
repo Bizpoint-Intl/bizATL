@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="wrr2sum" Title="Night Shift Summary">
+    <DetailGridColumnInfo MappingName="matnum"	HeaderText="Appointment"	Width="130"  ReadOnly="True" Format="#,##0.00####"/>
+    <DetailGridColumnInfo MappingName="shiftcode"	HeaderText="Shift"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="monday"	HeaderText="MON"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="tuesday"	HeaderText="TUE"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="wednesday"	HeaderText="WED"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="thursday"	HeaderText="THU"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="friday"	HeaderText="FRI"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="saturday"	HeaderText="SAT"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="sunday"	HeaderText="SUN"	Width="50"  ReadOnly="True" Format="#,##0.00####"/>
+
+
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

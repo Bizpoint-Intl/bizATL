@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="grn1"	ExtractGridInfo="ExtractGridInfo_GRNE.xml">
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<!--<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"				Width="35"	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="ponum"			HeaderText="POR No."				Width="90" ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="matnum"		HeaderText="{languageBinding.matnum}"			Width="120"  F2="True"  F2GridInfo="F2GridInfo_MATM.xml"/>
+		<DetailGridColumnInfo MappingName="detail"			HeaderText="{languageBinding.detail}"				Width="300"/>
+		<DetailGridColumnInfo MappingName="qty"			HeaderText="{languageBinding.qty}"				Width="60"/>
+
+    <DetailGridColumnInfo MappingName="uomcode"			HeaderText="{languageBinding.uom}"				Width="60"	F2="True"  F2GridInfo="F2GridInfo_UOM.xml"/>
+    <DetailGridColumnInfo MappingName="uom"			HeaderText="Base UOM"				Width="60"	ReadOnly="true"/>
+
+    <DetailGridColumnInfo MappingName="price"			HeaderText="{languageBinding.unitprice}"			Width="80"/>
+		<DetailGridColumnInfo MappingName="grosamt"		HeaderText="{languageBinding.grosamt}"			Width="80"/>
+		<DetailGridColumnInfo MappingName="discamt"		HeaderText="{languageBinding.discamt}"			Width="80"/>
+
+    <DetailGridColumnInfo MappingName="sn"		HeaderText="S/N"			Width="30" ColumnType="CheckBox"/>
+
+    <DetailGridColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.detail1_oriamt}"	Width="80" 	ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="memo"		HeaderText="Memo"			Width="300"/>
+
+    <DetailGridColumnInfo MappingName="remark"		HeaderText="{languageBinding.remarks}"			Width="300"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"			Width="0"	ReadOnly="true" Key="True"/>
+    <DetailGridColumnInfo MappingName="line"        HeaderText="{languageBinding.matnum}"           Width="0"      Sort="True"/>-->
+
+    <DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"				Width="35"	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="matnum"		HeaderText="ProductNo"			Width="120"  F2="True"  F2GridInfo="F2GridInfo_MATM.xml"/>
+    <DetailGridColumnInfo MappingName="apmatnum"		HeaderText="APProductNo"			Width="120"  F2="True"  F2GridInfo="F2GridInfo_MATM2_1.xml"/>
+    <DetailGridColumnInfo MappingName="detail"			HeaderText="{languageBinding.detail}"				Width="200"/>
+
+    <DetailGridColumnInfo MappingName="pqty"			HeaderText="P. QTY"				Width="60"/>
+    <DetailGridColumnInfo MappingName="uomcode"			HeaderText="P UOM"				Width="60" F2="True"   F2GridInfo="F2GridInfo_UOM.xml"/>
+    <DetailGridColumnInfo MappingName="uomqty"		HeaderText="Convertion Factor"			Width="80"  ReadOnly="True"/>
+    <DetailGridColumnInfo MappingName="qty"			HeaderText="Base QTY"				Width="60" ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="uom"			HeaderText="Base UOM"				Width="60"	ReadOnly="true"/>
+
+    <!--<DetailGridColumnInfo MappingName="qty"			HeaderText=""				Width="0" ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="uom"			HeaderText=""				Width="0"	ReadOnly="true"/>-->
+
+    <DetailGridColumnInfo MappingName="uprice"			HeaderText=""			Width="0"/>
+    <DetailGridColumnInfo MappingName="price"			HeaderText="{languageBinding.unitprice}"			Width="80"/>
+    <DetailGridColumnInfo MappingName="grosamt"		HeaderText="{languageBinding.grosamt}"			Width="80"/>
+    <DetailGridColumnInfo MappingName="discamt"		HeaderText="{languageBinding.discamt}"			Width="80"/>
+    <DetailGridColumnInfo MappingName="oriamt"		HeaderText="{languageBinding.detail1_oriamt}"	Width="80" 	ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="memo"		HeaderText="Memo"			Width="300"/>
+    <DetailGridColumnInfo MappingName="remark"		HeaderText="{languageBinding.remarks}"			Width="300"/>
+    <DetailGridColumnInfo MappingName="sn"		HeaderText="S/N"			Width="35" ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="whnum"			HeaderText="WHNUM"		Width="80" F2="True" F2GridInfo="F2GridInfo_WHM.xml"/>
+    <DetailGridColumnInfo MappingName="ccnum"		HeaderText="CCNUM"			Width="120"  F2="True"  F2GridInfo="F2GridInfo_CCM.xml"/>
+    <DetailGridColumnInfo MappingName="projectid"		HeaderText="ProjectID"			Width="100"  F2="True"  F2GridInfo="F2GridInfo_PRJM.xml"/>
+
+    <!--<DetailGridColumnInfo MappingName="modelcode"		HeaderText="Convertion Factor"			Width="120"/>-->
+    <DetailGridColumnInfo MappingName="pbrdcode"		HeaderText="Manufacturer"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PBRD.xml"/>
+    <DetailGridColumnInfo MappingName="ploftcode"		HeaderText="Loft"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PLFT.xml"/>
+    <DetailGridColumnInfo MappingName="pflexcode"		HeaderText="Flex"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PFLX.xml"/>
+    <DetailGridColumnInfo MappingName="pshfcode"		HeaderText="Shalf"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PSHF.xml"/>
+    <DetailGridColumnInfo MappingName="pcolcode"		HeaderText="Color"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PCOL.xml"/>
+    <DetailGridColumnInfo MappingName="pszcode"		HeaderText="Size"			Width="80"  F2="True"  F2GridInfo="F2GridInfo_PSZ.xml"/>
+    <DetailGridColumnInfo MappingName="boxno"		HeaderText="Box No"			Width="80"/>
+    <DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"			Width="0"	ReadOnly="true" Key="True"/>
+    <DetailGridColumnInfo MappingName="line"        HeaderText="{languageBinding.matnum}"           Width="0"      Sort="True"/>
+  </DetailGridInfo>
+</BizXml>

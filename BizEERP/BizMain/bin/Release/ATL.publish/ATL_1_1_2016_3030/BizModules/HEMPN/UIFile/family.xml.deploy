@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="family" Text="Families" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid	Name="dg_Family" Location="0, 0"	Size="736,535"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+      <DataGrid	Name="dg_contactinfos" Location="0, 0"	Size="0,0"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}" Visible="False"/>
+		</Controls>
+	</Form>
+</BizXml>

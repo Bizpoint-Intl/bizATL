@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="1" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_detail"					Location=" 10, 5"	Size="90, 16"		TextAlign="MiddleLeft"	Text="Journal Detail"/>
+			<TextBox	Name="favth_detail"				Location="107, 5"	Size="220,21"		TabIndex="1"/>
+			<Label		Name="lbl_trandate"				Location="330, 5"	Size="60, 16"		TextAlign="MiddleLeft"	Text="Trandate"/>
+				<dtp:BizDateTimePicker	Name="favth_trandate"	Location="390, 5"	Size=" 90, 20"		TabIndex="1"/>
+			<Label		Name="lbl_aropen"				Location="495, 5"	Size="20, 16"		TextAlign="MiddleLeft"	Text="AR"/>
+			<CheckBox	Name="favth_aropen"			Location="515, 5"	Size="20,21"		TabIndex="1"/>
+			<Label		Name="lbl_apopen"				Location="535, 5"	Size="20, 16"		TextAlign="MiddleLeft"	Text="AP"/>
+			<CheckBox	Name="favth_apopen"			Location="555, 5"	Size="20,21"		TabIndex="1"/>
+			<Label		Name="lbl_cshopen"				Location="575, 5"	Size="25, 16"		TextAlign="MiddleLeft"	Text="CSH"/>
+			<CheckBox	Name="favth_cshopen"			Location="600, 5"	Size="20,21"		TabIndex="1"/>
+			<Label		Name="lbl_glopen"				Location="620, 5"	Size="20,16"		TextAlign="MiddleLeft"	Text="GL"/>
+			<CheckBox	Name="favth_glopen"			Location="640, 5"	Size="20,21"		TabIndex="1"/>
+			<Button		Name="btn_getOB"				Location="660, 5"	Size="70,23"		TabIndex="1"		Text="Get OB" 				Click="btn_Add_Click"/>
+
+			<GroupBox	Name="grp_VoucherInfo"		Location="5, 30" Text="Voucher Info" Size="725,95">
+				<Controls>
+					<Label		Name="lbl_vouchernum"		Location=" 10, 15"	Size="90, 16"		TextAlign="MiddleLeft"	Text="Voucher No."/>
+					<TextBox	Name="txt_vouchernum"	Location="100, 15"	Size="110,21"		TabIndex="1"/>
+					<Label		Name="lbl_chequeno"		Location="220, 15"	Size="60, 16"		TextAlign="MiddleLeft"	Text="Cheque No."/>
+					<TextBox	Name="txt_chequeno"		Location="280, 15"	Size="100,21"		TabIndex="1"/>
+					<Label		Name="lbl_trandate"			Location="390, 15"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Trandate."/>
+						<dtp:BizDateTimePicker	Name="txt_trandate" 	Location="450, 15"	Size=" 120, 20"		TabIndex="1"/>
+					<Label		Name="lbl_arnum"				Location="10, 40"		Size="60, 16"		TextAlign="MiddleLeft"	Text="Customer"/>
+					<TextBox	Name="txt_arname"			Location="300, 40"	Size="80,21"		TabStop="False"  CharacterCasing="Upper" ReadOnly="True"/>
+					<Label		Name="lbl_apnum"			Location="390, 40"	Size="60, 16"		TextAlign="MiddleLeft"	Text="Supplier"/>
+					<TextBox	Name="txt_apname"			Location="640, 40"	Size="80,21"		TabStop="False"  CharacterCasing="Upper" ReadOnly="True"/>
+					<Label		Name="lbl_jvTemplate"		Location="570, 15"	Size="50, 16"		TextAlign="MiddleLeft"	Text="JV Temp"/>
+					<TextBox	Name="favth_jvtemplate"	Location="625, 15"	Size="95,21"		TabStop="False"  CharacterCasing="Upper"/>
+					<Label		Name="lbl_instruction"		Location="10, 65"	Size="380, 35"	Multiline="True" TextAlign="MiddleLeft"	Text="To edit Voucher Info, key in Voucher No, press F11 to load and F12 to save the entry"  ForeColor="RoyalBlue"/>
+					<Label		Name="lbl_invdate"			Location="390, 65"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Inv. Date"/>
+						<dtp:BizDateTimePicker	Name="txt_invdate"	Location="440, 65"	Size=" 120, 20"		TabIndex="2"/>
+					<Button		Name="btn_Add"				Location="610, 65"	Size="110,23"		TabIndex="2"		Text="Add" 				Click="btn_Add_Click"/>
+			</Controls>
+			</GroupBox>
+			
+			<GroupBox	Name="grp_TransactionInfo"	Location="5,125" Text="Transactions Info" Size="725,110">
+				<Controls>
+					<Label		Name="lbl_accnum"			Location=" 10, 15"	Size="40, 16"		TextAlign="MiddleLeft"	Text="Acc No."/>
+					<TextBox	Name="txt_accname"		Location="300, 15"	Size="80,21"		TabStop="False"  CharacterCasing="Upper" ReadOnly="True"/>
+
+					<!--<TextBox	Name="favth_oricur"			Location="10, 55"		Size="50,21"		TabIndex="2"/>
+					<TextBox	Name="favth_exrate"		Location="60, 55"		Size="70,21"		TabIndex="2" TextAlign="Right"/>-->
+
+          <ComboBox	Name="cbo_oricur"			Location="10, 55"	Size="50,21"		TabIndex="2"/>
+          
+					<Label		Name="lbl_oridebit"			Location="180, 38"	Size="90, 16"		TextAlign="MiddleLeft"	Text="Debit"/>
+					<Label		Name="lbl_oricredit"			Location="300, 38"	Size="90, 16"		TextAlign="MiddleLeft"	Text="Credit"/>
+					<TextBox	Name="txt_oridebit"			Location="140, 55"	Size="120,21"		TabIndex="2" TextAlign="Right"/>				
+					<TextBox	Name="txt_oricredit"			Location="260, 55"	Size="120,21"		TabIndex="2" TextAlign="Right"/>
+
+					<Button		Name="btn_Insert"			Location="380, 55"	Size="100,23"		TabIndex="3"		Text="Insert" 							Click="btn_Insert_Click"/>
+					<Button		Name="btn_NextTrans"		Location="480, 55"	Size="130,23"		TabIndex="4"		Text="Next Transaction (F8)" 	Click="btn_Next_Click"/>
+					<Button		Name="btn_Update"			Location="610, 55"	Size="110,23"		TabIndex="99"		Text="Update (F5)" 					Click="btn_Update_Click"/>
+
+					<Label		Name="lbl_desc"				Location="10, 80"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Detail"/>
+					<TextBox	Name="txt_desc"				Location="60, 80"	Size="660,23"		TabIndex="2"	/>
+
+				</Controls>
+			</GroupBox>
+
+		<DataGrid	Name="dg_detail"		Location=" 5,240"		Text ="Journal Transactions Listing" Size="725,260"	HeaderForeColor="ControlText" TabIndex="1" CaptionBackColor="blue"/>
+			<Label	Name="txt_CA"	Location="10,505"	Size="85,15"	TabIndex="3" TextAlign="Right" ReadOnly="True" Text="Current Action:" ForeColor="darkbrown"/>
+      <Label	Name="txt_currentAction"	Location="95,505"	Size="220,40"	TabIndex="3" TextAlign="Right" ReadOnly="True" ForeColor="brown"/>
+
+      <Label	Name="lbl_ispaste"	Location="10,518"	Size="50,15"	TabIndex="3" TextAlign="Right" ReadOnly="True" Text="Is Paste:" ForeColor="darkbrown"/>
+      <CheckBox	Name="favth_ispaste"			Location="60, 518"	Size="20,21"		 Text="Is Paste" />
+      
+      
+			<Label		Name="lbl_oridebit"			Location="315, 505"	Size="45, 16"		TextAlign="MiddleLeft"	Text="Debit"/>
+			<TextBox	Name="favth_debit"			Location="360, 505"	Size="90,21"		TabStop="False"  TextAlign="Right"	ReadOnly="True"/>
+			<Label		Name="lbl_oricredit"			Location="460, 505"	Size="35, 16"		TextAlign="MiddleLeft"	Text="Credit"/>
+			<TextBox	Name="favth_credit"			Location="505, 505"	Size="90,21"		TabStop="False"  TextAlign="Right"	ReadOnly="True"/>
+			<Label		Name="lbl_oriamt"				Location="605, 505"	Size="35, 16"		TextAlign="MiddleLeft"	Text="Total"/>
+			<TextBox	Name="favth_oriamt"		Location="640, 505"	Size="90,21"		TabStop="False"  TextAlign="Right"	ReadOnly="True"/>
+    </Controls>
+  </Form>
+</BizXml>

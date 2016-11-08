@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="mdth" Title="MDT" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_MDT.xml">
+		<VoucherGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"	Width="120"    SearchItem="true" ConfirmItem="true" Key="True"/>
+		<VoucherGridColumnInfo MappingName="mdtname"		HeaderText="Mdt Name"						Width="240"    SearchItem="true"/>
+		<VoucherGridColumnInfo MappingName="mdtdate"		HeaderText="Mdt Date"							Width="90"		SearchItem="true" ColumnType="DateTime"/>
+		<VoucherGridColumnInfo MappingName="status"			HeaderText="{languageBinding.status}"	Width="60"/>
+	</VoucherGridInfo>
+</BizXml>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="favth" Key="refnum" CompanyTitle="{languageBinding.coyBizERP}" ModuleTitle="JV Template">
+		<RelationTables>
+			<!--<DocRelationTableInfo TableName="apd" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="ard" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="csh" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="piv1" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="siv1" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="gld" DataField="refnum" ConditionField="refnum" Save="True"/>-->
+			<!--<DocRelationTableInfo TableName="acm" DataField="accnum" ConditionField="accnum"/>-->
+		</RelationTables>
+		<DocumentPages>
+			<!-- Payt -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header" Title="Header">
+				<Details>
+					<Detail DataGridName="dg_detail"	DetailGridInfo="DetailGridInfo_Transactions.xml" CaptionText="Journal Transactions Listing"/>
+				</Details>				
+			</DocumentPageInfo>
+			<!--<DocumentPageInfo FileName="Ledger.xml"	FormName="ledger" Title="Ledger">
+				<Details>
+					<Detail DataGridName="dg_ARD"		DetailGridInfo="DetailGridInfo_ARD.xml"		CaptionText="Debtors (A/R Ledger) Details"/>
+					<Detail DataGridName="dg_SIV"		DetailGridInfo="DetailGridInfo_SIV1.xml"	CaptionText="Sales Ledger Details"/>
+					<Detail DataGridName="dg_APD"		DetailGridInfo="DetailGridInfo_APD.xml"		CaptionText="Creditors (A/P Ledger) Details"/>
+					<Detail DataGridName="dg_PIV"		DetailGridInfo="DetailGridInfo_PIV1.xml"		CaptionText="Purchases Ledger Details"/>
+					<Detail DataGridName="dg_CSH"		DetailGridInfo="DetailGridInfo_CSH.xml"		CaptionText="Cash Ledger Details"/>
+					<Detail DataGridName="dg_GLD"		DetailGridInfo="DetailGridInfo_GLD.xml"		CaptionText="General Ledger Details"/>
+				</Details>
+			</DocumentPageInfo>-->
+
+		</DocumentPages>
+  </DocumentInfo>
+</BizXml>

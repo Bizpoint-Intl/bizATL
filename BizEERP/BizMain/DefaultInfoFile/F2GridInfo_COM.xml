@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="com" Title="{languageBinding.itemCOM}" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
+		<F2GridColumnInfo MappingName="comnum"	HeaderText="{languageBinding.comnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="comname"	HeaderText="{languageBinding.comname}"	Width="250" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="ptc"		HeaderText="{languageBinding.ptc}"		Width="110" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="phone"	HeaderText="{languageBinding.phone}"	Width="100"/>
+		<F2GridColumnInfo MappingName="fax"		HeaderText="{languageBinding.fax}"		Width="100"/>
+		<F2GridColumnInfo MappingName="email"	HeaderText="{languageBinding.email}"	Width="165"/>
+		<F2GridColumnInfo MappingName="address"	HeaderText="{languageBinding.address}"	Width="300"/>
+  </F2GridInfo>
+</BizXml>

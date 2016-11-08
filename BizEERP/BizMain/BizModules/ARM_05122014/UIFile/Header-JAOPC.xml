@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="0" Font="{languageBinding.sys_font}">
+		<Controls>
+      <GroupBox	Name="grp_ARMContactInfo" Location="5, 10" Text="{languageBinding.grp_ContactInfo}" Size="360, 330">
+        <Controls>
+			<Label		Name="lbl_active"			Location="5,	25"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.active}"/>
+			<CheckBox	Name="arm_active"		Location="105,	20"		Size="30, 20"	TabIndex="0"	FlatStyle="System"/>
+
+			<Label		Name="lbl_qctnum"		Location="140,	25"		Size="50, 16"	TextAlign="MiddleLeft"	Text="QCT No"/>
+			<TextBox	Name="arm_qctnum"		Location="190,	20"		Size="150,21"	TabIndex="1"/>
+						
+			<Label		Name="lbl_arname"		Location="5,	50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.arname}"/>
+			<TextBox	Name="arm_arname"		Location="105,	45"		Size="250,21"	TabIndex="1"/>
+			<Label		Name="lbl_phone"			Location="5,	75"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+			<TextBox	Name="arm_phone"		Location="105,	70"		Size="120,21"	TabIndex="3"/>
+			<Label		Name="lbl_hp"				Location="5,	100"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+			<TextBox	Name="arm_hp"			Location="105,	95"		Size="120,21"	TabIndex="4"/>
+			<Label		Name="lbl_fax"				Location="5,	125"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+			<TextBox	Name="arm_fax"			Location="105,	120"		Size="120,21"	TabIndex="5"/>
+			<Label		Name="lbl_email"			Location="5,	150"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.email}"/>
+			<TextBox	Name="arm_email"		Location="105,	145"		Size="250,21"	TabIndex="6"/>
+			<Label		Name="lbl_ptc"				Location="5,	175"		Size="100,16"	TextAlign="MiddleLeft"	Text="{languageBinding.ptc}"/>
+			<TextBox	Name="arm_ptc"			Location="105,	170"		Size="250,21"	TabIndex="7"/>
+
+          <GroupBox Name="gpSiteAddr" Text="Site Address" Location="5, 195" Size="350, 130" TabIndex="8" TabStop="False">
+            <Controls>
+              <TextBox Name="arm_addr1" Location="17, 24" Size="320, 20" TabIndex="0" />
+              <TextBox Name="arm_addr2" Location="17, 50" Size="320, 20" TabIndex="1" />
+              <TextBox Name="arm_addr3" Location="17, 76" Size="320, 20" TabIndex="2" />
+              <TextBox Name="arm_addr4" Location="17, 102" Size="320, 20" TabIndex="3" />
+            </Controls>
+          </GroupBox>
+
+
+			<!---->
+
+			<!---->
+
+		</Controls>
+	</GroupBox>
+
+
+
+	<GroupBox	Name="grp_ARMCompanyBillingInfo" Location="375, 10" Text="Billing Information" Size="360, 330" TabIndex="10" TabStop="False">
+		<Controls>
+			<Label		Name="lbl_ispending"			Location="5,	25"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Pending"/>
+			<CheckBox	Name="arm_ispending"		Location="105,	20"		Size="30, 20"	TabIndex="0"	FlatStyle="System"/>
+			
+			<Label		Name="lbl_barname"		Location="5,	50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.arname}"/>
+			<TextBox	Name="arm_barname"		Location="105,	45"		Size="250,21"	TabIndex="1"/>
+			<Label		Name="lbl_bphone"			Location="5,	75"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+			<TextBox	Name="arm_bphone"		Location="105,	70"		Size="120,21"	TabIndex="3"/>
+			<Label		Name="lbl_bhp"				Location="5,	100"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+			<TextBox	Name="arm_bhp"			Location="105,	95"		Size="120,21"	TabIndex="4"/>
+			<Label		Name="lbl_bfax"				Location="5,	125"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+			<TextBox	Name="arm_bfax"			Location="105,	120"		Size="120,21"	TabIndex="5"/>
+			<Label		Name="lbl_bemail"			Location="5,	150"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.email}"/>
+			<TextBox	Name="arm_bemail"		Location="105,	145"		Size="250,21"	TabIndex="6"/>
+			<Label		Name="lbl_bptc"				Location="5,	175"		Size="100,16"	TextAlign="MiddleLeft"	Text="{languageBinding.ptc}"/>
+			<TextBox	Name="arm_bptc"			Location="105,	170"		Size="250,21"	TabIndex="7"/>
+
+			<GroupBox Name="gpBillAddr" Text="Billing Address" Location="5, 195" Size="350, 130" TabIndex="8" TabStop="False">
+				<Controls>
+					<TextBox Name="arm_baddr1" Location="17, 24" Size="320, 20" TabIndex="0" />
+					<TextBox Name="arm_baddr2" Location="17, 50" Size="320, 20" TabIndex="1" />
+					<TextBox Name="arm_baddr3" Location="17, 76" Size="320, 20" TabIndex="2" />
+					<TextBox Name="arm_baddr4" Location="17, 102" Size="320, 20" TabIndex="3" />
+				</Controls>
+			</GroupBox>
+
+		</Controls>
+	</GroupBox>
+			<GroupBox	Name="grp_ARMCompanyInfo" Location="5, 345" Text="{languageBinding.grp_CompanyInfo}" Size="730,200" TabIndex="10" TabStop="False">
+				<Controls>
+					<Label			Name="lbl_ptnum"				Location="5,25"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Term"/>
+					<TextBox		Name="arm_ptnum"			Location="105,	20"		Size="80,21"	TabIndex="0"/>
+					<TextBox		Name="ptm_ptname"			Location="185,	20"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+					<Label			Name="lbl_credit"				Location="5,	50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.credit}"/>
+					<TextBox		Name="arm_credit"			Location="105,	45"		Size="120,21"	TabIndex="1"	TextAlign="Right"/>
+					<Label			Name="lbl_gstgrpnum"		Location="5,	75"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.gstgrpnum}"/>
+					<TextBox		Name="arm_gstgrpnum"		Location="105,	70"		Size="80, 21"	TabIndex="2"/>
+					<TextBox		Name="gstm_gstgrpname"	Location="185,	70"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+					<Label			Name="lbl_regnum"			Location="5,	100"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.regnum}"/>
+					<TextBox		Name="arm_regnum"			Location="105,	95"		Size="80, 21"	TabIndex="3"/>
+					<TextBox		Name="regm_regname"		Location="185,	95"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+					<Label			Name="lbl_oricur"				Location="5,	125"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.oricur}"/>
+					<TextBox		Name="arm_oricur"			Location="105,	120"		Size="80, 21"	TabIndex="4"/>									
+					<TextBox		Name="exr_curname"			Location="185,	120"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+														
+					
+					
+					<Label			Name="lbl_accnum"			Location="380,	25"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Debtors A/C"/>
+					
+					<TextBox		Name="arm_accnum"			Location="475,	20"		Size="80, 21"	TabIndex="5"/>
+					<TextBox		Name="acm_accname"		Location="555,	20"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+					
+					<Label			Name="lbl_accnum2"			Location="380,	50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Revenue A/C"/>
+					<TextBox		Name="arm_accnum2"		Location="475,	45"		Size="80, 21"	TabIndex="5"/>
+					<TextBox		Name="acm2_accname"		Location="555,	45"		Size="170,21"	CanFocus="False"	TabStop="False"	ReadOnly="True"/>
+				</Controls>
+			</GroupBox>
+
+			
+    </Controls>
+	</Form>
+</BizXml>

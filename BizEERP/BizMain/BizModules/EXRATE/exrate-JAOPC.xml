@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, System" 
+		xmlns:def="Definition" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+  <Form Name="exr" Text="System Currency" Location="4, 21" AutoScaleBaseSize="5, 14" 
+		ClientSize="500, 350" ForeColor="Black" StartPosition="CenterScreen" 
+		Font="{languageBinding.sys_font}" Load="Form_Load">
+	<!--DON26<ele:BizFormIcon Icon="Bizpoint.ico"/>-->
+    <Controls>
+      <DataGrid Name="dataGrid" Location="10, 51" Size="480, 300" HeaderForeColor="ControlText" TabIndex="3">
+        <Controls>
+          <HScrollBar Location="0, 63"  TabIndex="0" Visible="False" />
+          <VScrollBar Location="113, 0" TabIndex="1" Visible="False" />
+        </Controls>
+      </DataGrid>
+      <Button Name="Btn_Update"		Text="&amp;Update"		Location="10, 10"	Size="114, 23" TabIndex="2" Click="btn_Update_Click"/>
+      <Button Name="Btn_Cancel"		Text="&amp;Cancel"		Location="132, 10"	Size="114, 23" TabIndex="1" Click="btn_Cancel_Click"/>
+    </Controls>
+  </Form>
+</BizXml>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="piv1">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="acm"	DataField="accnum"	ConditionField="accnum"/>
+			<!--<bas:RelationTableInfo TableName="ccm"	DataField="ccnum"	ConditionField="ccnum"/>
+			<bas:RelationTableInfo TableName="matm"	DataField="matnum"	ConditionField="matnum"/>
+			<bas:RelationTableInfo TableName="uom"	DataField="uomcode"	ConditionField="uom"/>-->
+		</RelationTables>
+		<!--<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"		HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="apnum"		HeaderText="{languageBinding.apnum}"		Width="100"/>
+		<DetailGridColumnInfo MappingName="invnum"		HeaderText="{languageBinding.invnum}"		Width="100"/>
+		<DetailGridColumnInfo MappingName="supplierdo"	HeaderText="{languageBinding.supplierdo}"	Width="100"/>
+		<DetailGridColumnInfo MappingName="supplierinv"	HeaderText="{languageBinding.supplierinv}"	Width="100"/>
+		<DetailGridColumnInfo MappingName="matnum"		HeaderText="{languageBinding.matnum}"		Width="100"	F2="True" F2GridInfo="F2GridInfo_MATM.xml"/>
+		<DetailGridColumnInfo MappingName="detail"		HeaderText="{languageBinding.detail}"		Width="200"/>		
+		<DetailGridColumnInfo MappingName="uom"			HeaderText="{languageBinding.uom}"			Width="50"	F2="True" F2GridInfo="F2GridInfo_UOM.xml"/>
+		<DetailGridColumnInfo MappingName="foc"			HeaderText="{languageBinding.foc}"			Width="30" ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="dqty"		HeaderText="{languageBinding.qty}"			Width="55"/>
+		<DetailGridColumnInfo MappingName="price"		HeaderText="{languageBinding.price}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="discper"		HeaderText="{languageBinding.discper}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="discamt"		HeaderText="{languageBinding.discamt}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="dgrosamt"	HeaderText="{languageBinding.grosamt}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.debitacc}"		Width="80"	F2="True" F2GridInfo="F2GridInfo_ACM.xml">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="accname"	F2MappingName="accname"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="accname"		HeaderText="{languageBinding.accDesc}"		Width="200" ReadOnly="True" TableName="acm"/>
+		<DetailGridColumnInfo MappingName="remarks"		HeaderText="{languageBinding.remarks}"		Width="300"/>-->
+		<DetailGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.accnum}"		Width="80"	ReadOnly="True"	F2="True" F2GridInfo="F2GridInfo_ACM.xml"/>
+		<DetailGridColumnInfo MappingName="invnum"		HeaderText="{languageBinding.invnum}"		Width="80"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="oricur"			HeaderText="{languageBinding.oricur}"			Width="50"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="exrate"		HeaderText="{languageBinding.exrate}"		Width="65"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="oridebit"		HeaderText="{languageBinding.oridebit}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="oricredit"		HeaderText="{languageBinding.oricredit}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.oriamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="postamt"		HeaderText="{languageBinding.postamt}"		Width="75"	ReadOnly="True"/>
+		<!--<DetailGridColumnInfo MappingName="exramt"		HeaderText="{languageBinding.exramt}"		Width="75"	ReadOnly="True"/>-->
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

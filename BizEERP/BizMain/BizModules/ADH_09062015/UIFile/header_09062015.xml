@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+
+      <Label		Name="lbl_pctrnum"	  Location="10,  10"		Size="80, 16"	TextAlign="Right" Text="P. Ctr No" Visible="False" />
+      <TextBox	Name="ctrh_pctrnum"	  Location="95,10"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+      <Label		Name="lbl_docunum"	  Location="10,  10"		Size="80, 16"	TextAlign="Right" Text="Cust. Ctr No" />
+      <TextBox	Name="ctrh_docunum"	  Location="95,10"		Size="100,21"	TabIndex="51" />
+
+      <!--Project ID-->
+      <Label		Name="lbl_projectid"	  Location="210,  10"		Size="40, 16"	TextAlign="Right" Text="Prj. ID" />
+      <TextBox	Name="ctrh_projectid"	  Location="250,10"		Size="100,21"	TabIndex="51" />
+
+
+      <Label		Name="lbl_ctrnum"	  Location="10,  10"		Size="80, 16"	TextAlign="Right" Text="Old Ctr No:" Visible="False"/>
+      <TextBox	Name="ctrh_oldrefnum"	  Location="95,10"		Size="150,21"	TabIndex="51" Visible="False"/>
+
+      <Label		Name="lbl_trandate"			   Location="350,  10"	  Size="80, 21" TextAlign="MiddleLeft" Text="TranDate"/>
+      <dtp:BizDateTimePicker Name="ctrh_trandate"  Location="435, 10"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+      <Label		Name="lbl_commencedate"	   Location="350,  35"	Size="80, 21" TextAlign="MiddleLeft" Text="Start Date"/>
+      <dtp:BizDateTimePicker Name="ctrh_commencedate"    Location="435, 35"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+      <Label		Name="lbl_enddate"	  Location="545,  35"		Size="60, 16"	TextAlign="Right" Text="End Date"/>
+      <dtp:BizDateTimePicker Name="ctrh_enddate"    Location="605, 35"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+
+      <Label		Name="lbl_user"	  Location="545,  10"		Size="60, 16"	TextAlign="Right" Text="Issued by:"/>
+      <TextBox	Name="ctrh_user"	  Location="605,10"		Size="100,21" ReadOnly="True" 	TabIndex="51"/>
+
+
+
+      <GroupBox	Name="grb_ctrhcontactinfo"		  Location="5, 35"		Size="340,355" 	Text="Customer Information" >
+        <Controls>
+          <Label		Name="lbl_arnum"	  Location="5,  20"		Size="80, 16"	TextAlign="Right" Text="Customer:"/>
+          <TextBox	Name="ctrh_arnum"	  Location="105,15"		Size="80,21"	TabIndex="51"/>
+
+          <TextBox	Name="ctrh_parnum"		Location="190,	15"		Size="80,21"	TabIndex="1" ReadOnly="True"/>
+          <!--<Label		Name="lbl_contractype"	  Location="210,  20"		Size="50, 16"	TextAlign="Right" Text="Ctr Type:"/>
+          <TextBox	Name="ctrh_contractype"	  Location="260,15"		Size="50,21"	TabIndex="51"/>-->
+
+          <ComboBox	Name="ctrh_contractype"				Location="280,15"	Size="50, 21"  TabIndex="5" OnClick="cb_Selected_value">
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem DisplayMember="Main" ValueMember="Main"/>
+                <ele:ComboBoxItem DisplayMember="Sub" ValueMember="Sub"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+          
+          <Label		Name="lbl_arname"		Location="5,	50"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.arname}"/>
+          <TextBox	Name="ctrh_arname"		Location="105,	45"		Size="230,21"	TabIndex="1" Visible="False"/>
+          <Label		Name="lbl_phone"			Location="5,	75"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+          <TextBox	Name="ctrh_phone"		Location="105,	70"		Size="120,21"	TabIndex="3" Visible="False"/>
+          <Label		Name="lbl_hp"				Location="5,	100"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+          <TextBox	Name="ctrh_hp"			Location="105,	95"		Size="120,21"	TabIndex="4" Visible="False"/>
+          <Label		Name="lbl_fax"				Location="5,	125"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+          <TextBox	Name="ctrh_fax"			Location="105,	120"		Size="120,21"	TabIndex="5" Visible="False"/>
+          <Label		Name="lbl_email"			Location="5,	150"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.email}"/>
+          <TextBox	Name="ctrh_email"		Location="105,	145"		Size="230,21"	TabIndex="6" Visible="False"/>
+          <Label		Name="lbl_ptc"				Location="5,	175"		Size="100,16"	TextAlign="MiddleLeft"	Text="{languageBinding.ptc}"/>
+          <TextBox	Name="ctrh_ptc"			Location="105,	170"		Size="230,21"	TabIndex="7" Visible="False"/>
+
+
+
+          <Label		Name="lbl_billaddr1"	  Location="5,  200"		Size="80, 16"	TextAlign="Right" Text="Bill Address"/>
+          <TextBox	Name="ctrh_billadd1"	  Location="105,195"		Size="230,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_billaddr2"	  Location="5,  225"		Size="80, 16"	TextAlign="Right" Text=""/>
+          <TextBox	Name="ctrh_billadd2"	  Location="105,220"		Size="230,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_billaddr3"	  Location="5,  250"		Size="80, 16"	TextAlign="Right" Text=""/>
+          <TextBox	Name="ctrh_billadd3"	  Location="105,245"		Size="230,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_billaddr4"	  Location="5,  275"		Size="80, 16"	TextAlign="Right" Text=""/>
+          <TextBox	Name="ctrh_billadd4"	  Location="105,270"		Size="230,21"	TabIndex="51" Visible="False"/>
+
+        </Controls>
+      </GroupBox>
+
+
+      <GroupBox	Name="grb_ctrhdocinfo"		  Location="350, 60"		Size="370,446" 	Text="Site Information" >
+        <Controls>
+
+          <Label		Name="lbl_sitenum"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Location No:"/>
+          <TextBox	Name="ctrh_sitenum"	  Location="95,25"		Size="90,21"	TabIndex="51"/>
+
+          <Label		Name="lbl_sector"	  Location="190,  25"		Size="40, 16"	TextAlign="Right" Text="Zone:" />
+          <TextBox	Name="ctrh_sectorcode"	  Location="230,25"		Size="45,21"	TabIndex="51" />
+
+          <Label		Name="lbl_sitename"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Loc Name:"/>
+          <TextBox	Name="ctrh_sitename"	  Location="95,50"		Size="270,21" 	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_addr1"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Site Address"/>
+          <Label		Name="lbl_addr2"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text=""/>
+          <Label		Name="lbl_addr3"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text=""/>
+          <Label		Name="lbl_postalcode"	  Location="10,  150"		Size="80, 16"	TextAlign="Right" Text="Postal Code"/>
+
+
+          <TextBox	Name="ctrh_addr1"	  Location="95,75"		Size="270,21"	TabIndex="51" Visible="False"/>
+          <TextBox	Name="ctrh_addr2"	  Location="95,100"		Size="270,21"	TabIndex="51" Visible="False"/>
+          <TextBox	Name="ctrh_addr3"	  Location="95,125"		Size="270,21"	TabIndex="51" Visible="False"/>
+          <TextBox	Name="ctrh_postalcode"	  Location="95,150"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_tel1"	  Location="10,  175"		Size="80, 16"	TextAlign="Right" Text="Tel No" />
+          <TextBox	Name="ctrh_tel1"	  Location="95,175"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_sfax"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="Fax"/>
+          <TextBox	Name="ctrh_sfax"	  Location="95,200"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+
+          <Label		Name="lbl_rep1"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Contact Person 1:"/>
+          <TextBox	Name="ctrh_rep1"	  Location="95,225"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_rep1tel"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+          <TextBox	Name="ctrh_rep1tel"	  Location="95,250"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_rep2"	  Location="10,  275"		Size="80, 16"	TextAlign="Right" Text="Contact Person 2:"/>
+          <TextBox	Name="ctrh_rep2"	  Location="95,275"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_rep2tel"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+          <TextBox	Name="ctrh_rep2tel"	  Location="95,300"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_rep2tel"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+          <TextBox	Name="ctrh_rep2tel"	  Location="95,300"		Size="270,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_premisetype"	  Location="10,  325"		Size="80, 16"	TextAlign="Right" Text="Premise Type:"/>
+          <TextBox	Name="ctrh_prmcode"	  Location="95,325"		Size="93,21"	TabIndex="51" />
+
+          <Label		Name="lbl_dctmcode"	  Location="200,  325"		Size="60, 16"	TextAlign="Right" Text="Doc Type:"/>
+          <TextBox	Name="ctrh_dctmcode"	  Location="260,325"		Size="93,21"	TabIndex="51"/>
+
+          <Label		Name="lbl_adstcode"	  Location="10,  350"		Size="60, 16"	TextAlign="Right" Text="Status:"/>
+          <ComboBox	Name="ctrh_adstcode"				Location="95,350"	Size="150, 21"  TabIndex="5" >
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem DisplayMember="Default" ValueMember="Default"/>
+                <ele:ComboBoxItem DisplayMember="Quotation" ValueMember="Quotation"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+
+          <Label		Name="lbl_empnum" 	  Location="10,  375"		Size="80, 16"	TextAlign="Right" Text="OE/OM" />
+          <TextBox	Name="ctrh_empnum"	  Location="95,375" 		Size="63,21"	TabIndex="51" />
+          <TextBox	Name="ctrh_empname"	  Location="160,375" 		Size="195,21"	TabIndex="51" ReadOnly="True"/>
+
+          <Label		Name="lbl_totalmonths" 	  Location="10,  400"		Size="80, 16"	TextAlign="Right" Text="Months" />
+          <TextBox	Name="ctrh_totalmonths"	  Location="95,400" 		Size="45,21"	TabIndex="51" ReadOnly="True"/>
+
+          <Label		Name="lbl_ttlbillingamt"	  Location="10,  425"		Size="80, 16"	TextAlign="Right" Text="Total Bill Amt:" />
+          <TextBox	Name="ctrh_ttlbillingamt"	  Location="95,425"		Size="90,21" 	TabIndex="51" />
+
+          <!---->
+
+
+
+
+
+
+
+          <!--Visible="False"-->
+          <Label		Name="lbl_qctnum"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="QCT No" Visible="False"/>
+          <TextBox	Name="ctrh_qctnum"	  Location="95,50"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+
+          <Label		Name="lbl_event"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Event" Visible="False"/>
+          <TextBox	Name="ctrh_event"	  Location="95,50"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_schedul"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Work Schedule" Visible="False"/>
+          <TextBox	Name="ctrh_schedule"	  Location="95,75"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+
+
+          <Label		Name="lbl_officer_qty" 	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Officers" Visible="False"/>
+          <TextBox	Name="ctrh_officerqty"	  Location="95,100" 		Size="45,21"	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_duty"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Main Duties" Visible="False"/>
+          <TextBox	Name="ctrh_duty"	  Location="95,125"		Size="242,50"	TabIndex="51" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper" Visible="False"/>
+
+          <!--Visible="False"-->
+
+          <Label		Name="lbl_subtotal"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="SubTotal" Visible="False"/>
+          <TextBox	Name="ctrh_subtotal" ReadOnly="True" 	  Location="95,200"		Size="90,21"	TabIndex="51" Visible="False"/>
+
+
+          <!--<Label		Name="lbl_additionalcosts"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Addittional"/>
+					<TextBox	Name="ctrh_additionalcosts" ReadOnly="True" 	  Location="95,225"		Size="90,21"	TabIndex="51" />-->
+
+          <!--<Label		Name="lbl_equipmentcosts"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Equipment"/>
+					<TextBox	Name="ctrh_equipmentcosts" ReadOnly="True" 	  Location="95,250"		Size="90,21"	TabIndex="51" />-->
+
+
+          <Label		Name="lbl_discamt"	   Location="10,  225"			Size="80, 16"	TextAlign="Right" Text="Discount:" Visible="False"/>
+          <TextBox	Name="ctrh_discamt"	  Location="95,225"	Size="90,21"	TabIndex="51" Visible="False"/>
+
+
+
+          <Label		Name="lbl_ttlbillingamt"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Total Bill Amt:" Visible="False"/>
+          <TextBox	Name="ctrh_ttlbillingamt"	  Location="95,250"		Size="90,21" ReadOnly="True" 	TabIndex="51" Visible="False"/>
+
+          <Label		Name="lbl_cc1"	  Location="10,  275"		Size="80, 16"	TextAlign="Right" Text="CC 1:" Visible="False"/>
+					<TextBox	Name="ctrh_cc1"	  Location="95,275"		Size="270,21" 	TabIndex="51" Visible="False"/>
+					<Label		Name="lbl_cc2"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="CC 2:" Visible="False"/>
+					<TextBox	Name="ctrh_cc2"	  Location="95,300"		Size="270,21" 	TabIndex="51" Visible="False"/>
+
+
+					<GroupBox	Name="grb_ctrhterminfo"		  Location="95,150"		Size="200,125" 	Text="Service Agreement"  Visible="False">
+						<Controls>
+							<Button Name="BtnTerms" Text="Document" Location="50,50"	 Size="120, 23"  UseVisualStyleBackColor="True" TabIndex="19"/>
+						</Controls>
+					</GroupBox>
+					
+
+ 
+
+					
+					
+				</Controls>
+			</GroupBox>
+
+			<Label		Name="lbl_sinstruction"	Location="10, 425" Size="140, 21"		Text="Special Instructions"/>
+			<TextBox	Name="ctrh_sinstruction" Location="10, 450" Size="285, 80"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

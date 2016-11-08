@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="exr">
+		<DetailGridColumnInfo MappingName="oricur"	HeaderText="Oricur"						Width="50"		ReadOnly="True"	Key="True"/>
+    <DetailGridColumnInfo MappingName="curname" HeaderText="Currency Name"		Width="100"	ReadOnly="True"	Key="True"/>
+    <DetailGridColumnInfo MappingName="rate0"	  HeaderText="Rate 0"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate1"	  HeaderText="Rate 1"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate2"	  HeaderText="Rate 2"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate3" 	HeaderText="Rate 3"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate4" 	HeaderText="Rate 4"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate5"  	HeaderText="Rate 5"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate6"	  HeaderText="Rate 6"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate7"  	HeaderText="Rate 7"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate8"	  HeaderText="Rate 8"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate9"	  HeaderText="Rate 9"						Width="50"/>
+    <DetailGridColumnInfo MappingName="rate10"	HeaderText="Rate 10"					Width="50"/>
+    <DetailGridColumnInfo MappingName="rate11"	HeaderText="Rate 11"					Width="50"/>
+    <DetailGridColumnInfo MappingName="rate12"	HeaderText="Rate 12"					Width="50"/>
+		<DetailGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"	Width="100"	ReadOnly="True"	/>
+		<DetailGridColumnInfo MappingName="modified"	HeaderText="Modified"						Width="120"	ReadOnly="True"	ColumnType="DateTime" />
+	</DetailGridInfo>
+</BizXml>

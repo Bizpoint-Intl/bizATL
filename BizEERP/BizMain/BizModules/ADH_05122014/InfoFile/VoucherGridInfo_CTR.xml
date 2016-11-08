@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="ctrh" Title="{languageBinding.CTR}" DocumentInfo="DocumentInfo_CTR.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"		Width="100"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+		<VoucherGridColumnInfo MappingName="arname"		HeaderText="Customer"		Width="200"/>
+   
+
+    
+    <VoucherGridColumnInfo MappingName="sectorcode"		HeaderText="Zone"		Width="100"/>
+		<VoucherGridColumnInfo MappingName="empname"		HeaderText="Supervisor"		Width="100"/>
+		<VoucherGridColumnInfo MappingName="sitename"		HeaderText="Location"		Width="100"/>
+    <VoucherGridColumnInfo MappingName="contractype"		HeaderText="Main/Sub"		Width="100"/>
+
+    <VoucherGridColumnInfo MappingName="dctmcode"		HeaderText="Type"		Width="100"/>
+    <VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="trandate"		HeaderText="Contract Date"		Width="70" ColumnType="DateTime"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="Issued By"			Width="40"/>
+		<VoucherGridColumnInfo MappingName="sinstruction"		HeaderText="Special Instructions"		Width="400"/>
+	</VoucherGridInfo>
+</BizXml>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="prjm" Title="{languageBinding.PRJM}" DocumentInfo="DocumentInfo_PRJM.xml"  DeletedInfo="true">
+    <VoucherGridColumnInfo MappingName="prjmcode"	HeaderText="ProjectCode"		Width="150"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True" PrintItem="True" VoucherSort="True" />
+		<VoucherGridColumnInfo MappingName="projectid"	HeaderText="ProjectID"		Width="150"  SearchItem="True" ConfirmItem="True" RefreshItem="True"  PrintItem="True" VoucherSort="True"/>
+    <VoucherGridColumnInfo MappingName="projectdesc"		HeaderText="Desc"		Width="500" SearchItem="True" ConfirmItem="True" RefreshItem="True"  PrintItem="True" VoucherSort="True"/>
+    <VoucherGridColumnInfo MappingName="arnum"		HeaderText="Customer"		Width="500" SearchItem="True" ConfirmItem="True" RefreshItem="True"  PrintItem="True" VoucherSort="True"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+	</VoucherGridInfo>
+</BizXml>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <DocumentInfo Name="documentInfo" MainTable="lve" Key="lvenum"   CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.LVE}">
+
+	  <RelationTables>
+		  <DocRelationTableInfo TableName="matm" DataField="matnum"			ConditionField="matnum">
+			  <Fields>
+				  <Field ColumnName="matnum"/>
+			  </Fields>
+		  </DocRelationTableInfo>
+	  </RelationTables>
+	  
+    <DocumentPages>
+		<DocumentPageInfo FileName="header.xml" FormName="header" Title="Header">
+
+
+			<F2Controls>
+				<F2Control ControlName="lve_matnum" F2GridInfo="F2GridInfo_matm.xml">
+					<RelationF2Tables>
+						<RelationF2Table TableName="matm"/>
+					</RelationF2Tables>
+				</F2Control>
+			</F2Controls>
+
+			<Details>
+				<Detail DataGridName="dg_lveInfo"	DetailGridInfo="DetailGridInfo_LVE1.xml"  CaptionText="Leave Lists"/>
+			</Details>
+
+		</DocumentPageInfo>		  
+	</DocumentPages>
+
+
+	  
+  </DocumentInfo>
+</BizXml>

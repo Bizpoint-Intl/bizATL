@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:str="System.String, Mscorlib"
+		xmlns:def="Definition"> 
+	<Form Name="frm_AddModule" Text="Add Module" ClientSize="500, 315" FormBorderStyle="FixedToolWindow" MaximizeBox="False" MinimizeBox="False" StartPosition="CenterScreen" ShowInTaskbar="False" ControlBox="false">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<!--PictureBox Name="pcb_AddModule" Location="0, 0" Size="500, 70" TabStop="False">
+				<ele:BizPictureBoxImage FileName="Bizpoint2.bmp"/>
+				<Controls>
+					<Label Name="lbl_AddModule_Title" Location="20,10"	Size="310,50" Font="Tahoma, 9pt" BackColor="White" Text="Select the name of one or more modules in the Available Modules box."/>
+				</Controls>
+			</PictureBox-->
+      <Label Name="lbl_AddModule_Title" Location="20,10"	Size="410,20" Font="Tahoma, 9pt" Text="Select the name of one or more modules in the Available Modules box."/>
+      
+			<GroupBox Name="grb_AddModule1" Location="0, 30"	 Size="500, 3" TabStop="False" />
+			<ListView Name="lvw_AddModule_Available"	Location="35,50" Font="Tahoma, 9pt" Size="150, 210" View="Details" LargeImageList="{imageList}" SmallImageList="{imageList}">
+				<Columns>
+					<ColumnHeader Text="Available Modules" Width="125" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+			<Button		Name="btn_AddModule_Add"	Text="Add &gt;"		Location="215,140"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<Button		Name="btn_AddModule_Remove"	Text="&lt; Remove"	Location="215,180"	Font="Tahoma, 9pt" Width="70" FlatStyle="System"/>
+			<ListView	Name="lvw_AddModule_Added"	Location="315, 50"	Font="Tahoma, 9pt" Size="150, 210" View="Details" LargeImageList="{imageList}" SmallImageList="{imageList}">
+				<Columns>
+					<ColumnHeader Text="Added Modules" Width="125" TextAlign="Left"/>
+				</Columns>
+			</ListView>
+			<GroupBox Name="grb_AddModule2" Location="0, 275" Size="500, 3" TabStop="False" />
+			<Button Name="btn_AddModule_Finish" Location="335,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="0" Text="Finish"/>
+			<Button Name="btn_AddModule_Cancel" Location="420,285" Font="Tahoma, 9pt" FlatStyle="System" TabIndex="1" Text="Cancel"/>
+		</Controls>
+	</Form>
+</BizXml>

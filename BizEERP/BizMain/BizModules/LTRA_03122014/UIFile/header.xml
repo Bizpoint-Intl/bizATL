@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xml:lang="zh-CN" 
+		xmlns:def="Definition" 
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:ele="BizRAD.BizElements, BizBase">
+  <Form Name="header" Text="Header" Location="4, 21" AutoScaleBaseSize="5, 14" ClientSize="732, 513" ForeColor="WindowText" TextAlign="MiddleLeft" Font="Tahoma, 8.25pt">
+    <Controls>
+      <Label		Name="lbl_display"		Location="5, 5"  Size="200,  21"	 Text="{languageBinding.LTRA}" BackColor="Black" ForeColor="White"  Font="Tahoma, 12 pt"  TextAlign="MiddleLeft" FontStyle="Bold"/>
+
+      <GroupBox	Name="grb_documentinfo"		    Location="5, 30"		 Size="730,95"	Text="Document Information" >
+				<Controls>
+					<Label		Name="lbl_requestedby"		Location="10, 22"  Size="90,  21"	 Text="Requested By"/>
+					<TextBox	Name="trah_requestedby"		Location="100, 22" Size="60, 21"	 TabIndex="52" CharacterCasing="Upper"/>
+					<TextBox	Name="hemph_empname"		Location="160, 22" Size="120, 21"	 ReadOnly="True" TabStop="False" CharacterCasing="Upper"/>
+					<Label		Name="lbl_senddate"			Location="10,44"   Size="90,  21"	 Text="Request Date"/>
+					<dtp:BizDateTimePicker Name="trah_senddate" Location="100, 44" Size="90, 21" TabIndex="5" CustomFormat="dd-MM-yyyy" Format="Custom"/>
+          <Label		Name="lbl_trandate"			Location="10,66"   Size="90,  21"	 Text="TranDate"/>
+          <dtp:BizDateTimePicker Name="trah_trandate" Location="100, 66" Size="90, 21" TabIndex="5" CustomFormat="dd-MM-yyyy" Format="Custom"/>
+
+				<Label		Name="lbl_trayear"	   Location="340, 22" 	Size="40, 21" TextAlign="MiddleLeft" Text="Year"/>
+				<ComboBox Name="trah_trayear"         Location="380, 22"  Size="50,21" Enabled="True" TabStop="False">				
+				</ComboBox>
+
+				<Label		Name="lbl_tramonth"	   Location="340, 44" 	Size="40, 21" TextAlign="MiddleLeft" Text="Month"/>
+				<ComboBox Name="trah_tramonth"         Location="380, 44"  Size="50,21" Enabled="True" TabStop="False">
+					<ele:BizDisplayValuePair>
+						<ele:ComboBoxItems>
+							<ele:ComboBoxItem DisplayMember="Jan"	ValueMember="1"/>
+							<ele:ComboBoxItem DisplayMember="Feb"	ValueMember="2"/>
+							<ele:ComboBoxItem DisplayMember="Mar"	ValueMember="3"/>
+							<ele:ComboBoxItem DisplayMember="Apr"	ValueMember="4"/>
+							<ele:ComboBoxItem DisplayMember="May"	ValueMember="5"/>
+							<ele:ComboBoxItem DisplayMember="Jun"	ValueMember="6"/>
+							<ele:ComboBoxItem DisplayMember="Jul"	ValueMember="7"/>
+							<ele:ComboBoxItem DisplayMember="Aug"	ValueMember="8"/>
+							<ele:ComboBoxItem DisplayMember="Sep"	ValueMember="9"/>
+							<ele:ComboBoxItem DisplayMember="Oct"	ValueMember="10"/>
+							<ele:ComboBoxItem DisplayMember="Nov"	ValueMember="11"/>
+							<ele:ComboBoxItem DisplayMember="Dec"	ValueMember="12"/>
+						</ele:ComboBoxItems>
+					</ele:BizDisplayValuePair>
+				</ComboBox>
+
+				<Label		Name="lbl_sectorcode"		Location="340, 66"  Size="40,  21"	 Text="Zone"/>
+				<TextBox	Name="trah_sectorcode"		Location="380, 66" Size="60, 21"	 TabIndex="52" CharacterCasing="Upper"/>
+
+				<Label		Name="lbl_user"		Location="500, 22"  Size="70,  21"	 Text="Created By"/>
+				<TextBox	Name="trah_user"		Location="570, 22" Size="120, 21"	 TabIndex="52" CharacterCasing="Upper" ReadOnly="True"/>
+
+          <Label		Name="lbl_user1"		Location="500, 50"  Size="70,  21"	 Text="Approved By"/>
+          <TextBox	Name="trah_agreedby"		Location="570, 50" Size="120, 21"	 TabIndex="52" CharacterCasing="Upper" ReadOnly="True"/>
+
+
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_source"		  Location="5, 135"		Size="730,200"	Text="Request Information" >
+				<Controls>
+						  
+					  <Label		Name="lbl_fromsitenum"		Location="10, 22"	  Size="90,  21"	Text="Transfer From(*)"/>
+					  <TextBox	Name="trah_fromsitenum"		Location="100,22"	  Size="50,  21"	TabIndex="3" CharacterCasing="Upper" />
+					  <TextBox	Name="sitm_sitename"			Location="152,22"	  Size="200, 21"	ReadOnly="True" TabStop="False" CharacterCasing="Upper"/>
+					
+					  <Label		Name="lbl_tositenum"			Location="10,44"	Size="90, 21"		Text="Transfer To(*)"/>
+					  <TextBox	Name="trah_tositenum"			Location="100,44"	Size="50, 21"		TabIndex="53" CharacterCasing="Upper"/>
+					  <TextBox	Name="sitm1_sitename"			Location="152, 44"	Size="200, 21"	ReadOnly="True" TabStop="False" CharacterCasing="Upper"/>
+					
+					  <Label		Name="lbl_agreedby"				Location="10, 66"	  Size="90, 21"		Text="Agreed By"/>
+					  <TextBox	Name="trah_agreedby"			Location="100,66"	  Size="124, 21"	ReadOnly="True" TabStop="False" CharacterCasing="Upper" />
+
+
+					  <Label		Name="lbl_docunum"		Location="460, 22"	  Size="60,  21"	Text="Ctr/Adh No"/>
+					  <TextBox	Name="trah_docunum"		Location="530,22"	  Size="120,  21"	TabIndex="3" CharacterCasing="Upper"/>
+					
+					  <!--<Label		Name="lbl_whnum"			Location="470, 44"	Size="50, 21"		Text="WHM"/>
+					  <TextBox	Name="trah_whnum"			Location="530,44"	Size="120, 21"		TabIndex="53" CharacterCasing="Upper"/>-->
+
+					<Label		Name="lbl_trqnum"		Location="470, 44"	  Size="50,  21"	Text="MRQ No"/>
+					<TextBox	Name="trah_trqnum"		Location="530,44"	  Size="120,  21"	TabIndex="3" CharacterCasing="Upper"/>
+
+					<Label		Name="lbl_whnum"			Location="470,66"	Size="50, 21"		Text="WHM"/>
+					<TextBox	Name="trah_whnum"			Location="530,66"	Size="50, 21"		TabIndex="53" CharacterCasing="Upper"/>
+					 
+					  <Label		Name="lbl_agreedempname"	Location="10, 66"	  Size="90, 21"		Text="Name" Visible="false"/>
+					  <TextBox	Name="hemph_empname"			Location="100,66"	  Size="252, 21"	ReadOnly="True" TabStop="False" CharacterCasing="Upper" Visible="false"/>
+					  <Label		Name="lbl_remarks"				Location="10, 90"	Size="90, 21"		Text="Remarks"/>
+				      <TextBox	Name="trah_remarks"				Location="100,90"	Size="600, 100"	TabIndex="2" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+					
+					</Controls>
+      </GroupBox>
+
+      <GroupBox	Name="grb_destination" Location="375, 110"		Size="360,150"	Text="Destination Information" Visible="false">
+        <Controls>
+					<Label		Name="lbl_sentby"					Location="10, 66"		Size="90, 21"		Text="Sent By Name" Visible="false"/>
+					<TextBox	Name="trah_sentby"				Location="100,66"		Size="252, 21"	TabIndex="4" CharacterCasing="Upper" Visible="false"/>
+					<Label		Name="lbl_senderremarks"	Location="10,	 66" Size="90, 21"		Text="Sender Remarks"/>
+					<TextBox	Name="trah_senderremarks" Location="100, 66" Size="252, 80"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+				</Controls>
+			</GroupBox>
+
+		<Button 	Name="btn_ExtractMATM"		Location="100, 370"	Size="150,31"	TabIndex="8" Text="Choose Material(s)"/>
+		<Button 	Name="btn_ExtractTemplate"		Location="292, 370"	Size="150,31"	TabIndex="8" Text="Extract Template(s)"/>
+		<Button 	Name="btn_PreviousMATM"		Location="484, 370"	Size="150,31"	TabIndex="8" Text="Previous Issue"/>
+    </Controls>
+  </Form>
+</BizXml>

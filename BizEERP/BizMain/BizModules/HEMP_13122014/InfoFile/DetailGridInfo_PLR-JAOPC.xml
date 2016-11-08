@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="plr" Title="Permits/Licences">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="pldesc"	HeaderText="Description"	Width="150"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="permitno"	HeaderText="WP No / SIRD No"	Width="150"       Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="applydate"	HeaderText="Date of Application"	Width="150"        ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy" />
+		<DetailGridColumnInfo MappingName="cancelddate"	HeaderText="Cancellation/Ceasation"	Width="150"        ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy" />
+		<DetailGridColumnInfo MappingName="expirydate"	HeaderText="Expiry Date"	Width="150"          ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<DetailGridColumnInfo MappingName="levy"	HeaderText="Levy ($)"	Width="80"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="Remarks"	Width="250"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="empnum"	HeaderText=""	Width="0"   Format="#,##0.00####" ReadOnly="true"  Key="True"/>
+		<DetailGridColumnInfo MappingName="nric"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true"  />
+
+
+	</DetailGridInfo>
+</BizXml>
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="sitm2" Title="Inventory">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="created"	HeaderText="Date"	Width="70"  ReadOnly="True"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"  />
+		<DetailGridColumnInfo MappingName="empnum"			  HeaderText="{languageBinding.empnum}"		Width="90" F2="True" F2GridInfo="F2GridInfo_vHEMPH2.xml"/>
+		<DetailGridColumnInfo MappingName="empname"	HeaderText="{languageBinding.empname}"	Width="90"  ReadOnly="True"        Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="matnum"	HeaderText="Appointment"	Width="90"  ReadOnly="True"        Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="eqmnum"	HeaderText="Equipment" F2="True" F2GridInfo="F2GridInfo_EQM.xml"	Width="70"         Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="qty"	HeaderText="{languageBinding.qty}"	Width="40"         Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="{languageBinding.remark}"	 Width="150"      Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="sitenum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:str="System.String, Mscorlib"
+		xmlns:def="Definition">  
+	<Form Name="frm_RegisterModule" Text="{languageBinding.frm_RegisterModule}" ClientSize="360,355" FormBorderStyle="FixedToolWindow" MaximizeBox="False" MinimizeBox="False" StartPosition="CenterScreen" ShowInTaskbar="False" ControlBox="false">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<!--PictureBox Name="pcb_RegisterModule" Location="0, 0" Size="165, 315" TabStop="False">
+				<ele:BizPictureBoxImage FileName="Bizpoint1.bmp"/>
+			</PictureBox-->
+			<Label		Name="lbl_RegisterModule_Title"		Location="30, 20"	Size="310, 20"	Font="Tahoma, 11pt, style=Bold"/>
+			<Label		Name="lbl_RegisterModule_Detail"	Location="30, 40"	Size="310, 50"	Font="Tahoma, 9pt"/>
+			<!--Module-->
+			<Label		Name="lbl_RegisterModule_ModuleName"	Location="30,100"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_ModuleName}"/>
+			<TextBox	Name="txt_RegisterModule_ModuleName"	Location="30,120"	Size="300, 20"	Font="Tahoma, 9pt"	MaxLength="50"		TabIndex="0"/>
+			<Label		Name="lbl_RegisterModule_Description"	Location="30,150"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_Description}"/>
+			<TextBox	Name="txt_RegisterModule_Descirption"	Location="30,170"	Size="300,100"	Font="Tahoma, 9pt"	MaxLength="500"		TabIndex="1" Multiline="True" ScrollBars="Vertical"/>
+			<CheckBox	Name="chb_RegisterModule_Type"			Location="30,270"	Size="100, 30"	Font="Tahoma, 9pt"	FlatStyle="System"	TabIndex="2" Text="{languageBinding.chb_RegisterModule_Type}" Checked="True"/>
+			<CheckBox	Name="chb_RegisterModule_AuditTrail"	Location="200,270"	Size="100, 30"	Font="Tahoma, 9pt"	FlatStyle="System"	TabIndex="2" Text="{languageBinding.chb_RegisterModule_AuditTrail}" Checked="True"/>
+			<!--Format-->
+			<Label		Name="lbl_RegisterModule_Prefix"	Location="30,20"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_Prefix}"/>
+			<TextBox	Name="txt_RegisterModule_Prefix"	Location="30,40"	Size="300, 20"	Font="Tahoma, 9pt"	MaxLength="50"  TabIndex="3"/>
+			<Label		Name="lbl_RegisterModule_Year"		Location="30,70"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_Year}"/>
+			<ComboBox	Name="cmb_RegisterModule_Year"		Location="30,90"	Size="140, 20"	Font="Tahoma, 9pt"	Text="YY" TabIndex="4" >
+				<Items>
+					<str:String>YY</str:String>
+					<str:String>YYYY</str:String>
+					<str:String>YYMM</str:String>
+					<str:String>YYYYMM</str:String>
+				</Items>
+			</ComboBox>
+			<Label		Name="lbl_RegisterModule_Number"	Location="30,120"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_Number}"/>
+			<TextBox	Name="txt_RegisterModule_Number"	Location="30,140"	Size="140, 20"	Font="Tahoma, 9pt"	MaxLength="50" Text="000000" TabIndex="5"/>
+			<Label		Name="lbl_RegisterModule_Sequence"	Location="190, 70"	Size="100, 20"	Font="Tahoma, 9pt"	Text="{languageBinding.lbl_RegisterModule_Sequence}"/>
+			<ListBox	Name="lsb_RegisterModule_Sequence"	Location="190, 90"	Size="100, 80"	Font="Tahoma, 9pt"	TabIndex="6"/>
+			<Button		Name="btn_RegisterModule_Asc"		Location="305, 90"	Size="25,  25"	Font="Tahoma, 9pt" TabIndex="7" ImageList="{imageList}" ImageIndex="17"/>
+			<Button		Name="btn_RegisterModule_Desc"		Location="305,125"	Size="25,  25"	Font="Tahoma, 9pt" TabIndex="8" ImageList="{imageList}" ImageIndex="18"/>
+			<Button		Name="btn_RegisterModule_Preview"	Location="305,160"	Size="25,  25"	Font="Tahoma, 9pt" TabIndex="9" ImageList="{imageList}" ImageIndex="19"/>
+			<Label		Name="lbl_RegisterModule_Preview"	Location="30,170"	Size="100, 20"	Font="Tahoma, 9pt" Text="{languageBinding.lbl_RegisterModule_Preview}"/>
+			<GroupBox	Name="grb_RegisterModule_Preview"	Location="30,185"	Size="300,115"	TabStop="False" Font="Tahoma, 9pt">
+				<Controls>
+					<Label Name="lbl_RegisterModule_Refnum" Location="10,10" Size="280,100" Font="Tahoma, 12pt, style=Bold" Text="{languageBinding.lbl_RegisterModule_Refnum}" TextAlign="MiddleCenter"/>
+				</Controls>
+			</GroupBox>
+			<!--Button-->
+			<GroupBox	Name="grb_RegisterModule"			Location="0,315"	Size="500, 3"	TabStop="False"/>
+			<Button		Name="btn_RegisterModule_Previous"	Location="100,325"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="10" Text="{languageBinding.btn_RegisterModule_Previous}"/>
+			<Button		Name="btn_RegisterModule_Next"		Location="185,325"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="11" Text="{languageBinding.btn_RegisterModule_Next}"/>
+			<Button		Name="btn_RegisterModule_Cancel"	Location="270,325"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="12" Text="{languageBinding.btn_RegisterModule_Cancel}"/>
+		</Controls>
+	</Form>
+</BizXml>

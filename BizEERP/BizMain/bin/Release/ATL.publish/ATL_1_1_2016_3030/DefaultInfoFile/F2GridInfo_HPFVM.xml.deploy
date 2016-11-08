@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="hpfvmd" Title="Search Payment Type" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="fvnum"		HeaderText="{languageBinding.fvnum}"		Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="varcode"	HeaderText="{languageBinding.varcode}"	Width="70"	IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="vardesc"	HeaderText="{languageBinding.vardesc}"	Width="200"/>
+	</F2GridInfo>
+</BizXml>

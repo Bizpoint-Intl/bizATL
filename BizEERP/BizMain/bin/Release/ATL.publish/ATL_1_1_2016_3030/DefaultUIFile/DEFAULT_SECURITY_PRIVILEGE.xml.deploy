@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+		<Form Name="frm_Privilege" Text="Privilege" ClientSize="360,385" StartPosition="CenterScreen" FormBorderStyle="FixedToolWindow" MaximizeBox="false" MinimizeBox="false" ShowInTaskbar="False" ControlBox="false">
+			<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+			<Controls>
+				<!--PictureBox Name="pcb_Privilege" Location="0, 0" Size="165, 315" TabStop="False">
+					<ele:BizPictureBoxImage FileName="Bizpoint1.bmp"/>
+				</PictureBox-->
+				<Label	Name="lbl_Privilege_Title"		Location="30, 20"	Size="320, 30"	Font="Tahoma, 11pt, style=Bold" Text="Welcome to the Privilege Wizard."/>
+				<Label	Name="lbl_Privilege_Detail"		Location="30, 50"	Size="320, 30"	Font="Tahoma, 9pt"	Text="Select type."/>
+				<Panel	Name="pnl_Privilege"          Location="30, 80"	Size="305,165"	BorderStyle="Fixed3D" BackColor="White">
+					<Controls>
+						<Label		Name="lbl_Privilege_Privilege"	Location="0,    0"	Width="150"	BackColor="Control" Font="Tahoma, 10pt, style=Bold" TextAlign="MiddleCenter" BorderStyle="FixedSingle" Text="Privilege"/>
+						<Label		Name="lbl_Privilege_Allow"		  Location="150,  0"	Width="150"	BackColor="Control" Font="Tahoma, 10pt, style=Bold"	TextAlign="MiddleCenter" BorderStyle="FixedSingle" Text="Allow"/>
+						<Label		Name="lbl_Privilege_All"		    Location="0,   20"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="All"/>
+						<Label		Name="lbl_Privilege_New"		    Location="0,   40"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="New"/>
+						<Label		Name="lbl_Privilege_Edit"		    Location="0,   60"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Edit"/>
+						<Label		Name="lbl_Privilege_Delete"		  Location="0,   80"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Delete"/>
+						<Label		Name="lbl_Privilege_Confirm"	  Location="0,  100"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Confirm"/>
+            <Label		Name="lbl_Privilege_Reopen"		  Location="0,  120"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Reopen"/>
+						<Label		Name="lbl_Privilege_Refresh"	  Location="0,  140"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Refresh"/>
+						<Label		Name="lbl_Privilege_Save"			  Location="0,  160"	Width="150"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Save"/>
+						<CheckBox	Name="chb_Privilege_All"			  Location="215, 20"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_New"			  Location="215, 40"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_Edit"			  Location="215, 60"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_Delete"		  Location="215, 80"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_Confirm"	  Location="215,100"	Font="Tahoma, 10pt" FlatStyle="System"/>
+            <CheckBox	Name="chb_Privilege_Reopen"	    Location="215,120"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_Refresh"	  Location="215,140"	Font="Tahoma, 10pt" FlatStyle="System"/>
+						<CheckBox	Name="chb_Privilege_Save"			  Location="215,160"	Font="Tahoma, 10pt" FlatStyle="System"/>
+					</Controls>
+				</Panel>
+				<Label		Name="lbl_Privilege_Table"		Location="30,290"	Size="150, 20"	Font="Tahoma, 9pt" 	Text="Table:"/>
+				<ComboBox	Name="cmb_Privilege_Table"		Location="30,310"	Size="150, 20"	Font="Tahoma, 9pt"/>
+				<Button		Name="btn_Privilege_Field"		Location="195,310"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="3" Text="Field..."/>
+				<!--lxf:TabControl Name="tcl_Privilege" Location="180,10" Size="305,290" Appearance="MultiForm" Style="Plain" IDEPixelBorder="True" Visible="True" PositionTop="True" TextInactiveColor="Black" Font="Tahoma, 8.75pt, style=Bold">
+					<lxf:TabPages>
+						<lxf:TabPage Name="tbp_Privilege_Module" Title="Module">
+							<Controls>
+								<Panel	Name="pnl_Privilege" Location="10,10"	Size="275,235"	BorderStyle="Fixed3D" BackColor="White">
+									<Controls>
+										<Label		Name="lbl_Privilege_Privilege"	Location="0,    0"	Width="135"	BackColor="Control" Font="Tahoma, 10pt, style=Bold" TextAlign="MiddleCenter" BorderStyle="FixedSingle" Text="Privilege"/>
+										<Label		Name="lbl_Privilege_Allow"		Location="135,  0"	Width="135"	BackColor="Control" Font="Tahoma, 10pt, style=Bold"	TextAlign="MiddleCenter" BorderStyle="FixedSingle" Text="Allow"/>
+										<Label		Name="lbl_Privilege_All"		Location="0,   20"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="All"/>
+										<Label		Name="lbl_Privilege_New"		Location="0,   40"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="New"/>
+										<Label		Name="lbl_Privilege_Edit"		Location="0,   60"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Edit"/>
+										<Label		Name="lbl_Privilege_Delete"		Location="0,   80"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Delete"/>
+										<Label		Name="lbl_Privilege_Confirm"	Location="0,  100"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Confirm"/>
+										<Label		Name="lbl_Privilege_Refresh"	Location="0,  120"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Refresh"/>
+										<Label		Name="lbl_Privilege_Save"		Location="0,  140"	Width="135"	Font="Tahoma, 10pt" TextAlign="MiddleCenter" Text="Save"/>
+										<CheckBox	Name="chb_Privilege_All"		Location="195, 20"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_New"		Location="195, 40"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_Edit"		Location="195, 60"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_Delete"		Location="195, 80"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_Confirm"	Location="195,100"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_Refresh"	Location="195,120"	Font="Tahoma, 10pt" FlatStyle="System"/>
+										<CheckBox	Name="chb_Privilege_Save"		Location="195,140"	Font="Tahoma, 10pt" FlatStyle="System"/>
+									</Controls>
+								</Panel>
+							</Controls>
+						</lxf:TabPage>
+						<lxf:TabPage Name="tbp_Privilege_Table" Title="Table">
+							<Controls>
+								<Label		Name="lbl_Privilege_Table"	Location="10,150"	Size="200, 20"	Font="Tahoma, 9pt" 	Text="Table:"/>
+								<ComboBox	Name="cmb_Privilege_Table"	Location="10,170"	Size="200, 20"	Font="Tahoma, 9pt"/>
+							</Controls>
+						</lxf:TabPage>
+					</lxf:TabPages>
+				</lxf:TabControl-->
+				
+				<GroupBox	Name="grb_Privilege"			Location="0,  345"	Size="500, 3"	TabStop="False"/>
+				<Button		Name="btn_Privilege_Finish"		Location="185,355"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="2" Text="Finish"/>
+				<Button		Name="btn_Privilege_Cancel"		Location="270,355"	Font="Tahoma, 9pt" FlatStyle="System" TabIndex="3" Text="Cancel"/>
+			</Controls>
+		</Form>
+</BizXml>

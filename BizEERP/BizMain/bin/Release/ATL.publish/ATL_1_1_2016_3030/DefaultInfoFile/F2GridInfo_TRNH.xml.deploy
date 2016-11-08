@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="trnh" Title="Training Request" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='TRNQ'" >
+		<F2GridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"	Width="100" IsItem="True" SearchItem="True"  Key="True"/>
+		<F2GridColumnInfo MappingName="coursecode"	HeaderText="Course Code"	Width="200" IsItem="True" SearchItem="True" />
+		<F2GridColumnInfo MappingName="coursename"	HeaderText="Course Name"	Width="200" IsItem="True" SearchItem="True" SortItem="True" SortType="DESC"/>
+		<F2GridColumnInfo MappingName="apnum"	HeaderText="Vendor Code"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="apname"	HeaderText="Vendor Name"	Width="200" IsItem="True" />
+    <F2GridColumnInfo MappingName="trandate"	HeaderText="Trandate"	Width="100" IsItem="True" />
+
+	</F2GridInfo>
+</BizXml>

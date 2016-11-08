@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="farh" Title="Search Dispose Fix Asset" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="fanum"	HeaderText="{languageBinding.fanum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="faname"	HeaderText="{languageBinding.faname}"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="status"	HeaderText="{languageBinding.status}"	Width="40" IsItem="True"/>
+		<F2GridColumnInfo MappingName="acatnum"	HeaderText="{languageBinding.acatnum}"	Width="80" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

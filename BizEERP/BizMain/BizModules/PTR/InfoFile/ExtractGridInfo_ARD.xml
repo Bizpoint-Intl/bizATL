@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizExtract, BizBase"
+    xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<ExtractGridInfo Name="extractGridInfo" FromTable="ard">
+    <VirtualColumns>
+      <bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean"   DefaultValue="False"/>
+    </VirtualColumns>
+		<Filters FromCondition="oriamt &gt; 0" ToCondition="oriamt &lt; 0">
+			<Filter MappingName="arnum"		HeaderText="{languageBinding.arnum}" AutoFill="True"/>
+			<Filter MappingName="invnum"	HeaderText="{languageBinding.invnum}"/>
+		</Filters>
+		<ExtractGridColumnInfo MappingName="mark"		HeaderText="{languageBinding.mark}"		Width="50" ReadOnly="false" ColumnType="CheckBox"/>
+		<ExtractGridColumnInfo MappingName="arnum"		HeaderText="{languageBinding.arnum}"		Width="100" Copy="True"/>
+		<ExtractGridColumnInfo MappingName="invnum"		HeaderText="{languageBinding.invnum}"		Width="100"	Copy="True"/>
+    	<ExtractGridColumnInfo MappingName="oricur"		HeaderText="{languageBinding.oricur}"		Width="50"	Copy="True"/>
+		<ExtractGridColumnInfo MappingName="invdate"	HeaderText="{languageBinding.invdate}"		Width="85"	FromColumn="trandate"	ToColumn="trandate"		FunctionType="Min" Copy="True" />
+		<ExtractGridColumnInfo MappingName="dramt"		HeaderText="{languageBinding.oridebit}"		Width="80"	FromColumn="oridebit"		ToColumn="0"			FunctionType="Sum"/>
+		<ExtractGridColumnInfo MappingName="cramt"		HeaderText="{languageBinding.oricredit}"	Width="80"	FromColumn="0"			ToColumn="oricredit"		FunctionType="Sum"/>
+		<ExtractGridColumnInfo MappingName="oriamt"		HeaderText="{languageBinding.oriamt}"		Width="0"	Copy="True">
+			<Expression Argument1="dramt" ArithmeticOperator="Minus" Argument2="cramt"/>
+		</ExtractGridColumnInfo>
+		<ExtractGridColumnInfo MappingName="exramt"		HeaderText="{languageBinding.exramt}"		Width="90"	FromColumn="0"			ToColumn="0"			FunctionType="Sum"/>
+		<ExtractGridColumnInfo MappingName="ccnum"		HeaderText="{languageBinding.ccnum}"		Width="100"	Copy="True"/>
+		<ExtractGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.accnum}"		Width="100"	Copy="True"/>
+		
+		<!--<Havings>
+			<Having Argument1="dramt" RelationOperator="NotEqual" Argument2="cramt"/>
+		</Havings>-->
+	</ExtractGridInfo>
+</BizXml>

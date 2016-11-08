@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="TDT2" Tag="dg_TDT2" Text="MWT Posting" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="0" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid	Name="dg_TDT2"			Location="0, 0"	Size="739, 538" CaptionText="MWT Posting" HeaderForeColor="ControlText" TabIndex="1" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="5"		Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" Visible="False" />
+				</Controls>
+			</DataGrid>
+		</Controls>
+	</Form>
+</BizXml>

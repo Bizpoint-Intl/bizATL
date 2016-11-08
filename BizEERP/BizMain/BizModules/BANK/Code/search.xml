@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, System" 
+		xmlns:def="Definition" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+  <Form Name="search" Text="Bank Reconciliation - Search" Location="4, 21" AutoScaleBaseSize="5, 14" 
+		ClientSize="350, 200" ForeColor="Black" StartPosition="CenterScreen" Font="{languageBinding.sys_font}">
+	<!--DON26<ele:BizFormIcon Icon="Bizpoint.ico"/>-->
+    <Controls>					
+		<Label		Name="lbl_refnum"		Location="10, 20"	Size="90, 21"	Text="Ref-No"/>
+		<TextBox	Name="search_refnum"	Location="110, 20"	Size="130, 21"	TabIndex="1" ReadOnly="True" TabStop="False" />
+		<Label		Name="lbl_trandate"		Location="10, 45"	Size="90, 21"	Text="TranDate"/>
+		<dtp:BizDateTimePicker	Name="search_trandate"	Location="110,45"	Size="100,21"	TabIndex="2" Enabled="False" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<Label		Name="lbl_chequenum"	Location="10, 70"	Size="90, 21"	Text="Cheque-No"/>
+		<TextBox	Name="search_chequenum"	Location="110,70"	Size="130, 21"	TabIndex="4" ReadOnly="True" TabStop="False" />
+		<Label		Name="lbl_detail"		Location="10, 95"	Size="90, 21"	Text="Detail"/>
+		<TextBox	Name="search_detail"	Location="110,95"	Size="230, 21"	TabIndex="3" ReadOnly="True"/>
+		<Label		Name="lbl_amount"		Location="10, 120"	Size="90, 21"	Text="Amount"/>
+		<TextBox	Name="search_amount"	Location="110,120"	Size="100, 21"	TabIndex="5" ReadOnly="True" TabStop="False" TextAlign="Right"/>
+
+		<Button		Name="Btn_Search"	Text="&amp;Search"		Location="130, 170"	Size="100, 23" TabIndex="55" Click="btn_search_Search_Click"/>
+		<Button		Name="Btn_Done"		Text="&amp;Done"		Location="240,170"	Size="100, 23" TabIndex="56" Click="btn_search_Done_Click"/>
+    </Controls>
+  </Form>
+</BizXml>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="atr" Key="refnum" CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.ATRB}">
+		<RelationTables>
+
+			<DocRelationTableInfo TableName="vMainHEMPH" DataField="empnum"			ConditionField="empnum">
+			
+			</DocRelationTableInfo>
+
+
+			<DocRelationTableInfo TableName="sem" DataField="sectorcode"			ConditionField="sectorcode">
+		
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="sitm" DataField="sitenum"			ConditionField="sitenum">
+			
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="wrr" DataField="refnum"			ConditionField="wrrnum">
+
+			</DocRelationTableInfo>
+
+
+			<DocRelationTableInfo TableName="vATRwrr" DataField="refnum"			ConditionField="wrrnum">
+
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="wkch"		DataField="refnum"	ConditionField="refnum"			Save="True"/>
+			<DocRelationTableInfo TableName="wkc1"		DataField="refnum"	ConditionField="refnum"			Save="True"/>
+			<DocRelationTableInfo TableName="wkc2"		DataField="refnum"	ConditionField="refnum"			Save="True"/>
+
+
+
+
+		</RelationTables>
+		<DocumentPages>
+			<!-- ATR -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+        <F2Controls>
+				<F2Control ControlName="atr_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+					<RelationF2Tables>
+						<RelationF2Table TableName="sem"/>
+					</RelationF2Tables>
+				</F2Control>
+			
+					<!--<F2Control ControlName="atr_wrrnum" F2GridInfo="F2GridInfo_WRR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="wrr"/>
+						</RelationF2Tables>
+					</F2Control>-->
+
+			<F2Control ControlName="atr_wrrnum" F2GridInfo="F2GridInfo_vATRWRR.xml">
+				<RelationF2Tables>
+					<RelationF2Table TableName="vATRwrr"/>
+				</RelationF2Tables>
+			</F2Control>
+			
+				</F2Controls>
+				
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="Timesheet.xml"		FormName="timesheet"	Title="Time Sheet">
+				<Details>
+					<Detail DataGridName="dg_timesheet"	DetailGridInfo="DetailGridInfo_ATR1.xml"  CaptionText="Time Sheet"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="TimesheetSummary.xml"		FormName="timesheetsummary"	Title="Time Sheet Summary">
+				<Details>
+					<Detail DataGridName="dg_timesheetsummary"	DetailGridInfo="DetailGridInfo_ATR2.xml"  CaptionText="Time Sheet Summary"/>
+				</Details>
+			</DocumentPageInfo>
+
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Site Master Report (Form)"  DefaultReport="True" ReportPath="\ATR\Report\ATRfrm1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

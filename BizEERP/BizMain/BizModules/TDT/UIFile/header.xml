@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xml:lang="zh-CN" 
+		xmlns:def="Definition" 
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="header" Text="Header" Location="4, 21" Size="736, 535" ForeColor="Black" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_tdtinfo"		Location=" 10, 10"	Size="350,195"	Text="TDT Information" >
+				<Controls>
+					<Label		Name="lbl_expire"		Location="10,  15"		Size=" 90,  21"		TabIndex=" 1"		TextAlign="MiddleLeft" Text="{languageBinding.expire}"/>
+					<CheckBox	Name="tdth_expire"		Location="141,  15"		Size=" 50,  22"		TabIndex="2"/>    
+					<Label		Name="lbl_tdtname"		Location=" 10,  40"		Size=" 90,  21"		TabIndex=" 3"		TextAlign="MiddleLeft" Text="TDT Name"/>
+					<TextBox	Name="tdth_tdtname"		Location="141,  40"		Size="200,  21"		TabIndex="4"		CharacterCasing="Upper"/>
+					<Label		Name="lbl_tdtdate"		Location="10,65"		Size="90, 16"		TextAlign="MiddleLeft"	Text="TDT Date"/>
+					<dtp:BizDateTimePicker	Name="tdth_tdtdate"		Location="141,65"	Size="100, 20"	TabIndex="0"	FlatStyle="System"/>
+					
+					<Label		Name="lbl_remarks"		Location="10,90"		Size="90, 21"		TextAlign="MiddleLeft"	Text="{languageBinding.remark}"/>
+					<TextBox	Name="tdth_remarks"		Location="141,90"		Size="200,90"		TabIndex="2"		Multiline="True"		ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+			
+			<GroupBox	Name="grb_Headerinfo"		Location=" 380, 10"	Size="350,90"	Text="Module Header" >
+				<Controls>
+					<Label		Name="lbl_selectClaus"	Location="10,15"		Size="90, 21"		TextAlign="MiddleLeft"	Text="Header F2/F3"/>
+					<TextBox	Name="tdth_selectClaus"	Location="141,15"		Size="200,60"		TabIndex="2"		Multiline="True"		ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_Detailinfo"			Location=" 380, 100"	Size="350,235"		Text="Module Detail" >
+				<Controls>
+					<Label		Name="lbl_insert"		Location="10,15"		Size="130, 21"		TextAlign="MiddleLeft"	Text="Insert(Column Copy)"/>
+					<TextBox	Name="tdth_insert"		Location="141,15"		Size="200,60"		TabIndex="2"		Multiline="True"		ScrollBars="Vertical"/>
+					<Label		Name="lbl_duplicate"	Location="10,85"		Size="130, 21"		TextAlign="MiddleLeft"	Text="Duplicate(Column Copy)"/>
+					<TextBox	Name="tdth_duplicate"	Location="141,85"		Size="200,60"		TabIndex="2"		Multiline="True"		ScrollBars="Vertical"/>
+					<Label		Name="lbl_reopen"		Location="10,155"		Size="130, 21"		TextAlign="MiddleLeft"	Text="Re-Open(Column Copy)"/>
+					<TextBox	Name="tdth_reopen"		Location="141,155"		Size="200,60"		TabIndex="2"		Multiline="True"		ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+			
+		</Controls>                                 
+	</Form>                                       
+</BizXml>                                       
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                

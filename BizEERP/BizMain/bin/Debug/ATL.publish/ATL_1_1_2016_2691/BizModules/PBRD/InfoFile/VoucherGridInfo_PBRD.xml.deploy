@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="pbrdm" Title="Product Brand"	DocumentInfo="DocumentInfo_PBRD.xml" PageSize="{languageBinding.sys_voucher_PageSize}">
+		<VoucherGridColumnInfo MappingName="pbrdcode"	HeaderText="Brand Code"				Width="100"	SearchItem="True"	ConfirmItem="True"	RefreshItem="True"	Key="True" />
+		<VoucherGridColumnInfo MappingName="pbrdname"	HeaderText="Description"				Width="200"/>
+		<VoucherGridColumnInfo MappingName="active"		HeaderText="Active"				Width="45" ColumnType="CheckBox" />
+		<VoucherGridColumnInfo MappingName="status"		HeaderText="{languageBinding.status}"		Width="0"/>
+	</VoucherGridInfo>
+</BizXml>

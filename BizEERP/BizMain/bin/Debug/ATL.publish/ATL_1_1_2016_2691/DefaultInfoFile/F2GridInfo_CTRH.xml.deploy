@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="ctrh" Title="Search Contract Record" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="status = 'P' OR status = 'O'">
+		<F2GridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="sitenum"	HeaderText="{languageBinding.sitenum}"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="sitename"	HeaderText="{languageBinding.sitename}"	Width="200" IsItem="True" />
+    <F2GridColumnInfo MappingName="sectorcode"	HeaderText="Sector"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="contractdate"	HeaderText="Contract Date"	Width="200" IsItem="True" />
+		<F2GridColumnInfo MappingName="commencedate"	HeaderText="Commencement Date"	Width="200" IsItem="True" />
+    <F2GridColumnInfo MappingName="arnum"	HeaderText=""	Width="0" IsItem="True" />
+    <F2GridColumnInfo MappingName="empnum"	HeaderText=""	Width="0" IsItem="True" />
+    <F2GridColumnInfo MappingName="empname"	HeaderText=""	Width="0" IsItem="True" />
+	</F2GridInfo>
+</BizXml>

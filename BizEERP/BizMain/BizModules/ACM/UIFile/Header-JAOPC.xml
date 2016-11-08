@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Header" Location="4, 21" Size="736, 535" ForeColor="Black" Font="{languageBinding.sys_font}">
+		<Controls>
+      <GroupBox		Name="grp_account"	Location="5,	5"	  Size="360,110" Text="Account" >
+        <Controls>
+          <Label    Name="lbl_acctype"          Location="5,   25"  Size="90, 21" TextAlign="MiddleLeft" Text="{languageBinding.acctype}"/>
+          <ComboBox Name="acm_acctype"          Location="110, 25"  Size="150,21" Enabled="False" TabStop="False">
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem DisplayMember="Income"					ValueMember="0"/>
+                <ele:ComboBoxItem DisplayMember="Other Income"			ValueMember="1"/>
+                <ele:ComboBoxItem DisplayMember="Expense"					ValueMember="2"/>
+                <ele:ComboBoxItem DisplayMember="Other Expense"			ValueMember="3"/>
+                <ele:ComboBoxItem DisplayMember="Cost of Goods Sold"		ValueMember="4"/>
+                <ele:ComboBoxItem DisplayMember="Cash"						ValueMember="5"/>
+                <ele:ComboBoxItem DisplayMember="Bank"						ValueMember="6"/>
+                <ele:ComboBoxItem DisplayMember="Other Current Asset"	ValueMember="7"/>
+                <ele:ComboBoxItem DisplayMember="Inventory Asset"			ValueMember="8"/>
+                <ele:ComboBoxItem DisplayMember="Non-Current Asset"		ValueMember="9"/>
+                <ele:ComboBoxItem DisplayMember="Fixed Asset"				ValueMember="10"/>
+                <ele:ComboBoxItem DisplayMember="Payroll Liability"			ValueMember="11"/>
+                <ele:ComboBoxItem DisplayMember="Current Liability"			ValueMember="12"/>
+                <ele:ComboBoxItem DisplayMember="Long-Term Liability"		ValueMember="13"/>
+                <ele:ComboBoxItem DisplayMember="Equity"						ValueMember="14"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+		  <CheckBox Name="acm_active"       Location="285, 25"		Size="60,21" TabIndex="1"  Text="{languageBinding.active}"/>
+          <Label    Name="lbl_accnum"          Location="5,   50"		Size="90, 21" TextAlign="MiddleLeft" Text="{languageBinding.accnum}"/>
+          <TextBox  Name="acm_accnum"	  Location="110, 50"		Size="120,21" ReadOnly="True" TabStop="False"  CharacterCasing="Upper"/>
+          <Label    Name="lbl_accname"        Location="5,   75"		Size="90, 21" TextAlign="MiddleLeft" Text="{languageBinding.accname}"/>
+          <TextBox  Name="acm_accname"	  Location="110, 75"		Size="240,21" TabIndex="0"/>
+        </Controls>
+      </GroupBox>
+    </Controls>	
+	</Form>
+</BizXml>

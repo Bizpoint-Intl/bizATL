@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+  	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox Name="grp_CustInfo"	Location="5,10"	Text="Customer Info"	Size="362,275" FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_arnum"			Location="20,  30"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Customer Code"/>
+					<TextBox	Name="sivh_arnum"		Location="110, 25"	Size="240,21"	TabIndex="1"/>
+
+					<Label		Name="lbl_arname"		Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Customer Name"/>
+					<TextBox	Name="sivh_detail"		Location="110, 50"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_address"		Location="20, 80"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.address}"/>
+					<TextBox	Name="sivh_addr1"		Location="110, 75"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+					<TextBox	Name="sivh_addr2"		Location="110,100"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+					<TextBox	Name="sivh_addr3"		Location="110,125"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+					<TextBox	Name="sivh_addr4"		Location="110,150"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_phone"			Location="20,180"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+					<TextBox	Name="sivh_phone"		Location="110,175"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_hp"				Location=" 20,205"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+					<TextBox	Name="sivh_hp"			Location="110,200"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+					
+					<Label		Name="lbl_fax"				Location=" 20,230"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+					<TextBox	Name="sivh_fax"			Location="110,225"	Size="240,21"	TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_contact"		Location=" 20,255"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.contact}"/>
+					<TextBox	Name="sivh_contact"	Location="110,250"	Size="240,21"	TabIndex="1"/>
+					
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grp_WorInfo"	Location="372, 10"	Text="Transaction Info"	Size="362,275" 	FlatStyle="System">
+				<Controls>
+
+					<Label		Name="lbl_docunum"			Location="20, 30"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.docunum}"/>
+					<TextBox	Name="sivh_docunum"		Location="110,25"	Size="240,21"	TabIndex="1"	TextAlign="Left"/>
+
+					<Label		Name="lbl_custpo"			Location="20, 55"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Cust PO No."/>
+					<TextBox	Name="sivh_custpo"			Location="110,50"	Size="240,21"	TabIndex="1"	TextAlign="Left"/>
+
+					<Label		Name="lbl_trandate"			Location="20,  80"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.trandate}"/>
+					<dtp:BizDateTimePicker	Name="sivh_trandate"	Location="110,75"	Size="120,21"	TabIndex="1" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+
+					<Label		Name="lbl_period"				Location="270,75"	Size="40, 16"	TextAlign="MiddleLeft"	Text="Period"/>
+					<TextBox	Name="sivh_period"			Location="320,75"	Size="30,21"	TabIndex="1"	TextAlign="Center"	ReadOnly="True"/>
+
+					<Label		Name="lbl_payterms"			Location="20, 105"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.payterms}"/>
+					<TextBox	Name="sivh_payterms"		Location="110,100"	Size="240,21"	TabIndex="1"	TextAlign="Left"/>
+
+					<Label		Name="lbl_gstgrpnum"		Location=" 20,130"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.gstgrpnum}"/>
+					<TextBox	Name="sivh_gstgrpnum"		Location="110,125"	Size="70, 21"		TabIndex="1"/>
+					<TextBox	Name="sivh_gstper"			Location="185,125"	Size="170, 21"		TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_oricur"				Location=" 20,155"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.oricur}"/>
+					<TextBox	Name="sivh_oricur"			Location="110,150"	Size="70, 21"		TabIndex="1"/>
+					<TextBox	Name="sivh_exrate"			Location="185,150"	Size="170, 21"		TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_accnum"			Location=" 20,180"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="Debit A/C"/>
+					<TextBox	Name="sivh_accnum"		Location="110,175"	Size="70, 21"		TabIndex="1"/>
+					<TextBox	Name="acm_accname"		Location="185,175"	Size="170, 21"		TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_Extract"			Location="20, 200"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Extract"/>
+					<Button 	Name="btn_Extract"		Location="110, 200"	  Size="120,23"	TabIndex="9" Text="Extract"/>
+					
+					<!--<TextBox	Name="sivh_ctrnum"			Location="110, 200"	Size="240,21"		TabIndex="1"  CharacterCasing="Upper"/>-->
+					
+					<!--<Label		Name="lbl_ctrnum"			Location="20, 200"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Contract"/>
+					<TextBox	Name="sivh_ctrnum"			Location="110, 200"	Size="240,21"		TabIndex="1"  CharacterCasing="Upper"/>
+
+					<Label		Name="lbl_adhnum"			Location="20,225"	Size="50, 16"		TextAlign="MiddleLeft"	Text="Adhoc"/>
+					<TextBox	Name="sivh_adhnum"		Location="110,225"	Size="240,21"		TabIndex="1"  CharacterCasing="Upper"/>-->
+
+					<CheckBox	Name="sivh_inclgst"			Location="110,250"	Size="100,21"	  TabIndex="1" Checked="False" Text="GST Inclusive"/>
+
+					<CheckBox	Name="sivh_autodisc"			Location="210,250"	Size="150,21"	  TabIndex="1" Checked="False" Text="Auto Calculate Discount"/>
+					
+				</Controls>
+			</GroupBox>
+
+			<!--<Label		Name="lbl_MainDesc"		Location="372,300"		Size="150, 16"	TextAlign="MiddleLeft"	Text="Desciption of Invoice"/>
+			<TextBox	Name="sivh_maindesc"		Location="372,325"	Size="240,55"	TabIndex="1"	Multiline="True"	ScrollBars="Vertical"/>-->
+
+      <GroupBox Name="gpShipAddr" Text="Billing Address" Location="5, 290" Size="362, 140"  TabIndex="8" TabStop="False">
+        <Controls>
+          <TextBox Name="sivh_saddr1" Location="20, 24" Size="300, 20" TabIndex="9" />
+          <TextBox Name="sivh_saddr2" Location="20, 50" Size="300, 20" TabIndex="10" />
+          <TextBox Name="sivh_saddr3" Location="20, 76" Size="300, 20" TabIndex="11" />
+          <TextBox Name="sivh_saddr4" Location="20, 102" Size="300, 20" TabIndex="12" />
+        </Controls>
+      </GroupBox>
+
+
+      <!--<DataGrid	Name="dg_SIV1"			Location="0,285"			Size="736,150"		HeaderForeColor="ControlText" TabIndex="1" CaptionBackColor="{languageBinding.captionBackColor}"/>-->
+     	<GroupBox Name="grp_Remark"	Location="5, 445"	Text="Remarks Info"	Size="362,85" 	FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_remark"		Location="20,20"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.remarks}"/>
+					<TextBox	Name="sivh_remark"		Location="110,15"	Size="240,55"	TabIndex="1"	Multiline="True"	ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+
+			<Label		Name="lbl_grosamt"			Location="515,435"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Gross Amt"/>
+			<TextBox	Name="sivh_grosamt"		Location="615,435"	Size="120,21"	TabStop="False" ReadOnly="True"  TextAlign="Right"/>
+			<Label		Name="lbl_discamt"			Location="515,460"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Disc Amt"/>
+			<TextBox	Name="sivh_discamt"		Location="615,460"	Size="120,21"	TabStop="False" ReadOnly="True"	TextAlign="Right"/>
+			<Label		Name="lbl_origstamt"			Location="515,485"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Orig GST Amt"/>
+			<TextBox	Name="sivh_origstamt"		Location="615,485"	Size="120,21"	TabStop="False" ReadOnly="True"	TextAlign="Right"/>
+			<Label		Name="lbl_oriamt"				Location="515,510"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Orig Amt"/>
+			<TextBox	Name="sivh_oriamt"			Location="615,510"	Size="120,21"	TabStop="False" ReadOnly="True"	TextAlign="Right"/>
+      
+
+		</Controls>
+	</Form>
+</BizXml>

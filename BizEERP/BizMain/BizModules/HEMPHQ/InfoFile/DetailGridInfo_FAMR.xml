@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="famr" Title="Family History">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="name"	HeaderText="Name"	Width="150"         />
+		<!--<DetailGridColumnInfo MappingName="relationship"	HeaderText="Relationship"	Width="150"         Format="#,##0.00####" />-->
+
+		<DetailGridColumnInfo MappingName="relationship"			  HeaderText="Relationship"		Width="150" ColumnType="ComboBox" >
+			<ComboBoxItems>
+				<bas:ComboBoxItem DisplayMember="MOTHER"			ValueMember="Mother"/>
+				<bas:ComboBoxItem DisplayMember="FATHER"			ValueMember="Father"/>
+				<bas:ComboBoxItem DisplayMember="SISTER"			ValueMember="Sister"/>
+				<bas:ComboBoxItem DisplayMember="BROTHER"			ValueMember="Brother"/>
+				<bas:ComboBoxItem DisplayMember="HUSBAND"			ValueMember="Husband"/>
+				<bas:ComboBoxItem DisplayMember="WIFE"			ValueMember="Wife"/>
+				<bas:ComboBoxItem DisplayMember="DAUGHTER"			ValueMember="Daughter"/>
+				<bas:ComboBoxItem DisplayMember="SON"			ValueMember="Son"/>
+        <bas:ComboBoxItem DisplayMember="FIANCE"			ValueMember="Fiance"/>
+        <bas:ComboBoxItem DisplayMember="FRIEND"			ValueMember="Friend"/>
+			</ComboBoxItems>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="contact"	HeaderText="Contact No"	Width="100"          />
+    <DetailGridColumnInfo MappingName="isemergency"  		  HeaderText="Emergency"		  Width="80" 	ColumnType="CheckBox"/>
+    
+    <DetailGridColumnInfo MappingName="fnric"	HeaderText="NRIC"	Width="100"          />
+    
+    <DetailGridColumnInfo MappingName="residencetype"			  HeaderText="R. Type"		Width="150" ColumnType="ComboBox" >
+      <ComboBoxItems>
+        <bas:ComboBoxItem DisplayMember="Others"			ValueMember="Others"/>
+        <bas:ComboBoxItem DisplayMember="DP"			ValueMember="DP"/>
+        <bas:ComboBoxItem DisplayMember="EP"			ValueMember="EP"/>
+        <bas:ComboBoxItem DisplayMember="FW"			ValueMember="FW"/>
+        <bas:ComboBoxItem DisplayMember="Local"			ValueMember="Local"/>
+        <bas:ComboBoxItem DisplayMember="PR1"			ValueMember="PR1"/>
+        <bas:ComboBoxItem DisplayMember="PR2"			ValueMember="PR2"/>
+        <bas:ComboBoxItem DisplayMember="PR3"			ValueMember="PR3"/>
+      </ComboBoxItems>
+    </DetailGridColumnInfo>
+    
+    <DetailGridColumnInfo MappingName="fbirthcertificate"	HeaderText="B. Certificate"	Width="100"          />
+    <DetailGridColumnInfo MappingName="age"	HeaderText="Age"	Width="100"          />
+    <DetailGridColumnInfo MappingName="occupation"	HeaderText="Occupation"	Width="100"          />
+    <DetailGridColumnInfo MappingName="company"	HeaderText="Company"	Width="100"          />
+    <DetailGridColumnInfo MappingName="gender"			  HeaderText="Gender"		Width="150" ColumnType="ComboBox" >
+      <ComboBoxItems>
+        <bas:ComboBoxItem DisplayMember="M"			ValueMember="1"/>
+        <bas:ComboBoxItem DisplayMember="F"			ValueMember="0"/>
+      </ComboBoxItems>
+    </DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="Remarks"	Width="250"       />
+		<DetailGridColumnInfo MappingName="empnum"	HeaderText=""	Width="0"    ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="nric"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" />
+
+	</DetailGridInfo>
+</BizXml>
+

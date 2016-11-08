@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PicoGuards">
+</Property><Property Name="Solution File" Value="D:\Work Files\Documents\Dropbox\SSI Projects\PicoGuards\BizMain\PicoGuards.sln">
+</Property><Property Name="Date" Value="Monday, 10 September, 2012">
+</Property><Property Name="Time" Value="11:02:20 AM">
+</Property></Properties><Event ErrorLevel="0" Project="PaintCellsOfGrid" Source="..\..\..\Sample Project\Custom_DataGridColumnStyl\PaintCellsOfGrid\PaintCellsOfGrid.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PaintCellsOfGrid" Source="..\..\..\Sample Project\Custom_DataGridColumnStyl\PaintCellsOfGrid\PaintCellsOfGrid.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PaintCellsOfGrid" Source="..\..\..\Sample Project\Custom_DataGridColumnStyl\PaintCellsOfGrid\PaintCellsOfGrid.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

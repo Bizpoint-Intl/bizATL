@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>45dcbb51-bfda-49e9-9b26-15edc56453eb</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Server=188.188.188.111\SQL2008;Initial Catalog=PG;user id=sa;password=sa123;Connection Timeout=600</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="CutOffDate">
+      <DataType>DateTime</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>CuttOffDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CutOffPeriod">
+      <DataType>Integer</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>CutOffPeriod</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.25in</RightMargin>
+  <LeftMargin>0in</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>3.49206cm</Top>
+        <Width>3.80952cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=Format(Parameters!CutOffDate.Value, "dd-MMM-yyyy")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>4.44444cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.25in</BottomMargin>
+  <rd:ReportID>174629b8-840d-4814-b826-6914de844acd</rd:ReportID>
+  <PageWidth>8.3in</PageWidth>
+  <DataSets>
+    <DataSet Name="HEMPHds1_HEMPHLOA">
+      <Fields>
+        <Field Name="empnum">
+          <DataField>empnum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="empname">
+          <DataField>empname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="matnum">
+          <DataField>matnum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="padd1">
+          <DataField>padd1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="padd2">
+          <DataField>padd2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="padd3">
+          <DataField>padd3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="countrypost">
+          <DataField>countrypost</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="regname">
+          <DataField>regname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="country">
+          <DataField>country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="salary">
+          <DataField>salary</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="approveby">
+          <DataField>approveby</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="countrypostal">
+          <DataField>countrypostal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="firstname">
+          <DataField>firstname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="datejoined">
+          <DataField>datejoined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="matname">
+          <DataField>matname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="approvebyempnum">
+          <DataField>approvebyempnum</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="approvebyname">
+          <DataField>approvebyname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="approvebymatname">
+          <DataField>approvebymatname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HEMPHds1</rd:DataSetName>
+        <rd:TableName>HEMPHLOA</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>7.75in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox15">
+        <Top>16.50794cm</Top>
+        <Width>7.61905cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!approvebymatname.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <rd:DefaultName>textbox14</rd:DefaultName>
+        <Top>15.87302cm</Top>
+        <Width>7.61905cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!approvebyname.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>15.55556cm</Top>
+        <Width>6.66667cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <Left>1.5873cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox13">
+        <Top>13.33333cm</Top>
+        <Width>6.66667cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="Yours sincerly,"</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Top>11.11111cm</Top>
+        <Width>16.50794cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="We look forward to your on-going support and contribution to the Company"</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <rd:DefaultName>textbox11</rd:DefaultName>
+        <Top>9.52381cm</Top>
+        <Width>16.50794cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>1.26984cm</Height>
+        <Value>="You will be required to carry out security duties and essential functions as may be" &amp;
+"instructed from time to time by the Company or persons acting on behalf of the Company"</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Top>8.57143cm</Top>
+        <Width>16.50794cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="Your gross salary shall be adjusted to " &amp; First(Fields!salary.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <rd:DefaultName>textbox9</rd:DefaultName>
+        <Top>6.98413cm</Top>
+        <Width>16.50794cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>1.26984cm</Height>
+        <Value>="We are pleased to offer you the position of a " &amp; First(Fields!matname.Value, "HEMPHds1_HEMPHLOA") &amp; "with the effect from " &amp; First(Fields!datejoined.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <rd:DefaultName>textbox8</rd:DefaultName>
+        <Top>5.71429cm</Top>
+        <Width>16.50794cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="LETTER OF APPOINTMENT - "&amp; First(Fields!matname.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <rd:DefaultName>textbox7</rd:DefaultName>
+        <Top>4.44444cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>="Dear " &amp; First(Fields!firstname.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Top>2.85714cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!countrypost.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>0.95238cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!padd1.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Top>1.5873cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!padd2.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Top>2.22222cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!padd3.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Top>0.31746cm</Top>
+        <Width>6.03175cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>1.5873cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!empname.Value, "HEMPHds1_HEMPHLOA")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.25in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.25in</TopMargin>
+  <PageHeight>11.7in</PageHeight>
+</Report>

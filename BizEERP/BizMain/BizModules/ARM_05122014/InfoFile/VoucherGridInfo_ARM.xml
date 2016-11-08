@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="arm" Title="{languageBinding.ARM}" DocumentInfo="DocumentInfo_ARM.xml" PageSize="{languageBinding.sys_voucher_PageSize}">
+		<VoucherGridColumnInfo MappingName="arnum"		HeaderText="{languageBinding.arnum}"			Width="100"	SearchItem="True"	ConfirmItem="True"	RefreshItem="True"	Key="True"/>
+		<VoucherGridColumnInfo MappingName="arname"	HeaderText="{languageBinding.arname}"			Width="160"/>
+		<VoucherGridColumnInfo MappingName="phone"		HeaderText="{languageBinding.phone}"		    Width="100"/>
+		<VoucherGridColumnInfo MappingName="ptc"		HeaderText="{languageBinding.ptc}"				Width="140"/>
+		<VoucherGridColumnInfo MappingName="status"		HeaderText="{languageBinding.status}"			Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"				Width="40"/>
+	</VoucherGridInfo>
+</BizXml>

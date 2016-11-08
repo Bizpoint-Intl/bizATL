@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="cashFlowStatement" targetNamespace="http://tempuri.org/cashFlowStatement.xsd" xmlns:mstns="http://tempuri.org/cashFlowStatement.xsd" xmlns="http://tempuri.org/cashFlowStatement.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="cashFlowStatement" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="cashFlowStatement" msprop:Generator_DataSetName="cashFlowStatement">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gld" msprop:Generator_UserTableName="gld" msprop:Generator_RowDeletedName="gldRowDeleted" msprop:Generator_RowChangedName="gldRowChanged" msprop:Generator_RowClassName="gldRow" msprop:Generator_RowChangingName="gldRowChanging" msprop:Generator_RowEvArgName="gldRowChangeEvent" msprop:Generator_RowEvHandlerName="gldRowChangeEventHandler" msprop:Generator_TableClassName="gldDataTable" msprop:Generator_TableVarName="tablegld" msprop:Generator_RowDeletingName="gldRowDeleting" msprop:Generator_TablePropName="gld">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accnum" msprop:Generator_UserColumnName="accnum" msprop:Generator_ColumnPropNameInRow="accnum" msprop:Generator_ColumnVarNameInTable="columnaccnum" msprop:Generator_ColumnPropNameInTable="accnumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="accname" msprop:Generator_UserColumnName="accname" msprop:Generator_ColumnPropNameInRow="accname" msprop:Generator_ColumnVarNameInTable="columnaccname" msprop:Generator_ColumnPropNameInTable="accnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="groupingName" msprop:Generator_UserColumnName="groupingName" msprop:Generator_ColumnPropNameInRow="groupingName" msprop:Generator_ColumnVarNameInTable="columngroupingName" msprop:Generator_ColumnPropNameInTable="groupingNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="depth" msprop:Generator_UserColumnName="depth" msprop:Generator_ColumnVarNameInTable="columndepth" msprop:Generator_ColumnPropNameInRow="depth" msprop:Generator_ColumnPropNameInTable="depthColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="pd0" msprop:Generator_UserColumnName="pd0" msprop:Generator_ColumnPropNameInRow="pd0" msprop:Generator_ColumnVarNameInTable="columnpd0" msprop:Generator_ColumnPropNameInTable="pd0Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd1" msprop:Generator_UserColumnName="pd1" msprop:Generator_ColumnPropNameInRow="pd1" msprop:Generator_ColumnVarNameInTable="columnpd1" msprop:Generator_ColumnPropNameInTable="pd1Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd2" msprop:Generator_UserColumnName="pd2" msprop:Generator_ColumnPropNameInRow="pd2" msprop:Generator_ColumnVarNameInTable="columnpd2" msprop:Generator_ColumnPropNameInTable="pd2Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd3" msprop:Generator_UserColumnName="pd3" msprop:Generator_ColumnPropNameInRow="pd3" msprop:Generator_ColumnVarNameInTable="columnpd3" msprop:Generator_ColumnPropNameInTable="pd3Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd4" msprop:Generator_UserColumnName="pd4" msprop:Generator_ColumnPropNameInRow="pd4" msprop:Generator_ColumnVarNameInTable="columnpd4" msprop:Generator_ColumnPropNameInTable="pd4Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd5" msprop:Generator_UserColumnName="pd5" msprop:Generator_ColumnPropNameInRow="pd5" msprop:Generator_ColumnVarNameInTable="columnpd5" msprop:Generator_ColumnPropNameInTable="pd5Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd6" msprop:Generator_UserColumnName="pd6" msprop:Generator_ColumnPropNameInRow="pd6" msprop:Generator_ColumnVarNameInTable="columnpd6" msprop:Generator_ColumnPropNameInTable="pd6Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd7" msprop:Generator_UserColumnName="pd7" msprop:Generator_ColumnPropNameInRow="pd7" msprop:Generator_ColumnVarNameInTable="columnpd7" msprop:Generator_ColumnPropNameInTable="pd7Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd8" msprop:Generator_UserColumnName="pd8" msprop:Generator_ColumnPropNameInRow="pd8" msprop:Generator_ColumnVarNameInTable="columnpd8" msprop:Generator_ColumnPropNameInTable="pd8Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd9" msprop:Generator_UserColumnName="pd9" msprop:Generator_ColumnPropNameInRow="pd9" msprop:Generator_ColumnVarNameInTable="columnpd9" msprop:Generator_ColumnPropNameInTable="pd9Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd10" msprop:Generator_UserColumnName="pd10" msprop:Generator_ColumnPropNameInRow="pd10" msprop:Generator_ColumnVarNameInTable="columnpd10" msprop:Generator_ColumnPropNameInTable="pd10Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd11" msprop:Generator_UserColumnName="pd11" msprop:Generator_ColumnPropNameInRow="pd11" msprop:Generator_ColumnVarNameInTable="columnpd11" msprop:Generator_ColumnPropNameInTable="pd11Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="pd12" msprop:Generator_UserColumnName="pd12" msprop:Generator_ColumnPropNameInRow="pd12" msprop:Generator_ColumnVarNameInTable="columnpd12" msprop:Generator_ColumnPropNameInTable="pd12Column" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ytd" msprop:Generator_UserColumnName="ytd" msprop:Generator_ColumnPropNameInRow="ytd" msprop:Generator_ColumnVarNameInTable="columnytd" msprop:Generator_ColumnPropNameInTable="ytdColumn" type="xs:decimal" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

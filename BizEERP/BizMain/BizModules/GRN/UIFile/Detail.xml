@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="detail" Text="Items" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="33" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid	Name="dg_Detail1"			Location="0,0"			Size="736,450"	HeaderForeColor="ControlText" TabIndex="1" CaptionBackColor="{languageBinding.captionBackColor}"/>
+	
+			<Label		Name="lbl_grosamt"			Location="515,460"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Gross Amt"/>
+			<TextBox	Name="grnh_grosamt"		Location="615,460"	Size="120,21"	TabIndex="17" ReadOnly="True"  TextAlign="Right"/>
+			<Label		Name="lbl_discamt"			Location="515,485"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Disc Amt"/>
+			<TextBox	Name="grnh_discamt"		Location="615,485"	Size="120,21"	TabIndex="17" ReadOnly="True"	TextAlign="Right"/>
+			<Label		Name="lbl_oriamt"				Location="515,510"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Orig Amt"/>
+			<TextBox	Name="grnh_oriamt"			Location="615,510"	Size="120,21"	TabIndex="17" ReadOnly="True"	TextAlign="Right"/>
+
+      <Button Name="btnPrintBarcode" Location="20, 470" Size="120, 26" TabIndex="5" Text="Print Barcode" />
+      <Label		Name="lbl_printPrice"				            Location="150,475"  Size="55, 16"	    TextAlign="MiddleLeft"	Text="Print Price"/>
+      <CheckBox	Name="grnh_printPrice"	      Location="210, 475"	 Size="30,	20"	    TabIndex="6"	  FlatStyle="System"/>
+    </Controls>
+	</Form>
+</BizXml>

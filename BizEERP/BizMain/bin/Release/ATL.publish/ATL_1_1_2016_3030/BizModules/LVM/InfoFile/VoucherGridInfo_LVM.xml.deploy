@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <VoucherGridInfo Name="voucherGridInfo" MainTable="lvm" Title="{languageBinding.LVM}" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_LVM.xml">
+    <VoucherGridColumnInfo MappingName="lvmnum"		    HeaderText="{languageBinding.lvenum}"	      Width="120"   SearchItem="true" ConfirmItem="true" Key="True"/>
+    <VoucherGridColumnInfo MappingName="lvmname"      HeaderText="{languageBinding.desc}"  Width="240"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="status"		    HeaderText="{languageBinding.status}"		    Width="60"    SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="ispaid"	    HeaderText="Is Paid"	                      Width="60"    ColumnType = "Checkbox"/>
+  </VoucherGridInfo>
+</BizXml>

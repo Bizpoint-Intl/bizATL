@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="matm" Title="{languageBinding.matm}" DocumentInfo="DocumentInfo_matm.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="matnum"	HeaderText="Appt Code"		Width="100"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+		<VoucherGridColumnInfo MappingName="matname"		HeaderText="Appointment"			Width="250"/>
+		<VoucherGridColumnInfo MappingName="status"			HeaderText="{languageBinding.status}"			Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"			HeaderText="{languageBinding.user}"				Width="40"/>
+	</VoucherGridInfo>
+</BizXml>

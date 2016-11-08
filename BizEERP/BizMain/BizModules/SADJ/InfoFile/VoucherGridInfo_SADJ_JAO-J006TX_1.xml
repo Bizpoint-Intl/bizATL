@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="SADJh" Title="{languageBinding.SADJ}" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_SADJ.xml">
+		<VoucherGridColumnInfo MappingName="refnum"		    HeaderText="{languageBinding.refnum}"	      Width="120"   SearchItem="true" ConfirmItem="true" Key="True"/>
+    <VoucherGridColumnInfo MappingName="empnum"      HeaderText="{languageBinding.empnum}"  Width="140"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="empname"      HeaderText="Name"  Width="240"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="doctype"		    HeaderText="Doc. Type"		    Width="120"    SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="isrecommended"		    HeaderText="Recommended"		    Width="90"  ColumnType="CheckBox"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="isapproved"		    HeaderText="Approved"		    Width="90"  ColumnType="CheckBox"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="newsaleffectivedate"		    HeaderText="Effective Date"		    Width="80"    SearchItem="true" ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+    <VoucherGridColumnInfo MappingName="status"		    HeaderText="{languageBinding.status}"		    Width="60"    SearchItem="true"/>
+	</VoucherGridInfo>
+</BizXml>

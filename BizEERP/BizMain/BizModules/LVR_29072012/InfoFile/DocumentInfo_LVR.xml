@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="lvr" Key="refnum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.LVR}">
+		<RelationTables>
+			<!--<DocRelationTableInfo TableName="sitmi" DataField="sitenumi" ConditionField="sitenumi">
+				<Fields>
+					<Field ColumnName="sitenumi"/>
+				</Fields>
+			</DocRelationTableInfo>-->
+			<DocRelationTableInfo TableName="hemph" DataField="empnum" ConditionField="empnum">
+				<Fields>
+					<Field ColumnName="empnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="hrcm" DataField="hrcnum" ConditionField="hrcnum">
+				<Fields>
+					<Field ColumnName="hrcnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+		</RelationTables>
+		<DocumentPages>
+			<!-- sitmi -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+				<!--To be uncommented later-->
+
+				<F2Controls>
+					<F2Control ControlName="lvr_empnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemph"/>
+						</RelationF2Tables>
+					</F2Control>
+
+
+
+				</F2Controls>
+				<Details>
+					<Detail DataGridName="dg_overallleavesummary"	DetailGridInfo="DetailGridInfo_LVR1.xml"  CaptionText="Leave Tally"/>
+				</Details>
+
+			</DocumentPageInfo>
+
+			<!--<DocumentPageInfo FileName="leavelists.xml"	FormName="leavelists"	Title="Leave Lists">
+				<Details>
+					<Detail DataGridName="dg_leavelists"	DetailGridInfo="DetailGridInfo_LVR1.xml"  CaptionText="Leave List"/>
+				</Details>
+			</DocumentPageInfo>-->
+
+
+			<DocumentPageInfo FileName="leavehistory.xml"	FormName="leaverec"	Title="Leave History">
+				<Details>
+				</Details>
+			</DocumentPageInfo>
+
+      <DocumentPageInfo FileName="leavesummary.xml"	FormName="leavesum"	Title="Leave Summary">
+        <Details>
+        </Details>
+      </DocumentPageInfo>
+		
+		</DocumentPages>
+		<Reports>
+		
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

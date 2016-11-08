@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="dayshift" Text="Day Shift" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+			<!--<Label		Name="lbl_dayshiftcode"	  Location="200,  5"		Size="200, 16"	TextAlign="Right" Text="' X ' = Available   ' O ' = Not Available"/>-->
+
+
+			<GroupBox	Name="grb_dayshiftinfo"		  Location="0, 35"		Size="734,310" 	Text="" >
+				<Controls>
+
+					<DataGrid	Name="dg_DayShift" Location="0, 0"	Size="736,310"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+			</Controls>
+		</GroupBox>
+
+			<GroupBox	Name="grb_dayshiftsummary"		  Location="0, 345"		Size="734,115" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_DayShiftsummary" Location="0, 0"	Size="736,115"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+      <Label		Name="lbl_wrr1Monday"	  Location="225,  465"		Size="40, 16"	TextAlign="Center" Text="MON"/>
+
+      <Label		Name="lbl_wrr1Tuesday"	  Location="280,  465"		Size="40, 16"	TextAlign="Middle" Text="TUE"/>
+
+      <Label		Name="lbl_wrr1Wednesday"	  Location="335,  465"		Size="40, 16"	TextAlign="Middle" Text="WED"/>
+
+      <Label		Name="lbl_wrr1Thursday"	  Location="390,  465"		Size="40, 16"	TextAlign="Middle" Text="THU"/>
+
+      <Label		Name="lbl_wrr1Friday"	  Location="445,  465"		Size="40, 16"	TextAlign="Middle" Text="FRI"/>
+
+      <Label		Name="lbl_wrr1Saturday"	  Location="500,  465"		Size="40, 16"	TextAlign="Middle" Text="SAT"/>
+
+      <Label		Name="lbl_wrr1Sunday"	  Location="555,  465"		Size="40, 16"	TextAlign="Middle" Text="SUN"/>
+
+
+
+      <!---->
+
+      <Label		Name="lbl_wrr1Total"	  Location="170,  485"		Size="40, 16"	TextAlign="Right" Text="Total"/>
+
+      <TextBox	Name="wrr1Total_monday"	  Location="220,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_tuesday"	  Location="275,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_wednesday"	  Location="330,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_thursday"	  Location="385,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_friday"	  Location="440,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_saturday"	  Location="495,485"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Total_sunday"	  Location="550,485"			Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <!---->
+
+      <Label		Name="lbl_DaysContract"	  Location="100,  510"		Size="120, 16"	TextAlign="Right" Text="Required Manpower"/>
+
+      <TextBox	Name="wrr1Ctrh_monday"	  Location="220,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_tuesday"	  Location="275,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_wednesday"	  Location="330,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_thursday"	  Location="385,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_friday"	  Location="440,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_saturday"	  Location="495,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <TextBox	Name="wrr1Ctrh_sunday"	  Location="550,510"		Size="40,21"	TabIndex="51" ReadOnly="True" />
+
+      <GroupBox	Name="grb_nightshiftinfo"		  Location="0, 35"		Size="0,0" 	Text="" Visible="False">
+        <Controls>
+          <DataGrid	Name="dg_NightShift" Location="0, 0"	Size=","	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+        </Controls>
+      </GroupBox>
+
+      <GroupBox	Name="grb_nightshiftsummary"		  Location="0, 35"		Size="0,0" 	Text="" Visible="False">
+        <Controls>
+          <DataGrid	Name="dg_NightShiftsummary" Location="0, 0"	Size="0,0" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+        </Controls>
+      </GroupBox>
+
+      <GroupBox	Name="grb_conciergeinfo"		  Location="0, 35"		Size="0,0" 	Text="" Visible="False">
+        <Controls>
+
+          <DataGrid	Name="dg_Concierge" Location="0, 0"	Size="0,0"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+        </Controls>
+      </GroupBox>
+
+      <GroupBox	Name="grb_conciergesummary"		  Location="0, 345"		Size="0,0" 	Text="" Visible="False" >
+        <Controls>
+          <DataGrid	Name="dg_Conciergesummary" Location="0, 0"	Size="0,0"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+        </Controls>
+      </GroupBox>
+
+
+    </Controls>
+	</Form>
+</BizXml>

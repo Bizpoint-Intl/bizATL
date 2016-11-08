@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="wkch" Key="refnum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.WKCA}">
+		<RelationTables>
+
+			<DocRelationTableInfo TableName="vMainHEMPH"		DataField="empnum"	ConditionField="fromempnum"/>
+			<DocRelationTableInfo TableName="vMainHEMPH"		DataField="empnum"	ConditionField="toempnum"	DataTableName="vMainHEMPH1"/>
+
+
+			<DocRelationTableInfo TableName="paytm" DataField="paytypecode"			ConditionField="paytypecode">
+
+      </DocRelationTableInfo>
+
+
+
+
+      <DocRelationTableInfo TableName="wrr" DataField="refnum"			ConditionField="wrrnum">
+
+			</DocRelationTableInfo>
+
+
+
+		</RelationTables>
+		<DocumentPages>
+			<!-- ATR -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+
+
+				<F2Controls>
+					<F2Control ControlName="wkch_fromempnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="vMainHEMPH"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="wkch_toempnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="vMainHEMPH1"/>
+						</RelationF2Tables>
+					</F2Control>
+
+
+				</F2Controls>
+			
+				
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="Timesheet.xml"		FormName="timesheet"	Title="Time Sheet">
+				<Details>
+					<Detail DataGridName="dg_timesheet"	DetailGridInfo="DetailGridInfo_WKC1.xml"  CaptionText="Time Sheet"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="TimesheetSummary.xml"		FormName="timesheetsummary"	Title="Time Sheet Summary">
+				<Details>
+					<Detail DataGridName="dg_timesheetsummary"	DetailGridInfo="DetailGridInfo_WKC2.xml"  CaptionText="Time Sheet Summary"/>
+				</Details>
+			</DocumentPageInfo>
+
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Weekly Summary Report"  DefaultReport="True" ReportPath="\WKCA\Report\WKCsummary1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

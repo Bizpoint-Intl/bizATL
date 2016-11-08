@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<!--<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}" >-->
+		<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='MATMSTK' AND ApplicationType='Machinery' AND (status = 'P' OR status = 'O')">
+		<F2GridColumnInfo MappingName="matnum"						HeaderText="Machinery"		Width="100"	IsItem="True"	SearchItem="True"	SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="matname"						HeaderText="Description"	Width="200" IsItem="True"	SearchItem="True"	SortItem="True"/>
+			<F2GridColumnInfo MappingName="uomcode"						HeaderText="{languageBinding.uom}"	Width="80"/>
+	</F2GridInfo>
+</BizXml>

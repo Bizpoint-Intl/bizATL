@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<Form Name="frm_Error" Text="{languageBinding.frm_Error}" ClientSize="690, 450">
+		<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+		<Controls>
+			<DataGrid	Name="dg_Error"			Location="20, 20"	Size="560,410"	Font="{languageBinding.Tahoma875}" CaptionVisible="False"/>
+			<Button		Name="btn_Error_Exit"	Location="600, 20"	FlatStyle="System" Text="{languageBinding.btn_Error_Exit}" Font="{languageBinding.Tahoma875Bold}"/>
+		</Controls>
+	</Form>
+</BizXml>

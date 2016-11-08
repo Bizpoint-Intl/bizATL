@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="enm1" Title="Email List">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+    <!--<DetailGridColumnInfo MappingName="Group"		HeaderText="Group"	Width="80"	F2="True" F2GridInfo="F2GridInfo_SysGroupInfo.xml" />-->
+    <DetailGridColumnInfo MappingName="username"		HeaderText="Username"	Width="80"	F2="True" F2GridInfo="F2GridInfo_SysUserInfo.xml" />
+    <DetailGridColumnInfo MappingName="empnum"		HeaderText="EmpNo"	Width="80"	F2="True" F2GridInfo="F2GridInfo_HEMPH.xml" />
+    <DetailGridColumnInfo MappingName="email"		HeaderText="Email"	Width="200"	 />
+    <DetailGridColumnInfo MappingName="sendtype"			  HeaderText="Type"		Width="80" ColumnType="ComboBox" >
+      <ComboBoxItems>
+        <bas:ComboBoxItem DisplayMember="TO"			ValueMember="TO"/>
+        <bas:ComboBoxItem DisplayMember="CC"			ValueMember="CC"/>
+        <bas:ComboBoxItem DisplayMember="BCC"			ValueMember="BCC"/>      
+      </ComboBoxItems>
+    </DetailGridColumnInfo>    
+		<DetailGridColumnInfo MappingName="recommend"	HeaderText="Allow" ColumnType="CheckBox" 	Width="120"  />
+		<DetailGridColumnInfo MappingName="ModuleCode"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="ModuleName"	HeaderText="" ReadOnly="True" 	Width=""  />
+	</DetailGridInfo>
+</BizXml>
+

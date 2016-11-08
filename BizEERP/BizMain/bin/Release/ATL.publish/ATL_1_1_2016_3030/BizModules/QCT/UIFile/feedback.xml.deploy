@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="feedback" Text="FeedBck" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+	
+			<GroupBox	Name="grb_feedbackinfo"		  Location="5, 10"		Size="731,250" 	Text="Shift Information" >
+				<Controls>
+
+					<Label		Name="lbl_DateRaised"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Date Raise:"/>
+					<dtp:BizDateTimePicker Name="txt_Daterasied"   Location="95,25"     Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+					<Label		Name="lbl_Raisedby"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Raised by:"/>
+					<TextBox	Name="txt_Raisedby"	  Location="95,50"		Size="180,21" 	TabIndex="51"/>
+
+					<Label		Name="lbl_description"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Description"/>
+					<Label		Name="lbl_followup"	  Location="10,  134"		Size="80, 16"	TextAlign="Right" Text="Follow-up"/>
+
+
+					<TextBox	Name="txt_desc"	  Location="95,75"		Size="240,45"	TabIndex="51"  Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+					<TextBox	Name="txt_followup"	  Location="95,134"		Size="240,45"	TabIndex="51"  Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+					<Button Name="qct4_btnUpdate" Text="UPDATE" Location="95, 200" Size="58, 23"  UseVisualStyleBackColor="True" TabIndex="19"/>
+					<Button Name="qct4_btnAdd" Text="ADD" Location="200, 200" Size="58, 23"  UseVisualStyleBackColor="True" TabIndex="19"/>
+
+
+
+				</Controls>
+			</GroupBox>
+			<GroupBox	Name="grb_feedback"	Location="5, 255" 	  		Size="731,260" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_feedback" Location="0, 0"	      Size="730, 200" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+
+
+
+
+
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

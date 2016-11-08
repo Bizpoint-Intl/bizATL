@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="debtors" Text="Debtors" Location="4, 21" Size="736,535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			
+			<DataGrid	Name="dg_Debtors" Location="0, 0"		Size="739,410"	HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+
+			<Label		Name="lbl_ardOriamt"			Location="540,410"	Size="90, 21"	TextAlign="MiddleLeft" Text="Debtors Total"/>
+			<TextBox	Name="recp_artotal"				Location="635,410"	Size="100,21"	TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_sivOriamt"				Location="540,435"	Size="90, 21"	TextAlign="MiddleLeft" Text="Others Total"/>
+			<TextBox	Name="recp_sivtotal"			Location="635,435"	Size="100,21"	TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_saj1Total"				Location="540,460"	Size="90, 21"	TextAlign="MiddleLeft" Text="Sales POS Total"/>
+			<TextBox	Name="recp_saj1Total"			Location="635,460"	Size="100,21"	TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_dardTotal"			Location="540,485"	Size="90, 21"	TextAlign="MiddleLeft" Text="Deposits Total"/>
+			<TextBox	Name="recp_dardTotal"			Location="635,485"	Size="100,21"	TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_Oriamt"				Location="540,510"	Size="90, 21"	TextAlign="MiddleLeft" Text="Grand Total"/>
+			<TextBox	Name="recp_oriamt"				Location="635,510"	Size="100,21"	TabIndex="9" TextAlign="Right" ReadOnly="True" BackColor="LightGreen"/>
+		</Controls>
+	</Form>
+</BizXml>

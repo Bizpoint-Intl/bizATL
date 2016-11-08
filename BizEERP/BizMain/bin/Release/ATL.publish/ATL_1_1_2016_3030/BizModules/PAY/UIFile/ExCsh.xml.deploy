@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="ExCsh" Text="ExCsh" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid	Name="dg_ExCsh"		Location="0, 0"		Size="739,460"	HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+			<Label		Name="lbl_apdOriamt"	Location="540,460"	Size="90, 21"		TextAlign="MiddleLeft" Text="A/P Total"/>
+			<TextBox	Name="txt_oriamt"		Location="635,460"	Size="100,21"		TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_PivOriamt"		Location="540,485"	Size="90, 21"		TextAlign="MiddleLeft" Text="Others Total"/>
+			<TextBox	Name="txt_oriamt2"		Location="635,485"	Size="100,21"		TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+			<Label		Name="lbl_Oriamt"		Location="540,510"	Size="90, 21"		TextAlign="MiddleLeft" Text="Grand Total"/>
+			<TextBox	Name="payt_oriamt"		Location="635,510"	Size="100,21"		TabIndex="9" TextAlign="Right" ReadOnly="True"/>
+		</Controls>
+	</Form>
+</BizXml>

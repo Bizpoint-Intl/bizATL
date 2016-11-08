@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="trih" Key="refnum"  CompanyTitle="{languageBinding.coyname}" ModuleTitle="{languageBinding.LRTN}">
+		<RelationTables>
+      <DocRelationTableInfo TableName="mwt" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="requestedby" DataTableName="hemph"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="sentby"			DataTableName="hemph1"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="agreedby"		DataTableName="hemph2"/>
+			<DocRelationTableInfo TableName="sitm"		DataField="sitenum"	ConditionField="fromsitenum"/>
+			<DocRelationTableInfo TableName="sitm"		DataField="sitenum"	ConditionField="tositenum"	DataTableName="sitm1"/>
+			<DocRelationTableInfo TableName="ctrh"		DataField="refnum"	ConditionField="ctrnum"/>
+			<DocRelationTableInfo TableName="whm"		DataField="whnum"	ConditionField="whnum"/>
+			<DocRelationTableInfo TableName="sem"		DataField="sectorcode"	ConditionField="sectorcode"/>
+			<DocRelationTableInfo TableName="grnh"		DataField="refnum"	ConditionField="grnrefnum" Save="True"/>
+			<DocRelationTableInfo TableName="vCTRH_ADH" DataField="refnum" ConditionField="docunum" />
+			<DocRelationTableInfo TableName="trah"		DataField="refnum"	ConditionField="tranum" />
+		</RelationTables>
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Header">
+				<F2Controls>
+					<F2Control ControlName="trih_requestedby"  F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemph"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_fromsitenum"  F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_tositenum"  F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm1"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_tranum" F2GridInfo="F2GridInfo_TRAH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="trah"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_docunum" F2GridInfo="F2GridInfo_vCTRH_ADH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="vCTRH_ADH"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_whnum"  F2GridInfo="F2GridInfo_WHM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="whm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="trih_sectorcode"  F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+      <DocumentPageInfo FileName="detail.xml" FormName="detail" Title="Details">
+        <Details>
+          <Detail DataGridName="dg_location"  DetailGridInfo="DetailGridInfo_TRI2.xml" CaptionText="Location Extricted"/>
+			<Detail DataGridName="dg_item"  DetailGridInfo="DetailGridInfo_TRI1.xml" CaptionText="Items to be Issued"/>
+        </Details>
+      </DocumentPageInfo>
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Material Received(Form) - Internal"  DefaultReport="True" ReportPath="\TRI\Report\TriFrm.rpt" />
+			<Report ReportName="Material Received(Form)"  DefaultReport="True" ReportPath="\TRI\Report\TriFrm2.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>

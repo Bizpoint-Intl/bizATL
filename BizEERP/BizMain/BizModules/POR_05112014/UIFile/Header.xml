@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox Name="grp_SuppInfo"	Location="5,10"	Text="Supplier Info"	Size="362,215" FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_apnum"			Location="20,  30"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Supplier Code"/>
+					<TextBox	Name="porh_apnum"		Location="120, 25"	Size="230,21"	TabIndex="8"/>
+
+					<Label		Name="lbl_apname"		Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Supplier Name"/>
+					<TextBox	Name="porh_apname"		Location="120, 50"	Size="230,21"	TabIndex="9" ReadOnly="True"/>
+
+					<Label		Name="lbl_address"		Location="20, 80"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.address}"/>
+					<TextBox	Name="porh_address"	Location="120, 75"	Size="230,33"	TabIndex="10"	Multiline="True"	ScrollBars="Vertical" ReadOnly="True"/>
+
+					<Label		Name="lbl_phone"			Location="20, 117"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+					<TextBox	Name="porh_phone"		Location="120,113"	Size="230,21"	TabIndex="11" ReadOnly="True"/>
+
+					<Label		Name="lbl_hp"				Location="20, 142"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+					<TextBox	Name="porh_hp"			Location="120,138"	Size="230,21"	TabIndex="12" ReadOnly="True"/>
+
+					<Label		Name="lbl_fax"				Location="20, 167"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+					<TextBox	Name="porh_fax"			Location="120,162"	Size="230,21"	TabIndex="13" ReadOnly="True"/>
+
+					<Label		Name="lbl_contact"		Location="20,192"	Size="100, 16"	TextAlign="MiddleLeft"	Text="Person-To-Contact"/>
+					<TextBox	Name="porh_contact"	Location="120,187"	Size="230,21"	TabIndex="9"/>
+
+				</Controls>
+			</GroupBox>
+      
+      <GroupBox Name="grp_Function"	Location="5,240"	Text="Funciton"	Size="362,215" FlatStyle="System">
+        <Controls>
+          <Label		Name="lbl_type"			Location="20,  30"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Delivery Type"/>
+          <ComboBox	Name="porh_type"		Location="110, 25"	Size="240,21" TabIndex="8" >
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem  DisplayMember="HQ"	 ValueMember="HQ"/>
+                <ele:ComboBoxItem  DisplayMember="SITE"	 ValueMember="SITE"/>
+                <ele:ComboBoxItem  DisplayMember="LOCAL"		 ValueMember="LOCAL"     Selected="true"/>
+                <ele:ComboBoxItem  DisplayMember="OVERSEA"	 ValueMember="OVERSEA"/>
+                <ele:ComboBoxItem  DisplayMember="OVERSEA2H"	 ValueMember="OVERSEA2H"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+
+          <Label		Name="lbl_ptype"			Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="PO Type"/>
+          <ComboBox	Name="porh_type2"		Location="110, 50"	Size="240,21" TabIndex="8">
+            <ele:BizDisplayValuePair>
+              <ele:ComboBoxItems>
+                <ele:ComboBoxItem  DisplayMember="General"		 ValueMember="General"     Selected="true"/>
+                <ele:ComboBoxItem  DisplayMember="HQ"	 ValueMember="HQ"/>
+                <ele:ComboBoxItem  DisplayMember="Service"	 ValueMember="Service"/>
+              </ele:ComboBoxItems>
+            </ele:BizDisplayValuePair>
+          </ComboBox>
+
+          <Label		Name="lbl_docunum2"			Location="20,  75"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Ctr/Adh"/>
+          <TextBox	Name="porh_docunum2"	Location="110,75"	Size="240,21"	TabIndex="9"/>
+          <Label		Name="lbl_ponum"			Location="20,  100"	Size="90, 16"	TextAlign="MiddleLeft"	Text="MRQ No"/>
+          <TextBox	Name="porh_ponum"	Location="110,100"	Size="240,21"	TabIndex="9"/>
+          
+          <GroupBox Name="grp_GRN"	Location="5,55"	Text="GRN"	Size="320,40" FlatStyle="System" Visible="false">
+            <Controls>
+             <Label		Name="lbl_autoGRN"		Location="20,  20"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Auto-GRN"/>
+             <RadioButton	Name="rad_GRNN"		Location="110, 15"	Size="50,21"	TabIndex="9" Text="No"/>
+             <RadioButton	Name="rad_GRNY"		Location="170, 15"	Size="50,21"	TabIndex="9" Text="Yes"/>
+             <Button	Name="btn_GRN"		Location="230, 15"	Size="80,21"	TabIndex="9" Text="GRN Data"/>
+            </Controls>
+          </GroupBox>
+          
+          <GroupBox Name="grp_PIV"	Location="5,95"	Text="PIV"	Size="320,40" FlatStyle="System" Visible="false">
+            <Controls>
+             <Label		Name="lbl_autoPIV"		Location="20, 20"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Auto-PIV"/>
+             <RadioButton	Name="rad_PIVN"	Location="110, 15"	Size="50,21"	TabIndex="10" Text="No"/>
+             <RadioButton	Name="rad_PIVY"		Location="170,15"	Size="50,21"	TabIndex="9" Text="Yes"/>
+             <Button	Name="btn_PIV"		Location="230,15"	Size="80,21"	TabIndex="9" Text="PIV Data"/>
+            </Controls>
+          </GroupBox>
+          <!--<Label		Name="lbl_phone"			Location="20, 117"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+          <TextBox	Name="porh_phone"		Location="110,113"	Size="240,21"	TabIndex="11" ReadOnly="True"/>
+
+          <Label		Name="lbl_hp"				Location="20, 142"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+          <TextBox	Name="porh_hp"			Location="110,138"	Size="240,21"	TabIndex="12" ReadOnly="True"/>
+
+          <Label		Name="lbl_fax"				Location="20, 167"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+          <TextBox	Name="porh_fax"			Location="110,162"	Size="240,21"	TabIndex="13" ReadOnly="True"/>
+
+          <Label		Name="lbl_contact"		Location="20,192"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.contact}"/>
+          <TextBox	Name="porh_contact"	Location="110,187"	Size="240,21"	TabIndex="9" ReadOnly="True"/>-->
+
+        </Controls>
+      </GroupBox>
+
+      <GroupBox	Name="grp_WorInfo"	Location="372, 10"	Text="Transaction Info"	Size="362,350" 	FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_docunum"			Location="20, 30"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.docunum}"/>
+					<TextBox	Name="porh_docunum"		Location="110,25"	Size="240,21"	TabIndex="19"	TextAlign="Left"/>
+
+					<Label		Name="lbl_trandate"			Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.trandate}"/>
+					<dtp:BizDateTimePicker	Name="porh_trandate"	Location="110,50"	Size="120,21"	TabIndex="14" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+          
+          <Label		Name="lbl_period"			Location="20,  80"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Period"/>
+          <TextBox	Name="porh_period"	Location="110,75"	Size="120,21"	TabIndex="14" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+
+          <Label		Name="lbl_payterms"			Location="20, 105"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.payterms}"/>
+					<TextBox	Name="porh_payterms"		Location="110,100"	Size="240,21"	TabIndex="19"	TextAlign="Left"/>
+
+					<Label		Name="lbl_gstgrpnum"		Location=" 20,130"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.gstgrpnum}"/>
+					<TextBox	Name="porh_gstgrpnum"	Location="110,125"	Size="110, 21"		TabIndex="1"/>
+					<TextBox	Name="porh_gstper"			Location="225,125"	Size="130, 21"		TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_oricur"				Location=" 20,155"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.oricur}"/>
+					<TextBox	Name="porh_oricur"			Location="110,150"	Size="110, 21"		TabIndex="1"/>
+					<TextBox	Name="porh_exrate"			Location="225,150"	Size="130, 21"		TabStop="False" ReadOnly="True"/>
+         
+          <Label		Name="lbl_SCNDate"		Location="20, 180"	Size="90, 16"	TextAlign="MiddleLeft"	Text="SCNDate"/>
+          <dtp:BizDateTimePicker	Name="porh_SCNDate"	Location="110, 175"	Size="120,55"	TabIndex="10" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+
+          <Label		Name="lbl_deliverTo"		Location="20, 205"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Deliver To"/>
+          <TextBox	Name="porh_daddress"	Location="110, 200"	Size="240,55"	TabIndex="10"	Multiline="True"	ScrollBars="Vertical" />
+     
+          <Label		Name="lbl_ddate"		Location="20, 265"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Deliver Date"/>
+          <dtp:BizDateTimePicker	Name="porh_ddate"	Location="110, 260"	Size="120,55"	TabIndex="10" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}" />
+
+          <Label		Name="lbl_remark"		Location="20,290"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.remarks}"/>
+					<TextBox	Name="porh_remark"	Location="110,285"	Size="240,55"	TabIndex="17"	Multiline="True"	ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+		
+			<!--<GroupBox Name="grp_Remark"	Location="5, 450"	Text="Remarks Info"	Size="362,85" 	FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_remark"		Location="20,20"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.remarks}"/>
+					<TextBox	Name="porh_remark"		Location="110,15"	Size="240,55"	TabIndex="17"	Multiline="True"	ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>-->
+
+      <Button 	Name="btn_ExtractMATM"		Location="492, 370"	Size="120,21"	TabIndex="8" Text="ExtractFromMATM"/>
+
+      <Button		Name="btn_Import"        Location="492, 410"    Size="120,21"   Text="Import"		     TabIndex="13"    />
+
+
+    </Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="hidend">
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"				Width="0"	ColumnType="CheckBox" ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="fromPeriod"		HeaderText="{languageBinding.fromPeriod}"		Width="60"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="toPeriod"		HeaderText="{languageBinding.toPeriod}"			Width="60"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="yeeCPFCode"		HeaderText="{languageBinding.yeeCPFCode}"		Width="120"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="yerCPFCode"		HeaderText="{languageBinding.yerCPFCode}"		Width="120"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="identify"		HeaderText="{languageBinding.identify}"			Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

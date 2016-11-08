@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="partcode"					HeaderText="{languageBinding.partcode}"		Width="95"	IsItem="True"	SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="partname"					HeaderText="{languageBinding.partname}"		Width="95"	IsItem="True"	SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="matnum"						HeaderText="{languageBinding.matnum}"		Width="100"	IsItem="True"	SearchItem="True"	SortItem="True"/>
+		<F2GridColumnInfo MappingName="matname"						HeaderText="{languageBinding.description1}"	Width="200"/>
+		<F2GridColumnInfo MappingName="description2"				HeaderText="{languageBinding.description2}"	Width="95"/>
+		<F2GridColumnInfo MappingName="matcat"						HeaderText="{languageBinding.matcat}"		Width="95"/>
+		<F2GridColumnInfo MappingName="finish"						HeaderText="{languageBinding.finish}"		Width="95"/>
+		<F2GridColumnInfo MappingName="length"						HeaderText="{languageBinding.length}"		Width="95"/>
+		<F2GridColumnInfo MappingName="weight"						HeaderText="{languageBinding.weight}"		Width="95"/>
+		<F2GridColumnInfo MappingName="height"						HeaderText="{languageBinding.height}"		Width="95"/>
+		<F2GridColumnInfo MappingName="width"						HeaderText="{languageBinding.width}"		Width="95"/>
+		<F2GridColumnInfo MappingName="glasstype"					HeaderText="{languageBinding.glasstype}"	Width="95"/>
+		<F2GridColumnInfo MappingName="surfacetype"					HeaderText="{languageBinding.surfacetype}"	Width="95"/>
+	</F2GridInfo>
+</BizXml>

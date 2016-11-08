@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="enm" Key="ModuleCode" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.ENM}">
+		<RelationTables>
+			<DocRelationTableInfo TableName="SysModuleInfo" DataField="ModuleName" ConditionField="ModuleName">
+				<Fields>
+					<Field ColumnName="ModuleName"/>
+				</Fields>
+			</DocRelationTableInfo>
+		</RelationTables>
+		<DocumentPages>
+			<!-- SHM -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+				<F2Controls>
+					<F2Control ControlName="enm_ModuleName" F2GridInfo="F2GridInfo_SysModuleInfo.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="SysModuleInfo"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+				<Details>
+					<Detail DataGridName="dg_userpermissions"	DetailGridInfo="DetailGridInfo_ENM1.xml"  CaptionText="Address Lists"/>
+				</Details>
+
+			</DocumentPageInfo>
+
+		</DocumentPages>
+		<Reports>
+			<!--<Report ReportName="Site Master Report (Form)"  DefaultReport="True" ReportPath="\SHM\Report\SHMfrm1.rpt" />-->
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="hwdm" Key="wdcode" CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.HWDM}">
+		<RelationTables>
+			<DocRelationTableInfo TableName="hems" DataField="emsnum" ConditionField="empscnum"/>
+		</RelationTables>
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Page">
+				<F2Controls>
+					<F2Control ControlName="hwdm_empscnum" F2GridInfo="F2GridInfo_HEMS.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hems"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

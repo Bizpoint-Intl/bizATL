@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="schedule" Text="Schedule" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_dayshiftinfo"		  Location="3, 5"		Size="734,165" 	Text="" >
+				<Controls>
+					<Label		Name="lbl_dayshiftcode"	  Location="10,  10"		Size="60, 16"	TextAlign="Right" Text="Shift Code:"/>
+					<TextBox	Name="sitm1_dayshiftcode"	  Location="70,10"		Size="60,21"	TabIndex="51"/>
+					<DataGrid	Name="dg_DayShift" Location="3, 35"	      Size="730, 100" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+
+					<Label		Name="lbl_TotaldStaff"	  Location="545,  140"		Size="35, 16"	TextAlign="Right" Text="Total"/>
+					<TextBox	Name="TotaldStaff"	  Location="580,140" ReadOnly="True" 		Size="50,21"	TabIndex="51"/>
+
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_nightshiftinfo"		  Location="3, 175"		Size="734,165" 	Text="" >
+				<Controls>
+					<Label		Name="lbl_nightthiftcode"	  Location="10,  10"		Size="60, 16"	TextAlign="Right" Text="Shift Code:"/>
+					<TextBox	Name="sitm2_nightshiftcode"	  Location="70,10"		Size="60,21"	TabIndex="51"/>
+					<DataGrid	Name="dg_NightShift" Location="3, 35"	      Size="730, 100" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+
+					<Label		Name="lbl_TotalnStaff"	  Location="545,  140"		Size="35, 16"		TextAlign="Right" Text="Total"/>
+					<TextBox	Name="TotalnStaff"	  Location="580,140" ReadOnly="True" 		Size="50,21"	TabIndex="51"/>
+
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_relief"		  Location="3, 350"		Size="734,140" 	Text="" >
+				<Controls>
+
+					<DataGrid	Name="dg_Relief" Location="3, 10"	      Size="730, 100" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+					<Label		Name="lbl_TotalrStaff"	  Location="545,  115"		Size="35, 16"	TextAlign="Right" Text="Total"/>
+					<TextBox	Name="TotalrStaff"	  Location="580,115" ReadOnly="True" 		Size="50,21"	TabIndex="51"/>
+				</Controls>
+			</GroupBox>
+
+			<Label		Name="lbl_OverallStaff"	  Location="480,  500"		Size="85, 16"	TextAlign="Right" Text="Overall Officers"/>
+			<TextBox	Name="OverallStaff"	  Location="583,500" ReadOnly="True" 		Size="50,21"	TabIndex="51"/>
+
+
+
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

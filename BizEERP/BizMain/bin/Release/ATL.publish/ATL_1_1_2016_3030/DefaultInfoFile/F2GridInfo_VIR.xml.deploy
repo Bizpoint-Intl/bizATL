@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="vir1" Title="Voucher Issue" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="vouchernum"		HeaderText="Voucher Num"		Width="180" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="vouchercode"		HeaderText="Voucher Code"	Width="120" />
+		<F2GridColumnInfo MappingName="vouchername"	  HeaderText="Voucher Name"	Width="150" />
+		<!--<F2GridColumnInfo MappingName="refnum"				HeaderText="{languageBinding.refnum}"				Width="80"  />-->
+		<F2GridColumnInfo MappingName="value"					HeaderText="Value"				Width="80"  />
+		<F2GridColumnInfo MappingName="arnum"					HeaderText="AR Num"				Width="80"  />
+		<F2GridColumnInfo MappingName="arname"				HeaderText="AR Name"				Width="80"  />
+		<F2GridColumnInfo MappingName="sitenum"				HeaderText="Site Num"			Width="80"  />	
+	</F2GridInfo>
+</BizXml>

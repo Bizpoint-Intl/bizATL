@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+
+			<GroupBox	Name="grb_semInfo"		  Location="5, 5"		Size="730,510" 	Text="Sector Information" >
+				<Controls>
+					<Label		Name="lbl_sectorcode" ReadOnly="True" 	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Sector Code:"/>
+					<TextBox	Name="sem_sectorcode"	  Location="95,25"		Size="150,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_opmgr"	  Location="10, 50"		Size="80, 16"	TextAlign="Right" Text="Ops Exec:"/>
+					<TextBox	Name="sem_opmgr"	  Location="95,50"		Size="150,21"	TabIndex="51"/>
+
+					<!--<Label		Name="lbl_country"	  Location="10, 75"		Size="80, 16"	TextAlign="Right" Text="Country:"/>
+					<TextBox	Name="sem_country"	  Location="95,75"		Size="150,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_state"	  Location="10, 100"		Size="80, 16"	TextAlign="Right" Text="State:"/>
+					<TextBox	Name="sem_state"	  Location="95,100"		Size="150,21"	TabIndex="51"/>-->
+
+
+
+					<Label		Name="lbl_desc"	Location="10, 125" Size="80, 21"		Text="Description"/>
+					<TextBox	Name="sem_desc" Location="95, 125" Size="320, 80"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+				</Controls>
+			</GroupBox>
+
+		</Controls>
+	</Form>
+</BizXml>

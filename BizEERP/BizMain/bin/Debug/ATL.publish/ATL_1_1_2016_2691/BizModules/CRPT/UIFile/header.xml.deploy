@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<BizXml xml:lang="zh-CN" 
+		xmlns:def="Definition" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls" 
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="header" Text="Header" Location="4, 21" ClientSize="732, 513" TextAlign="MiddleLeft" ForeColor="WindowText" Font="Tahoma, 8.25pt" >
+		<Controls>
+			<GroupBox	Name="grb_reportinfo"	Location="10,5"	Size="520,200" Text="Report  Information">
+				<Controls>
+					<Label		Name="lbl_reportcode"			Location="10,	18"		Size="115, 21"	TextAlign="MiddleLeft" Text="Report Code"/>
+					<TextBox	Name="crpth_code"				Location="140,	18"		Size="100, 21"	TabIndex="1" CharacterCasing="Upper" Key="true"/>
+					<Label		Name="lbl_reportcode"			Location="10,	48"		Size="115, 21"	TextAlign="MiddleLeft" Text="Report  Description"/>
+					<TextBox	Name="crpth_description"		Location="140,	48"		Size="300, 50"	TabIndex="1" CharacterCasing="Upper" Multiline="true"/>
+					<Label		Name="lbl_viewcode"				Location="10,	108"	Size="115, 21"	TextAlign="MiddleLeft" Text="View Code"/>
+					<TextBox	Name="crpth_viewcode"			Location="140,	108"	Size="150, 21"	TabIndex="1" CharacterCasing="Upper"/>
+					<Label		Name="lbl_viewdescription"		Location="10,	138"	Size="115, 21"	TextAlign="MiddleLeft" Text="View Description"/>
+					<TextBox	Name="crpth_viewdescription"	Location="140,	138"	Size="300, 42"	TabIndex="1" CharacterCasing="Upper" Multiline="true" ReadOnly="true" ScrollBars="Vertical"/>
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_reportpresentation"	Location="10,205"	Size="520,120" Text="Report  Presentation" Visible ="true">
+				<Controls>
+					<!--<Label		Name="lbl_selectclause"			Location="50,	15"		Size="70, 21"	TextAlign="MiddleLeft" Text="Select :"/>
+					<TextBox	Name="crpth_selectclause"		Location="140,	15"		Size="320, 63"	TabIndex="1" CharacterCasing="Upper" Multiline ="true" ScrollBars="Vertical"/>-->
+					<Label		Name="lbl_whereclause"			Location="10,	20"		Size="70, 21"	TextAlign="MiddleLeft" Text="Pre-Filter "/>
+					<TextBox	Name="crpth_whereclause"		Location="140,	20"		Size="320, 63"	TabIndex="1" CharacterCasing="Upper" Multiline ="true" ScrollBars="Vertical"/>
+					<!--<Label		Name="lbl_groupbyclause"		Location="50,	142"	Size="70, 21"	TextAlign="MiddleLeft" Text="Group By:"/>
+					<TextBox	Name="crpth_groupbyclause"		Location="140,	142"	Size="320, 42"	TabIndex="1" CharacterCasing="Upper" Multiline ="true" ScrollBars="Vertical"/>
+					<Label		Name="lbl_havingclause"			Location="50,	184"	Size="70, 21"	TextAlign="MiddleLeft" Text="Having :"/>
+					<TextBox	Name="crpth_havingclause"		Location="140,	184"	Size="320, 63"	TabIndex="1" CharacterCasing="Upper" Multiline ="true" ScrollBars="Vertical"/>
+					<Label		Name="lbl_orderbyclause"		Location="50,	247"	Size="70, 21"	TextAlign="MiddleLeft" Text="Order By :"/>
+					<TextBox	Name="crpth_orderbyclause"		Location="140,	247"	Size="320, 42"	TabIndex="1" CharacterCasing="Upper" Multiline ="true" ScrollBars="Vertical"/>-->
+					<Label		Name="lbl_cutoffdate"			Location="10,	90"		Size="70, 21"	TextAlign="MiddleLeft" Text="Cut-Off Date "/>					
+					<dtp:BizDateTimePicker Name="crpth_cutoffdate" Location="140,	90"		Size="122, 21" CustomFormat="{languageBinding.sysDateFormat}" Format="Custom"  Enabled="True"/>					
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_userpermissions"	Location="10,325"	Size="520,200" Text="User Permissions">
+				<Controls>
+					<Label		Name="lbl_username"		Location="150,	20"		Size="70, 21"	TextAlign="MiddleLeft" Text="Username"/>
+					<TextBox	Name="username"			Location="230,	20"		Size="150, 63"	TabIndex="1" />
+					<ListBox    Name="lsbox_users"  	Location ="10, 20" Size="120, 140" />
+					<Button		Name="Btn_RemoveUser"   Text="Remove User" Location="10, 170" Size="120, 25" TabIndex="123" />
+					
+					<Button		Name="Btn_AddUser"  	Text="Add User" Location="390, 20" Size="100, 20" TabIndex="123" />
+				</Controls>
+			</GroupBox>
+
+			<GroupBox	Name="grb_columnlist"	Location="555,300"	Size="140,160" Text="Columns list" Visible="false">
+				<Controls>
+					<ListBox    Name="lsbox_columnlist"  Location ="10, 20" Size="120, 200" />
+				</Controls>
+			</GroupBox>
+
+			<Button		Name="Btn_Generate" Text="Generate Table" Location="555, 18" Size="160, 25" TabIndex="123" />
+			<Button		Name="Btn_Generate2" Text="Generate Report" Location="555, 45" Size="160, 25" TabIndex="123" />
+		</Controls>
+	</Form>
+</BizXml>

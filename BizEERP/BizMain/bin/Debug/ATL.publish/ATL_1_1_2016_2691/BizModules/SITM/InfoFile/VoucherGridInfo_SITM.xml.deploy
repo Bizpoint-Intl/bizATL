@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="sitm" Title="{languageBinding.SITM}" DocumentInfo="DocumentInfo_SITM.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="sitenum"	HeaderText="Site Info"		Width="150"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True" PrintItem="True" VoucherSort="True" />
+		<VoucherGridColumnInfo MappingName="sitename"		HeaderText="Site Name"		Width="500" SearchItem="True" ConfirmItem="True" RefreshItem="True"  PrintItem="True" VoucherSort="True"/>
+		<!--<VoucherGridColumnInfo MappingName="sectorcode"		HeaderText="Zone"		Width="50"/>-->
+		<VoucherGridColumnInfo MappingName="iscoach"		HeaderText="Pest Control"		Width="45"  ColumnType="CheckBox"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+	</VoucherGridInfo>
+</BizXml>

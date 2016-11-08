@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="ccm" Title="{languageBinding.itemCCM}" DocumentInfo="DocumentInfo_CCM.xml" PageSize="{languageBinding.sys_voucher_PageSize}">
+		<VoucherGridColumnInfo MappingName="ccnum"		HeaderText="{languageBinding.ccnum}"	Width="100"	SearchItem="True"	ConfirmItem="True"	RefreshItem="True"	Key="True"/>
+		<VoucherGridColumnInfo MappingName="ccname"	HeaderText="{languageBinding.ccname}"	Width="250"/>
+		<VoucherGridColumnInfo MappingName="status"		HeaderText="{languageBinding.status}"	Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"		Width="60"/>
+		<VoucherGridColumnInfo MappingName="active"		HeaderText="{languageBinding.active}"	Width="40"  ColumnType="CheckBox"/>
+	</VoucherGridInfo>
+</BizXml>

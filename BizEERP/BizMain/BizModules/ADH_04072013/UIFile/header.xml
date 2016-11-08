@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_adhnum"	  Location="10,  10"		Size="80, 16"	TextAlign="Right" Text="Old Ctr No:"/>
+			<TextBox	Name="adh_oldrefnum"	  Location="95,10"		Size="150,21"	TabIndex="51"/>
+
+			<Label		Name="lbl_arnum"	  Location="10,  35"		Size="80, 16"	TextAlign="Right" Text="Customer:"/>
+			<TextBox	Name="adh_arnum"	  Location="95,35"		Size="150,21"	TabIndex="51"/>
+
+
+			<Label		Name="lbl_trandate"			   Location="350,  10"	  Size="80, 21" TextAlign="MiddleLeft" Text="TranDate"/>
+			<dtp:BizDateTimePicker Name="adh_trandate"  Location="435, 10"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+			<Label		Name="lbl_commencedate"	   Location="350,  35"	Size="80, 21" TextAlign="MiddleLeft" Text="Start Date"/>
+			<dtp:BizDateTimePicker Name="adh_commencedate"    Location="435, 35"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+			<Label		Name="lbl_enddate"	  Location="545,  35"		Size="60, 16"	TextAlign="Right" Text="End Date"/>
+			<dtp:BizDateTimePicker Name="adh_enddate"    Location="605, 35"      Size="80, 21"  Format="Custom" CustomFormat="dd-MM-yyyy" />
+
+
+			<Label		Name="lbl_user"	  Location="545,  10"		Size="60, 16"	TextAlign="Right" Text="Issued by:"/>
+			<TextBox	Name="adh_user"	  Location="605,10"		Size="100,21" ReadOnly="True" 	TabIndex="51"/>
+
+
+
+			<GroupBox	Name="grb_adhcontactinfo"		  Location="5, 60"		Size="320,355" 	Text="Site Contract Information" >
+				<Controls>
+					<Label		Name="lbl_sitenum"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Location No:"/>
+					<TextBox	Name="adh_sitenum"	  Location="95,25"		Size="90,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_sitename"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Loc Name:"/>
+					<TextBox	Name="adh_sitename"	  Location="95,50"		Size="180,21" 	TabIndex="51"/>
+
+					<Label		Name="lbl_addr1"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Site Address"/>
+					<Label		Name="lbl_addr2"	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text=""/>
+					<Label		Name="lbl_addr3"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text=""/>
+					<Label		Name="lbl_postalcode"	  Location="10,  150"		Size="80, 16"	TextAlign="Right" Text="Postal Code"/>
+
+
+					<TextBox	Name="arm_addr1"	  Location="95,75"		Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="adh_addr2"	  Location="95,100"		Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="adh_addr3"	  Location="95,125"		Size="180,21"	TabIndex="51"/>
+					<TextBox	Name="adh_postalcode"	  Location="95,150"		Size="180,21"	TabIndex="51"/>
+-
+					<Label		Name="lbl_tel1"	  Location="10,  175"		Size="80, 16"	TextAlign="Right" Text="Tel No"/>
+					<TextBox	Name="adh_tel1"	  Location="95,175"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_sfax"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="Fax"/>
+					<TextBox	Name="adh_sfax"	  Location="95,200"		Size="180,21"	TabIndex="51"/>
+
+
+					<Label		Name="lbl_rep1"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Contact Person 1:"/>
+					<TextBox	Name="adh_rep1"	  Location="95,225"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_rep1tel"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+					<TextBox	Name="adh_rep1tel"	  Location="95,250"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_rep2"	  Location="10,  275"		Size="80, 16"	TextAlign="Right" Text="Contact Person 2:"/>
+					<TextBox	Name="adh_rep2"	  Location="95,275"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_rep2tel"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+					<TextBox	Name="adh_rep2tel"	  Location="95,300"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_rep2tel"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="Contact No:"/>
+					<TextBox	Name="adh_rep2tel"	  Location="95,300"		Size="180,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_premisetype"	  Location="10,  325"		Size="80, 16"	TextAlign="Right" Text="Premise Type:"/>
+					<TextBox	Name="adh_prmcode"	  Location="95,325"		Size="180,21"	TabIndex="51"/>
+
+
+				</Controls>
+			</GroupBox>
+
+
+			<GroupBox	Name="grb_adhdocinfo"		  Location="330, 60"		Size="400,446" 	Text="Site Information" >
+				<Controls>
+
+					<Label		Name="lbl_sector"	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Zone" />
+					<TextBox	Name="adh_sectorcode"	  Location="95,25"		Size="45,21"	TabIndex="51" />
+
+					<Label		Name="lbl_qctnum"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="QCT No" />
+					<TextBox	Name="adh_qctnum"	  Location="95,50"		Size="200,21"	TabIndex="51" />
+
+					<Label		Name="lbl_padhnum"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="P. Ctr No" />
+					<TextBox	Name="adh_padhnum"	  Location="95,75"		Size="200,21"	TabIndex="51" />
+
+
+					<Label		Name="lbl_totalmonths" 	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Months" />
+					<TextBox	Name="adh_totalmonths"	  Location="95,100" 		Size="45,21"	TabIndex="51" ReadOnly="True"/>
+
+					<!--Visible="False"-->
+				
+
+					<Label		Name="lbl_event"	  Location="10,  50"		Size="80, 16"	TextAlign="Right" Text="Event" Visible="False"/>
+					<TextBox	Name="adh_event"	  Location="95,50"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+					<Label		Name="lbl_schedul"	  Location="10,  75"		Size="80, 16"	TextAlign="Right" Text="Work Schedule" Visible="False"/>
+					<TextBox	Name="adh_schedule"	  Location="95,75"		Size="200,21"	TabIndex="51" Visible="False"/>
+
+
+
+					<Label		Name="lbl_officer_qty" 	  Location="10,  100"		Size="80, 16"	TextAlign="Right" Text="Officers" Visible="False"/>
+					<TextBox	Name="adh_officerqty"	  Location="95,100" 		Size="45,21"	TabIndex="51" Visible="False"/>
+
+					<Label		Name="lbl_duty"	  Location="10,  125"		Size="80, 16"	TextAlign="Right" Text="Main Duties" Visible="False"/>
+					<TextBox	Name="adh_duty"	  Location="95,125"		Size="242,50"	TabIndex="51" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper" Visible="False"/>
+
+					<!--Visible="False"-->
+					
+					<Label		Name="lbl_subtotal"	  Location="10,  200"		Size="80, 16"	TextAlign="Right" Text="SubTotal" Visible="False"/>
+					<TextBox	Name="adh_subtotal" ReadOnly="True" 	  Location="95,200"		Size="90,21"	TabIndex="51" Visible="False"/>
+					
+
+					<!--<Label		Name="lbl_additionalcosts"	  Location="10,  225"		Size="80, 16"	TextAlign="Right" Text="Addittional"/>
+					<TextBox	Name="adh_additionalcosts" ReadOnly="True" 	  Location="95,225"		Size="90,21"	TabIndex="51" />-->
+
+					<!--<Label		Name="lbl_equipmentcosts"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Equipment"/>
+					<TextBox	Name="adh_equipmentcosts" ReadOnly="True" 	  Location="95,250"		Size="90,21"	TabIndex="51" />-->
+					
+
+					<Label		Name="lbl_discamt"	   Location="10,  225"			Size="80, 16"	TextAlign="Right" Text="Discount:" Visible="False"/>
+					<TextBox	Name="adh_discamt"	  Location="95,225"	Size="90,21"	TabIndex="51" Visible="False"/>
+
+
+
+					<Label		Name="lbl_ttlbillingamt"	  Location="10,  250"		Size="80, 16"	TextAlign="Right" Text="Total Bill Amt:" Visible="False"/>
+					<TextBox	Name="adh_ttlbillingamt"	  Location="95,250"		Size="90,21" ReadOnly="True" 	TabIndex="51" Visible="False"/>
+
+					<Label		Name="lbl_cc1"	  Location="10,  275"		Size="80, 16"	TextAlign="Right" Text="CC 1:" Visible="False"/>
+					<TextBox	Name="adh_cc1"	  Location="95,275"		Size="270,21" 	TabIndex="51" Visible="False"/>
+					<Label		Name="lbl_cc2"	  Location="10,  300"		Size="80, 16"	TextAlign="Right" Text="CC 2:" Visible="False"/>
+					<TextBox	Name="adh_cc2"	  Location="95,300"		Size="270,21" 	TabIndex="51" Visible="False"/>
+
+
+					<GroupBox	Name="grb_adhterminfo"		  Location="95,150"		Size="200,125" 	Text="Terms and Condition" >
+						<Controls>
+							<Button Name="BtnTerms" Text="Terms" Location="50,50"	 Size="120, 23"  UseVisualStyleBackColor="True" TabIndex="19"/>
+						</Controls>
+					</GroupBox>
+					
+
+ 
+
+					<Label		Name="lbl_billaddr1"	  Location="10,  325"		Size="80, 16"	TextAlign="Right" Text="Bill Address"/>
+					<TextBox	Name="adh_billadd1"	  Location="95,325"		Size="270,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_billaddr2"	  Location="10,  350"		Size="80, 16"	TextAlign="Right" Text=""/>
+					<TextBox	Name="adh_billadd2"	  Location="95,350"		Size="270,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_billaddr3"	  Location="10,  375"		Size="80, 16"	TextAlign="Right" Text=""/>
+					<TextBox	Name="adh_billadd3"	  Location="95,375"		Size="270,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_billaddr4"	  Location="10,  400"		Size="80, 16"	TextAlign="Right" Text=""/>
+					<TextBox	Name="adh_billadd4"	  Location="95,400"		Size="270,21"	TabIndex="51"/>
+					
+					
+				</Controls>
+			</GroupBox>
+
+			<Label		Name="lbl_sinstruction"	Location="10, 425" Size="140, 21"		Text="Special Instructions"/>
+			<TextBox	Name="adh_sinstruction" Location="10, 450" Size="285, 80"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+
+
+		</Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="sitm" Key="sitenum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.SITM}">
+		<RelationTables>
+
+
+			<DocRelationTableInfo TableName="sem" DataField="sectorcode" ConditionField="sectorcode">
+	
+			</DocRelationTableInfo>
+
+
+			<DocRelationTableInfo TableName="arm" DataField="arnum" ConditionField="arnum">
+
+			</DocRelationTableInfo>
+		
+			
+		</RelationTables>
+		<DocumentPages>
+			<!-- CTRH -->
+			<DocumentPageInfo FileName="Header.xml"	 Visible="False" 	FormName="header"	Title="Header">
+
+				<!--To be uncommented later-->
+				
+				<F2Controls>
+					<F2Control ControlName="sitm_arnum" F2GridInfo="F2GridInfo_ARM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="arm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="sitm_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+
+			</DocumentPageInfo>
+
+
+			<DocumentPageInfo FileName="Inventory.xml"	FormName="inventory"	Title="Inventory Log">
+				<Details>
+					<Detail DataGridName="dg_Inventory"	DetailGridInfo="DetailGridInfo_sitm1.xml"  CaptionText="Inventory Log"/>
+				</Details>
+			</DocumentPageInfo>
+
+	
+
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Contracts Report (Form)"  DefaultReport="True" ReportPath="\CTRH\Report\CTRHfrm1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

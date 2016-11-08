@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="ptypem" Key="ptypecode" CompanyTitle="{languageBinding.coyATL}" ModuleTitle="Product Type">
+    <DocumentPages>
+			<DocumentPageInfo FileName="Header.xml"	FormName="header" Title="Header">
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

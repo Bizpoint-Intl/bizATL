@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="wkch" Title="{languageBinding.WKCB}" DocumentInfo="DocumentInfo_WKC.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"		Width="150"   SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+		<VoucherGridColumnInfo MappingName="weekno"	 Visible="False" 	HeaderText=""		Width="0" DataType="System.String"/>
+		<VoucherGridColumnInfo MappingName="weekDateFrom"		HeaderText="From"		Width="100"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<VoucherGridColumnInfo MappingName="weekDateTo"		HeaderText="To"		Width="100"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<VoucherGridColumnInfo MappingName="trandate"		HeaderText="{languageBinding.trandate}"		Width="100" ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"			Width="40"/>
+		<VoucherGridColumnInfo MappingName="remark"		HeaderText="{languageBinding.remark}"		Width="400"/>
+	</VoucherGridInfo>
+</BizXml>

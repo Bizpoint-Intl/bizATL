@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="pfmsr" Title="Salary Scale">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="hsgcode"	HeaderText="" ReadOnly="True" 	Width="0"   Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="hsamcode"	HeaderText="Salary Breakdown"	Width="100"   Format="#,##0.00####" F2="True" F2GridInfo="F2GridInfo_HSAM.xml"/>
+		<DetailGridColumnInfo MappingName="rateamt"	HeaderText="Total($)"	Width="100"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="dateadjusted"	HeaderText=""	Width="0" ReadOnly="True"   ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<DetailGridColumnInfo MappingName="remarks"	HeaderText="Remarks"	Width="250"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="salcode"	HeaderText="" ReadOnly="True" 	Width="0"   Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="isExempt"  		  HeaderText="Exempt"		  Width="60" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="empnum"	HeaderText=""	Width="0"   Format="#,##0.00####" ReadOnly="true" Key="True" />
+		<DetailGridColumnInfo MappingName="sitenum"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="nric"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<!--<DetailGridColumnInfo MappingName="myline"		HeaderText=""		ReadOnly="True" 	Width="0"	 Sort="True"	 />-->
+		<DetailGridColumnInfo MappingName="line"		HeaderText=""		ReadOnly="True" 	Width="0"	 Sort="True"	 />
+
+
+
+
+	</DetailGridInfo>
+</BizXml>
+

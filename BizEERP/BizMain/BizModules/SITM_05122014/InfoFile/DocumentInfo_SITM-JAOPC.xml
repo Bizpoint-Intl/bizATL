@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="sitm" Key="sitenum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.SITM}">
+		<RelationTables>
+
+			<DocRelationTableInfo	TableName="prm" DataField="prmcode" ConditionField="prmcode"/>
+			
+
+			<DocRelationTableInfo TableName="sem" DataField="sectorcode" ConditionField="sectorcode">
+	
+			</DocRelationTableInfo>
+
+
+			<DocRelationTableInfo TableName="arm" DataField="arnum" ConditionField="arnum">
+
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="qcth" DataField="refnum" ConditionField="qctnum">
+
+			</DocRelationTableInfo>
+		
+			
+		</RelationTables>
+		<DocumentPages>
+			<!-- CTRH -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+				<!--To be uncommented later-->
+
+				
+				<F2Controls>
+
+					<F2Control ControlName="sitm_prmcode" F2GridInfo="F2GridInfo_PRM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="prm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="sitm_qctnum" F2GridInfo="F2GridInfo_QCTH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="qcth"/>
+						</RelationF2Tables>
+					</F2Control>
+					
+					<F2Control ControlName="sitm_arnum" F2GridInfo="F2GridInfo_ARM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="arm"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="sitm_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+
+			</DocumentPageInfo>
+
+
+
+	
+
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Contracts Report (Form)"  DefaultReport="True" ReportPath="\CTRH\Report\CTRHfrm1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

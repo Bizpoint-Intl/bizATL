@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="detail" Text="Details" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			
+			<GroupBox	Name="grb_location"		  Location="3, 5"		Size="734,200" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_location" Location="0, 0"	Size="730, 200"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+			<GroupBox	Name="grb_item"		  Location="3, 201"		Size="734,320" 	Text="" >
+				<Controls>			
+					<DataGrid	Name="dg_item" Location="5, 10"	Size="734, 308"	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+			
+		</Controls>
+	</Form>
+</BizXml>

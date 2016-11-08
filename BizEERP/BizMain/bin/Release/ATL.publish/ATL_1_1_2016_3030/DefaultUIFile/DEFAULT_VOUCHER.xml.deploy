@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <Form Name="frm_Voucher" Text="{languageBinding.frm_Voucher}" Tag="Voucher" AutoScroll="True">
+    <Controls>
+      <!--Search-->
+      <GroupBox Name="grp_Voucher_Search" Text="{languageBinding.grp_Voucher_Search}" Location="15,5" Size="900, 50" FlatStyle="System" Font="Arial, 9.75pt, style=Bold" ForeColor="Black">
+        <Controls>
+          <Label		    Name="lbl_Voucher_Search"		Location="30, 20" Size="110,25" Font="{languageBinding.Tahoma875Bold}" TextAlign="MiddleLeft" ForeColor="Black" Text="{languageBinding.lbl_Voucher_Search}"/>
+          <TextBox	    Name="txt_Voucher_Search"		Location="145,20" Size="170,25" Font="{languageBinding.Tahoma875}" TabIndex="1" CharacterCasing="Upper"/>
+          <Label		    Name="lbl_Voucher_Default"	Location="370,20" Size="55, 20" Font="{languageBinding.Tahoma875Bold}" TextAlign="MiddleLeft" ForeColor="Black" Text="{languageBinding.lbl_Voucher_Default}"/>
+          <RadioButton  Name="rdb_Voucher_Default"	Location="435,18" Size="25, 24" FlatStyle="System" Checked="True"/>
+          <Label		    Name="lbl_Voucher_All"			Location="470,20" Size="25, 20" Font="{languageBinding.Tahoma875Bold}" TextAlign="MiddleLeft" ForeColor="Black" Text="{languageBinding.lbl_Voucher_All}"/>
+          <RadioButton  Name="rdb_Voucher_All"		  Location="505,18" Size="25, 24" FlatStyle="System" />
+        </Controls>
+      </GroupBox>
+      <!--DataGrid-->
+      <GroupBox Name="grp_Voucher_DataGird" Text="{languageBinding.grp_Voucher_DataGird}" Location="15, 55" Size="900,523" FlatStyle="System" Font="{languageBinding.Tahoma975Bold}" ForeColor="Black">
+        <Controls>
+          <DataGrid Name="dg_Voucher"			Location="30, 20"	Size="840,450"	Font="{languageBinding.Tahoma875}" CaptionVisible="False" SelectionForeColor="Red"/>
+          <!-- Search -->
+          <TextBox  Name="txt_Voucher_Search_0"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_1"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_2"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_3"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_4"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_5"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_6"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_7"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_8"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <TextBox  Name="txt_Voucher_Search_9"	Location="67, 470"	Size="80,20"	Font="{languageBinding.Tahoma875}"	Text="" CharacterCasing="Upper"/>
+          <!--QueryPage-->
+          <Label    Name="lbl_Voucher_Goto"				Location="160, 495"	Size="85,20"	Font="{languageBinding.Tahoma975Bold}"	ForeColor="Black"	Text="{languageBinding.lbl_Voucher_Goto}"/>
+          <TextBox  Name="txt_Voucher_Goto"				Location="250, 492"	Size="80,20"	Font="{languageBinding.Tahoma975Bold}"	ForeColor="Black"	Text="" TextAlign="Right"/>
+          <Label    Name="lbl_Voucher_Of"					Location="340, 495"	Size="20,20"	Font="{languageBinding.Tahoma975Bold}"	ForeColor="Black"	Text="{languageBinding.lbl_Voucher_Of}"/>
+          <Label    Name="lbl_Voucher_Page"				Location="360, 495"	Size="60,20"	Font="{languageBinding.Tahoma975Bold}"	ForeColor="Black"	Text=""/>
+          <Button	  Name="btn_Voucher_Goto"		    Text="{languageBinding.btn_Voucher_Goto}"		  Location="420, 495"	Size="50,21" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+          <Button	  Name="btn_Voucher_First"			Text="{languageBinding.btn_Voucher_First}"		Location="470, 495"	Size="50,21" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}" Enabled="False"/>
+          <Button	  Name="btn_Voucher_Previous"		Text="{languageBinding.btn_Voucher_Previous}"	Location="520, 495"	Size="50,21" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}" Enabled="False"/>
+          <Button	  Name="btn_Voucher_Next"		    Text="{languageBinding.btn_Voucher_Next}"		  Location="570, 495"	Size="50,21" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+          <Button	  Name="btn_Voucher_Last"		    Text="{languageBinding.btn_Voucher_Last}"		  Location="620, 495"	Size="50,21" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+        </Controls>
+      </GroupBox>
+      <!--Button-->
+      <Button Name="btn_Voucher_New"			Text="{languageBinding.btn_Voucher_New}"			Location="930,  90"	ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+      <Button Name="btn_Voucher_Edit"			Text="{languageBinding.btn_Voucher_Edit}"			Location="930, 140" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+      <Button Name="btn_Voucher_Delete"			Text="{languageBinding.btn_Voucher_Delete}"		Location="930, 190" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}" Visible="False"/>
+      <Button Name="btn_Voucher_Cancel"			Text="{languageBinding.btn_Voucher_Cancel}"		Location="930, 190" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+      <Button Name="btn_Voucher_Search"		Text="{languageBinding.btn_Voucher_Search}"		Location="930, 240" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+      <Button Name="btn_Voucher_Confirm"		Text="{languageBinding.btn_Voucher_Confirm}"		Location="930, 290" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"		Visible="False"/>
+      <Button Name="btn_Voucher_Reopen"		Text="{languageBinding.btn_Voucher_Reopen}"		Location="930, 340" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"		Visible="False"/>
+      <Button Name="btn_Voucher_Refresh"		Text="{languageBinding.btn_Voucher_Refresh}"		Location="930, 390"	ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"		Visible="False"/>
+
+      <Button Name="btn_Voucher_Print"			Text="{languageBinding.btn_Voucher_Print}"			Location="930, 440" ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+      <Button Name="btn_Voucher_Analysis"		Text="{languageBinding.btn_Voucher_Analysis}"	Location="930, 490"	ForeColor="0,70,213" FlatStyle="System" Font="{languageBinding.Tahoma875Bold}"/>
+
+    </Controls>
+  </Form>
+</BizXml>

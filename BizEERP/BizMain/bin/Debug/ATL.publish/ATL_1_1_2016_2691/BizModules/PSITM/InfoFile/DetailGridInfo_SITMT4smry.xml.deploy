@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="sitmt4sum" Title="Relief Summary">
+		<DetailGridColumnInfo MappingName="matnum"	HeaderText="Appointment"	Width="180"  ReadOnly="True" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="total"	HeaderText="Total"	Width="80"  ReadOnly="True" Format="#,##0.00####"/>
+
+		<DetailGridColumnInfo MappingName="sitenumt"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

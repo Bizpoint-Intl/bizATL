@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+		<Form Name="frm_UnLogin" Text="{languageBinding.frm_UnLogin}" ClientSize="360,355" StartPosition="CenterScreen" FormBorderStyle="FixedToolWindow" MaximizeBox="false" MinimizeBox="false" ShowInTaskbar="False" ControlBox="false">
+			<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+			<Controls>
+				<!--PictureBox Name="pcb_UnLogin" Location="0, 0" Size="165, 315" TabStop="False">
+					<ele:BizPictureBoxImage FileName="Bizpoint1.bmp"/>
+				</PictureBox-->
+				<ListView Name="lvw_UnLogin" Location="30, 20" Size="305,280" Font="{languageBinding.Tahoma10}" LargeImageList="{imageList}" SmallImageList="{imageList}" FullRowSelect="True" MultiSelect="False" View="Details" Tag="11">
+					<Columns>
+						<ColumnHeader Text="{languageBinding.lvw_UnLogin_Name}"		Width="150"/>
+						<ColumnHeader Text="{languageBinding.lvw_UnLogin_Time}" Width="135"/>
+					</Columns>
+				</ListView>
+				<GroupBox	Name="grb_UnLogin"			Location="0,  315"	Size="500, 3"	TabStop="False"/>
+				<Button		Name="btn_UnLogin_Refresh"	Location="100,325"	Font="{languageBinding.Tahoma9}" FlatStyle="System" TabIndex="1" Text="{languageBinding.btn_UnLogin_Refresh}"/>
+				<Button		Name="btn_UnLogin_Delete"	Location="185,325"	Font="{languageBinding.Tahoma9}" FlatStyle="System" TabIndex="2" Text="{languageBinding.btn_UnLogin_Delete}"/>
+				<Button		Name="btn_UnLogin_Cancel"	Location="270,325"	Font="{languageBinding.Tahoma9}" FlatStyle="System" TabIndex="3" Text="{languageBinding.btn_UnLogin_Cancel}"/>
+			</Controls>
+		</Form>
+</BizXml>

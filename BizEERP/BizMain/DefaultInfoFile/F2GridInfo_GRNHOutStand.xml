@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+    xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <F2GridInfo Name="f2GridInfo" MainTable="grnhOutStand" Title="Goods Receipt" PageSize="{languageBinding.sys_F2_Pagesize}">
+    <!--<RelationTables>
+      <rel:RelationTableInfo TableName="apm"	    DataField="apnum"	ConditionField="apnum"/>
+    </RelationTables>-->
+    <F2GridColumnInfo MappingName="refnum"	HeaderText="GRN No."	    Width="110" IsItem="True" SearchItem="True" SortItem="True"  Key="True"/>	
+	  <!--<F2GridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"		Width="130" IsItem="True" SearchItem="True" SortItem="True"/>-->
+    <F2GridColumnInfo MappingName="apnum"		  HeaderText="Supplier"	    Width="250" IsItem="True" SearchItem="True" SortItem="True"/>
+	  <!--<F2GridColumnInfo MappingName="trandate"	HeaderText="{languageBinding.trandate}"		Width="80"  IsItem="True" SearchItem="True" SortItem="True"/>-->		
+	</F2GridInfo>
+</BizXml>
+

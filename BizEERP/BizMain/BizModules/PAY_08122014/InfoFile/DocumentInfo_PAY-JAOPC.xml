@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="payt" Key="refnum" CompanyTitle="{languageBinding.coyASOMS}" ModuleTitle="Purchase Payment">
+		<RelationTables>
+      <!--steve*-->
+      <DocRelationTableInfo TableName="locm" DataField="locno" ConditionField="locno"/>
+      <DocRelationTableInfo TableName="deptm" DataField="deptno" ConditionField="deptno"/>
+      <!--steve end-->
+      <DocRelationTableInfo TableName="apm" DataField="apnum" ConditionField="apnum"/>
+				<!--<Fields>
+			<Field ColumnName="apname"/>
+				</Fields>
+			</DocRelationTableInfo>-->
+			<DocRelationTableInfo TableName="gstm" DataField="gstgrpnum" ConditionField="gstgrpnum">
+				<Fields>
+					<Field ColumnName="gstgrpname"/>
+					<Field ColumnName="gsttype"/>
+				</Fields>
+			</DocRelationTableInfo>	
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>	
+			<!--<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur1" DataTableName="exr1">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur3" DataTableName="exr3">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur4" DataTableName="exr4">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>-->
+			<DocRelationTableInfo TableName="acm"	DataField="accnum" ConditionField="accnum1" DataTableName="acm1">
+				<Fields>
+					<Field ColumnName="accname"/>
+					<Field ColumnName="oricur"/>
+				</Fields>
+			</DocRelationTableInfo>			
+			<DocRelationTableInfo TableName="acm"	DataField="accnum" ConditionField="accnum2" DataTableName="acm2">
+				<Fields>
+					<Field ColumnName="accname"/>
+					<Field ColumnName="oricur"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="acm"	DataField="accnum" ConditionField="accnum3" DataTableName="acm3">
+				<Fields>
+					<Field ColumnName="accname"/>
+					<Field ColumnName="oricur"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="acm"	DataField="accnum" ConditionField="accnum4" DataTableName="acm4">
+				<Fields>
+					<Field ColumnName="accname"/>
+					<Field ColumnName="oricur"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="piv1"	DataField="refnum"	ConditionField="refnum"/>
+			<DocRelationTableInfo TableName="siv1"		DataField="refnum"	ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="rec10" DataField="refnum"	ConditionField="refnum" Save="True"/>
+		</RelationTables>
+		<DocumentPages>
+			<!-- RECP -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header" Title="Header">
+				<F2Controls>
+
+					<F2Control ControlName="payt_apnum" F2GridInfo="F2GridInfo_APM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="apm"/>
+						</RelationF2Tables>
+					</F2Control>
+					
+					<F2Control ControlName="payt_oricur" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr"/>
+						</RelationF2Tables>					
+					</F2Control>
+					<!--<F2Control ControlName="payt_oricur1" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr1"/>
+						</RelationF2Tables>					
+					</F2Control>
+					<F2Control ControlName="payt_oricur3" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr3"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="payt_oricur4" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr4"/>
+						</RelationF2Tables>
+					</F2Control>-->
+					<F2Control ControlName="payt_gstgrpnum" F2GridInfo="F2GridInfo_GSTM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="gstm"/>
+						</RelationF2Tables>					
+					</F2Control>
+					<F2Control ControlName="payt_accnum1"  F2GridInfo="F2GridInfo_ACM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="acm1"/>							
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="payt_accnum2"  F2GridInfo="F2GridInfo_ACM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="acm2"/>							
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="payt_accnum3"  F2GridInfo="F2GridInfo_ACM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="acm3"/>
+						</RelationF2Tables>
+					</F2Control>
+				<F2Control ControlName="payt_accnum4"  F2GridInfo="F2GridInfo_ACM.xml">
+					<RelationF2Tables>
+						<RelationF2Table TableName="acm4"/>
+					</RelationF2Tables>
+				</F2Control>
+          <!--steve*-->
+          <!--<F2Control ControlName="payt_locno"  F2GridInfo="F2GridInfo_LOCM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="locm"/>
+            </RelationF2Tables>
+          </F2Control>
+          <F2Control ControlName="payt_deptno"  F2GridInfo="F2GridInfo_DEPTM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="deptm"/>
+            </RelationF2Tables>
+          </F2Control>-->
+          <!--steve end-->
+				</F2Controls>
+				<!--<Details>
+					<Detail DataGridName="dg_Creditors" DetailGridInfo="DetailGridInfo_APD.xml"  CaptionText="Payables Ledger Details"/>
+				</Details>-->
+			</DocumentPageInfo>
+
+
+			<!-- APD -->
+			<DocumentPageInfo FileName="Creditors.xml"  FormName="creditors" Title="Creditors">
+				<Details>
+					<Detail DataGridName="dg_Creditors" DetailGridInfo="DetailGridInfo_APD.xml"  CaptionText="Payables Ledger Details"/>
+				</Details>
+			</DocumentPageInfo>
+      
+			<!-- Piv1 -->
+			<DocumentPageInfo FileName="Others.xml"  FormName="others" Title="Others">
+				<Details>
+					<Detail DataGridName="dg_Others" DetailGridInfo="DetailGridInfo_PIV1.xml" CaptionText="Purchase Ledger Details"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<!-- Exchange Currency -->
+			<DocumentPageInfo FileName="ExCsh.xml"  FormName="ExCsh" Title="Exchange Currency">
+				<Details>
+					<Detail DataGridName="dg_ExCsh" DetailGridInfo="DetailGridInfo_ExCsh.xml" CaptionText="Exchange Oricur Details"/>
+				</Details>
+			</DocumentPageInfo>-->
+      
+      <!--San*-->
+    <!--Cost Centre Distribution-->
+    <DocumentPageInfo FileName="CcDist.xml" FormName="CcDist" Title="Cost Centre Distribution">
+      <Details>
+        <Detail DataGridName="detail_CcDist" DetailGridInfo="DetailGridInfo_CcDist.xml"  CaptionText="Cost Centre Distribution"/>
+      </Details>
+    </DocumentPageInfo>
+    <!--San_End-->
+			
+			<!-- Csh, Gld -->
+			<DocumentPageInfo FileName="Ledgers.xml"  FormName="ledgers" Title="Ledgers">
+				<Details>
+					<Detail DataGridName="dg_CSH" DetailGridInfo="DetailGridInfo_CSH.xml" CaptionText="Cash Ledger Details"/>
+					<Detail DataGridName="dg_GLD" DetailGridInfo="DetailGridInfo_GLD.xml" CaptionText="General Ledger Details"/>
+				</Details>
+			</DocumentPageInfo>
+		</DocumentPages>
+    <Reports>
+      <Report ReportName="Payment (Creditors)"		ReportPath="\PAY\Report\Payment.rpt" />
+      <Report ReportName="Payment (Others)" ReportPath="\PAY\Report\otherPayment.rpt" />
+    </Reports>
+  </DocumentInfo>
+</BizXml>

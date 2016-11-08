@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="hemp2" Title="Nationality Progression">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="nationality"	HeaderText="Nationality"	Width="100" F2="True" F2GridInfo="F2GridInfo_HNAM.xml"   />
+    <DetailGridColumnInfo MappingName="effectivedate"	HeaderText="Effective Date"	Width="120"        ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy" />
+    <DetailGridColumnInfo MappingName="islatest"  		  HeaderText="Latest"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="isMainNationality"  		  HeaderText="Main"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="remark"	HeaderText="Remarks"  	Width="350" />
+		<DetailGridColumnInfo MappingName="nric"		HeaderText=""			Width="0"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="empnum"		HeaderText=""			Width="0"	ReadOnly="true"  Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

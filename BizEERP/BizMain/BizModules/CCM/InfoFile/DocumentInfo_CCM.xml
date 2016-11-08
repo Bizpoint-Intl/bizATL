@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="ccm" Key="ccnum" CompanyTitle="{languageBinding.coyBizAcct}" ModuleTitle="{languageBinding.itemCCM}">
+		<DocumentPages>
+			<!-- ccm -->
+			<DocumentPageInfo FileName="Header.xml"	FormName="header" Title="Page">
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="apm" Title="{languageBinding.itemAPM}" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
+		<F2GridColumnInfo MappingName="apnum"		HeaderText="{languageBinding.apnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="apname"		HeaderText="{languageBinding.apname}"	Width="250" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="ptc"			HeaderText="{languageBinding.ptc}"		Width="110" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="hp"			HeaderText="{languageBinding.hp}"		Width="100"/>
+		<F2GridColumnInfo MappingName="phone"		HeaderText="{languageBinding.phone}"	Width="100"/>
+		<F2GridColumnInfo MappingName="fax"			HeaderText="{languageBinding.fax}"		Width="100"/>
+		<F2GridColumnInfo MappingName="email"		HeaderText="{languageBinding.email}"	Width="165"/>
+		<F2GridColumnInfo MappingName="address"		HeaderText="{languageBinding.address}"	Width="300"/>
+		<F2GridColumnInfo MappingName="term"		HeaderText="{languageBinding.term}"		Width="100"/>
+    <F2GridColumnInfo MappingName="credit"		HeaderText="Credit"		Width="100"/>
+    <F2GridColumnInfo MappingName="accnum"		HeaderText="Credit A/C"		Width="100"/>
+    <F2GridColumnInfo MappingName="accnum2"		HeaderText="Expense A/C"		Width="100"/>
+    
+  </F2GridInfo>
+</BizXml>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="hacss">
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"		HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="acsscode"	HeaderText="{languageBinding.acsscode}"		Width="150"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="acssnum"		HeaderText="{languageBinding.acssnum}"		Width="100"/>
+		<DetailGridColumnInfo MappingName="acssname"	HeaderText="{languageBinding.acssname}"		Width="250"	FromColor="LightGreen" ToColor="LightGreen"/>
+		<DetailGridColumnInfo MappingName="acmsnum"		HeaderText="{languageBinding.acmsnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

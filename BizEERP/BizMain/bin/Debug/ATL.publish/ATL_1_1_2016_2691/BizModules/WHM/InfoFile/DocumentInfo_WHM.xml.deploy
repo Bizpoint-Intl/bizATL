@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="whm" Key="whnum" CompanyTitle="{languageBinding.coyname}" ModuleTitle="Warehouse">
+		<RelationTables>
+      <DocRelationTableInfo TableName="sitm"		DataField="sitenum"	  ConditionField="sitenum"/>
+      <DocRelationTableInfo TableName="hemph"		DataField="empnum"	  ConditionField="pempnum"/>
+    </RelationTables>
+		<DocumentPages>
+      <DocumentPageInfo FileName="header.xml" FormName="header" Title="Header">
+        <F2Controls>
+          <F2Control ControlName="whm_sitenum"  F2GridInfo="F2GridInfo_SITM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="sitm"/>
+            </RelationF2Tables>
+          </F2Control>
+
+          <F2Control ControlName="whm_pempnum"  F2GridInfo="F2GridInfo_HEMPH.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph"/>
+            </RelationF2Tables>
+          </F2Control>
+          
+        </F2Controls>
+      </DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

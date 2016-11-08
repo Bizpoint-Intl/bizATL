@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="bfavh" Key="refnum" CompanyTitle="{languageBinding.coyBizERP}" ModuleTitle="{languageBinding.FAVP}">
+		<RelationTables>
+			<DocRelationTableInfo TableName="favth" DataField="refnum" ConditionField="jvtemplate"/>
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur"/>
+		</RelationTables>
+		<DocumentPages>
+			<!-- Payt -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header" Title="Header">
+				<F2Controls>
+					<F2Control ControlName="bfavh_jvtemplate"  F2GridInfo="F2GridInfo_FAVT.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="favth"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="bfavh_oricur"  F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+				<Details>
+					<Detail DataGridName="dg_detail"	DetailGridInfo="DetailGridInfo_Transactions.xml" CaptionText="Journal Transactions Listing"/>
+				</Details>				
+			</DocumentPageInfo>
+		
+      <DocumentPageInfo FileName="employeelist1.xml"		FormName="emplist1"	Title="Employee">
+        <Details>
+          <Detail DataGridName="dg_detail2"	DetailGridInfo="DetailGridInfo_Transactions2.xml" CaptionText="Employee Listing"/>
+        </Details>
+      </DocumentPageInfo>
+
+
+      <DocumentPageInfo FileName="detail2.xml"		FormName="sumattn"	Title="Summary of Attendance">
+        <Details>
+          <Detail DataGridName="dg_detail22"	DetailGridInfo="DetailGridInfo_Detail2.xml" CaptionText="Summary of Attendance"/>
+        </Details>
+      </DocumentPageInfo>
+
+
+      <DocumentPageInfo FileName="detail3.xml"		FormName="sumsalary"	Title="Summary of Salary">
+        <Details>
+          <Detail DataGridName="dg_detail3"	DetailGridInfo="DetailGridInfo_Detail3.xml" CaptionText="Summary of Salary"/>
+          <Detail DataGridName="dg_detail4"	DetailGridInfo="DetailGridInfo_Detail4.xml" CaptionText=""/>
+        </Details>
+      </DocumentPageInfo>
+
+      <DocumentPageInfo FileName="Ledger.xml"	FormName="ledger" Title="Ledger">
+        <Details>
+          <Detail DataGridName="dg_ARD"		DetailGridInfo="DetailGridInfo_ARD.xml"		CaptionText="Debtors (A/R Ledger) Details"/>
+          <Detail DataGridName="dg_SIV"		DetailGridInfo="DetailGridInfo_SIV1.xml"	CaptionText="Sales Ledger Details"/>
+          <Detail DataGridName="dg_APD"		DetailGridInfo="DetailGridInfo_APD.xml"		CaptionText="Creditors (A/P Ledger) Details"/>
+          <Detail DataGridName="dg_PIV"		DetailGridInfo="DetailGridInfo_PIV1.xml"		CaptionText="Purchases Ledger Details"/>
+          <Detail DataGridName="dg_CSH"		DetailGridInfo="DetailGridInfo_CSH.xml"		CaptionText="Cash Ledger Details"/>
+          <Detail DataGridName="dg_GLD"		DetailGridInfo="DetailGridInfo_GLD.xml"		CaptionText="General Ledger Details"/>
+        </Details>
+      </DocumentPageInfo>
+
+
+    </DocumentPages>
+		<Reports>
+			<Report ReportName="Journal"			ReportPath="\FAV\Report\Journal.rpt" />
+		</Reports>
+  </DocumentInfo>
+</BizXml>

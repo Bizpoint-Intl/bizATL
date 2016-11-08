@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		    xmlns:rel="BizRAD.BizBase, BizBase"
+		    xmlns:def="Definition"
+		    xmlns:ref="Reference">
+  <F2GridInfo Name="f2GridInfo" MainTable="favth" Title="Journal Adjustment Template" PageSize="{languageBinding.sys_F2_Pagesize}">
+    <F2GridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"				Width="200" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+    <!--<F2GridColumnInfo MappingName="apnum"			HeaderText="{languageBinding.apnum}"				Width="150" IsItem="True" SearchItem="True" SortItem="True"/>
+    <F2GridColumnInfo MappingName="arnum"			HeaderText="{languageBinding.arnum}"				Width="150" IsItem="True" SearchItem="True" SortItem="True"/>-->
+    <F2GridColumnInfo MappingName="detail"		HeaderText="{languageBinding.detail}"				Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+    <F2GridColumnInfo MappingName="trandate"	HeaderText="{languageBinding.trandate}"			Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+  </F2GridInfo>
+</BizXml>

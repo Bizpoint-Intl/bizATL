@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="wrr" Key="refnum" CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.WRRHQ}">
+		<RelationTables>
+			<!--<DocRelationTableInfo TableName="ctrh" DataField="refnum" ConditionField="ctrnum">
+		
+			</DocRelationTableInfo>-->
+			<DocRelationTableInfo TableName="vMainHEMPH" DataField="empnum" ConditionField="empnum">
+	
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="shm" DataField="shiftcode" ConditionField="shiftcode">
+		
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="sem" DataField="sectorcode" ConditionField="sectorcode">
+	
+			</DocRelationTableInfo>
+
+			<DocRelationTableInfo TableName="sitmt" DataField="sitenumt" ConditionField="sitenumt">
+
+			</DocRelationTableInfo>
+			
+			<DocRelationTableInfo TableName="sitm" DataField="sitenum" ConditionField="sitenum">
+
+			</DocRelationTableInfo>
+			
+	
+		</RelationTables>
+		<DocumentPages>
+			<!-- wrr -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+						 
+				<!--To be uncommented later-->
+
+				<Details>
+					<Detail DataGridName="dg_overallsummary"	DetailGridInfo="DetailGridInfo_WRRall.xml"  CaptionText="Overall"/>
+				</Details>
+				
+				<F2Controls>
+					<!--<F2Control ControlName="wrr_ctrnum" F2GridInfo="F2GridInfo_CTRH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="ctrh"/>
+						</RelationF2Tables>
+					</F2Control>-->
+
+					<F2Control ControlName="wrr_sectorcode" F2GridInfo="F2GridInfo_SEM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sem"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="wrr_sitenumt" F2GridInfo="F2GridInfo_SITMT.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitmt"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					<F2Control ControlName="wrr_sitenum" F2GridInfo="F2GridInfo_SITM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="sitm"/>
+						</RelationF2Tables>
+					</F2Control>
+					
+				</F2Controls>
+
+				
+				
+				
+				<!--To be uncommented later-->
+			</DocumentPageInfo>
+			<!-- wrr1 -->
+			<!--<DocumentPageInfo FileName="Schedule.xml"	FormName="schedule"	Title="Schedule">
+			
+				<Details>
+					<Detail DataGridName="dg_DayShift"	DetailGridInfo="DetailGridInfo_WRR1.xml"  CaptionText="Day Shift"/>
+					<Detail DataGridName="dg_NightShift"	DetailGridInfo="DetailGridInfo_WRR2.xml"  CaptionText="Night Shift"/>
+					<Detail DataGridName="dg_Relief"	DetailGridInfo="DetailGridInfo_WRR3.xml"  CaptionText="Relief"/>
+				</Details>
+			</DocumentPageInfo>-->
+			<!-- wrr2 -->
+
+			<DocumentPageInfo FileName="DayShift.xml"	FormName="dayshift"	Title="Day Shift">							
+				<Details>
+					<Detail DataGridName="dg_DayShift"	DetailGridInfo="DetailGridInfo_WRR1.xml"  CaptionText="Day Shift"/>
+					<Detail DataGridName="dg_DayShiftsummary"	DetailGridInfo="DetailGridInfo_WRR1smry.xml"  CaptionText="Day Shift Summary"/>
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="NightShift.xml"	FormName="nightshift"	Title="Night Shift">
+
+		
+				
+				<Details>
+					<Detail DataGridName="dg_NightShift"	DetailGridInfo="DetailGridInfo_WRR2.xml"  CaptionText="Night Shift"/>
+					<Detail DataGridName="dg_NightShiftsummary"	DetailGridInfo="DetailGridInfo_WRR2smry.xml"  CaptionText="Night Shift Summary"/>
+
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="Concierge.xml"	FormName="concierge"	Title="Concierge">
+
+		
+				
+				<Details>
+					<Detail DataGridName="dg_Concierge"	DetailGridInfo="DetailGridInfo_WRR3.xml"  CaptionText="Concierge"/>
+					<Detail DataGridName="dg_Conciergesummary"	DetailGridInfo="DetailGridInfo_WRR3smry.xml"  CaptionText="Concierge Summary"/>
+
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="Relief.xml"	FormName="relief"	Title="Relief">
+				<Details>
+					<Detail DataGridName="dg_Relief"	DetailGridInfo="DetailGridInfo_WRR4.xml"  CaptionText="Relief"/>
+					<Detail DataGridName="dg_Reliefsummary"	DetailGridInfo="DetailGridInfo_WRR4smry.xml"  CaptionText="Relief Summary"/>
+
+				</Details>
+			</DocumentPageInfo>
+
+			<DocumentPageInfo FileName="DetailedSchedule.xml"	FormName="detailedschedule"	Title="Detailed Schedule">
+				<Details>
+					<Detail DataGridName="dg_detailedschedule"	DetailGridInfo="DetailGridInfo_ATMR.xml"  CaptionText="Detailed Schedule"/>
+				</Details>
+			</DocumentPageInfo>
+			
+			
+		</DocumentPages>
+		<Reports>
+			<Report ReportName="Weekly Rooster 1"  DefaultReport="True" ReportPath="\WRRD\Report\WeeklyRoostert1.rpt" />
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

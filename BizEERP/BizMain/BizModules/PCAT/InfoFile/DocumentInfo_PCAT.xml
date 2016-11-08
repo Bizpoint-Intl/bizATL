@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="pcatm" Key="pcatcode" CompanyTitle="{languageBinding.coyATL}" ModuleTitle="Product Category Master">
+		<RelationTables>
+			<DocRelationTableInfo TableName="ptypem" DataField="ptypecode" ConditionField="ptypecode">
+			</DocRelationTableInfo>
+		</RelationTables>
+		<DocumentPages>
+			<DocumentPageInfo FileName="Header.xml"	FormName="header" Title="Header">
+				<F2Controls>
+					<F2Control ControlName="pcatm_ptypecode" F2GridInfo="F2GridInfo_PTYPE.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="ptypem"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

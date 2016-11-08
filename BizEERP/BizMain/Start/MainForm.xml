@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tabs>
+
+  <Tab Name="Contracts" Size="69,23">
+    <TabStripPage Name="tsp_Contracts">
+      <TabPanel Name="Modules">
+        <!--<RibbonButton Name="QCT" Text="QCT" Image="menu_pcshm.png" InfoTitle="Quotation Record" InfoComment=""/>-->
+        <RibbonButton Name="CTR" Text="CTR" Image="menu_pcshm.png" InfoTitle="Contract Record" InfoComment=""/>
+        <RibbonButton Name="ADH" Text="ADH" Image="menu_pcshm.png" InfoTitle="Add Hoc" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Pest Modules">
+        <!--<RibbonButton Name="QCT" Text="QCT" Image="menu_pcshm.png" InfoTitle="Quotation Record" InfoComment=""/>-->
+        <RibbonButton Name="PCTR" Text="PCTR" Image="menu_pcshm.png" InfoTitle="Pest Contract Record" InfoComment=""/>
+        <RibbonButton Name="PADH" Text="PADH" Image="menu_pcshm.png" InfoTitle="Pest Add Hoc" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Masters">
+        <RibbonButton Name="SITM" Text="LOCM" Image="menu_pcshm.png" InfoTitle="Location Master" InfoComment=""/>
+        <RibbonButton Name="PRJM" Text="PRJM" Image="menu_pcshm.png" InfoTitle="ProjectID Master" InfoComment=""/>
+        <RibbonButton Name="WHM"    Text="WHM"     Image="menu_apm.png" InfoTitle="WHM" InfoComment=""/>
+        <!--<RibbonButton Name="SITME" Text="SiteEquip" Image="menu_pcshm.png" InfoTitle="Site Equipment" InfoComment=""/>-->
+        <RibbonButton Name="ARM"   Text="CUS"      Image="menu_arm.png"	InfoTitle="Customer Master"			InfoComment=""/>
+        <RibbonButton Name="PRM"   Text="PRM"      Image="menu_arm.png"	InfoTitle="Premises Master"			InfoComment=""/>
+        <!--<RibbonButton Name="PTCH"   Text="PTCH"      Image="menu_arm.png"	InfoTitle="PTC Master"			InfoComment=""/>-->
+
+        <!--<RibbonButton Name="LCM"   Text="LCM"      Image="menu_arm.png"	InfoTitle="Location Master"			InfoComment=""/>-->
+        
+        <RibbonButton Name="FQM"   Text="FQM"      Image="menu_arm.png"	InfoTitle="Frequncy Master"			InfoComment=""/>
+        <RibbonButton Name="PDM"   Text="PDM"      Image="menu_arm.png"	InfoTitle="Periodic Master"			InfoComment=""/>
+        <RibbonButton Name="DCTM"   Text="DCTM"      Image="menu_arm.png"	InfoTitle="Doc Type Master"			InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="PM" Size="69,23">
+    <TabStripPage Name="tsp_Masters">
+
+      <TabPanel Name="Masters">
+        <RibbonButton Name="SITMT" Text="SITMT" Image="menu_pcshm.png" InfoTitle="Site Master Template" InfoComment=""/>
+        <RibbonButton Name="PSITM" Text="PSITMT" Image="menu_pcshm.png" InfoTitle="Pest Site Master Template" InfoComment=""/>
+        <RibbonButton Name="SITMTA" Text="SITMTA" Image="menu_matm.png"	InfoTitle="Site Allocation Check" InfoComment=""/>
+        <RibbonButton Name="SEM" Text="Zone" Image="menu_pcshm.png" InfoTitle="Zone Master" InfoComment=""/>
+
+        <RibbonButton Name="ISM" Text="ISM" Image="menu_pcshm.png" InfoTitle="Inventory Schedule Master" InfoComment=""/>
+
+        <RibbonButton Name="ISN"				Text="ISN"			Image="menu_matm.png"			InfoTitle="Inventory Schedule Notification" InfoComment=""/>
+
+        <!--<RibbonButton Name="EQM" Text="Equip" Image="menu_pcshm.png" InfoTitle="Equipment Master" InfoComment=""/>
+		<RibbonButton Name="SITMD" Text="SITMD" Image="menu_pcshm.png" InfoTitle="Site Designation" InfoComment=""/>-->
+      </TabPanel>
+
+      <TabPanel Name="Modules">
+        <RibbonButton Name="WOR" Text="WOR" Image="menu_pcshm.png" InfoTitle="Work Order" InfoComment=""/>
+        <RibbonButton Name="PWOR" Text="PWOR" Image="menu_pcshm.png" InfoTitle="Pest Work Order" InfoComment=""/>
+        <RibbonButton Name="SVC" Text="SVC" Image="menu_pcshm.png" InfoTitle="Cleaning Service Report" InfoComment=""/>
+        <RibbonButton Name="WORGEN" Text="GWOR" Image="menu_pcshm.png" InfoTitle="Generate Work Order" InfoComment=""/>
+        <RibbonButton Name="TRQ" Text="MRQ" Image="menu_pcshm.png" InfoTitle="Material Request" InfoComment=""/>
+        <RibbonButton Name="TRA" Text="MIS" Image="menu_pcshm.png" InfoTitle="Material Issue" InfoComment=""/>
+        <RibbonButton Name="TRI" Text="MRN" Image="menu_pcshm.png" InfoTitle="Material Receive" InfoComment=""/>
+        <RibbonButton Name="RTN" Text="RTN" Image="menu_pcshm.png" InfoTitle="Material Return" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Loan Modules">
+        <RibbonButton Name="LTRQ" Text="LMRQ" Image="menu_pcshm.png" InfoTitle="Material Request" InfoComment=""/>
+        <RibbonButton Name="LTRA" Text="LMIS" Image="menu_pcshm.png" InfoTitle="Material Issue" InfoComment=""/>
+        <RibbonButton Name="LTRI" Text="LMRN" Image="menu_pcshm.png" InfoTitle="Material Receive" InfoComment=""/>
+        <RibbonButton Name="LRTN" Text="LRTN" Image="menu_pcshm.png" InfoTitle="Material Return" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Roster Modules">
+        <RibbonButton Name="WRR" Text="RosteR" Image="menu_pcshm.png" InfoTitle="Roster" InfoComment=""/>
+      </TabPanel>
+
+
+
+      <TabPanel Name="Time Control">
+        <RibbonButton Name="TIMECONTROL" Text="TIMEC" Image="menu_pcshm.png" InfoTitle="Time" InfoComment=""/>
+        <RibbonButton Name="ATRF" Text="ATRF" Image="menu_pcshm.png" InfoTitle="Attendance Report" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Attendance Modules">
+        <RibbonButton Name="ATR" Text="ATR" Image="menu_pcshm.png" InfoTitle="Attendance Record" InfoComment=""/>
+      </TabPanel>
+
+      <!--<TabPanel Name="Roster Modules">
+      <RibbonButton Name="WRRA" Text="Roster-A" Image="menu_pcshm.png" InfoTitle="Weekly Roster A" InfoComment=""/>
+      <RibbonButton Name="WRRB" Text="Roster-B" Image="menu_pcshm.png" InfoTitle="Weekly Roster B" InfoComment=""/>
+      <RibbonButton Name="WRRC" Text="Roster-C" Image="menu_pcshm.png" InfoTitle="Weekly Roster C" InfoComment=""/>
+	  <RibbonButton Name="WRRHQ" Text="Roster-HQ" Image="menu_pcshm.png" InfoTitle="Weekly Roster HQ" InfoComment=""/>      
+    </TabPanel>
+		
+	<TabPanel Name="Attendance Modules">	
+      <RibbonButton Name="ATRA" Text="ATR-A" Image="menu_pcshm.png" InfoTitle="Attendance Record A" InfoComment=""/>
+      <RibbonButton Name="ATRB" Text="ATR-B" Image="menu_pcshm.png" InfoTitle="Attendance Record B" InfoComment=""/>
+      <RibbonButton Name="ATRC" Text="ATR-C" Image="menu_pcshm.png" InfoTitle="Attendance Record C" InfoComment=""/>      
+	<RibbonButton Name="ATRHQ" Text="ATR-HQ" Image="menu_pcshm.png" InfoTitle="Attendance Record HQ" InfoComment=""/>
+    </TabPanel>
+		
+	  <TabPanel Name="Time Control">			
+		<RibbonButton Name="TIMECONTROL" Text="TIMEC" Image="menu_pcshm.png" InfoTitle="Time Control" InfoComment=""/>
+	  </TabPanel>
+
+		<TabPanel Name="PAYROLL A">			
+			<RibbonButton Name="MTAA" Text="MTL-A" Image="menu_pcshm.png" InfoTitle="Monthly Compilation - A" InfoComment=""/>
+		</TabPanel>
+		<TabPanel Name="PAYROLL B">			
+			<RibbonButton Name="MTAB" Text="MTL-B" Image="menu_pcshm.png" InfoTitle="Monthly Compilation - B" InfoComment=""/>
+		</TabPanel>
+		<TabPanel Name="PAYROLL C">
+			<RibbonButton Name="MTAC" Text="MTL-C" Image="menu_pcshm.png" InfoTitle="Monthly Compilation - C" InfoComment=""/>
+		</TabPanel>
+		<TabPanel Name="PAYROLL HQ">
+			<RibbonButton Name="MTAHQ" Text="MTL-HQ" Image="menu_pcshm.png" InfoTitle="Monthly Compilation - HQ" InfoComment=""/>
+		</TabPanel>-->
+
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="HR"  Size="89,23">
+    <TabStripPage Name="tsp_HRM">
+      <TabPanel Name="Modules">
+        <RibbonButton Name="SADJ" Text="SADJ" Image="saj.png"	InfoTitle="Salary Adjustment Record" InfoComment=""/>
+        <RibbonButton Name="SADJGEN" Text="GSADJ" Image="saj.png"	InfoTitle="Mass Salary Adjustment Record" InfoComment=""/>
+        <RibbonButton Name="APPR" Text="APPR" Image="saj.png"	InfoTitle="Cleaner Appraisal Record" InfoComment=""/>
+        <RibbonButton Name="APPH" Text="APPH" Image="saj.png"	InfoTitle="HQ Appraisal Record" InfoComment=""/>
+        <RibbonButton Name="TRNQ" Text="TRNQ" Image="menu_matm.png"	InfoTitle="Trainning Requisition Request" InfoComment=""/>
+        <RibbonButton Name="TRN" Text="TRN" Image="menu_matm.png"	InfoTitle="Trainning Requisition" InfoComment=""/>
+        <RibbonButton Name="LVR" Text="Leave" Image="lvr.png"	InfoTitle="Leave Record" InfoComment=""/>
+        <RibbonButton Name="LVRH" Text="LeaveHQ" Image="lvr.png"	InfoTitle="Leave Record" InfoComment=""/>
+        <RibbonButton Name="LVA"       Text="LvA "    Image="menu_hotm.png"     InfoTitle="Leave Adjustment" InfoComment=""/>
+        <!--<RibbonButton Name="LADJ" Text="LADJ" Image="lvr.png"	InfoTitle="Leave Adjustment Record" InfoComment=""/>-->
+        <RibbonButton Name="CFR" Text="Confirm" Image="cfr.png"	InfoTitle="Confirmation Record" InfoComment=""/>
+        <RibbonButton Name="ERR" Text="Resign" Image="menu_hemp.png"	InfoTitle="Resignation Record" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Masters">
+        <RibbonButton Name="HEMP" Text="EmpCL" Image="POstaff.png"	InfoTitle="CL Employee Record" InfoComment=""/>
+        <RibbonButton Name="HEMPV" Text="EmpCL2" Image="POstaff.png"	InfoTitle="CL Employee Record" InfoComment=""/>
+        <RibbonButton Name="HEMPHQ" Text="EmpHQ" Image="StaffIcon.png"	InfoTitle="HQ Employee Record" InfoComment=""/>
+        <RibbonButton Name="HEMPHQS" Text="EmpHQS" Image="StaffIcon.png"	InfoTitle="HQ Employee Record No Salary" InfoComment=""/>
+
+        <RibbonButton Name="Pend" Text="Pending " Image="StaffIcon.png"	InfoTitle="Pending Employee Record" InfoComment=""/>
+        <!--<RibbonButton Name="HEMPN" Text="EmpN" Image="StaffIcon.png"	InfoTitle="New Employee Record" InfoComment=""/>-->
+
+
+
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="HR2"  Size="89,23">
+    <TabStripPage Name="tsp_HRM2">
+
+
+      <TabPanel Name="Masters">
+        <RibbonButton Name="CSE"				Text="CSE"	Image="menu_hems.png"			InfoTitle="Course Master" InfoComment=""/>
+        <RibbonButton Name="MATM"			Text="DSGN"			Image="menu_matm.png"		InfoTitle="H/R Designation Master" InfoComment=""/>
+        <RibbonButton Name="SHM"				Text="Shift"	Image="menu_hems.png"			InfoTitle="Shift Code" InfoComment=""/>
+        <RibbonButton Name="PMM"				Text="P.Mode"	Image="menu_hems.png"			InfoTitle="Payment Mode" InfoComment=""/>
+        <!--<RibbonButton Name="HQAM"			Text="QA"	Image="menu_hacms.png"		InfoTitle="Question and Answers" InfoComment=""/>-->
+        <RibbonButton Name="GPFM"			Text="PF"	Image="menu_hacms.png"		InfoTitle="Performance Factors" InfoComment=""/>
+        <RibbonButton Name="HNAM"				Text="Nationality"			Image="menu_matm.png"			InfoTitle="Nationality Master" InfoComment=""/>
+        <RibbonButton Name="HRAM"				Text="Race"			Image="menu_matm.png"			InfoTitle="Religion Master" InfoComment=""/>
+        <RibbonButton Name="HRRM"				Text="Religion"			Image="menu_matm.png"			InfoTitle="Race Master" InfoComment=""/>
+        <RibbonButton Name="HSGM"				Text="Grading"			Image="menu_matm.png"			InfoTitle="Staff Grading Master" InfoComment=""/>
+        <RibbonButton Name="HSAM"				Text="Sal Scale"			Image="menu_matm.png"			InfoTitle="Staff Salary Master" InfoComment=""/>
+        <RibbonButton Name="HEMPS"				Text="Status"			Image="menu_matm.png"			InfoTitle="Staff Status Master" InfoComment=""/>
+        <RibbonButton Name="HETM"				Text="EmpType"			Image="menu_matm.png"			InfoTitle="Employment Type" InfoComment=""/>
+        <RibbonButton Name="SADJM"				Text="SalAdjM."			Image="menu_matm.png"			InfoTitle="Salary Adjustment Master" InfoComment=""/>
+        <RibbonButton Name="HRPM"       Text="R/A"    Image="menu_hotm.png"     InfoTitle="Recommendation / Approval Master" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Time Management Masters">
+        <RibbonButton Name="LVM"       Text="LvM"    Image="menu_hotm.png"     InfoTitle="Leave Master" InfoComment=""/>
+        <RibbonButton Name="LVE"       Text="LvE "    Image="menu_hotm.png"     InfoTitle="Leave Entitlement" InfoComment=""/>
+        <RibbonButton Name="PBHM"       Text="Holiday"    Image="menu_hotm.png"     InfoTitle="Public Holiday Master" InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="Finance"  Size="89,23">
+		<TabStripPage Name="tsp_Accounting">
+			<TabPanel Name="Sales">
+				<RibbonButton Name="SIV"    Text="Sale Inv"     Image="menu_siv.png"  InfoTitle="Sales Invoice"		InfoComment=""/>
+				<RibbonButton Name="SCR"    Text="Sale Cr"      Image="menu_scr.png"  InfoTitle="Sales Credit Note"	InfoComment=""/>
+				<RibbonButton Name="SDB"    Text="Sale Db"      Image="menu_scr.png"  InfoTitle="Sales Debit Note"		InfoComment=""/>
+				<RibbonButton Name="SRC"    Text="Receipt"      Image="menu_src.png"  InfoTitle="Sales Receipts"		InfoComment=""/>
+        <RibbonButton Name="MSRC"    Text="M.Receipt"      Image="menu_src.png"  InfoTitle="Misc Sales Receipts"		InfoComment=""/>
+				<!--<RibbonButton Name="PTR"    Text="P.T. Rcpt."      Image="menu_src.png"  InfoTitle="Petty Cash Receipts"		InfoComment=""/>-->
+
+			</TabPanel>
+			<TabPanel Name="Purchase">
+				<RibbonButton Name="PIV"		Text="Pur Inv"			Image="menu_siv.png"  InfoTitle="Purchase Invoice"			InfoComment=""/>
+        <RibbonButton Name="GIV"		Text="Mat Inv"			Image="menu_siv.png"  InfoTitle="Material Invoice"			InfoComment=""/>
+
+        <RibbonButton Name="PCR"    Text="Pur Cr"			Image="menu_scr.png"  InfoTitle="Purchase Credit Note"		InfoComment=""/>
+				<RibbonButton Name="PDB"    Text="Pur Db"			Image="menu_scr.png"  InfoTitle="Purchase Debit Note"		InfoComment=""/>
+				<RibbonButton Name="PAY"    Text="Payment"      Image="menu_src.png"  InfoTitle="Payment Receipts"			InfoComment=""/>
+        <RibbonButton Name="MPAY"    Text="M. Pay"      Image="menu_src.png"  InfoTitle="Misc Payments"			InfoComment=""/>
+
+				<!--<RibbonButton Name="GHQC"    Text="GiroHQ"      Image="menu_src.png"  InfoTitle="Giro HQ Claims"			InfoComment=""/>-->
+				<RibbonButton Name="PTP"    Text="P.Csh P."      Image="menu_src.png"  InfoTitle="Petty Cash Pay"			InfoComment=""/>
+				
+				<RibbonButton Name="BANK"   Text="Bank"			Image="menu_pmt.png"  InfoTitle="Bank"							InfoComment=""/>
+				<RibbonButton Name="FAV"    Text="Journal"			Image="menu_fav.png"  InfoTitle="Journal"						InfoComment=""/>
+        <RibbonButton Name="FAVP"    Text="JournalP"			Image="menu_fav.png"  InfoTitle="Journal Payroll"						InfoComment=""/>
+				<RibbonButton Name="PTC"    Text="P. Cash"			Image="menu_fav.png"  InfoTitle="Petty Cash"						InfoComment=""/>
+				<RibbonButton Name="FAVT"    Text="J(Temp)"			Image="menu_fav.png"  InfoTitle="Journal(Template)"						InfoComment=""/>
+				<RibbonButton Name="SOA"    Text="SOA"			Image="menu_fav.png"  InfoTitle="Stateent of Accounts"	InfoComment=""/>
+			</TabPanel>
+			<TabPanel Name="Reports">
+				<!--<RibbonButton Name="FINRPT"   Text="FSW"		Image="menu_salerpt.png" InfoTitle="Financial Statement Worksheet" InfoComment=""/>-->
+				<RibbonButton Name="ACCRPT"    Text="Accounts"  Image="menu_accrpt.png" InfoTitle="Accounts" InfoComment=""/>
+			</TabPanel>
+		</TabStripPage>
+	</Tab>
+
+  <Tab Name="Acct Settings" Size="89,23">
+		<TabStripPage Name="tsp_Accounting">
+			<TabPanel Name="Masters">
+				<RibbonButton Name="ACM"        Text="Accounts"    Image="menu_acm.png"   InfoTitle="Chart of Accounts"             InfoComment=""/>
+        <RibbonButton Name="ACMG"        Text="Acc Grp"    Image="menu_acm.png"   InfoTitle="Chart of Accounts Group"             InfoComment=""/>
+				<RibbonButton Name="CCM"        Text="Cost Ctr"       Image="menu_ccm.png"   InfoTitle="Cost Center"                         InfoComment=""/>
+				<RibbonButton Name="EXR"          Text="Currency"    Image="menu_exr.png"     InfoTitle="Currency Master"               InfoComment=""/>
+				<RibbonButton Name="EXRATE"   Text="EXRATE"       Image="menu_exr.png"     InfoTitle="Exrate Table"                        InfoComment=""/>
+				<RibbonButton Name="PTM"         Text="Pay Term"   Image="menu_ptm.png"    InfoTitle="Payment Terms Master" InfoComment=""/>
+				<RibbonButton Name="PAYTM"         Text="Pay Type"   Image="menu_ptm.png"    InfoTitle="Payment Type Master" InfoComment=""/>
+				<RibbonButton Name="GSTM"      Text="GSTM"		       Image="menu_ptm.png"    InfoTitle="GST Master"                          InfoComment=""/>
+				<RibbonButton Name="GSTSP"     Text="Tax Rates"   Image="menu_ptm.png"    InfoTitle="Tax Rates"                              InfoComment=""/>
+			</TabPanel>
+			<TabPanel Name="General">
+				<RibbonButton Name="COY"				   Text="Coy"		           Image="menu_coysp.png"	InfoTitle="Company Information"    InfoComment=""/>
+			</TabPanel>
+			<TabPanel Name="Administrator Settings">
+				<RibbonButton Name="ACC"				           Text="Accounts"	Image="menu_acm.png"	 InfoTitle="Default Accounts"  InfoComment=""/>
+				<RibbonButton Name="AccDefaults"	Text="Defaults"   Image="menu_acm.png"   InfoTitle="Defaults Settings"		InfoComment=""/>
+				<RibbonButton Name="MDT"				        Text="MDT"			     Image="menu_acm.png"   InfoTitle="MDT"                            InfoComment=""/>
+				<RibbonButton Name="TDT"				          Text="TDT"			       Image="menu_acm.png"   InfoTitle="TDT"                              InfoComment=""/>
+        <RibbonButton Name="PD"				          Text="PD"			       Image="menu_acm.png"   InfoTitle="PD"                              InfoComment=""/>
+			</TabPanel>
+		</TabStripPage>
+	</Tab>
+
+  <Tab Name="Inventory" Size="74,23">
+    <TabStripPage Name="tsp_Purchase">
+      <TabPanel Name="Modules">
+        <RibbonButton Name="POR"    Text="Order"        Image="menu_por.png" InfoTitle="Purchase Order" InfoComment=""/>
+        <!--<RibbonButton Name="PON"    Text="PON" Image="menu_grn.png" InfoTitle="Purchase Order Notification" InfoComment=""/>-->
+        <RibbonButton Name="GRN"    Text="Receipt"      Image="menu_grn.png" InfoTitle="Goods Receipt Note" InfoComment=""/>
+        <RibbonButton Name="WAC"    Text="WAC"        Image="menu_por.png" InfoTitle="Weighted Average Cost" InfoComment=""/>
+        <RibbonButton Name="MAV"    Text="Stk Adj"     Image="menu_por.png" InfoTitle="Stock Adjustment" InfoComment=""/>
+        <RibbonButton Name="LMAV"    Text="LStk Adj"     Image="menu_por.png" InfoTitle="Stock Adjustment" InfoComment=""/>
+      </TabPanel>
+
+      <TabPanel Name="Master">
+
+   
+        <RibbonButton Name="MATMSTK"			Text="Stock"			Image="menu_matm.png"		InfoTitle="Stock Master" InfoComment=""/>
+        <RibbonButton Name="UOM"    Text="UOM"     Image="menu_apm.png" InfoTitle="UOM Master" InfoComment=""/>
+        <RibbonButton Name="PCAT"    Text="PCAT"     Image="menu_apm.png" InfoTitle="Product Category Master" InfoComment=""/>
+        <RibbonButton Name="PTYPE"    Text="PTYPE"     Image="menu_apm.png" InfoTitle="Product Type Master" InfoComment=""/>
+        <RibbonButton Name="PBRD"    Text="PBRD"     Image="menu_apm.png" InfoTitle="Product Brand Master" InfoComment=""/>
+        <RibbonButton Name="CTM"    Text="CTM"     Image="menu_apm.png" InfoTitle="Country Codes" InfoComment=""/>
+        <RibbonButton Name="APM"    Text="Supplier"     Image="menu_apm.png" InfoTitle="Supplier" InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="Report" Size="89,23">
+    <TabStripPage Name="tsp_Report">
+      <TabPanel Name="">
+        <RibbonButton Name="CRPT"				Text="Customize"	Image="menu_posrpt.png"		InfoTitle="Customize Reports" InfoComment=""/>
+        <RibbonButton Name="VIEWM"			Text="View"				Image="menu_posview.png"	InfoTitle="Build Reports View" InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="Setting" Size="74,23">
+    <TabStripPage Name="tsp_Setting">
+      <TabPanel Name="Master">
+        <RibbonButton Name="FLDM"			Text="FLDM"			Image="menu_matm.png"		InfoTitle="Folder Master" InfoComment=""/>
+        <RibbonButton Name="DCM"			Text="DCM"			Image="menu_matm.png"		InfoTitle="Document Master" InfoComment=""/>
+        <RibbonButton Name="ENM"       Text="ENM"    Image="menu_hotm.png"     InfoTitle="Email Notification Master" InfoComment=""/>
+        <RibbonButton Name="INT"			Text="INT"			Image="menu_matm.png"		InfoTitle="Interface" InfoComment=""/>
+
+      </TabPanel>
+      <TabPanel Name="General">
+        <RibbonButton Name="COY"				   Text="Coy"		           Image="menu_coysp.png"	InfoTitle="Company Information"    InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+  <Tab Name="Help"        Size="70,23">
+    <TabStripPage Name="tsp_Help">
+      <TabPanel Name="General">
+        <RibbonButton Name="COY"				   Text="Coy"		           Image="menu_coysp.png"	InfoTitle="Company Information"    InfoComment=""/>
+      </TabPanel>
+      <TabPanel Name="About ERP">
+        <RibbonButton Name="ABOUT"	Text="BizERP" Image="Bizpoint.ico" InfoTitle="BizERP"							InfoComment=""/>
+      </TabPanel>
+    </TabStripPage>
+  </Tab>
+
+</Tabs>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="hacm">
+		<DetailGridColumnInfo MappingName="mark"		HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="acsscode"	HeaderText="{languageBinding.acsscode}"		Width="150"/>
+		<DetailGridColumnInfo MappingName="apcnum"		HeaderText="{languageBinding.apcnum}"		Width="100"/>
+		<DetailGridColumnInfo MappingName="apccode"		HeaderText="{languageBinding.apccode}"		Width="150"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="apcname"		HeaderText="{languageBinding.apcname}"		Width="500"/>
+		<DetailGridColumnInfo MappingName="acmsnum"		HeaderText="{languageBinding.acmsnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

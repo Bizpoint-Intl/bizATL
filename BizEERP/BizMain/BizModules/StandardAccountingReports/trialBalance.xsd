@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="trialBalance" targetNamespace="http://tempuri.org/trialBalance.xsd" xmlns:mstns="http://tempuri.org/trialBalance.xsd" xmlns="http://tempuri.org/trialBalance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="trialBalance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="trialBalance" msprop:Generator_DataSetName="trialBalance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gld" msprop:Generator_UserTableName="gld" msprop:Generator_RowDeletedName="gldRowDeleted" msprop:Generator_TableClassName="gldDataTable" msprop:Generator_RowChangedName="gldRowChanged" msprop:Generator_RowClassName="gldRow" msprop:Generator_RowChangingName="gldRowChanging" msprop:Generator_RowEvArgName="gldRowChangeEvent" msprop:Generator_RowEvHandlerName="gldRowChangeEventHandler" msprop:Generator_TablePropName="gld" msprop:Generator_TableVarName="tablegld" msprop:Generator_RowDeletingName="gldRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="accnum" msprop:Generator_UserColumnName="accnum" msprop:Generator_ColumnPropNameInRow="accnum" msprop:Generator_ColumnVarNameInTable="columnaccnum" msprop:Generator_ColumnPropNameInTable="accnumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="accname" msprop:Generator_UserColumnName="accname" msprop:Generator_ColumnPropNameInRow="accname" msprop:Generator_ColumnVarNameInTable="columnaccname" msprop:Generator_ColumnPropNameInTable="accnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="acctype" msprop:Generator_UserColumnName="acctype" msprop:Generator_ColumnPropNameInRow="acctype" msprop:Generator_ColumnVarNameInTable="columnacctype" msprop:Generator_ColumnPropNameInTable="acctypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bfdebit" msprop:Generator_UserColumnName="bfdebit" msprop:Generator_ColumnPropNameInRow="bfdebit" msprop:Generator_ColumnVarNameInTable="columnbfdebit" msprop:Generator_ColumnPropNameInTable="bfdebitColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="bfcredit" msprop:Generator_UserColumnName="bfcredit" msprop:Generator_ColumnPropNameInRow="bfcredit" msprop:Generator_ColumnVarNameInTable="columnbfcredit" msprop:Generator_ColumnPropNameInTable="bfcreditColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="curdebit" msprop:Generator_UserColumnName="curdebit" msprop:Generator_ColumnPropNameInRow="curdebit" msprop:Generator_ColumnVarNameInTable="columncurdebit" msprop:Generator_ColumnPropNameInTable="curdebitColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="curcredit" msprop:Generator_UserColumnName="curcredit" msprop:Generator_ColumnPropNameInRow="curcredit" msprop:Generator_ColumnVarNameInTable="columncurcredit" msprop:Generator_ColumnPropNameInTable="curcreditColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ytddebit" msprop:Generator_UserColumnName="ytddebit" msprop:Generator_ColumnPropNameInRow="ytddebit" msprop:Generator_ColumnVarNameInTable="columnytddebit" msprop:Generator_ColumnPropNameInTable="ytddebitColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ytdcredit" msprop:Generator_UserColumnName="ytdcredit" msprop:Generator_ColumnPropNameInRow="ytdcredit" msprop:Generator_ColumnVarNameInTable="columnytdcredit" msprop:Generator_ColumnPropNameInTable="ytdcreditColumn" type="xs:decimal" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

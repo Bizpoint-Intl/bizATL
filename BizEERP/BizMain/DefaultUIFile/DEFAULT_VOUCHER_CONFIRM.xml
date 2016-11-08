@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls"
+        xmlns:def="Definition">
+  <Form Name="frm_Confirm" ClientSize="500,315" StartPosition="CenterScreen" FormBorderStyle="FixedToolWindow" MaximizeBox="false" MinimizeBox="false" ShowInTaskbar="False" ControlBox="false">
+	<!--ele:BizFormIcon Icon="Bizpoint.ico"/-->
+	<Controls>
+		<!--PictureBox Name="pcb_Confirm" Location="0, 0" Size="500, 70" TabStop="False">
+			<ele:BizPictureBoxImage FileName="Bizpoint2.bmp"/>
+				<Controls>
+					<Label Name="lbl_Confirm_Title" Location="20,10"	Size="310,50" Font="{languageBinding.Tahoma9}" BackColor="White" Text="{languageBinding.lbl_Confirm_Title}"/>
+				</Controls>
+		</PictureBox-->
+    <Label Name="lbl_Confirm_Title" Location="20,10"	Size="410,20" Font="{languageBinding.Tahoma9}"  Text="{languageBinding.lbl_Confirm_Title}"/>
+    
+		<GroupBox Name="grb_ConfirmUp" Location="0, 30"	 Size="500, 3" TabStop="False" />
+		<!--Label-->
+		<Label	Name="lbl_Confirm_From"	Location="130,40" Size="110,25" Font="{languageBinding.Tahoma875Bold}" TextAlign="MiddleLeft" Text="{languageBinding.lbl_Confirm_From}"/>
+		<Label	Name="lbl_Confirm_To"	Location="315,40" Size="110,25" Font="{languageBinding.Tahoma875Bold}" TextAlign="MiddleLeft" Text="{languageBinding.lbl_Confirm_To}"/>
+		<!--Search0-->
+		<Label	 Name="lbl_Confirm_Field0"	Location="10, 72" Size="115, 25" Font="{languageBinding.Tahoma975Bold}"/>
+		<TextBox Name="txt_Confirm_From0"	Location="130,70" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To0"		Location="315,70" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From0" Location="130,70" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To0"	Location="315,70" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Search1-->
+		<Label   Name="lbl_Confirm_Field1"	Location="10, 102" Size="115, 25" Font="{languageBinding.Tahoma975Bold}"/>
+		<TextBox Name="txt_Confirm_From1"	Location="130,100" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To1"		Location="315,100" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From1" Location="130,100" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To1"	Location="315,100" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Search2-->
+		<Label   Name="lbl_Confirm_Field2"	Location="10, 132" Size="115, 25" Font="{languageBinding.Tahoma975Bold}"/>
+		<TextBox Name="txt_Confirm_From2"	Location="130,130" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To2"		Location="315,130" Size="175, 25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From2" Location="130,130" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To2"	Location="315,130" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Search3-->
+		<Label   Name="lbl_Confirm_Field3"	Location="10, 162" Size="115,25" Font="{languageBinding.Tahoma875Bold}"/>
+		<TextBox Name="txt_Confirm_From3"	Location="130,160" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To3"		Location="315,160" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From3" Location="130,160" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To3"	Location="315,160" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Search4-->
+		<Label   Name="lbl_Confirm_Field4"	Location="10, 192" Size="115,25" Font="{languageBinding.Tahoma875Bold}"/>
+		<TextBox Name="txt_Confirm_From4"	Location="130,190" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To4"		Location="315,190" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From4" Location="130,190" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To4"	Location="315,190" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Search5-->
+		<Label   Name="lbl_Confirm_Field5"	Location="10, 222" Size="115,25" Font="{languageBinding.Tahoma875Bold}"/>
+		<TextBox Name="txt_Confirm_From5"	Location="130,220" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<TextBox Name="txt_Confirm_To5"		Location="315,220" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" CharacterCasing="Upper"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_From5" Location="130,220" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<dtp:BizDateTimePicker Name="dtp_Confirm_To5"	Location="315,220" Size="175,25" Font="{languageBinding.Tahoma975}" Visible="False" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+		<!--Button-->
+		<GroupBox Name="grb_ConfirmDown" Location="0, 275" Size="500, 3" TabStop="False" />
+		<Button Name="btn_Confirm_OK"		Text="{languageBinding.btn_Confirm_OK}"	    Location="335,285" Font="{languageBinding.Tahoma875Bold}" FlatStyle="System"/>
+		<Button Name="btn_Confirm_Cancel"	Text="{languageBinding.btn_Confirm_Cancel}"	Location="420,285" Font="{languageBinding.Tahoma875Bold}" FlatStyle="System"/>
+	</Controls>
+  </Form>
+</BizXml>
+

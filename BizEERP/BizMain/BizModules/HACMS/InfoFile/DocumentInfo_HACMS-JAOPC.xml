@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="hacms" Key="acmsnum" CompanyTitle="{languageBinding.coypg}" ModuleTitle="{languageBinding.HACMS}">
+		<DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header"	Title="Page">
+				<Details>
+					<Detail DataGridName="dg_Detail" DetailGridInfo="DetailGridInfo_HACSS.xml"  CaptionText="Appraisal Code Sub Section"/>
+				</Details>
+			</DocumentPageInfo>
+			<DocumentPageInfo FileName="Codes.xml"	FormName="codes"	Title="Codes">
+				<Details>
+					<Detail DataGridName="dg_Codes" DetailGridInfo="DetailGridInfo_HACM.xml"  CaptionText="Appraisal Codes"/>
+				</Details>
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

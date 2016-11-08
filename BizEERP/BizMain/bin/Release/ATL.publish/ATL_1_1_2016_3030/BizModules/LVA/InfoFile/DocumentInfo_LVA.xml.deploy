@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="lvah" Key="refnum" CompanyTitle="{languageBinding.coyHCC}" ModuleTitle="{languageBinding.LVA}">
+		<RelationTables>
+      <DocRelationTableInfo TableName="lwt" DataField="refnum" ConditionField="refnum" Save="True"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="fromempnum" DataTableName="hemph"/>
+			<DocRelationTableInfo TableName="hemph"		DataField="empnum"	ConditionField="toempnum"			DataTableName="hemph1"/>
+      <DocRelationTableInfo TableName="hemph"		DataField="sitenum"	ConditionField="sitenum"			/>
+      
+     
+    </RelationTables>
+    
+		<DocumentPages>
+			<!-- lvah -->
+			<DocumentPageInfo FileName="Header.xml"		FormName="header" Title="Header">
+        <F2Controls>
+        <F2Control ControlName="lvah_fromempnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+          <RelationF2Tables>
+            <RelationF2Table TableName="hemph"/>
+          </RelationF2Tables>
+        </F2Control>
+
+          <F2Control ControlName="lvah_sitenum" F2GridInfo="F2GridInfo_SITM.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="sitm"/>
+            </RelationF2Tables>
+          </F2Control>
+
+        <F2Control ControlName="lvah_toempnum" F2GridInfo="F2GridInfo_HEMPH.xml">
+          <RelationF2Tables>
+            <RelationF2Table TableName="hemph"/>
+          </RelationF2Tables>
+        </F2Control>
+          </F2Controls>
+        
+				<!-- lva1 -->
+				<Details>
+					<Detail DataGridName="dg_Detail" DetailGridInfo="DetailGridInfo_LVA1.xml"  CaptionText="Stock Adjustment Note Details"/>
+				</Details>
+			</DocumentPageInfo>
+		</DocumentPages>
+    <!--<Reports>
+      <Report ReportName="Stock Adjustment"			ReportPath="\LVA\Report\LVAFrm_Adj.rpt"/>
+      <Report ReportName="Stock Take Report"			ReportPath="\LVA\Report\LVAFrm_Take.rpt"/>
+    </Reports>-->
+	</DocumentInfo>
+</BizXml>

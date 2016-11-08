@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="mav1">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="matm"	DataField="matnum"	ConditionField="matnum"/>
+			<bas:RelationTableInfo TableName="uom"	DataField="uomcode"	ConditionField="uom"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"		            HeaderText="{languageBinding.mark}"			         Width="50"	     ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="line"			            HeaderText="{languageBinding.matnum}"		   Width="0"	       Sort="True"	AutoIncrement = "True" AutoIncrementSeed = "100" AutoIncrementStep = "100" />
+		<DetailGridColumnInfo MappingName="matnum"       HeaderText="{languageBinding.matnum}"		   Width="140"	   F2="True"     F2GridInfo="F2GridInfo_MATM.xml">
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="matname"    HeaderText="{languageBinding.matname}"     Width="225"    ReadOnly="True"  TableName="matm"/>
+    <DetailGridColumnInfo MappingName="barcode"    HeaderText="SN"     Width="80"    ReadOnly="True"  />
+    <DetailGridColumnInfo MappingName="uom"              HeaderText="{languageBinding.uom}"			           Width="50"	     ReadOnly="True"  TableName="matm"/>
+    <DetailGridColumnInfo MappingName="bkqty"            HeaderText=""		                                             Width="0"      ReadOnly="True" />
+    <DetailGridColumnInfo MappingName="phyqty"         HeaderText=""									                           Width="0" />
+	<DetailGridColumnInfo MappingName="qty"                 HeaderText="Adjust Qty"		                                       Width="70"/>
+    <DetailGridColumnInfo MappingName="stkdate"        HeaderText="Stk Date"		                                             Width="80"/>
+	<DetailGridColumnInfo MappingName="refnum"      HeaderText="{languageBinding.refnum}"		         Width="0"	       ReadOnly="True"  Key="True"/>
+	</DetailGridInfo>
+</BizXml>

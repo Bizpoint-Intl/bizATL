@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="hetm" Key="hetmnum" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.HETM}">
+		<RelationTables>
+			
+			<DocRelationTableInfo TableName="hemps" DataField="statuscode"			ConditionField="statuscode">
+				<Fields>
+					<Field ColumnName="statuscode"/>
+				</Fields>
+			</DocRelationTableInfo>
+
+			
+		</RelationTables>
+		<DocumentPages>
+
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+
+				
+				<F2Controls>
+					
+					<F2Control ControlName="hetm_statuscode" F2GridInfo="F2GridInfo_HEMPS.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemps"/>
+						</RelationF2Tables>
+					</F2Control>
+
+					
+				</F2Controls>
+
+			</DocumentPageInfo>
+			
+		</DocumentPages>
+		<Reports>
+			<!--<Report ReportName="Site Master Report (Form)"  DefaultReport="True" ReportPath="\SITM\Report\SITMfrm1.rpt" />-->
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

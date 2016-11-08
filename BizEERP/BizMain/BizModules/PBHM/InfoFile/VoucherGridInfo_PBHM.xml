@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <VoucherGridInfo Name="voucherGridInfo" MainTable="pbhm" Title="{languageBinding.PBHM}" PageSize="{languageBinding.sys_voucher_PageSize}" DocumentInfo="DocumentInfo_PBHM.xml">
+    <VoucherGridColumnInfo MappingName="pbhnum"		HeaderText="{languageBinding.pbhnum}"	  Width="120"    SearchItem="true" ConfirmItem="true" Key="True"/>
+    <VoucherGridColumnInfo MappingName="pbhyear"	HeaderText="{languageBinding.pbhyear}"	Width="240"    SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="status"		HeaderText="{languageBinding.status}"		Width="60"/>
+  </VoucherGridInfo>
+</BizXml>

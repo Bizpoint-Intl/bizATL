@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:s="System, System"
+		xmlns:cdwf="CrystalDecisions.Windows.Forms, CrystalDecisions.Windows.Forms"
+		xmlns:def="Definition" xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="formPreview" Text="Form Preview" Location="100, 32" AutoScaleBaseSize="5, 14" ClientSize="732, 513" ForeColor="Black" WindowState="Maximized" Font="Tahoma, 8.25pt">
+		<Controls>
+			<Button Name="btn_exit_ok"		Text="Exit"		Location="400, 0"	Size="80, 21" TabIndex="10" FlatStyle="System" Click="btn_exit_ok_Click"/>
+			<cdwf:CrystalReportViewer Name="crystalReportViewer1" Location="0, 0" Size="732, 513" ActiveViewIndex="-1" DisplayGroupTree="False" Dock="Fill" TabIndex="0">
+				<cdwf:ReportSource>
+					<Null />
+				</cdwf:ReportSource>
+				<cdwf:DockPadding>
+					<DockPaddingEdges />
+				</cdwf:DockPadding>
+				<cdwf:Controls>
+					<cdwf:PageView Location="0, 26" Size="732, 467" ActiveViewIndex="-1" DisplayBackgroundEdge="True" Dock="Fill" EnableDrillDown="True" ForeColor="WindowText" ShowCloseButton="True" ShowExportButton="True" ShowGotoPageButton="True" ShowGroupTreeButton="True" ShowPageNavigateButtons="True" ShowPrintButton="True" ShowRefreshButton="True" ShowTextSearchButton="True" ShowZoomButton="True" TabIndex="2">
+						<cdwf:LogOnInfo>
+							<Null />
+						</cdwf:LogOnInfo>
+						<cdwf:ParameterFieldInfo>
+							<Null />
+						</cdwf:ParameterFieldInfo>
+						<cdwf:ReportDocumentManager>
+							<Null />
+						</cdwf:ReportDocumentManager>
+						<cdwf:Controls>
+							<TabControl Location="0, 0" Size="732, 467" Dock="Fill" TabIndex="0" />
+						</cdwf:Controls>
+						<cdwf:DockPadding>
+							<DockPaddingEdges />
+						</cdwf:DockPadding>
+					</cdwf:PageView>
+					<Splitter Location="0, 40" Size="2, 84" TabIndex="1" TabStop="False" Visible="False" />
+					<cdwf:ReportGroupTree Location="0, 40" Size="144, 84" Dock="Left" ForeColor="WindowText" TabIndex="0" Visible="False">
+						<cdwf:ReportDocumentManager>
+							<Null />
+						</cdwf:ReportDocumentManager>
+						<cdwf:Controls>
+							<cdwf:TotallerTreeView Location="0, 0" Size="144, 84" Dock="Fill" ImageIndex="1" SelectedImageIndex="1" TabIndex="0">
+								<cdwf:ImageList>
+									<Images>
+										<Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAHVJREFUOE/lkssNwDAIQ71TdmIO1mCn7ESBCCW9QdtbkawIiec4H+APNRRItc9r4JxbYVQuGxZRUQ3BZf1KU6uAvCgNfAV6Bje4bcC8oqe8B1USsI4RURUOpTowkRucT1i6PImdN1y77XPqFWxGj39cP+pnxAU4bnLHyvGmZQAAAABJRU5ErkJggg==</Bitmap>
+										<Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAGBJREFUOE9jYBhkwPg/AwMuTJxT/585cwYDA7VCDSZsyH9sAGTAgQMHiDIEpwGhoaFAAwi7BKsBM2fO/A/DEENwA6wGIAuOGvAfGhO0DERsKRFZjEAs4MsLyHKEkzTRKgDtX2OHS3sA+gAAAABJRU5ErkJggg==</Bitmap>
+									</Images>
+								</cdwf:ImageList>
+							</cdwf:TotallerTreeView>
+						</cdwf:Controls>
+						<cdwf:DockPadding>
+							<DockPaddingEdges />
+						</cdwf:DockPadding>
+					</cdwf:ReportGroupTree>
+					<!--ToolBar Location="0, 0" Size="732, 26" Appearance="Flat" Divider="False" DropDownArrows="True" Enabled="False" ShowToolTips="True" TabIndex="0" TabStop="True">
+            <ImageList>
+              <Images>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAEdJREFUOE9jYBiM4D8eR+GTg2vDpQgkTrYBMM1kGYCsmWQD0DWTZAA2zSQZAApVilwAixaKwgCbIQTTLk3SAbJLCLpgiCkAAExFLtKZnxLIAAAAAElFTkSuQmCC</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAEFJREFUOE9jYBhK4D8ljgVpJtsAmGayDEDWTLIB6JpJMgCbZpIMAAU4RS6AxRhFYYDNELKTAkXpANklZLtgEGsEAKuUI91GrpK0AAAAAElFTkSuQmCC</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAADxJREFUOE9jYBis4D+lDgMZQJEhMAPINgTZALIMQTeAZEOwGUCSIVR3AcmxSrVYINlmmAaSAoxsWwaHRgDCiyPdowO8LAAAAABJRU5ErkJggg==</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAExJREFUOE9jYBiM4D8eR+GTg2sDKcKlkCQDsCkm2QB0DWQZgKyJbANgGsk2ABbCZBmAHKskG4CeJEgyAFt6ItoAXImRKAMGY/bC4yYAT1Au0htJ3BEAAAAASUVORK5CYII=</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAGNJREFUOE9jZECA/0hsfExGXJL/CQGgRpAlOC0ipB+sGQRwGUKUAUiuwHAJQQOQFWBzBe0MaID6nWwXgAxANwSvF2AasNEwV5AUBiS7AD00KQ4DbNFDkheGkAFo6RyWafDRDADKSFRRiznDSgAAAABJRU5ErkJggg==</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAEVJREFUOE9jYBheoIGB4T8IY/MVPjm4epgidENwiWMNPnTFJGmGmYisiSin4/MzrjDBG/sUuYCiMKA4FihOB8MrWxDtGwC+WkNUE558QwAAAABJRU5ErkJggg==</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAIBJREFUOE+1U0EOgDAI4+me9i5+hkCcQcYAE8U0O7W0DQL8MMSaFbZrqZpLPBeIHIhwi5w5aAkU2203S4w0vgiPMQgRFd5N1XpEFo7OrTrVs3c6sQ7K7bYXiSF4COw2wsEHxbC5PTmNwHT9XHHvC/QRonvQXBmi8vwhdMv89v89AQwUXPK8UlMPAAAAAElFTkSuQmCC</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAIZJREFUOE+dk4EOgCAIRPHP+3NLrTzwgIytjc3ueZ5YZFaFPmqLt1izuoRtE3ejTN/FrTwIBcgxRCB8AIsTF4AQA1NxKEAT2Q9/YMeYVm9xtw39FuC1Chn8AijRGqifAXNAbiQG4PltFmGIGB7exOcM0D6bAW8a00ncdhA9DpoBvDac96iXEyFKKgTgjZOqAAAAAElFTkSuQmCC</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAIFJREFUOE+1UosKwCAI9NP3521GymleyMaEaJHea4n8WZfIsPWK5yuAsyvQo0BXu4YWKtBzF2QOVwAdkG0QVej3CcSZM7uBYENlZ3rEyhnY3RreQnV5GSQzMxveBwyWvO9JRfitASB4WQe0WGZg0qphZKYWcogMiIZ48k7u2k+bNt4lJU1RgPm/1gAAAABJRU5ErkJggg==</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAExJREFUOE9jYBgs4D/QIdgw0e4Dav6PhsEGEg0odgHRNhGjkCSnE2sgSQEMcwGCbgAGKDKGxBjRgOQAJsl0YpxBtgsGLgyI8Rb11AAACNRDwcSiX7gAAAAASUVORK5CYII=</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAGJJREFUOE/NklEKACAIQzt6R/NmllIikTTpx4E/0V5Ta62yeIaTSkuNRKS1IDBITVsb4kDPNFczCghfP9oJUxjAR8+2YcM7IehGvgHSX7DGPs+lcLmPxMuch7jnakLweYQ3B6iVx1MHi/h6AAAAAElFTkSuQmCC</Bitmap>
+                <Bitmap>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAGtJREFUOE+1k+0KABAMRb3/U+3NENHF3UdB+WGts7NlKT0+ufLGRbQWP8pnEaEAJX4CbgxQEy20uKm/AECftddArIoXmwYtca+Cb2KwmPwBYFshA2UO3nz6ACNTtvLuAUSfrVj4Qz3eTwdXAHPYr3XSg8G/AAAAAElFTkSuQmCC</Bitmap>
+              </Images>
+            </ImageList>
+            <Buttons>
+              <ToolBarButton Enabled="False" ImageIndex="0" ToolTipText="转到第一页">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="1" ToolTipText="转到上一页">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="2" ToolTipText="转到下一页">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="3" ToolTipText="转到最后一页">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="4" ToolTipText="跳向页">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="5" ToolTipText="关闭当前视图">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="6" ToolTipText="打印报表">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="7" ToolTipText="刷新">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="8" ToolTipText="导出报表">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="9" Style="ToggleButton" ToolTipText="切换组树">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="10" Style="DropDownButton" ToolTipText="缩放">
+                <DropDownMenu>
+                  <ContextMenu>
+                    <MenuItems>
+                      <MenuItem Text="页宽" Index="0" />
+                      <MenuItem Text="整页" Index="1" />
+                      <MenuItem Text="400%" Index="2" />
+                      <MenuItem Text="300%" Index="3" />
+                      <MenuItem Text="200%" Index="4" />
+                      <MenuItem Text="150%" Index="5" />
+                      <MenuItem Text="100%" Index="6" />
+                      <MenuItem Text="75%" Index="7" />
+                      <MenuItem Text="50%" Index="8" />
+                      <MenuItem Text="25%" Index="9" />
+                      <MenuItem Text="自定义..." Index="10" />
+                    </MenuItems>
+                  </ContextMenu>
+                </DropDownMenu>
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+              <ToolBarButton Enabled="False" ImageIndex="11" ToolTipText="搜索文本">
+                <Tag>
+                  <s:Int32 />
+                </Tag>
+              </ToolBarButton>
+            </Buttons>
+          </ToolBar>
+          <StatusBar Location="0, 493" Size="732, 20" ShowPanels="True" SizingGrip="False" TabIndex="3" Font="宋体, 9pt">
+            <Panels>
+              <StatusBarPanel Text="当前页码:" AutoSize="Spring" Width="244" />
+              <StatusBarPanel Text="总页码:" AutoSize="Spring" Width="244" />
+              <StatusBarPanel Text="缩放因数: 100%" AutoSize="Spring" Width="244" />
+            </Panels>
+          </StatusBar-->
+				</cdwf:Controls>
+			</cdwf:CrystalReportViewer>
+		</Controls>
+		<DockPadding>
+			<DockPaddingEdges />
+		</DockPadding>
+	</Form>
+</BizXml>

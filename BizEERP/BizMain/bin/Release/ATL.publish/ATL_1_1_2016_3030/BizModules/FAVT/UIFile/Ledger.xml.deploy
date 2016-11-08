@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+	<Form Name="ledger" Text="Ledger" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid	Name="dg_ARD"		Location="0, 0"		Size="0,0" CaptionText="Debtors (A/R Ledger) Details" HeaderForeColor="ControlText" TabIndex="10" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="11"	Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="12" Visible="False" />
+				</Controls>
+			</DataGrid>
+			<DataGrid	Name="dg_SIV"		Location="0, 80"		Size="0, 0" CaptionText="Sales Ledger Details" HeaderForeColor="ControlText" TabIndex="20" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="21"	Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="22" Visible="False" />
+				</Controls>
+			</DataGrid>
+			<DataGrid	Name="dg_APD"		Location="0, 160"		Size="0,0" CaptionText="Creditors (A/P Ledger) Details" HeaderForeColor="ControlText" TabIndex="20" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="21"	Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="22" Visible="False" />
+				</Controls>
+			</DataGrid>
+			<DataGrid	Name="dg_PIV"		Location="0, 240"		Size="0, 0" CaptionText="Purchases Ledger Details" HeaderForeColor="ControlText" TabIndex="20" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="21"	Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="22" Visible="False" />
+				</Controls>
+			</DataGrid>
+			<DataGrid	Name="dg_CSH"		Location="0, 320"		Size="0, 0" CaptionText="Cash Ledger Details" HeaderForeColor="ControlText" TabIndex="20" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 63"	TabIndex="21"	Visible="False" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="22" Visible="False" />
+				</Controls>
+			</DataGrid>
+			<DataGrid	Name="dg_GLD"		Location="0, 0"		Size="739,530" CaptionText="General Ledger Details" HeaderForeColor="ControlText" TabIndex="20" CaptionBackColor="{languageBinding.captionBackColor}">
+				<Controls>
+					<HScrollBar Location="0, 700"	TabIndex="21"	Visible="True" />
+					<VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="22" Visible="False" />
+				</Controls>
+			</DataGrid>
+		</Controls>
+	</Form>
+</BizXml>

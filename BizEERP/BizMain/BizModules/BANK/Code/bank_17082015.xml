@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, System" 
+		xmlns:def="Definition" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+  <Form Name="bank" Text="Bank Reconciliation - Receipt/Payment" Location="4, 21" AutoScaleBaseSize="5, 14" 
+		ClientSize="800, 550" ForeColor="Black" StartPosition="CenterScreen" Font="{languageBinding.sys_font}">
+    <Controls>
+		<GroupBox	Name="grb_selection" Location="10, 10" Text="Selection" Size="370,150">
+			<Controls>
+				<!--<Label		Name="lbl_period"				Location="5,25"			Size="60, 16"		TextAlign="MiddleLeft" Text="Period"/>
+				<ComboBox	Name="period"						Location="65,20"		Size="40,21"		TabIndex="1"/>-->
+				<Label		Name="lbl_datefrm"			Location="5, 25"		Size="60, 16"		TextAlign="MiddleLeft" Text="From Date"/>
+				<dtp:BizDateTimePicker	Name="selDateFrom"	Location="65,20"	Size="100,21"	TabIndex="2" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+				<Label		Name="lbl_dateto"				Location="180,25"		Size="50, 16"		TextAlign="MiddleLeft" Text="To Date"/>
+				<dtp:BizDateTimePicker	Name="selDateTo"	Location="230,20"	Size="100,21"	TabIndex="3" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+				<Label		Name="lbl_accnum"				Location="5,75"			Size="60, 16"		TextAlign="MiddleLeft" Text="Bank ACC"/>
+				<ComboBox	Name="accnum"						Location="65,70"		Size="265,21"		TabIndex="4"/>
+				<ComboBox	Name="coy"							Location="65,95"		Size="0,0"		TabIndex="5"/>				
+				<Button		Name="Btn_Search"				Location="230, 120"	Size="100, 23"	Text="&amp;Refresh" TabIndex="4" Click="btn_Search_Click"/>
+			</Controls>
+		</GroupBox>
+		<GroupBox	Name="grb_filter" Location="390, 10" Text="Filter" Size="270,150">
+			<Controls>						
+				<Label		Name="lbl_showvouchers"	Location="25, 25"		Size="100, 16"	TextAlign="MiddleLeft" Text="Show Vouchers"/>
+				<ComboBox	Name="showvouchers"			Location="125,20"		Size="100,21"		TabIndex="11" SelectedIndexChanged="showvouchers_SelectionChange">
+					<ele:BizDisplayValuePair>
+						<ele:ComboBoxItems>
+							<ele:ComboBoxItem ValueMember="Both"/>
+							<ele:ComboBoxItem ValueMember="Reconciled"/>
+							<ele:ComboBoxItem ValueMember="Unreconciled"/>
+						</ele:ComboBoxItems>
+					</ele:BizDisplayValuePair>
+				</ComboBox>	
+				<Label		Name="lbl_viewtype"			Location="25, 50"		Size="100, 16"	TextAlign="MiddleLeft" Text="View"/>
+				<ComboBox	Name="viewtype"					Location="125,45"		Size="100,21"		TabIndex="12" SelectedIndexChanged="viewtype_SelectionChange">
+					<ele:BizDisplayValuePair>
+						<ele:ComboBoxItems>
+							<ele:ComboBoxItem ValueMember="Both"/>
+							<ele:ComboBoxItem ValueMember="Withdrawals"/>
+							<ele:ComboBoxItem ValueMember="Deposits"/>
+						</ele:ComboBoxItems>
+					</ele:BizDisplayValuePair>
+				</ComboBox>
+				<Label		Name="lbl_sortedby"			Location="25, 75"		Size="100, 16"	TextAlign="MiddleLeft" Text="Sort By"/>
+				<ComboBox	Name="sortedby"					Location="125,70"		Size="100,21"		TabIndex="13" SelectedIndexChanged="sortedby_SelectionChange">
+					<ele:BizDisplayValuePair>
+						<ele:ComboBoxItems>
+							<ele:ComboBoxItem ValueMember="Date"/>
+							<ele:ComboBoxItem ValueMember="Reference No"/>
+							<ele:ComboBoxItem ValueMember="Cheque No"/>
+							<ele:ComboBoxItem ValueMember="Detail"/>
+							<ele:ComboBoxItem ValueMember="Withdrawal"/>
+							<ele:ComboBoxItem ValueMember="Deposit"/>
+							<ele:ComboBoxItem ValueMember="Reconciled"/>
+						</ele:ComboBoxItems>
+					</ele:BizDisplayValuePair>
+				</ComboBox>
+			</Controls>
+		</GroupBox>
+
+
+
+      <Label		Name="lbl_bankamt"				Location="665,150"			Size="60, 16"		TextAlign="MiddleLeft" Text=""/>
+
+      <DataGrid Name="dataGrid" Location="10, 170" Size="780, 315" HeaderForeColor="ControlText" TabIndex="40">
+			<Controls>
+				<HScrollBar Location="0, 63"  TabIndex="41" Visible="False" />
+				<VScrollBar Location="113, 0" TabIndex="42" Visible="False" />
+			</Controls>
+		</DataGrid>
+
+      <Label		Name="lbl_subtotal"				Location="690,490"			Size="60, 16"		TextAlign="MiddleLeft" Text=""/>
+		<Button Name="Btn_Find"								Location="30, 515"	Size="100, 23" TabIndex="50" Text="&amp;Find Voucher" Click="btn_Find_Click"/>
+		<Button Name="Btn_Mark"								Location="140, 515"	Size="100, 23" TabIndex="51" Text="&amp;Mark All"	Click="btn_Mark_Click"/>
+		<Button Name="Btn_Unmark"							Location="250, 515"	Size="100, 23" TabIndex="52" Text="&amp;Unmark All"	Click="btn_Unmark_Click"/>	      
+		<Button Name="Btn_Reconsile"					Location="360, 515"	Size="100, 23" TabIndex="53" Text="U&amp;nreconsile"	Click="btn_Reconsile_Click"/>
+		<Button Name="Btn_Report"							Location="470, 515"	Size="100, 23" TabIndex="54" Text="Rep&amp;ort"	Click="btn_Report_Click"/>
+		<Button Name="Btn_Update"							Location="580, 515"	Size="100, 23" TabIndex="55" Text="&amp;Save"	Click="btn_Update_Click"/>
+		<Button Name="Btn_Cancel"							Location="690, 515"	Size="100, 23" TabIndex="56" Text="&amp;Cancel"	Click="btn_Cancel_Click"/>
+    </Controls>
+  </Form>
+</BizXml>

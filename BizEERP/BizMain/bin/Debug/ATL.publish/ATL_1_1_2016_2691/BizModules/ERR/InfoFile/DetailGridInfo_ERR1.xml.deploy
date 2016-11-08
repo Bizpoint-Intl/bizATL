@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="err1" Title="Schedule">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="equipment"	HeaderText="Equipment"	Width="150"  F2="True" F2GridInfo="F2GridInfo_EQM.xml" Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="iscollected"	HeaderText="Collected"	Width="50" ColumnType="CheckBox" Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="{languageBinding.remark}"	Width="450"  Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>	
+	</DetailGridInfo>
+</BizXml>
+

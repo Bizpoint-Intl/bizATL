@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="acctype" Key="acctype" CompanyTitle="{languageBinding.coyBizERP}" ModuleTitle="A/C Type">
+    <RelationTables>
+      <DocRelationTableInfo	TableName="acctypegrouping" DataField="reportGrouping" ConditionField="reportGrouping">
+        <Fields>
+          <Field ColumnName="groupingName"/>
+        </Fields>
+      </DocRelationTableInfo>
+    </RelationTables>
+    <DocumentPages>
+			<DocumentPageInfo FileName="Header.xml"	FormName="header" Title="Page">
+        <F2Controls>
+          <F2Control ControlName="acctype_reportGrouping" F2GridInfo="F2GridInfo_ACCTYPEGROUPING.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="acctypegrouping"/>
+            </RelationF2Tables>
+          </F2Control>
+        </F2Controls>
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

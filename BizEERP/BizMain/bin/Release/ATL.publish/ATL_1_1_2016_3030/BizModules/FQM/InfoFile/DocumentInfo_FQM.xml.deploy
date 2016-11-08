@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="fqm" Key="frequencycode" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.FQM}">
+		<RelationTables>
+				  
+	
+		</RelationTables>
+		
+		<DocumentPages>
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+				<F2Controls>
+					<!--<F2Control ControlName="paytm_opmgr" F2GridInfo="F2GridInfo_HEMPH.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="hemph"/>
+						</RelationF2Tables>
+					</F2Control>-->
+				</F2Controls>
+
+			</DocumentPageInfo>
+		</DocumentPages>
+
+	</DocumentInfo>
+</BizXml>
+

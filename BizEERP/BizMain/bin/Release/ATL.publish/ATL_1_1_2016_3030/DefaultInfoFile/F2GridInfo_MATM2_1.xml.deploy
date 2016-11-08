@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="vAPMATM" Title="Search Supplier Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}">
+    <F2GridColumnInfo MappingName="apnum"			HeaderText="{languageBinding.apnum}"				Width="120"	SearchItem="True"/>
+    <F2GridColumnInfo MappingName="matnum"			HeaderText="{languageBinding.matnum}"				IsItem="True"	SearchItem="True"/>
+    <F2GridColumnInfo MappingName="apmatnum"			HeaderText="Supplier Product Code"				Width="120"	SearchItem="True"  SortItem="True" Key="True"/>
+    <F2GridColumnInfo MappingName="matname"		HeaderText="{languageBinding.matname}"		Width="350"	SearchItem="True" SortItem="True"/>
+    <F2GridColumnInfo MappingName="dpriceConvert"		HeaderText="Purcahse price"			Width="100"	 />
+
+    <F2GridColumnInfo MappingName="uomqty"		HeaderText="Qty Conversion factor"			Width="100"	/>
+    <F2GridColumnInfo MappingName="stdcost"		HeaderText="StdCost"			Width="100" 	 />
+    <F2GridColumnInfo MappingName="baseunitprice"		HeaderText="Base Unit Price"			Width="100" 	 />
+    <F2GridColumnInfo MappingName="uom"		HeaderText="Base UOM"			Width="100" 	ReadOnly="True" />
+    <F2GridColumnInfo MappingName="uomcode"		HeaderText="Purchase UOM"			Width="100" 	ReadOnly="True" />
+    <F2GridColumnInfo MappingName="flag"		HeaderText=""			Width="0"  />
+    <F2GridColumnInfo MappingName="guid"			HeaderText=""				Width="0"	 />
+    <F2GridColumnInfo MappingName="pstatus"			HeaderText=""				Width="0"	 />
+  </F2GridInfo>
+</BizXml>

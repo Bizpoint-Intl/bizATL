@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="ponh" Key="refnum" CompanyTitle="{languageBinding.coyBizAcct}" ModuleTitle="Purchase Order Notification">
+		<RelationTables>
+			<DocRelationTableInfo TableName="porh" DataField="refnum" ConditionField="ponum"/>
+			<!--<DocRelationTableInfo TableName="mwt"	DataField="grnum"	ConditionField="refnum"	Save="True"/>-->
+			<DocRelationTableInfo TableName="apm" DataField="apnum" ConditionField="apnum">
+				<Fields>
+					<Field ColumnName="apname"/>
+					<Field ColumnName="address"/>
+					<Field ColumnName="phone"/>
+					<Field ColumnName="hp"/>
+					<Field ColumnName="fax"/>
+					<Field ColumnName="ptc"/>
+          <Field ColumnName="oricur"/>
+          <Field ColumnName="ptnum"/>
+          <Field ColumnName="gstgrpnum"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="gstm" DataField="gstgrpnum" ConditionField="gstgrpnum">
+				<Fields>
+					<Field ColumnName="gstgrpname"/>
+					<Field ColumnName="gsttype"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="exr" DataField="oricur" ConditionField="oricur">
+				<Fields>
+					<Field ColumnName="curname"/>
+				</Fields>
+			</DocRelationTableInfo>
+			<DocRelationTableInfo TableName="ptm" DataField="ptnum" ConditionField="payterms"/>
+			<DocRelationTableInfo TableName="porh" DataField="refnum" ConditionField="ponum"/>
+      <DocRelationTableInfo	TableName="hemph" DataField="empnum" ConditionField="rcvby">
+        <Fields>
+          <Field ColumnName="empname"/>
+        </Fields>
+      </DocRelationTableInfo>
+    </RelationTables>
+		<DocumentPages>
+			<!-- porh -->
+			<DocumentPageInfo FileName="Header.xml"	FormName="header" Title="Page">
+				<F2Controls>
+					<F2Control ControlName="ponh_apnum" F2GridInfo="F2GridInfo_APM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="apm"/>
+						</RelationF2Tables>
+					</F2Control>
+          <F2Control ControlName="ponh_rcvby" F2GridInfo="F2GridInfo_HEMP.xml">
+            <RelationF2Tables>
+              <RelationF2Table TableName="hemph"/>
+            </RelationF2Tables>
+          </F2Control>
+					<F2Control ControlName="ponh_payterms" F2GridInfo="F2GridInfo_PTM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="ptm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="ponh_gstgrpnum" F2GridInfo="F2GridInfo_GSTM.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="gstm"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="ponh_oricur" F2GridInfo="F2GridInfo_EXR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="exr"/>
+						</RelationF2Tables>
+					</F2Control>
+					<F2Control ControlName="ponh_ponum" F2GridInfo="F2GridInfo_POR.xml">
+						<RelationF2Tables>
+							<RelationF2Table TableName="porh"/>
+						</RelationF2Tables>
+					</F2Control>
+				</F2Controls>
+			</DocumentPageInfo>
+      <DocumentPageInfo FileName="Detail.xml"	FormName="detail" Title="Items">
+        <Details>
+          <Detail DataGridName="dg_Detail1"	DetailGridInfo="DetailGridInfo_Detail1.xml" CaptionText="Purchase Order Notification Detail"/>
+        </Details>
+      </DocumentPageInfo>
+    </DocumentPages>
+		<Reports>
+			<Report ReportName="Purchase Order Notification(Form)"  DefaultReport="True" ReportPath="\PON\Report\ponRpt.rpt"/>
+		</Reports>
+	</DocumentInfo>
+</BizXml>

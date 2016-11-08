@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+
+
+			<GroupBox	Name="grb_hsgmInfo"		  Location="5, 5"		Size="730,510" 	Text="Staff Grade Information" >
+				<Controls>
+					<Label		Name="lbl_desc" ReadOnly="True" 	  Location="10,  25"		Size="80, 16"	TextAlign="Right" Text="Grading Level:"/>
+					<TextBox	Name="hsgm_desc"	  Location="95,25"		Size="200,21"	TabIndex="51"/>
+
+					<Label		Name="lbl_remark"	Location="10, 50" Size="80, 21"		Text="Description"/>
+					<TextBox	Name="hsgm_remarks" Location="95, 50" Size="320, 80"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+				</Controls>
+			</GroupBox>
+
+		</Controls>
+	</Form>
+</BizXml>

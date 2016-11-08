@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="trah" Title="{languageBinding.TRA}" PageSize='21' DocumentInfo="DocumentInfo_TRA.xml">
+		<VoucherGridColumnInfo MappingName="refnum"				HeaderText="{languageBinding.refnum}"		Width="120"	 SearchItem="true" ConfirmItem="true" Key="True" VoucherSort="True" SortItem="True" SortType="DESC"/>
+    <VoucherGridColumnInfo MappingName="trqnum"				HeaderText="MRQ Ref"		Width="200" />
+    <VoucherGridColumnInfo MappingName="trinum"				HeaderText="MRN Ref"		Width="200" />
+    <VoucherGridColumnInfo MappingName="fromsitenum"	HeaderText="From"				Width="50"	SearchItem="true" SearchKeyDownF2="true" F2GridInfo="F2GridInfo_SITM.xml"/>
+    <VoucherGridColumnInfo MappingName="fromsitename"				HeaderText="Desc"		Width="200" />
+    <VoucherGridColumnInfo MappingName="tositenum"		HeaderText="To"					Width="50"	SearchItem="true" SearchKeyDownF2="true" F2GridInfo="F2GridInfo_SITM.xml"/>
+    <VoucherGridColumnInfo MappingName="tositename"				HeaderText="Desc"		Width="200" />
+    <VoucherGridColumnInfo MappingName="trandate"			HeaderText="Trandate"		Width="70"	ColumnType="DateTime" />
+    <VoucherGridColumnInfo MappingName="ttqty"				HeaderText="TotalQty"		Width="70" />
+    <VoucherGridColumnInfo MappingName="agreedby"			HeaderText="Agreed By"	Width="65"	SearchItem="true" SearchKeyDownF2="true" F2GridInfo="F2GridInfo_HEMPH.xml"/>
+		<VoucherGridColumnInfo MappingName="remarks"			HeaderText="Remarks"		Width="60"/>
+		<VoucherGridColumnInfo MappingName="status"				HeaderText="Status"							Width="40"/>
+	</VoucherGridInfo>
+</BizXml>

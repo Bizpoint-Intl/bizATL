@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="paytm" Title="{languageBinding.PAYTM}" DocumentInfo="DocumentInfo_PAYTM.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="paytypecode"	HeaderText="Pay Type Code"		Width="100"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+    <VoucherGridColumnInfo MappingName="value"		HeaderText="Value"		Width="60"/>
+    <VoucherGridColumnInfo MappingName="[Desc]"	HeaderText="Description"		Width="200"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"			Width="40"/>
+		<VoucherGridColumnInfo MappingName="remark"		HeaderText="{languageBinding.remark}"		Width="400"/>
+	</VoucherGridInfo>
+</BizXml>

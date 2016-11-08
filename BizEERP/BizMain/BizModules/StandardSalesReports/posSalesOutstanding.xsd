@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="posSalesOutstanding" targetNamespace="http://tempuri.org/posSalesOutstanding.xsd" xmlns:mstns="http://tempuri.org/posSalesOutstanding.xsd" xmlns="http://tempuri.org/posSalesOutstanding.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="posSalesOutstanding" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="posSalesOutstanding" msprop:Generator_DataSetName="posSalesOutstanding">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="posh" msprop:Generator_UserTableName="posh" msprop:Generator_RowDeletedName="poshRowDeleted" msprop:Generator_RowChangedName="poshRowChanged" msprop:Generator_RowClassName="poshRow" msprop:Generator_RowChangingName="poshRowChanging" msprop:Generator_RowEvArgName="poshRowChangeEvent" msprop:Generator_RowEvHandlerName="poshRowChangeEventHandler" msprop:Generator_TableClassName="poshDataTable" msprop:Generator_TableVarName="tableposh" msprop:Generator_RowDeletingName="poshRowDeleting" msprop:Generator_TablePropName="posh">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="arnum" msprop:Generator_UserColumnName="arnum" msprop:Generator_ColumnVarNameInTable="columnarnum" msprop:Generator_ColumnPropNameInRow="arnum" msprop:Generator_ColumnPropNameInTable="arnumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="arname" msprop:Generator_UserColumnName="arname" msprop:Generator_ColumnPropNameInRow="arname" msprop:Generator_ColumnVarNameInTable="columnarname" msprop:Generator_ColumnPropNameInTable="arnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sitenum" msprop:Generator_UserColumnName="sitenum" msprop:Generator_ColumnVarNameInTable="columnsitenum" msprop:Generator_ColumnPropNameInRow="sitenum" msprop:Generator_ColumnPropNameInTable="sitenumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="refnum" msprop:Generator_UserColumnName="refnum" msprop:Generator_ColumnVarNameInTable="columnrefnum" msprop:Generator_ColumnPropNameInRow="refnum" msprop:Generator_ColumnPropNameInTable="refnumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="trandate" msdata:DateTimeMode="Local" msprop:Generator_UserColumnName="trandate" msprop:Generator_ColumnVarNameInTable="columntrandate" msprop:Generator_ColumnPropNameInRow="trandate" msprop:Generator_ColumnPropNameInTable="trandateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

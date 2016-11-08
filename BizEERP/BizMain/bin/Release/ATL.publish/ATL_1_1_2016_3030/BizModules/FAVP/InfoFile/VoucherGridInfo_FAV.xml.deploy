@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:del="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="bfavh"  Title="{languageBinding.FAVP}" DocumentInfo="DocumentInfo_FAV.xml">
+		<VoucherGridColumnInfo MappingName="refnum"		HeaderText="Journal No."		Width="120" ConfirmItem="True" SearchItem="true" RefreshItem="True" Key="True"  SortType="desc"/>
+		<VoucherGridColumnInfo MappingName="trandate"		HeaderText="{languageBinding.trandate}"		Width="80"   ColumnType="DateTime"/>
+		<VoucherGridColumnInfo MappingName="detail"			HeaderText="Detail"									Width="350" />
+		<VoucherGridColumnInfo MappingName="period"			HeaderText="{languageBinding.period}"		Width="40" />
+		<VoucherGridColumnInfo MappingName="status"			HeaderText="{languageBinding.status}"		Width="50" />
+		<VoucherGridColumnInfo MappingName="[user]"			HeaderText="{languageBinding.user}"			Width="80" />
+		</VoucherGridInfo>
+ </BizXml>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="pivh" Title="Search Purchase Invoice" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="supinvnum"		HeaderText="{languageBinding.supinvnum}"	Width="120"	 SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="coy"				HeaderText="{languageBinding.coy}"			Width="60"	 SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="trandate"		HeaderText="{languageBinding.trandate}"		Width="80"	 SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="oricur"			HeaderText="{languageBinding.oricur}"		Width="40"/>
+		<F2GridColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.oriamt}"		Width="80"/>
+		<F2GridColumnInfo MappingName="postamt"			HeaderText="{languageBinding.postamt}"		Width="80"/>
+		<F2GridColumnInfo MappingName="apnum"			HeaderText="{languageBinding.apnum}"		Width="80"   SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="apname"			HeaderText="{languageBinding.apname}"		Width="215"/>		
+	</F2GridInfo>
+</BizXml>

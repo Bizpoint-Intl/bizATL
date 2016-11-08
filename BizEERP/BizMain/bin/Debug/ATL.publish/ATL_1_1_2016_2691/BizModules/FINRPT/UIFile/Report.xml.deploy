@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml xmlns="System.Windows.Forms"
+		xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:lxf="LXFClassLibrary.Controls, MagicLibrary"
+		xmlns:mgc="BizRAD.BizMagicLibrary, BizMagicLibrary">
+  <Form Name="Report" Tag="dg_Report" Text="Detail" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="0" Font="{languageBinding.sys_font}" Load="detail_Load">
+    <Controls>
+      <DataGrid	Name="dg_Report"		Location="0, 35"		Size="732, 485" CaptionText="Report" Dock="top" HeaderForeColor="ControlText" TabIndex="1" CaptionBackColor="{languageBinding.captionBackColor}">
+        <Controls>
+          <!--<HScrollBar Location="0, 63"	TabIndex="3"	Visible="False" />
+          <VScrollBar Location="113, 0"	LargeChange="1" Maximum="0" TabIndex="4" Visible="False" />-->
+        </Controls>
+      </DataGrid>
+     
+    </Controls>
+  </Form>
+</BizXml>

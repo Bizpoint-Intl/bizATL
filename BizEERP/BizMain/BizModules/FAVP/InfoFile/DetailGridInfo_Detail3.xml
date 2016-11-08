@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="bfav3p">
+		<RelationTables>
+			<!--<bas:RelationTableInfo TableName="apm"	    DataField="apnum"	ConditionField="apnum"/>
+			<bas:RelationTableInfo TableName="arm"	    DataField="arnum"	ConditionField="arnum"/>
+			<bas:RelationTableInfo TableName="acm"	    DataField="accnum"	ConditionField="accnum"/>-->
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"				HeaderText="{languageBinding.mark}"	Width="35"	ColumnType="CheckBox"/>
+
+
+
+    <DetailGridColumnInfo MappingName="projectid"		HeaderText="Proj ID"		Width="100" F2="True" F2GridInfo="F2GridInfo_PID.xml"/>
+    <!--<DetailGridColumnInfo MappingName="empnum"		HeaderText="EmpNo"		Width="75"		Sort="True"  SearchItem="True" F2="True" F2GridInfo="F2GridInfo_HEMPH.xml" />
+    <DetailGridColumnInfo MappingName="matnum"			HeaderText="Designation"			Width="70"		ReadOnly="True"/>-->
+    <DetailGridColumnInfo MappingName="rateamt"			HeaderText="Rate"		Width="100"	/>
+
+    <DetailGridColumnInfo MappingName="dirFeeAmt"			HeaderText="Dir Fee"		Width="100"	/>
+    <DetailGridColumnInfo MappingName="DirRemuAmt"			HeaderText="Dir Rum"		Width="100"	/>
+
+    <DetailGridColumnInfo MappingName="otamt"			HeaderText="OT"		Width="100"	/>
+    <DetailGridColumnInfo MappingName="bonusamt"			HeaderText="Bonus"		Width="100"	/>
+
+    <DetailGridColumnInfo MappingName="alencash"			HeaderText="A/L Encash"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="accomallow"			HeaderText="Accom Allw"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="adjamt"			HeaderText="Adjustment"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="cashadv"			HeaderText="Cash Adv"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="cdacamt"			HeaderText="CDAC"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="handphoneamt"			HeaderText="Handphone"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="loadamt"			HeaderText="Loan"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <!--<DetailGridColumnInfo MappingName="medreim"			HeaderText="Med. Reim"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>-->
+    <DetailGridColumnInfo MappingName="mosqamt"			HeaderText="MOSQ"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="otallowamt"			HeaderText="OT Allw"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="sindamt"			HeaderText="SINDA"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="supallowamt"			HeaderText="Sup Allw"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="transallowamt"			HeaderText="Trans Allw"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="transreimamt"			HeaderText="Trans Reim"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="unionfeeamt"			HeaderText="Union Fee"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="varamt"			HeaderText="Variance"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="otherallowamt"			HeaderText="Other Allw"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+
+
+    <DetailGridColumnInfo MappingName="cpfamt"			HeaderText="CPF"				Width="100"		TextAlign="Right"	Format="#,##0.00"/>
+    <DetailGridColumnInfo MappingName="cpfskillamt"			HeaderText="CPF-Skill"		Width="100"	/>
+
+    <DetailGridColumnInfo MappingName="isdirector"  		  HeaderText="Dir"		  Width="40" 	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="cpf3amt"			HeaderText="CPF3"		Width="100"	/>
+    <DetailGridColumnInfo MappingName="cpf4amt"			HeaderText="CPF4"		Width="100"	/>
+    <DetailGridColumnInfo MappingName="fwlamt"				HeaderText="FWL"				Width="100"/>
+    <DetailGridColumnInfo MappingName="allowamt"			HeaderText="Allowance"			Width="100"		/>
+    <DetailGridColumnInfo MappingName="medamt"			HeaderText="Medical"			Width="50"	/>
+    <!--<DetailGridColumnInfo MappingName="ccnum"			HeaderText="CostCenter"			Width="70"		F2="True" F2GridInfo="F2GridInfo_CCM.xml" />-->
+
+    <!--<DetailGridColumnInfo MappingName="sitenum"		HeaderText="{languageBinding.sitenum}"		Width="100" F2="True" F2GridInfo="F2GridInfo_SITM.xml"/>
+    <DetailGridColumnInfo MappingName="jobid"			HeaderText="Job"			Width="150" />-->
+    <DetailGridColumnInfo MappingName="refnum"			HeaderText="{languageBinding.refnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+
+<!--1<DetailGridColumnInfo MappingName="vouchernum"		HeaderText="Voucher No."		Width="100"	ReadOnly="True"	Sort="True"/>1
+2<DetailGridColumnInfo MappingName="trandate"			HeaderText="trandate"			Width="60"		ReadOnly="True"/>2
+3<DetailGridColumnInfo MappingName="accnum"			HeaderText="Acc. No."			Width="40"		ReadOnly="True"/>4
+4<DetailGridColumnInfo MappingName="accname"			HeaderText="Acc. Name"		Width="100"	ReadOnly="True" TableName="acm"/>5
+5<DetailGridColumnInfo MappingName="oridebit"			HeaderText="Debit"				Width="100"	ReadOnly="True" TextAlign="Right"/>7
+6<DetailGridColumnInfo MappingName="oricredit"			HeaderText="Credit"				Width="100"	ReadOnly="True" TextAlign="Right"/>8
+7<DetailGridColumnInfo MappingName="detail"				HeaderText="Descriptions"		Width="85"	ReadOnly="True"/>6
+8<DetailGridColumnInfo MappingName="apnum"			HeaderText="A/P No."			Width="50"		ReadOnly="True"/>9
+9<DetailGridColumnInfo MappingName="apname"			HeaderText="A/P Name"			Width="100"	ReadOnly="True" TableName="apm"/>10
+10<DetailGridColumnInfo MappingName="arnum"				HeaderText="A/R No."			Width="50"		ReadOnly="True"/>15
+11<DetailGridColumnInfo MappingName="arname"			HeaderText="A/R Name"			Width="100"	ReadOnly="True" TableName="arm"/>16
+12<DetailGridColumnInfo MappingName="invnum"			HeaderText="Inv No."			Width="100"	ReadOnly="True"/>11
+13<DetailGridColumnInfo MappingName="invdate"			HeaderText="Inv Date"			Width="60"		ReadOnly="True"/>12
+14<DetailGridColumnInfo MappingName="chequeno"		HeaderText="Cheque No."		Width="80"		ReadOnly="True"/>3
+15<DetailGridColumnInfo MappingName="oricur"				HeaderText="Currency"			Width="40"		ReadOnly="True"/>13
+16<DetailGridColumnInfo MappingName="exrate"			HeaderText="Ex-rate"			Width="50"		ReadOnly="True"/>14-->

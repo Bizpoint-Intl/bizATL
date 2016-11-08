@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="matm" Title="{languageBinding.itemMATM}" DocumentInfo="DocumentInfo_MATM.xml" PageSize="{languageBinding.sys_voucher_PageSize}" >
+		<VoucherGridColumnInfo MappingName="matnum"		HeaderText="Product Code"			Width="155"	SearchItem="True"	ConfirmItem="True"	RefreshItem="True"	Key="True" />
+		<VoucherGridColumnInfo MappingName="matname"		HeaderText="Description"					Width="400"/>
+		<VoucherGridColumnInfo MappingName="nonstock"		HeaderText="Non-Stock"		Width="70" ColumnType="CheckBox" />
+		<VoucherGridColumnInfo MappingName="pcatcode"		HeaderText="Category"				Width="70" />
+		<VoucherGridColumnInfo MappingName="pstatus"		HeaderText="Status"				Width="45" />
+		<VoucherGridColumnInfo MappingName="status"			HeaderText="{languageBinding.status}"		Width="0"/>
+		<VoucherGridColumnInfo MappingName="[user]"			HeaderText="{languageBinding.user}"			Width="70"/>
+	</VoucherGridInfo>
+</BizXml>

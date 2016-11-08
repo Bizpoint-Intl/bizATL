@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="dctm" Title="{languageBinding.DCTM}" DocumentInfo="DocumentInfo_DCTM.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="dctmcode"	HeaderText="Doc Type Code"		Width="100"  SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+    <VoucherGridColumnInfo MappingName="dctmname"			HeaderText="Name"			Width="150"/>   
+    <VoucherGridColumnInfo MappingName="status"			HeaderText=""			Width="0"/>
+		<VoucherGridColumnInfo MappingName="[user]"			HeaderText="{languageBinding.user}"				Width="60"/>
+	</VoucherGridInfo>
+</BizXml>

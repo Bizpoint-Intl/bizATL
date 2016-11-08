@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="33" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox Name="grp_SuppInfo"	Location="5,10"	Text="Supplier Info"	Size="362,290" FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_apnum"		Location="20,  30"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Supplier Code"/>
+					<TextBox	Name="ponh_apnum"		Location="120, 25"	Size="230,21"	TabIndex="8"/>
+
+					<Label		Name="lbl_apname"		Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="Supplier Name"/>
+					<TextBox	Name="ponh_apname"		Location="120, 50"	Size="230,21"	TabIndex="9" ReadOnly="True"/>
+
+					<Label		Name="lbl_address"		Location="20, 80"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.address}"/>
+					<TextBox	Name="ponh_address"	Location="120, 75"	Size="230,51"	TabIndex="10"	Multiline="True"	ScrollBars="Vertical" ReadOnly="True"/>
+
+					<Label		Name="lbl_phone"			Location="20, 135"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+					<TextBox	Name="ponh_phone"		Location="120,130"	Size="230,21"	TabIndex="11" ReadOnly="True"/>
+
+					<Label		Name="lbl_hp"				Location="20, 160"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+					<TextBox	Name="ponh_hp"			Location="120,155"	Size="230,21"	TabIndex="12" ReadOnly="True"/>
+
+					<Label		Name="lbl_fax"				Location="20, 185"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+					<TextBox	Name="ponh_fax"			Location="120,180"	Size="230,21"	TabIndex="13" ReadOnly="True"/>
+
+					<Label		Name="lbl_contact"		Location="20,215"	Size="100, 16"	TextAlign="MiddleLeft"	Text="Person-To-Contact"/>
+					<TextBox	Name="ponh_contact"	Location="120,210"	Size="230,21"	TabIndex="9"/>
+				</Controls>
+			</GroupBox>
+			<GroupBox	Name="grp_WorInfo"	Location="372, 10"	Text="Transaction Info"	Size="362,435" 	FlatStyle="System">
+				<Controls>
+					<Label		Name="lbl_docunum"			Location="20, 30"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.docunum}"/>
+					<TextBox	Name="ponh_docunum"		Location="110,25"	Size="240,21"	TabIndex="19"	TextAlign="Left"/>
+
+					<Label		Name="lbl_trandate"			Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.trandate}"/>
+					<dtp:BizDateTimePicker	Name="ponh_trandate"	Location="110,50"	Size="120,21"	TabIndex="14" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+          <Label		Name="lbl_period"			Location="20, 80"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.period}"/>
+          <TextBox	Name="ponh_period"		Location="110,75"	Size="110,21"	TabIndex="19"	TextAlign="Left"/>
+          
+          <Label		Name="lbl_rcvby"			Location="20, 105"		Size="90, 16"	TextAlign="MiddleLeft"	Text="Receive By"/>
+          <TextBox	Name="ponh_rcvby"		Location="110,100"	Size="110,21"	TabIndex="19"	TextAlign="Left"/>
+          <TextBox	Name="hemph_empname"		Location="225,100"	Size="125,21"	TabIndex="19"	TextAlign="Left"/>
+
+          <Label		Name="lbl_payterms"			Location="20, 130"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.payterms}"/>
+					<TextBox	Name="ponh_payterms"		Location="110,125"	Size="240,21"	TabIndex="19"	TextAlign="Left"/>
+
+					<Label		Name="lbl_gstgrpnum"		Location=" 20,155"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.gstgrpnum}"/>
+					<TextBox	Name="ponh_gstgrpnum"	Location="110,150"	Size="110, 21"		TabIndex="1"/>
+					<TextBox	Name="ponh_gstper"			Location="225,150"	Size="125, 21"		TabStop="False" ReadOnly="True"/>
+
+					<Label		Name="lbl_oricur"				Location=" 20,180"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="{languageBinding.oricur}"/>
+					<TextBox	Name="ponh_oricur"			Location="110,175"	Size="110, 21"		TabIndex="1"/>
+					<TextBox	Name="ponh_exrate"			Location="225,175"	Size="125, 21"		TabStop="False" ReadOnly="True"/>
+
+          <Label		Name="lbl_sdonum"			Location=" 20,205"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="Supplier DOR No."/>
+          <TextBox	Name="ponh_sdonum"			Location="110,200"	Size="240, 21"		TabIndex="1"/>
+
+          <Label		Name="lbl_ssivnum"			Location="20,230"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="Proforma Inv No."/>
+          <TextBox	Name="ponh_ssivnum"			Location="110,225"	Size="240, 21"		TabIndex="1"/>
+
+          <Label		Name="lbl_remark"		Location="20,255"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.remarks}"/>
+          <TextBox	Name="ponh_remark"		Location="110,250"	Size="240,55"	TabIndex="17"	Multiline="True"	ScrollBars="Vertical"/>
+
+          <Label		Name="lbl_etddate"			Location="20,330"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="ETD Date"/>
+          <dtp:BizDateTimePicker	Name="ponh_etddate"			Location="110,325"	Size="120, 21"		TabIndex="1" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+          <Label		Name="lbl_etadate"			Location="20,355"	Size=" 90, 16"		TextAlign="MiddleLeft"	Text="ETA Date"/>
+          <dtp:BizDateTimePicker	Name="ponh_dtadate"			Location="110,350"	Size="120, 21"		TabIndex="1" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+
+        </Controls>
+      </GroupBox>
+    
+      <GroupBox Name="grp_function"	Location="5,310"	Text="Function"	Size="362,290" FlatStyle="System">
+        <Controls>
+          <Label		Name="lbl_extractPOR"		Location="20,  30"	Size="90, 16"	TextAlign="MiddleLeft"	Text="POR No."/>
+          <TextBox	Name="ponh_ponum"	   Location="110, 25"	Size="120,51"	TabIndex="10"/>
+          <Button 	Name="btn_Extract"		Location="235, 25"	Size="80,21"	TabIndex="8" Text="Extract"/>
+
+          <Label		Name="lbl_autoGRN"		Location="20,  55"	Size="90, 16"	TextAlign="MiddleLeft"	Text="AutoGRN" Visible="false"/>
+          <RadioButton	Name="rad_GRNN"		Location="110, 55"	Size="50,21"	TabIndex="9" Text="No" Visible="false"/>
+          <RadioButton	Name="rad_GRNY"		Location="170, 55"	Size="50,21"	TabIndex="9" Text="Yes" Visible="false"/>
+          <Button	Name="btn_autoGRN"	Location="235, 55"	Size="80,21"	TabIndex="9" Text="GRN Data" Visible="false"/>
+
+          <!--<Label		Name="lbl_address"		Location="20, 80"		Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.address}"/>
+          <TextBox	Name="ponh_address"	Location="110, 75"	Size="240,51"	TabIndex="10"	Multiline="True"	ScrollBars="Vertical" ReadOnly="True"/>
+
+          <Label		Name="lbl_phone"			Location="20, 135"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.phone}"/>
+          <TextBox	Name="ponh_phone"		Location="110,130"	Size="240,21"	TabIndex="11" ReadOnly="True"/>
+
+          <Label		Name="lbl_hp"				Location="20, 160"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.hp}"/>
+          <TextBox	Name="ponh_hp"			Location="110,155"	Size="240,21"	TabIndex="12" ReadOnly="True"/>
+
+          <Label		Name="lbl_fax"				Location="20, 185"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.fax}"/>
+          <TextBox	Name="ponh_fax"			Location="110,180"	Size="240,21"	TabIndex="13" ReadOnly="True"/>
+
+          <Label		Name="lbl_contact"		Location="20,215"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.contact}"/>
+          <TextBox	Name="ponh_contact"	Location="110,210"	Size="240,21"	TabIndex="9"/>-->
+        </Controls>
+      </GroupBox>
+    </Controls>
+	</Form>
+</BizXml>

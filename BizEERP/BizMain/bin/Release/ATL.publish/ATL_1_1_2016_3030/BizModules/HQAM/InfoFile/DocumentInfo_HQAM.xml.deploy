@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="hqam" Key="hqamcode" CompanyTitle="{languageBinding.coypg}"  ModuleTitle="{languageBinding.HQAM}">
+		<RelationTables>
+		
+
+		</RelationTables>
+		<DocumentPages>
+			<DocumentPageInfo FileName="Header.xml"		FormName="header"	Title="Header">
+				<Details>
+					<Detail DataGridName="dg_qa"	DetailGridInfo="DetailGridInfo_HQAM1.xml"  CaptionText="Answers"/>
+				</Details>
+
+			</DocumentPageInfo>
+
+
+		</DocumentPages>
+		<Reports>
+			
+		</Reports>
+	</DocumentInfo>
+</BizXml>
+

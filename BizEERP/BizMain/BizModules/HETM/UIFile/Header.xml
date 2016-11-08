@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib" 
+		xmlns:ele="BizRAD.BizElements, BizBase" 
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<Label		Name="lbl_hetmnum"		Location="10, 10"	Size="90, 16"	TextAlign="MiddleLeft" Text="Employment Type Code"/>
+			<TextBox	Name="hetm_hetmnum"	Location="110, 5"	Size="250,21" ReadOnly="True" 	TabIndex="0"/>
+			<Label		Name="lbl_statuscode"		Location="10, 40"	Size="90, 32"	TextAlign="MiddleLeft" Text="Appointment Description"/>
+			<TextBox	Name="hetm_statuscode"	Location="110,35"	Size="90,16"	TabIndex="0" />
+		</Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="SADJ1" Title="Schedule">
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="Qno"		HeaderText="No"			Width="50"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="question"		HeaderText="Factor"			Width="300"	ReadOnly="true" />
+		<DetailGridColumnInfo MappingName="answer"	HeaderText=""	Width="0" F2="True" F2GridInfo="F2GridInfo_HQAM1.xml" />
+		<DetailGridColumnInfo MappingName="maxScore"	HeaderText="Score" 	Width="60"  />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="hqamcode"	HeaderText="" ReadOnly="True" 	Width=""  />
+	</DetailGridInfo>
+</BizXml>
+

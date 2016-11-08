@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+			<GroupBox	Name="grb_hqamsquestioninfo"		  Location="5, 10"		Size="731,250" 	Text="Question and Answers Information" >
+				<Controls>
+					<CheckBox	Name="hqam_isactive"	Text="Active" Location="320, 50"	Size="80,19"	TabIndex="52" FlatStyle="System"/>
+					
+					<Label		Name="lbl_question"			   Location="65,  25"	  Size="60, 21" TextAlign="MiddleLeft" Text="Question"/>
+					<TextBox	Name="hqam_question" 	  Location="65,50"		Size="240, 60"	Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+					<Label		Name="lbl_remark"	Location="65,  125" Size="150, 21"		Text="Remarks"/>
+					<TextBox	Name="hqam_remark" Location="65, 150"	 Size="320, 80" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>
+
+				</Controls>
+			</GroupBox>
+			<GroupBox	Name="grb_hqamanswerinfo"	Location="5, 255" 	  		Size="731,210" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_qa" Location="0, 0"	      Size="730, 200" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+
+
+		</Controls>
+	</Form>
+</BizXml>

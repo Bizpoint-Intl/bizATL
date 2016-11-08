@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xml:lang="zh-CN" 
+		xmlns:def="Definition" 
+		xmlns="System.Windows.Forms, System.Windows.Forms" 
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="header" Text="Header" Location="4, 21" Size="736, 535" ForeColor="Black" AutoScaleBaseSize="5, 14" Font="{languageBinding.sys_font}">
+		<Controls>
+      <CheckBox Name="exr_active"           Location="100, 10" Size="200,21" TabIndex="0" Text="{languageBinding.active}"/>
+			<Label    Name="lbl_oricur"          Location="10,  35" Size="90, 21" TextAlign="MiddleLeft"  Text="{languageBinding.oricur}"/>
+			<TextBox  Name="exr_oricur"          Location="100, 35" Size="250,21" TabIndex="1"  CharacterCasing="Upper" ReadOnly="True"/>
+			
+			<Label    Name="lbl_curname"          Location="10,  60" Size="90, 21" TextAlign="MiddleLeft"  Text="{languageBinding.curname}"/>
+			<TextBox  Name="exr_curname"          Location="100, 60" Size="250,21" TabIndex="1"  CharacterCasing="Upper"/>         
+    </Controls>
+  </Form>
+</BizXml>

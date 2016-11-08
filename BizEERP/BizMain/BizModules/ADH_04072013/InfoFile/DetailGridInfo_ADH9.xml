@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="adh9" Title="Chemical">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="matm"	DataField="matnum"	ConditionField="matnum"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="matnum"			  HeaderText="Chemical" 		Width="150" F2="True" F2GridInfo="F2GridInfo_CHEMICAL.xml">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="matname"	F2MappingName="matname"/>
+				<RelationF2Column ColumnName="pcatcode"	F2MappingName="pcatcode"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="matname"	HeaderText="Name"	Width="100"         Format="#,##0.00####" ReadOnly="True" TableName="matm"/>
+		<DetailGridColumnInfo MappingName="itemdesc"	HeaderText="Description"	Width="120"          />
+		<DetailGridColumnInfo MappingName="pcatcode"	HeaderText=""	Width="0"       ReadOnly="True" TableName="matm"/>
+		<DetailGridColumnInfo MappingName="estmamt"	HeaderText="Est Amt per Item"	Width="100"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="actmamt"	HeaderText="Act Amt per Item"	Width="100"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="qty"	HeaderText="Qty"	Width="70"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="totalmths"	HeaderText=""	Width="0"         />
+		<DetailGridColumnInfo MappingName="mthnum"	HeaderText=""	Width="0"         ReadOnly="True" />
+
+		<DetailGridColumnInfo MappingName="price"	HeaderText="Monthly Cost"	Width="70"         Format="#,##0.00####"  ReadOnly="True"/>
+
+
+
+
+
+		<DetailGridColumnInfo MappingName="oriamt"	HeaderText="Actual Amt"	Width="70"         Format="#,##0.00####" ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="moriamt"	HeaderText=""	Width="0"         Format="#,##0.00####" />
+
+		<DetailGridColumnInfo MappingName="amount"	HeaderText="" ReadOnly="True" 	Width="0"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="Remark"	Width="200"         Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+	</DetailGridInfo>
+	
+</BizXml>
+

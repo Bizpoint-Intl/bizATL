@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml	xmlns="BizRAD.BizDocument,	BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DocumentInfo Name="documentInfo" MainTable="acm" Key="accnum" CompanyTitle="{languageBinding.coyname}" ModuleTitle="{languageBinding.ACM}">
+    <RelationTables>
+    </RelationTables>
+    <DocumentPages>
+			<DocumentPageInfo FileName="header.xml" FormName="header" Title="Header" >
+			</DocumentPageInfo>
+		</DocumentPages>
+	</DocumentInfo>
+</BizXml>

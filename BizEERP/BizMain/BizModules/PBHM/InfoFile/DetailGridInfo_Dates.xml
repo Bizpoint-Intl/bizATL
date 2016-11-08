@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:def="Definition"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:ref="Reference">
+  <DetailGridInfo Name="detailGridInfo" MainTable="pbhm1" Title="{languageBinding.PBHM}">
+    <VirtualColumns>
+      <bas:VirtualColumn ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+    </VirtualColumns>
+    <DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"			Width="32"		ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="pbhyear"	  HeaderText="{languageBinding.pbhyear}"  Width="60"    ReadOnly="True"/>
+    <DetailGridColumnInfo MappingName="pbhmth"	  HeaderText="{languageBinding.pbhmth}"	  Width="60"    ReadOnly="True"/>
+    <DetailGridColumnInfo MappingName="pbhdate"	  HeaderText="{languageBinding.pbhdate}"  Width="80" 	ColumnType="DateTime" Format="Custom" CustomFormat="{languageBinding.sysDateFormat}"/>
+    <DetailGridColumnInfo MappingName="detail"	  HeaderText="{languageBinding.details}"  Width="250"/>
+    <DetailGridColumnInfo MappingName="wkend"	    HeaderText="{languageBinding.wkendHQ}"  Width="80" 	  ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="pbhnum"	  HeaderText="{languageBinding.pbhnum}"   Width="0"     ReadOnly="True" Key="true"/>
+  </DetailGridInfo>
+</BizXml>

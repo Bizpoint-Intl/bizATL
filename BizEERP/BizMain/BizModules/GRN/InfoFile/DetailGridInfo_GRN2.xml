@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="grn2"	>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"				Width="35"	ColumnType="CheckBox"/>
+    <DetailGridColumnInfo MappingName="matnum"			HeaderText="{languageBinding.matnum}"				Width="90" ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="qty"		HeaderText="{languageBinding.qty}"			Width="40"  ReadOnly="true"/>
+    <!--	<DetailGridColumnInfo MappingName="detail"			HeaderText="{languageBinding.detail}"				Width="300"/>
+		<DetailGridColumnInfo MappingName="qty"			HeaderText="{languageBinding.qty}"				Width="60"/>
+		<DetailGridColumnInfo MappingName="uom"			HeaderText="{languageBinding.uom}"				Width="60"	F2="True"  F2GridInfo="F2GridInfo_UOM.xml"/>
+		<DetailGridColumnInfo MappingName="price"			HeaderText="{languageBinding.unitprice}"			Width="80"/>
+		<DetailGridColumnInfo MappingName="grosamt"		HeaderText="{languageBinding.grosamt}"			Width="80"/>
+		<DetailGridColumnInfo MappingName="discamt"		HeaderText="{languageBinding.discamt}"			Width="80"/>
+		<DetailGridColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.detail1_oriamt}"	Width="80" 	ReadOnly="true"/>-->
+		<DetailGridColumnInfo MappingName="barcode"		HeaderText="Serial No"			Width="300"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"			Width="0"	ReadOnly="true" Key="True"/>
+    <DetailGridColumnInfo MappingName="line"        HeaderText="{languageBinding.matnum}"           Width="0"      Sort="True"/>
+  </DetailGridInfo>
+</BizXml>

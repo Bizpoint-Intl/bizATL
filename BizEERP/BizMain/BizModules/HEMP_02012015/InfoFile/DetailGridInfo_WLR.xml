@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="wlr" Title="Warning Letter">
+		<!--<RelationTables>
+			<bas:RelationTableInfo TableName="pdm"	DataField="svccode"	ConditionField="svccode"/>
+			<bas:RelationTableInfo TableName="sitm"	DataField="sitenum"	ConditionField="sitenum"/>
+			<bas:RelationTableInfo TableName="hemph"	DataField="empnum"	ConditionField="zempnum"/>
+		</RelationTables>-->
+		<VirtualColumns>
+			<bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+			<bas:VirtualColumn ColumnName="button1"	DataType="System.String" DefaultValue="Doc" />
+			<bas:VirtualColumn ColumnName="button2"	DataType="System.String" DefaultValue="View" />
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="dateIssued"		HeaderText="Issued"		Width="75"	ColumnType="DateTime"		/>
+		<DetailGridColumnInfo MappingName="button1"		HeaderText="Document"			Width="80"	ColumnType="TextBox" />
+		<DetailGridColumnInfo MappingName="remark"	HeaderText=""	 Width="0"         />
+		<DetailGridColumnInfo MappingName="isSigned"  		  HeaderText="Signed"		  Width="40" 	ColumnType="CheckBox" ReadOnly="True"/>
+
+    <DetailGridColumnInfo MappingName="typeofwarning1"  		  HeaderText="1st"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="typeofwarning2"  		  HeaderText="2nd"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="typeofwarning3"  		  HeaderText="3rd"		  Width="40" 	ColumnType="CheckBox" />
+
+
+    <DetailGridColumnInfo MappingName="o1"  		  HeaderText="O1"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o2"  		  HeaderText="O2"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o3"  		  HeaderText="O3"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o4"  		  HeaderText="O4"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o5"  		  HeaderText="O5"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o6"  		  HeaderText="O6"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o7"  		  HeaderText="O7"		  Width="40" 	ColumnType="CheckBox" />
+    <DetailGridColumnInfo MappingName="o7remark"	HeaderText="Other Offence Remark"	 Width="250"         />
+
+    <DetailGridColumnInfo MappingName="descInfraction"	HeaderText="Desc of Infraction"	 Width="250"         />
+    <DetailGridColumnInfo MappingName="consequencesInfraction"	HeaderText="Consequences of Infraction"	 Width="250"         />
+
+
+
+    <!--<DetailGridColumnInfo MappingName="button2"		HeaderText="Signature"			Width="80"	ColumnType="TextBox" />-->
+		<DetailGridColumnInfo MappingName="empnum"		HeaderText=""			Width="0"	 Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

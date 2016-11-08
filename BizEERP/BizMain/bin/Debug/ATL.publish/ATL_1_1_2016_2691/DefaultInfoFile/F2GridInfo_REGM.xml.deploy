@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="regm" Title="Search Region Master" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
+		<F2GridColumnInfo MappingName="regnum"	HeaderText="{languageBinding.regnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="regname"	HeaderText="{languageBinding.regname}"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

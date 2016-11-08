@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="worh" Title="{languageBinding.WOR}" DocumentInfo="DocumentInfo_WOR.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"		Width="150"   SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"/>
+		<VoucherGridColumnInfo MappingName="searchType"		HeaderText="Type"		Width="45"/>		
+		<VoucherGridColumnInfo MappingName="arname"		HeaderText="Customer"		Width="90"/>
+		<VoucherGridColumnInfo MappingName="sitename"		HeaderText="Location"		Width="90"/>
+		<VoucherGridColumnInfo MappingName="sectorcode"		HeaderText="Zone"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="worDateFrom"		HeaderText="From"		Width="100"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<VoucherGridColumnInfo MappingName="worDateTo"		HeaderText="To"		Width="100"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>		
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="{languageBinding.user}"			Width="40"/>
+		<VoucherGridColumnInfo MappingName="remark"		HeaderText="{languageBinding.remark}"		Width="400"/>
+	</VoucherGridInfo>
+</BizXml>

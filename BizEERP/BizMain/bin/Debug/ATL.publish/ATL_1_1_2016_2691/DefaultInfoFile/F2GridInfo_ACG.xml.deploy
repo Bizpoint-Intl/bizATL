@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="acg" Title="Search Accounts Group Master" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="active=0">
+		<F2GridColumnInfo MappingName="acgnum"	HeaderText="{languageBinding.acgnum}"	Width="120" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="acgname"	HeaderText="{languageBinding.acgname}"	Width="250" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

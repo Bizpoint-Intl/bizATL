@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="viewprojid" Title="Search Project ID Master" PageSize="{languageBinding.sys_F2_Pagesize}" >
+		<F2GridColumnInfo MappingName="projectid"		HeaderText="ProjectID"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="arnum"	HeaderText="Customer"	Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+    <F2GridColumnInfo MappingName="arname"	HeaderText="Desc"	Width="200" />
+    <F2GridColumnInfo MappingName="sitenum"	HeaderText="Site"	Width="100" />
+    <F2GridColumnInfo MappingName="flag"	HeaderText="Flag"	Width="100" />
+	</F2GridInfo>
+</BizXml>

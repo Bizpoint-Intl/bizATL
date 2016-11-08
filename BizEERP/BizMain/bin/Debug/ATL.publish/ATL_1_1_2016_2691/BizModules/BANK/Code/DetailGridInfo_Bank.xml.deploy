@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="csh">
+		<!--<RelationTables>
+			<bas:RelationTableInfo TableName="arm"	DataField="arnum"	ConditionField="arnum"/>
+			<bas:RelationTableInfo TableName="apm"	DataField="apnum"	ConditionField="apnum"/>
+		</RelationTables>-->
+		<DetailGridColumnInfo MappingName="[ID]"				HeaderText="ID"										Width="0"		ReadOnly="True"	Key="True"/>
+		<DetailGridColumnInfo MappingName="mark"				HeaderText="{languageBinding.mark}"			Width="35"		ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="period"				HeaderText="{languageBinding.period}"		Width="23"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="trandate"			HeaderText="{languageBinding.trandate}"		Width="75"		ReadOnly="True"	ColumnType="DateTime"/>
+		<DetailGridColumnInfo MappingName="refnum"			HeaderText="{languageBinding.refnum}"		Width="95"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="coy"				HeaderText="Company"								Width="55"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="chknum"			HeaderText="Cheque No."							Width="100"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="detail"				HeaderText="Detail"									Width="135"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="arname"			HeaderText="{languageBinding.arname}"		Width="135"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="apname"			HeaderText="{languageBinding.apname}"		Width="135"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="withdrawal"		HeaderText="Withdrawal"							Width="65"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="deposit"			HeaderText="Deposit"								Width="65"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="recondate"		HeaderText="Recon Date"							Width="75"		ColumnType="DateTime"/>
+	</DetailGridInfo>
+</BizXml>

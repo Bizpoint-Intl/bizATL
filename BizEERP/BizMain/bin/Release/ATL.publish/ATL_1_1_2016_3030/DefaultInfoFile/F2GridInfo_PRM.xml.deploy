@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="prm" Title="Premises Master" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="prmcode"		HeaderText="Premises Code"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="prmname"	HeaderText="Details"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

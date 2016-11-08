@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition"
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:s="System, mscorlib"
+		xmlns:ele="BizRAD.BizElements, BizBase"
+		xmlns:dtp="BizRAD.BizControls.BizDateTimePicker, BizControls">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+	
+			<GroupBox	Name="grb_shmshiftinfo"		  Location="5, 10"		Size="731,300" 	Text="Shift Information" >
+				<Controls>
+					<Label    Name="lvl_lvenum"       Location="10,  10" Size="90,  21"   TextAlign="MiddleLeft"	Text="LvE No" />
+					<TextBox  Name="lve_lvenum"      Location="100, 10" Size="120, 21"   TabIndex="2"  TabStop="False"  CharacterCasing="Upper"/>
+					<Label    Name="lvl_matnum"         Location="10,  35" Size="90,  21"   TextAlign="MiddleLeft" Text="Appointment" />
+					<TextBox  Name="lve_matnum"     Location="100, 35" Size="120, 21"   TabIndex="4"  CharacterCasing="Upper" />
+					<!--<Label    Name="lvl_nod"         Location="10,  60" Size="90,  21"   TextAlign="MiddleLeft" Text="No. of Days" />-->
+					<!--<TextBox  Name="lve_offdays"     Location="100, 60" Size="50, 21"   TabIndex="4"  CharacterCasing="Upper" />-->
+					<!--<Label  Name="lv1_nod2"     Location="165, 60" Size="50, 21"   TextAlign="MiddleLeft" Text="Days"/>-->
+					<Label    Name="lvl_remark"       Location="10,  85" Size="90,  21"   TextAlign="MiddleLeft"	Text="{languageBinding.remark}" />
+					<TextBox  Name="lve_remark"      Location="100, 85" Size="320, 60"	TabIndex="6" Multiline="True" ScrollBars="Vertical" CharacterCasing="Upper"/>				</Controls>
+			</GroupBox>
+			<GroupBox	Name="grb_lveinfo"	Location="5, 305" 	  		Size="731,210" 	Text="" >
+				<Controls>
+					<DataGrid	Name="dg_lveInfo" Location="0, 0"	      Size="730, 200" 	Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="{languageBinding.captionBackColor}"/>
+				</Controls>
+			</GroupBox>
+		</Controls>
+	</Form>
+</BizXml>

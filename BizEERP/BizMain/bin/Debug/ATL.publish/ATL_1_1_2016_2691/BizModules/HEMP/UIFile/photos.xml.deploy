@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xml:lang="zh-CN"
+		xmlns:def="Definition"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing"
+		xmlns:ele="BizRAD.BizElements, BizBase">
+	<Form Name="photos" Text="photos" Location="4, 21" Size="736, 535" ForeColor="Black" AutoScaleBaseSize="5, 14" Font="{languageBinding.sys_font}">
+		<Controls>
+			<!--<Button Name="btnAdd" Text="Add" Location="460, 250" Size="58, 23" TabIndex="34" UseVisualStyleBackColor="True"/>
+			
+			<TextBox Name="pictureurl" Location="170, 250" Size="240, 21" ReadOnly="True" TabIndex="33" />-->
+			<PictureBox Name="pictbox" Location="170, 280" Size="360, 230" TabStop="False" InitialImage="System.Drawing.Bitmap" BorderStyle="Fixed3D" />
+
+			<DataGrid	Name="dg_photos" Location="20,10"		Size="700,230"	HeaderForeColor="ControlText"  TabIndex="7" CaptionBackColor="{languageBinding.captionBackColor}"/>
+		</Controls>
+	</Form>
+</BizXml>

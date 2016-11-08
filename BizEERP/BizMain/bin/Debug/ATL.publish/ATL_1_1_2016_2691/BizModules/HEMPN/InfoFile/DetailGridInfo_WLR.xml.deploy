@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="wlr" Title="Warning Letter">
+		<!--<RelationTables>
+			<bas:RelationTableInfo TableName="pdm"	DataField="svccode"	ConditionField="svccode"/>
+			<bas:RelationTableInfo TableName="sitm"	DataField="sitenum"	ConditionField="sitenum"/>
+			<bas:RelationTableInfo TableName="hemph"	DataField="empnum"	ConditionField="zempnum"/>
+		</RelationTables>-->
+		<VirtualColumns>
+			<bas:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+			<bas:VirtualColumn ColumnName="button1"	DataType="System.String" DefaultValue="Doc" />
+			<bas:VirtualColumn ColumnName="button2"	DataType="System.String" DefaultValue="View" />
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="dateIssued"		HeaderText="Issued"		Width="75"	ColumnType="DateTime"		/>
+		<DetailGridColumnInfo MappingName="button1"		HeaderText="Document"			Width="80"	ColumnType="TextBox" />
+		<DetailGridColumnInfo MappingName="remark"	HeaderText="Remarks"	 Width="250"         />
+		<DetailGridColumnInfo MappingName="isSigned"  		  HeaderText="Signed"		  Width="40" 	ColumnType="CheckBox" ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="button2"		HeaderText="Signature"			Width="80"	ColumnType="TextBox" />
+		<DetailGridColumnInfo MappingName="empnum"		HeaderText=""			Width="0"	 Key="True"/>
+	</DetailGridInfo>
+</BizXml>
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="pbm" Title="{languageBinding.itemPBM}" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
+		<F2GridColumnInfo MappingName="pbnum"		HeaderText="{languageBinding.pbnum}"		Width="120" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="pbname"		HeaderText="{languageBinding.description}"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
+	</F2GridInfo>
+</BizXml>

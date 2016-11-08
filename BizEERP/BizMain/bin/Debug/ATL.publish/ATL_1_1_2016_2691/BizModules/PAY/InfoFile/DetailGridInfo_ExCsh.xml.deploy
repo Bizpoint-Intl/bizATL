@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="excsh">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="acm"	DataField="accnum"	ConditionField="accnum"/>
+			<bas:RelationTableInfo TableName="exr"	DataField="oricur"	ConditionField="oricur"/>
+		</RelationTables>
+		<VirtualColumns>
+			<bas:VirtualColumn ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"			HeaderText="{languageBinding.mark}"			Width="35"	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="trandate"		HeaderText="{languageBinding.trandate}"		Width="75"	ColumnType="DateTime"		ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="chknum"		HeaderText="Cheque No."							Width="80"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="accnum"		HeaderText="{languageBinding.accnum}"		Width="80"	F2="True" F2GridInfo="F2GridInfo_ACM.xml">
+			<RelationF2Columns>
+				<RelationF2Column ColumnName="accname"	F2MappingName="accname"/>
+			</RelationF2Columns>
+		</DetailGridColumnInfo>
+		<DetailGridColumnInfo MappingName="accname"		HeaderText="{languageBinding.accname}"	Width="170" ReadOnly="True" TableName="acm"/>
+		<DetailGridColumnInfo MappingName="lgr"				HeaderText="{languageBinding.lgr}"				Width="50"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="oricur"			HeaderText="{languageBinding.oricur}"			Width="50"	F2="True" F2GridInfo="F2GridInfo_EXR.xml"/>
+		<DetailGridColumnInfo MappingName="exrate"		HeaderText="{languageBinding.exrate}"		Width="65"	ReadOnly="False"/>
+		<DetailGridColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.oriamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="postamt"		HeaderText="{languageBinding.postamt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="bankamt"		HeaderText="{languageBinding.bankamt}"		Width="75"/>
+		<DetailGridColumnInfo MappingName="exramt"		HeaderText="{languageBinding.exramt}"		Width="75"	ReadOnly="True"/>
+		<DetailGridColumnInfo MappingName="detail"			HeaderText="{languageBinding.detail}"			Width="250"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText="{languageBinding.refnum}"		Width="0"	ReadOnly="True" Key="True"/>
+	</DetailGridInfo>
+</BizXml>

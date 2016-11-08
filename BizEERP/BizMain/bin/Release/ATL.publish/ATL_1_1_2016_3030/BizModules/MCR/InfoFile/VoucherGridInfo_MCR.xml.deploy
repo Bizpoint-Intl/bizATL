@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="mcrh" Title="Monthly Consignment Reconciliation" DocumentInfo="DocumentInfo_MCR.xml" PageSize="{languageBinding.sys_voucher_PageSize}">
+		<RelationTables>
+			<bas:RelationTableInfo TableName="arm"		DataField="arnum"	ConditionField="arnum"/>
+		</RelationTables>
+		<VoucherGridColumnInfo MappingName="refnum"		HeaderText="Ref No."							Width="100"	SearchItem="True"	ConfirmItem="True"	RefreshItem="True"	Key="True"  SortType="desc"/>
+		<VoucherGridColumnInfo MappingName="arnum"			HeaderText="A/R No."							Width="100"/>
+		<VoucherGridColumnInfo MappingName="arname"		HeaderText="A/R Name"							Width="250"	TableName="arm"/>
+		<VoucherGridColumnInfo MappingName="status"			HeaderText="{languageBinding.status}"	Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"			HeaderText="{languageBinding.user}"		Width="60"/>
+	</VoucherGridInfo>
+</BizXml>

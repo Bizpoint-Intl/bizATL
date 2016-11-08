@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="hemph" Title="{languageBinding.itemHEMP}" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="active=1">
+		<F2GridColumnInfo MappingName="empnum"			HeaderText="{languageBinding.empnum}"		Width="120"	IsItem="True"	SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="empname"			HeaderText="{languageBinding.empname}"		Width="300"	IsItem="True"	SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="desgnum"			HeaderText="{languageBinding.desgnum}"		Width="100"/>
+		<F2GridColumnInfo MappingName="PRQApprove"		HeaderText="{languageBinding.prqapprove}"	Width="100"/>
+	</F2GridInfo>
+</BizXml>

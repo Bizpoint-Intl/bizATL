@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="worh" Title="{languageBinding.WOR}" DocumentInfo="DocumentInfo_WOR.xml"  DeletedInfo="true">
+		<VoucherGridColumnInfo MappingName="refnum"	HeaderText="{languageBinding.refnum}"		Width="150"   SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True" />
+		<VoucherGridColumnInfo MappingName="worstatus"		HeaderText="Status"		Width="45"/>
+    <VoucherGridColumnInfo MappingName="isSubmitted"		    HeaderText="Submitted"		    Width="90"  ColumnType="CheckBox"   SearchItem="true"/>
+    <VoucherGridColumnInfo MappingName="sitenum"		HeaderText="SiteNo"		Width="120"/>
+    <VoucherGridColumnInfo MappingName="sitename"		HeaderText="Location Name"		Width="120"/>
+    <VoucherGridColumnInfo MappingName="trandate"		    HeaderText="Date"		    Width="80"    SearchItem="true" ColumnType="DateTime"   VoucherSort="True" SortItem="True" SortType="DESC"/>
+		<VoucherGridColumnInfo MappingName="[status]"		HeaderText="{languageBinding.status}"		Width="45"/>
+		<VoucherGridColumnInfo MappingName="[user]"		HeaderText="Modified By"			Width="80"/>
+	</VoucherGridInfo>
+</BizXml>

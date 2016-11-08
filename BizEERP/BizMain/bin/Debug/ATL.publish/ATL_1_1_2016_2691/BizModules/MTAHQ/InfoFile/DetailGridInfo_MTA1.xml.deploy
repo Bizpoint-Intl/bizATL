@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<DetailGridInfo Name="detailGridInfo" MainTable="mta1" Title="Time Sheet">
+		<RelationTables>
+			<rel:RelationTableInfo TableName="lvm" DataField="lvmnum" ConditionField="lvmnum"/>
+      <rel:RelationTableInfo TableName="paytm" DataField="paytypecode" ConditionField="paytypecode"/>
+		</RelationTables>
+		<VirtualColumns>
+			<rel:VirtualColumn	ColumnName="mark" DataType="System.Boolean" DefaultValue="False"/>			
+		</VirtualColumns>
+		<DetailGridColumnInfo MappingName="mark"  		  HeaderText="{languageBinding.mark}"		  Width="40" 	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="empnum"			  HeaderText="{languageBinding.empnum}"	 ReadOnly="True" 	Width="90" />
+		<DetailGridColumnInfo MappingName="empname"	HeaderText="Name"	 Width="100"     ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="sitenum"	HeaderText="Site No"	 Width="100"     ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="sectorcode"	HeaderText="Sector"	 Width="100"     ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="day"	HeaderText="Day"	 Width="100"     ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="date"	HeaderText="Date"	 Width="100"     ReadOnly="True"    ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<DetailGridColumnInfo MappingName="timein"	HeaderText="Time In"	 Width="70"   ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="shiftcode"	HeaderText="ShiftCode"	 Width="70"   ReadOnly="True"    Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="schedtimein"	HeaderText="Sched Time In"	 Width="80"   ReadOnly="True"     />
+		<DetailGridColumnInfo MappingName="confirmedtimein"	HeaderText="Confirmed Time In" ReadOnly="True"  	 Width="100"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="scheddatein"	HeaderText="Sched Date In"	 Width="80"   ReadOnly="True"     ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<DetailGridColumnInfo MappingName="empnum2"			  HeaderText="{languageBinding.empnum}"	 ReadOnly="True" 	Width="90" />
+		<DetailGridColumnInfo MappingName="timeout"	HeaderText="Time Out"	 Width="70"    ReadOnly="True"     Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="schedtimeout"	HeaderText="Sched Time Out"	 Width="80"    ReadOnly="True"     />
+		<DetailGridColumnInfo MappingName="confirmedtimeout"	HeaderText="Confirmed Time Out"	 ReadOnly="True"  Width="100"   Format="#,##0.00####"/>
+		<DetailGridColumnInfo MappingName="scheddateout"	HeaderText="Sched Date Out"	 Width="80"   ReadOnly="True"     ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+    
+		<DetailGridColumnInfo MappingName="TotalHrs"	HeaderText="Hours"	 Width="60"     ReadOnly="True"    Format="#,##0.00####"/>
+    <DetailGridColumnInfo MappingName="LateMins"	HeaderText="Late Mins"	 Width="60"     ReadOnly="True"    Format="#,##0.00####"/>
+
+    <DetailGridColumnInfo MappingName="lvmnum"	HeaderText="Status"	 Width="70"        Format="#,##0.00####" F2="True" F2GridInfo="F2GridInfo_LVM.xml"/>
+		<DetailGridColumnInfo MappingName="rnric"	HeaderText=""	 Width="0"  ReadOnly="True"       Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="replacedby"	HeaderText="Replaced By"	 Width="70"  ReadOnly="True"       Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="rempname"	HeaderText="Replaced By Name"	 Width="100"    ReadOnly="True"     Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="isAdhoc"  		  HeaderText="Is Ad hoc"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="adhocremark"	HeaderText="Adhoc Remark"	 Width="150"     Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="RepRefKey"	HeaderText=""	 Width="0"  ReadOnly="True"       Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="isPH"  		  HeaderText="Is PH"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="isOT"  		  HeaderText="Is OT"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="OTrate"	HeaderText="OT Rate"	 Width="70"      Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="isUS"  		  HeaderText="Is US"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="isDRE"  		  HeaderText="Is DRE"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+		<DetailGridColumnInfo MappingName="isRD"  		  HeaderText="Is RD"		  Width="40" ReadOnly="True"  	ColumnType="CheckBox"/>
+
+		<DetailGridColumnInfo MappingName="dayofweek"		HeaderText=""			Width="0"	ReadOnly="true"/>
+		<DetailGridColumnInfo MappingName="paytypecode"	HeaderText="Pay Type"	 Width="40" ReadOnly="True"     Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="daysperweek"	HeaderText="Days Per.WK"	 Width="70" ReadOnly="True"     Format="#,##0.00####" />
+		<DetailGridColumnInfo MappingName="value"	HeaderText=""  	 Width="0"     Format="#,##0.00####" TableName="paytm"/>
+		<DetailGridColumnInfo MappingName="empnum3"			  HeaderText="{languageBinding.empnum}"	 ReadOnly="True" 	Width="90" />
+		<DetailGridColumnInfo MappingName="atrnum"		HeaderText="ATR No:"			Width="100"	ReadOnly="true"/>
+		<DetailGridColumnInfo MappingName="refnum"		HeaderText=""			Width="0"	ReadOnly="true" Key="True"/>
+		<DetailGridColumnInfo MappingName="monthno"		HeaderText=""			Width="0"	ReadOnly="true" />
+	</DetailGridInfo>
+</BizXml>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml	xmlns:def="Definition" 
+		xmlns:ref="Reference"
+		xmlns="System.Windows.Forms, System.Windows.Forms"
+		xmlns:sd="System.Drawing, System.Drawing" 
+		xmlns:s="System, mscorlib">
+	<Form Name="header" Text="Page" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="3" Font="{languageBinding.sys_font}">
+		<Controls>
+      <CheckBox Name="acm_active"       Location="105, 25"		Size="60,21" TabIndex="1"  Text="{languageBinding.active}"/>
+
+      <Label		Name="lbl_acctype"		Location="5,	50"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.acctype}"/>
+        <TextBox		Name="acctype_acctype"		Location="105,	50"	Size="90, 20"	TabIndex="2"	FlatStyle="System" ReadOnly="true"/>
+			  <Label		Name="lbl_catname"		Location="5,	75"	Size="90, 16"	TextAlign="MiddleLeft"	Text="{languageBinding.description}"/>
+			  <TextBox		Name="acctype_acctypename"		Location="105,	75"	Size="240,21"	TabIndex="3"/>
+      <CheckBox Name="acctype_balancesheet"       Location="105, 100"		Size="90,21" TabIndex="4"  Text="Balancesheet"/>
+      <Label		Name="lbl_reportGrouping"		Location="5,	125"	Size="90, 16"	TextAlign="MiddleLeft"	Text="ReportGrouping"/>
+      <TextBox Name="acctype_reportGrouping"       Location="105, 125"		Size="60,21" TabIndex="5"/>
+      <TextBox Name="acctypegrouping_groupingName"       Location="165, 125"		Size="180,21" TabIndex="5"/>
+    </Controls>
+	</Form>
+</BizXml>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizReport, BizBase"
+		xmlns:rel="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<ReportInfo Name="reportInfo" MainTable="gld">		
+		<ReportColumnInfo MappingName="refnum"			HeaderText="{languageBinding.refnum}"/>
+		<ReportColumnInfo MappingName="oricur"		HeaderText="{languageBinding.oricur}"/>
+		<ReportColumnInfo MappingName="oridebit"		HeaderText="{languageBinding.oridebit}"/>
+		<ReportColumnInfo MappingName="oricredit"			HeaderText="{languageBinding.oricredit}"/>
+		<ReportColumnInfo MappingName="oriamt"			HeaderText="{languageBinding.oriamt}"/>
+		<ReportColumnInfo MappingName="postamt"				HeaderText="{languageBinding.postamt}"/>
+		<ReportColumnInfo MappingName="detail"			HeaderText="{languageBinding.detail}"/>
+		<ReportColumnInfo MappingName="accnum"			HeaderText="{languageBinding.accnum}"/>		
+		<ReportColumnInfo MappingName="accname"		HeaderText="{languageBinding.accname}"/>
+		<ReportColumnInfo MappingName="detail1"			HeaderText="{languageBinding.detail1}"/>
+	</ReportInfo>
+</BizXml>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<BizXml xmlns="System.Windows.Forms"
+				xmlns:def="Definition">
+	<Form Name="detail_CF" Text="Suppliers" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="5" Font="{languageBinding.sys_font}">
+		<Controls>
+			<DataGrid Name="dg_CF" Location="0, 0" Size="736, 535" Dock="Fill" HeaderForeColor="ControlText" TabIndex="100" ScrollBars="Both" CaptionBackColor="{languageBinding.captionBackColor}"/>
+		</Controls>
+	</Form>
+</BizXml>

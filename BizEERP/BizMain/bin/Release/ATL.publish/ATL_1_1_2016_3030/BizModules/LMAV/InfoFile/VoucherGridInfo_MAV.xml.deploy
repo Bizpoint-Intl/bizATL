@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizVoucher, BizBase"
+		xmlns:bas="BizRAD.BizBase, BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<VoucherGridInfo Name="voucherGridInfo" MainTable="mavh" Title="{languageBinding.LMAV}" DocumentInfo="DocumentInfo_MAV.xml">
+		<VoucherGridColumnInfo MappingName="refnum"		    HeaderText="{languageBinding.refnum}"		  Width="130"		SearchItem="True" ConfirmItem="True" RefreshItem="True" Key="True"  PrintItem="True"  SortType="DESC"/>
+    <VoucherGridColumnInfo MappingName="trandate"	    HeaderText="{languageBinding.trandate}"		Width="90"			  SearchItem="True" ConfirmItem="True" RefreshItem="True" ColumnType="DateTime"/>
+    <VoucherGridColumnInfo MappingName="mavtype"		HeaderText="Adj. Type"	                                        Width="120"    SearchItem="True"/>
+    <VoucherGridColumnInfo MappingName="whnum"			  HeaderText="Warehouse"			                                Width="70"		    SearchItem="True"/>
+		<VoucherGridColumnInfo MappingName="detail"			    HeaderText="{languageBinding.detail}"			    Width="250"		SearchItem="True"/>
+		<!--<VoucherGridColumnInfo MappingName="opbal"			HeaderText="OpeningBalance"						Width="100"/>-->
+		<VoucherGridColumnInfo MappingName="status"			    HeaderText="{languageBinding.status}"	        Width="45" />
+		<VoucherGridColumnInfo MappingName="[user]"		      HeaderText="{languageBinding.user}"		        Width="80"/>
+	</VoucherGridInfo>
+</BizXml>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizF2,BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+	<F2GridInfo Name="f2GridInfo" MainTable="vATRwrr" Title="Week Master" PageSize="{languageBinding.sys_F2_Pagesize}">
+		<F2GridColumnInfo MappingName="refnum"		HeaderText="refnum"		Width="150" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
+		<F2GridColumnInfo MappingName="sitenum"	HeaderText="{languageBinding.sitenum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="sectorcode"	HeaderText="Sector"	Width="50" IsItem="True" SearchItem="True" SortItem="True"/>
+		<F2GridColumnInfo MappingName="commencedate"	HeaderText="From"	Width="80"  ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<F2GridColumnInfo MappingName="enddate"	HeaderText="To"	Width="80" IsItem="True" ColumnType="DateTime" Format="Custom" CustomFormat="dd-MM-yyyy"/>
+		<F2GridColumnInfo MappingName="Status"	HeaderText="{languageBinding.status}"	Width="50" IsItem="True"  />
+	</F2GridInfo>
+</BizXml>

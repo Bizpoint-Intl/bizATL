@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BizXml	xmlns="BizRAD.BizDetail, BizBase"
+		xmlns:bas="BizRAD.BizBase,	BizBase"
+		xmlns:def="Definition"
+		xmlns:ref="Reference">
+  <DetailGridInfo Name="detailGridInfo" MainTable="matm3">
+    <VirtualColumns>
+      <bas:VirtualColumn ColumnName="mark"	DataType="System.Boolean" DefaultValue="False"/>
+    </VirtualColumns>
+    <DetailGridColumnInfo MappingName="mark"			         HeaderText="{languageBinding.mark}"		Width="50"	    ColumnType="CheckBox"/>
+    <!--<DetailGridColumnInfo MappingName="Line"		           HeaderText=""	                                                    Width="0"	     ReadOnly="True" Sort="True"/>-->
+    <DetailGridColumnInfo MappingName="matnum"		   HeaderText="Product Code"	                        Width="150"	ReadOnly="true" Key="True"/>
+    <DetailGridColumnInfo MappingName="matname"		 HeaderText="Description"	                            Width="300"	ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="uomcode"		 HeaderText="UOM"	                                          Width="50"	    ReadOnly="true"/>
+    <DetailGridColumnInfo MappingName="printqty"		   HeaderText="Qty"	                                            Width="60"/>
+  </DetailGridInfo>
+</BizXml>
