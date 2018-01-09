@@ -37,8 +37,8 @@
     <SignAssembly>false</SignAssembly>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>true</GenerateManifests>
-    <ManifestCertificateThumbprint>69E42B598CBE8DF2D7BD87B38A7B82FDBDC4A178</ManifestCertificateThumbprint>
-    <ManifestKeyFile>ATL_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>91FD584482893524A5313EC2AC74B3F31C87407E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ATL_2_TemporaryKey.pfx</ManifestKeyFile>
     <PublishUrl>\\192.168.1.21\Deployment\64\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -112,6 +112,7 @@
     <None Include="App.config" />
     <None Include="ASL.pfx" />
     <None Include="ATL_1_TemporaryKey.pfx" />
+    <None Include="ATL_2_TemporaryKey.pfx" />
     <None Include="ATL_TemporaryKey.pfx" />
     <None Include="BizModules\ACM\InfoFile\vssver2.scc" />
     <None Include="BizModules\ACM\UIFile\vssver2.scc" />

@@ -3,7 +3,7 @@
 		xmlns:def="Definition"
 		xmlns:ref="Reference">
 	<!--<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}" >-->
-		<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Search Material Master Record" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='MATM'">
+		<F2GridInfo Name="f2GridInfo" MainTable="matm" Title="Designation Master Record" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="flag='MATM'">
 		<F2GridColumnInfo MappingName="matnum"						HeaderText="Designation"		Width="100"	IsItem="True"	SearchItem="True"	SortItem="True" Key="True"/>
 		<F2GridColumnInfo MappingName="matname"						HeaderText="Desc"	Width="200"/>
 			<F2GridColumnInfo MappingName="uomcode"						HeaderText="{languageBinding.uom}"	Width="80"/>
