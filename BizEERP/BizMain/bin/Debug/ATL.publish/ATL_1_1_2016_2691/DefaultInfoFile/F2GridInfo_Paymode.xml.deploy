@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BizXml	xmlns="BizRAD.BizF2,BizBase"
-		xmlns:def="Definition"
-		xmlns:ref="Reference">
-	<F2GridInfo Name="f2GridInfo" MainTable="PaymodeMaster" Title="Paymode" PageSize="{languageBinding.sys_F2_Pagesize}">
-		<F2GridColumnInfo MappingName="PaymodeCode"		HeaderText="Paymode Code"			Width="120" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
-		<F2GridColumnInfo MappingName="PaymodeName"		HeaderText="Paymode Name"			Width="300" IsItem="True" SearchItem="True" SortItem="True"/>
-	</F2GridInfo>
-</BizXml>

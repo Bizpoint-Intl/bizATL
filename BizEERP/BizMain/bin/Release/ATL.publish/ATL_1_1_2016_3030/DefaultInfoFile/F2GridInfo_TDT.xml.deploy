@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BizXml	xmlns="BizRAD.BizF2,BizBase"
-		    xmlns:def="Definition"
-		    xmlns:ref="Reference">
-	<F2GridInfo Name="f2GridInfo" MainTable="tdth" Title="{languageBinding.TDT}" PageSize="{languageBinding.sys_F2_Pagesize}">
-    <F2GridColumnInfo MappingName="tdtnum"		HeaderText="TDT No."		Width="180" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
-    <F2GridColumnInfo MappingName="tdtname"		HeaderText="TDT Name"	Width="210" IsItem="True" SearchItem="True" SortItem="True"/>
-	</F2GridInfo>
-</BizXml> 

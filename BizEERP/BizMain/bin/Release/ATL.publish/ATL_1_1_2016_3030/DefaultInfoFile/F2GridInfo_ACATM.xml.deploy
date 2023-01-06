@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BizXml	xmlns="BizRAD.BizF2,BizBase"
-		xmlns:def="Definition"
-		xmlns:ref="Reference">
-	<F2GridInfo Name="f2GridInfo" MainTable="acatm" Title="Search Asset Category Master" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
-		<F2GridColumnInfo MappingName="acatnum"		HeaderText="{languageBinding.acatnum}"	Width="100" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
-		<F2GridColumnInfo MappingName="acatname"	HeaderText="{languageBinding.acatname}"	Width="200" IsItem="True" SearchItem="True" SortItem="True"/>
-	</F2GridInfo>
-</BizXml>

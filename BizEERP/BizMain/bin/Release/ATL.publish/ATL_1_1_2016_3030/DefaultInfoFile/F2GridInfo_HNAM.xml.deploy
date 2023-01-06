@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BizXml	xmlns="BizRAD.BizF2,BizBase"
-		xmlns:def="Definition"
-		xmlns:ref="Reference">
-	<F2GridInfo Name="f2GridInfo" MainTable="hnam" Title="Search Nationality Code Master" PageSize="{languageBinding.sys_F2_Pagesize}" DefaultCondition="expire=0">
-		<F2GridColumnInfo MappingName="nationalitycode"	HeaderText="Nationality Code"	Width="100" IsItem="True" SearchItem="True" SortItem="True" />
-		<F2GridColumnInfo MappingName="nationality"	HeaderText="Description"	Width="200" IsItem="True" SearchItem="True" SortItem="True" Key="True"/>
-	</F2GridInfo>
-</BizXml>

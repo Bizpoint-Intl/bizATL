@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<BizXml xmlns="System.Windows.Forms"
-		xmlns:def="Definition">
-	<Form Name="transactions" Text="transactions" Location="4, 21" Size="736, 535" ForeColor="Black" TabIndex="4">
-		<Controls>
-			<DataGrid Name="dg_detail" Location="0, 0" Size="736, 535" Font="Tahoma, 8.25pt" Dock="Fill" HeaderForeColor="ControlText" TabIndex="0" CaptionBackColor="0,78,152"/>
-		</Controls>
-	</Form>
-</BizXml>
