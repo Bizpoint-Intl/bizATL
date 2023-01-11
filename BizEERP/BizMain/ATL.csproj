@@ -32,16 +32,16 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignManifests>true</SignManifests>
     <SignAssembly>false</SignAssembly>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>true</GenerateManifests>
-    <ManifestCertificateThumbprint>91FD584482893524A5313EC2AC74B3F31C87407E</ManifestCertificateThumbprint>
-    <ManifestKeyFile>ATL_2_TemporaryKey.pfx</ManifestKeyFile>
-    <PublishUrl>\\192.168.1.21\Deployment\64\</PublishUrl>
+    <ManifestCertificateThumbprint>89D6832B32A2619977A414C04AF896B31990764A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ATL_3_TemporaryKey.pfx</ManifestKeyFile>
+    <PublishUrl>D:\Temp\Deploy\ATL\2023_2\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -49,13 +49,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://192.168.1.21:7777/</InstallUrl>
+    <InstallUrl>\\192.168.1.21\Deployment\64_newcert2023\</InstallUrl>
     <SupportUrl>http://bizpoint-intl.com/Contacts.htm</SupportUrl>
     <TargetCulture>en</TargetCulture>
     <ProductName>ATL</ProductName>
     <PublisherName>Bizpoint International</PublisherName>
     <MinimumRequiredVersion>1.0.0.5</MinimumRequiredVersion>
-    <ApplicationVersion>1.1.2016.3030</ApplicationVersion>
+    <ApplicationVersion>1.1.2023.2</ApplicationVersion>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
   </PropertyGroup>
@@ -113,6 +113,7 @@
     <None Include="ASL.pfx" />
     <None Include="ATL_1_TemporaryKey.pfx" />
     <None Include="ATL_2_TemporaryKey.pfx" />
+    <None Include="ATL_3_TemporaryKey.pfx" />
     <None Include="ATL_TemporaryKey.pfx" />
     <None Include="BizModules\ACM\InfoFile\vssver2.scc" />
     <None Include="BizModules\ACM\UIFile\vssver2.scc" />
@@ -268,7 +269,6 @@
     <None Include="BizModules\CTR\Report\CTRDataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CTRDataSet1.Designer.cs</LastGenOutput>
     </None>
     <None Include="BizModules\CTR\Report\CTRDataSet1.xss">
       <DependentUpon>CTRDataSet1.xsd</DependentUpon>
@@ -390,7 +390,6 @@
     <None Include="BizModules\SIV\Report\dsInvoice.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>dsInvoice.Designer.cs</LastGenOutput>
     </None>
     <None Include="BizModules\SIV\Report\dsInvoice.xss">
       <DependentUpon>dsInvoice.xsd</DependentUpon>
@@ -961,6 +960,7 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
+    <None Include="Copy of App - Dev Live.config" />
     <None Include="DefaultUIFile\DEFAULT_ABOUTBIZERP\vssver2.scc" />
     <None Include="BizModules\GRN\Code\vssver2.scc" />
     <None Include="BizModules\GRN\InfoFile\vssver2.scc" />
@@ -1451,11 +1451,6 @@
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="BizModules\CTR\Report\CTRDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CTRDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="BizModules\FAV\Code\FilterOP.cs">
       <SubType>Form</SubType>
@@ -1957,11 +1952,6 @@
     <Compile Include="BizModules\SIV\Report\dsInvoice.cs">
       <DependentUpon>dsInvoice.xsd</DependentUpon>
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BizModules\SIV\Report\dsInvoice.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsInvoice.xsd</DependentUpon>
     </Compile>
     <Compile Include="BizModules\SIV\Report\dsSIV.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -21381,6 +21371,11 @@
     </PublishFile>
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
       <Visible>False</Visible>
       <ProductName>.NET Framework 2.0</ProductName>

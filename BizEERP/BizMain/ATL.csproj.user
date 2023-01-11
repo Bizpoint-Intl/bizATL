@@ -1,14 +1,14 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ReferencePath>C:\Program Files (x86)\Common Files\Business Objects\2.7\Managed\C:\Program Files\Common Files\Business Objects\2.7\Managed\</ReferencePath>
-    <PublishUrlHistory>\\192.168.1.21\Deployment\64\|\\192.168.1.21\Deployment\86\|\\192.168.1.21\Deployment\Test64\|\\192.168.1.21\Deployment\Backup\64\1.1.2016.2691\|\\192.168.1.21\Deployment\Backup\64\1.1.2016.2690\</PublishUrlHistory>
-    <InstallUrlHistory>http://192.168.1.21:7777/|http://192.168.1.21:8888/|http://192.168.1.21:7771/|http://192.168.1.21:8881/|http://192.168.1.21:7788/</InstallUrlHistory>
+    <PublishUrlHistory>D:\Temp\Deploy\ATL\2023_2\|D:\Temp\Deploy\ATL\2023_1\|D:\Temp\Deploy\ATL\2023_0\|\\192.168.1.21\Deployment\64_newcert2023\|\\192.168.1.21\Deployment\64_newcert\</PublishUrlHistory>
+    <InstallUrlHistory>\\192.168.1.21\Deployment\64_newcert2023\|http://192.168.1.21:7777/|http://192.168.1.21:8888/|http://192.168.1.21:7771/|http://192.168.1.21:8881/</InstallUrlHistory>
     <SupportUrlHistory>http://bizpoint-intl.com/Contacts.htm</SupportUrlHistory>
     <UpdateUrlHistory>
     </UpdateUrlHistory>
     <BootstrapperUrlHistory>
     </BootstrapperUrlHistory>
-    <ApplicationRevision>3030</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
     <ProjectView>ShowAllFiles</ProjectView>
