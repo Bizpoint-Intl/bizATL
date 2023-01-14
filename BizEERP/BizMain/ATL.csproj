@@ -39,7 +39,7 @@
     <GenerateManifests>true</GenerateManifests>
     <ManifestCertificateThumbprint>89D6832B32A2619977A414C04AF896B31990764A</ManifestCertificateThumbprint>
     <ManifestKeyFile>ATL_3_TemporaryKey.pfx</ManifestKeyFile>
-    <PublishUrl>D:\Temp\Deploy\ATL\2023_2\</PublishUrl>
+    <PublishUrl>D:\Temp\Deploy\ATL\2023_3\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -55,7 +55,7 @@
     <ProductName>ATL</ProductName>
     <PublisherName>Bizpoint International</PublisherName>
     <MinimumRequiredVersion>1.0.0.5</MinimumRequiredVersion>
-    <ApplicationVersion>1.1.2023.2</ApplicationVersion>
+    <ApplicationVersion>1.1.2023.3</ApplicationVersion>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
   </PropertyGroup>
@@ -1820,7 +1820,6 @@
     </Compile>
     <Compile Include="BizModules\CTR\Report\CTRDataSet1.cs">
       <DependentUpon>CTRDataSet1.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="BizModules\PCTR\Code\Voucher_CTR.cs" />
     <Compile Include="BizModules\SADJ\Code\MassSalaryAdjustment.cs">
@@ -1951,7 +1950,6 @@
     <Compile Include="BizModules\SIV\Code\Voucher_SIV.cs" />
     <Compile Include="BizModules\SIV\Report\dsInvoice.cs">
       <DependentUpon>dsInvoice.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="BizModules\SIV\Report\dsSIV.Designer.cs">
       <AutoGen>True</AutoGen>
