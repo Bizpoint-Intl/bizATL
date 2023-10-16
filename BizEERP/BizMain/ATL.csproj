@@ -39,7 +39,7 @@
     <GenerateManifests>true</GenerateManifests>
     <ManifestCertificateThumbprint>89D6832B32A2619977A414C04AF896B31990764A</ManifestCertificateThumbprint>
     <ManifestKeyFile>ATL_3_TemporaryKey.pfx</ManifestKeyFile>
-    <PublishUrl>D:\Temp\Deploy\ATL\2023_4\</PublishUrl>
+    <PublishUrl>D:\Temp\Deploy\ATL\2023_5\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -55,7 +55,7 @@
     <ProductName>ATL</ProductName>
     <PublisherName>Bizpoint International</PublisherName>
     <MinimumRequiredVersion>1.0.0.5</MinimumRequiredVersion>
-    <ApplicationVersion>1.1.2023.4</ApplicationVersion>
+    <ApplicationVersion>1.1.2023.5</ApplicationVersion>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
   </PropertyGroup>
